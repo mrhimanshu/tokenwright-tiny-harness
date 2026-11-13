@@ -1,0 +1,18 @@
+claude-sonnet-5-5 B_bloated t1 0 ['changelog-writer'] 8
+claude-sonnet-5-5 B_bloated t2 0 ['changelog-writer'] 8
+claude-sonnet-5-5 B_bloated t3 0 ['changelog-writer'] 8
+claude-sonnet-5-5 B_bloated t4 0 ['changelog-writer'] 8
+claude-sonnet-5-5 B_bloated t5 0 ['changelog-writer', 'changelog-writer'] 8
+claude-sonnet-5-5 B_bloated t6 0 ['changelog-writer'] 8
+claude-sonnet-5-5 B_bloated t1 1 ['changelog-writer'] 8
+claude-sonnet-5-5 B_bloated t2 1 ['changelog-writer'] 8
+claude-sonnet-5-5 B_bloated t3 1 ['changelog-writer'] 7
+claude-sonnet-5-5 B_bloated t4 1 ['changelog-writer'] 8
+claude-sonnet-5-5 B_bloated t5 1 ['changelog-writer'] 8
+claude-sonnet-5-5 B_bloated t6 1 ['changelog-writer'] 8
+claude-sonnet-5-5 B_bloated t1 2 ['changelog-writer'] 8
+claude-sonnet-5-5 B_bloated t2 2 ['changelog-writer'] 8
+claude-sonnet-5-5 B_bloated t3 2 ['changelog-writer'] 7
+claude-sonnet-5-5 B_bloated t4 2 ['changelog-writer'] 8
+claude-sonnet-5-5 B_bloated t5 2 ['changelog-writer'] 8
+claude-sonnet-5-5 B_bloated t6 2 ['changelog-writer'] 8
