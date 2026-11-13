@@ -1,0 +1,12 @@
+{
+ "repo": "Qwen/Qwen2.5-0.5B-Instruct",
+ "sha": "7ae557604adf67be50417f59c2c2f167def9a775",
+ "files": {
+  "model.safetensors": {
+   "expected": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+   "got": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+   "ok": true,
+   "bytes": 988097824
+  }
+ }
+}

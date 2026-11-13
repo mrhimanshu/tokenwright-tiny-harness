@@ -1,0 +1,432 @@
+{
+ "tasks": [
+  "biology",
+  "economics",
+  "health",
+  "philosophy",
+  "psychology"
+ ],
+ "per_task": {
+  "biology": {
+   "base": {
+    "acc": 0.14444444444444443,
+    "kl": 0.0,
+    "ret_acc": 0.08333333333333333,
+    "train_s": null,
+    "deleted": null,
+    "gate_weights": null,
+    "mask_bytes_zstd": null,
+    "peak_mem_gb": null,
+    "n_test": 180,
+    "n_train": 537,
+    "weights_changed": null,
+    "n_params": 494032768
+   },
+   "wanda_only": {
+    "acc": 0.1388888888888889,
+    "kl": 0.0031239733091031918,
+    "ret_acc": 0.08333333333333333,
+    "train_s": null,
+    "deleted": 191509,
+    "gate_weights": 104595456,
+    "mask_bytes_zstd": 463672,
+    "peak_mem_gb": null,
+    "n_test": 180,
+    "n_train": 537,
+    "weights_changed": null,
+    "n_params": 494032768
+   },
+   "random_deletion": {
+    "acc": 0.12777777777777777,
+    "kl": 0.02752912711993864,
+    "ret_acc": 0.11666666666666667,
+    "train_s": null,
+    "deleted": 1125634,
+    "gate_weights": 104595456,
+    "mask_bytes_zstd": 1961558,
+    "peak_mem_gb": null,
+    "n_test": 180,
+    "n_train": 537,
+    "weights_changed": null,
+    "n_params": 494032768
+   },
+   "deletion_tuning": {
+    "acc": 0.20555555555555555,
+    "kl": 0.10312564465989986,
+    "ret_acc": 0.11666666666666667,
+    "train_s": 136.3,
+    "deleted": 1125634,
+    "gate_weights": 104595456,
+    "mask_bytes_zstd": 1955819,
+    "peak_mem_gb": 14.98,
+    "n_test": 180,
+    "n_train": 537,
+    "weights_changed": null,
+    "n_params": 494032768
+   },
+   "full_finetune": {
+    "acc": 0.23333333333333334,
+    "kl": 0.207307671638556,
+    "ret_acc": 0.13333333333333333,
+    "train_s": 216.9,
+    "deleted": null,
+    "gate_weights": null,
+    "mask_bytes_zstd": null,
+    "peak_mem_gb": 11.61,
+    "n_test": 180,
+    "n_train": 537,
+    "weights_changed": 494004779,
+    "n_params": 494032768
+   }
+  },
+  "economics": {
+   "base": {
+    "acc": 0.14218009478672985,
+    "kl": 0.0,
+    "ret_acc": 0.08333333333333333,
+    "train_s": null,
+    "deleted": null,
+    "gate_weights": null,
+    "mask_bytes_zstd": null,
+    "peak_mem_gb": null,
+    "n_test": 211,
+    "n_train": 633,
+    "weights_changed": null,
+    "n_params": 494032768
+   },
+   "wanda_only": {
+    "acc": 0.14218009478672985,
+    "kl": 0.0031239814938325864,
+    "ret_acc": 0.08333333333333333,
+    "train_s": null,
+    "deleted": 191519,
+    "gate_weights": 104595456,
+    "mask_bytes_zstd": 463493,
+    "peak_mem_gb": null,
+    "n_test": 211,
+    "n_train": 633,
+    "weights_changed": null,
+    "n_params": 494032768
+   },
+   "random_deletion": {
+    "acc": 0.14218009478672985,
+    "kl": 0.025562704130439467,
+    "ret_acc": 0.11666666666666667,
+    "train_s": null,
+    "deleted": 1040144,
+    "gate_weights": 104595456,
+    "mask_bytes_zstd": 1855339,
+    "peak_mem_gb": null,
+    "n_test": 211,
+    "n_train": 633,
+    "weights_changed": null,
+    "n_params": 494032768
+   },
+   "deletion_tuning": {
+    "acc": 0.1848341232227488,
+    "kl": 0.08779950706872922,
+    "ret_acc": 0.11666666666666667,
+    "train_s": 115.8,
+    "deleted": 1040144,
+    "gate_weights": 104595456,
+    "mask_bytes_zstd": 1847464,
+    "peak_mem_gb": 12.76,
+    "n_test": 211,
+    "n_train": 633,
+    "weights_changed": null,
+    "n_params": 494032768
+   },
+   "full_finetune": {
+    "acc": 0.1943127962085308,
+    "kl": 0.2013835845712445,
+    "ret_acc": 0.1,
+    "train_s": 194.6,
+    "deleted": null,
+    "gate_weights": null,
+    "mask_bytes_zstd": null,
+    "peak_mem_gb": 11.65,
+    "n_test": 211,
+    "n_train": 633,
+    "weights_changed": 493994138,
+    "n_params": 494032768
+   }
+  },
+  "health": {
+   "base": {
+    "acc": 0.11707317073170732,
+    "kl": 0.0,
+    "ret_acc": 0.08333333333333333,
+    "train_s": null,
+    "deleted": null,
+    "gate_weights": null,
+    "mask_bytes_zstd": null,
+    "peak_mem_gb": null,
+    "n_test": 205,
+    "n_train": 611,
+    "weights_changed": null,
+    "n_params": 494032768
+   },
+   "wanda_only": {
+    "acc": 0.11219512195121951,
+    "kl": 0.003123955659475915,
+    "ret_acc": 0.08333333333333333,
+    "train_s": null,
+    "deleted": 191491,
+    "gate_weights": 104595456,
+    "mask_bytes_zstd": 463473,
+    "peak_mem_gb": null,
+    "n_test": 205,
+    "n_train": 611,
+    "weights_changed": null,
+    "n_params": 494032768
+   },
+   "random_deletion": {
+    "acc": 0.12195121951219512,
+    "kl": 0.025736498285903714,
+    "ret_acc": 0.11666666666666667,
+    "train_s": null,
+    "deleted": 1051520,
+    "gate_weights": 104595456,
+    "mask_bytes_zstd": 1869794,
+    "peak_mem_gb": null,
+    "n_test": 205,
+    "n_train": 611,
+    "weights_changed": null,
+    "n_params": 494032768
+   },
+   "deletion_tuning": {
+    "acc": 0.37073170731707317,
+    "kl": 0.09933059895571154,
+    "ret_acc": 0.08333333333333333,
+    "train_s": 164.7,
+    "deleted": 1051520,
+    "gate_weights": 104595456,
+    "mask_bytes_zstd": 1864072,
+    "peak_mem_gb": 13.83,
+    "n_test": 205,
+    "n_train": 611,
+    "weights_changed": null,
+    "n_params": 494032768
+   },
+   "full_finetune": {
+    "acc": 0.3902439024390244,
+    "kl": 0.18025739214692116,
+    "ret_acc": 0.06666666666666667,
+    "train_s": 268.4,
+    "deleted": null,
+    "gate_weights": null,
+    "mask_bytes_zstd": null,
+    "peak_mem_gb": 12.79,
+    "n_test": 205,
+    "n_train": 611,
+    "weights_changed": 494005147,
+    "n_params": 494032768
+   }
+  },
+  "philosophy": {
+   "base": {
+    "acc": 0.096,
+    "kl": 0.0,
+    "ret_acc": 0.08333333333333333,
+    "train_s": null,
+    "deleted": null,
+    "gate_weights": null,
+    "mask_bytes_zstd": null,
+    "peak_mem_gb": null,
+    "n_test": 125,
+    "n_train": 374,
+    "weights_changed": null,
+    "n_params": 494032768
+   },
+   "wanda_only": {
+    "acc": 0.096,
+    "kl": 0.0031239706402301933,
+    "ret_acc": 0.08333333333333333,
+    "train_s": null,
+    "deleted": 191525,
+    "gate_weights": 104595456,
+    "mask_bytes_zstd": 463470,
+    "peak_mem_gb": null,
+    "n_test": 125,
+    "n_train": 374,
+    "weights_changed": null,
+    "n_params": 494032768
+   },
+   "random_deletion": {
+    "acc": 0.08,
+    "kl": 0.028163885573323454,
+    "ret_acc": 0.11666666666666667,
+    "train_s": null,
+    "deleted": 1146799,
+    "gate_weights": 104595456,
+    "mask_bytes_zstd": 1983601,
+    "peak_mem_gb": null,
+    "n_test": 125,
+    "n_train": 374,
+    "weights_changed": null,
+    "n_params": 494032768
+   },
+   "deletion_tuning": {
+    "acc": 0.136,
+    "kl": 0.16782784123565342,
+    "ret_acc": 0.08333333333333333,
+    "train_s": 95.1,
+    "deleted": 1146799,
+    "gate_weights": 104595456,
+    "mask_bytes_zstd": 1975704,
+    "peak_mem_gb": 10.65,
+    "n_test": 125,
+    "n_train": 374,
+    "weights_changed": null,
+    "n_params": 494032768
+   },
+   "full_finetune": {
+    "acc": 0.128,
+    "kl": 0.447643014431071,
+    "ret_acc": 0.08333333333333333,
+    "train_s": 164.7,
+    "deleted": null,
+    "gate_weights": null,
+    "mask_bytes_zstd": null,
+    "peak_mem_gb": 10.57,
+    "n_test": 125,
+    "n_train": 374,
+    "weights_changed": 494010272,
+    "n_params": 494032768
+   }
+  },
+  "psychology": {
+   "base": {
+    "acc": 0.15,
+    "kl": 0.0,
+    "ret_acc": 0.08333333333333333,
+    "train_s": null,
+    "deleted": null,
+    "gate_weights": null,
+    "mask_bytes_zstd": null,
+    "peak_mem_gb": null,
+    "n_test": 200,
+    "n_train": 598,
+    "weights_changed": null,
+    "n_params": 494032768
+   },
+   "wanda_only": {
+    "acc": 0.15,
+    "kl": 0.003123966789706021,
+    "ret_acc": 0.08333333333333333,
+    "train_s": null,
+    "deleted": 191529,
+    "gate_weights": 104595456,
+    "mask_bytes_zstd": 463548,
+    "peak_mem_gb": null,
+    "n_test": 200,
+    "n_train": 598,
+    "weights_changed": null,
+    "n_params": 494032768
+   },
+   "random_deletion": {
+    "acc": 0.15,
+    "kl": 0.025634422851538562,
+    "ret_acc": 0.11666666666666667,
+    "train_s": null,
+    "deleted": 1044611,
+    "gate_weights": 104595456,
+    "mask_bytes_zstd": 1860030,
+    "peak_mem_gb": null,
+    "n_test": 200,
+    "n_train": 598,
+    "weights_changed": null,
+    "n_params": 494032768
+   },
+   "deletion_tuning": {
+    "acc": 0.14,
+    "kl": 0.09466900961576832,
+    "ret_acc": 0.1,
+    "train_s": 107.0,
+    "deleted": 1044611,
+    "gate_weights": 104595456,
+    "mask_bytes_zstd": 1854622,
+    "peak_mem_gb": 11.69,
+    "n_test": 200,
+    "n_train": 598,
+    "weights_changed": null,
+    "n_params": 494032768
+   },
+   "full_finetune": {
+    "acc": 0.17,
+    "kl": 0.20020575147919745,
+    "ret_acc": 0.1,
+    "train_s": 179.2,
+    "deleted": null,
+    "gate_weights": null,
+    "mask_bytes_zstd": null,
+    "peak_mem_gb": 11.09,
+    "n_test": 200,
+    "n_train": 598,
+    "weights_changed": 494005965,
+    "n_params": 494032768
+   }
+  }
+ },
+ "mean": {
+  "base": {
+   "acc": 0.12993954199257632,
+   "acc_min": 0.096,
+   "acc_max": 0.15,
+   "kl": 0.0,
+   "n": 5
+  },
+  "wanda_only": {
+   "acc": 0.12785282112536764,
+   "acc_min": 0.096,
+   "acc_max": 0.15,
+   "kl": 0.003123969578469581,
+   "n": 5
+  },
+  "random_deletion": {
+   "acc": 0.12438181841534054,
+   "acc_min": 0.08,
+   "acc_max": 0.15,
+   "kl": 0.02652532759222877,
+   "n": 5
+  },
+  "deletion_tuning": {
+   "acc": 0.20742427721907547,
+   "acc_min": 0.136,
+   "acc_max": 0.37073170731707317,
+   "kl": 0.11055052030715247,
+   "n": 5
+  },
+  "full_finetune": {
+   "acc": 0.22317800639617774,
+   "acc_min": 0.128,
+   "acc_max": 0.3902439024390244,
+   "kl": 0.24735948285339804,
+   "n": 5
+  }
+ },
+ "gain_recovered": {
+  "biology": 0.6874999999999999,
+  "economics": 0.8181818181818179,
+  "health": 0.9285714285714285,
+  "philosophy": 1.2500000000000002,
+  "psychology": -0.4999999999999986
+ },
+ "flips": {
+  "biology": {
+   "base_wrong_dt_right": null
+  },
+  "economics": {
+   "base_wrong_dt_right": null
+  },
+  "health": {
+   "base_wrong_dt_right": null
+  },
+  "philosophy": {
+   "base_wrong_dt_right": null
+  },
+  "psychology": {
+   "base_wrong_dt_right": null
+  }
+ }
+}
