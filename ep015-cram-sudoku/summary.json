@@ -1,0 +1,473 @@
+{
+ "claude-sonnet-5-5": {
+  "n": 5,
+  "correct": 3,
+  "ran_out": 2,
+  "wrong_answer": 0,
+  "cost_total": 1.248,
+  "cost_per_puzzle": 0.25,
+  "cost_per_solved": 0.416,
+  "median_secs": 166.1,
+  "max_secs": 195.9,
+  "median_out_tok": 25879,
+  "per_puzzle": [
+   [
+    0,
+    true,
+    "end_turn",
+    10887,
+    73.4,
+    0.10943
+   ],
+   [
+    1,
+    true,
+    "end_turn",
+    23719,
+    150.3,
+    0.23772
+   ],
+   [
+    2,
+    false,
+    "max_tokens",
+    32000,
+    191.9,
+    0.32055
+   ],
+   [
+    3,
+    true,
+    "end_turn",
+    25879,
+    166.1,
+    0.25931
+   ],
+   [
+    4,
+    false,
+    "max_tokens",
+    32000,
+    195.9,
+    0.32056
+   ]
+  ]
+ },
+ "claude-opus-5-5": {
+  "n": 5,
+  "correct": 3,
+  "ran_out": 2,
+  "wrong_answer": 0,
+  "cost_total": 2.131,
+  "cost_per_puzzle": 0.426,
+  "cost_per_solved": 0.71,
+  "median_secs": 124.9,
+  "max_secs": 247.3,
+  "median_out_tok": 16059,
+  "per_puzzle": [
+   [
+    0,
+    true,
+    "end_turn",
+    11297,
+    88.7,
+    0.22707
+   ],
+   [
+    1,
+    true,
+    "end_turn",
+    14934,
+    115.0,
+    0.29974
+   ],
+   [
+    2,
+    false,
+    "max_tokens",
+    32000,
+    247.3,
+    0.6411
+   ],
+   [
+    3,
+    true,
+    "end_turn",
+    16059,
+    124.9,
+    0.32222
+   ],
+   [
+    4,
+    false,
+    "max_tokens",
+    32000,
+    245.3,
+    0.64112
+   ]
+  ]
+ },
+ "claude-haiku-5-5": {
+  "n": 10,
+  "correct": 3,
+  "ran_out": 5,
+  "wrong_answer": 2,
+  "cost_total": 0.135,
+  "cost_per_puzzle": 0.014,
+  "cost_per_solved": 0.045,
+  "median_secs": 105.7,
+  "max_secs": 117.7,
+  "median_out_tok": 30750.0,
+  "per_puzzle": [
+   [
+    0,
+    false,
+    "end_turn",
+    24981,
+    89.4,
+    0.01252
+   ],
+   [
+    1,
+    false,
+    "max_tokens",
+    32000,
+    117.7,
+    0.01603
+   ],
+   [
+    2,
+    false,
+    "max_tokens",
+    32000,
+    113.2,
+    0.01603
+   ],
+   [
+    3,
+    false,
+    "max_tokens",
+    32000,
+    109.7,
+    0.01603
+   ],
+   [
+    4,
+    false,
+    "max_tokens",
+    32000,
+    109.7,
+    0.01603
+   ],
+   [
+    5,
+    true,
+    "end_turn",
+    11980,
+    45.1,
+    0.00602
+   ],
+   [
+    6,
+    false,
+    "max_tokens",
+    32000,
+    113.2,
+    0.01603
+   ],
+   [
+    7,
+    false,
+    "end_turn",
+    29500,
+    101.7,
+    0.01478
+   ],
+   [
+    8,
+    true,
+    "end_turn",
+    19939,
+    73.2,
+    0.01
+   ],
+   [
+    9,
+    true,
+    "end_turn",
+    23268,
+    82.1,
+    0.01166
+   ]
+  ]
+ },
+ "code": {
+  "claude-haiku-5-5": {
+   "n": 3,
+   "all_500": 3,
+   "solved": [
+    500,
+    500,
+    500
+   ],
+   "median_ms": [
+    1.36,
+    1.14,
+    1.85
+   ],
+   "total_s": [
+    1.06,
+    0.96,
+    1.74
+   ],
+   "cost": [
+    0.00288,
+    0.00391,
+    0.00494
+   ],
+   "lines": [
+    108,
+    127,
+    128
+   ],
+   "write_secs": [
+    24.9,
+    33.7,
+    44.2
+   ]
+  },
+  "claude-sonnet-5-5": {
+   "n": 3,
+   "all_500": 3,
+   "solved": [
+    500,
+    500,
+    500
+   ],
+   "median_ms": [
+    1.48,
+    1.43,
+    1.02
+   ],
+   "total_s": [
+    1.17,
+    1.13,
+    0.8
+   ],
+   "cost": [
+    0.01828,
+    0.01889,
+    0.02024
+   ],
+   "lines": [
+    96,
+    99,
+    109
+   ],
+   "write_secs": [
+    12.3,
+    12.4,
+    14.2
+   ]
+  },
+  "claude-opus-5-5": {
+   "n": 3,
+   "all_500": 3,
+   "solved": [
+    500,
+    500,
+    500
+   ],
+   "median_ms": [
+    1.19,
+    1.49,
+    1.66
+   ],
+   "total_s": [
+    1.07,
+    1.38,
+    1.45
+   ],
+   "cost": [
+    0.05103,
+    0.05299,
+    0.06321
+   ],
+   "lines": [
+    122,
+    104,
+    120
+   ],
+   "write_secs": [
+    21.5,
+    23.1,
+    28.4
+   ]
+  }
+ },
+ "cram": [
+  {
+   "engine": "c",
+   "energy": "hand",
+   "ntrain": 1000,
+   "steps": 300,
+   "lr": 0.05,
+   "seed": 0,
+   "ntest": 500,
+   "solved": 497,
+   "stopped": 497,
+   "wrong_stops": 0,
+   "fit_s": 0.0,
+   "wall_s": 75.27,
+   "procs": 1,
+   "median_ms": 42.778,
+   "mean_ms": 150.53,
+   "p90_ms": 311.332,
+   "max_ms": 6598.565,
+   "median_moves": 241718,
+   "budget": 10000000,
+   "chains": 4,
+   "peer_recovery": 1.0,
+   "hbar": 1.0,
+   "tau": 0.0
+  },
+  {
+   "engine": "c",
+   "energy": "learn",
+   "ntrain": 1000,
+   "steps": 300,
+   "lr": 0.05,
+   "seed": 0,
+   "ntest": 500,
+   "solved": 496,
+   "stopped": 496,
+   "wrong_stops": 0,
+   "fit_s": 2.506,
+   "wall_s": 102.12,
+   "procs": 1,
+   "median_ms": 53.195,
+   "mean_ms": 204.22,
+   "p90_ms": 350.661,
+   "max_ms": 6330.799,
+   "median_moves": 314814,
+   "budget": 10000000,
+   "chains": 4,
+   "peer_recovery": 1.0,
+   "hbar": 2.034813642501831,
+   "tau": 3.61749005317688
+  },
+  {
+   "engine": "c",
+   "energy": "learn",
+   "ntrain": 1000,
+   "steps": 300,
+   "lr": 0.05,
+   "seed": 1,
+   "ntest": 500,
+   "solved": 496,
+   "stopped": 496,
+   "wrong_stops": 0,
+   "fit_s": 2.518,
+   "wall_s": 102.37,
+   "procs": 1,
+   "median_ms": 61.07,
+   "mean_ms": 204.72,
+   "p90_ms": 396.655,
+   "max_ms": 6398.616,
+   "median_moves": 378275,
+   "budget": 10000000,
+   "chains": 4,
+   "peer_recovery": 1.0,
+   "hbar": 2.034400463104248,
+   "tau": 3.6271629333496094
+  },
+  {
+   "engine": "c",
+   "energy": "learn",
+   "ntrain": 1000,
+   "steps": 300,
+   "lr": 0.05,
+   "seed": 2,
+   "ntest": 500,
+   "solved": 497,
+   "stopped": 497,
+   "wrong_stops": 0,
+   "fit_s": 2.524,
+   "wall_s": 95.47,
+   "procs": 1,
+   "median_ms": 54.167,
+   "mean_ms": 190.92,
+   "p90_ms": 424.697,
+   "max_ms": 6333.315,
+   "median_moves": 327919,
+   "budget": 10000000,
+   "chains": 4,
+   "peer_recovery": 1.0,
+   "hbar": 2.0353832244873047,
+   "tau": 3.1086349487304688
+  }
+ ],
+ "cram_on_claude_puzzles": [
+  [
+   0,
+   true,
+   6.092,
+   1.444
+  ],
+  [
+   1,
+   true,
+   1286.447,
+   204.511
+  ],
+  [
+   2,
+   true,
+   66.262,
+   377.366
+  ],
+  [
+   3,
+   true,
+   1246.011,
+   1937.679
+  ],
+  [
+   4,
+   true,
+   121.891,
+   3.017
+  ],
+  [
+   5,
+   true,
+   0.274,
+   0.436
+  ],
+  [
+   6,
+   true,
+   6.265,
+   79.526
+  ],
+  [
+   7,
+   true,
+   583.323,
+   2399.736
+  ],
+  [
+   8,
+   true,
+   8.612,
+   0.448
+  ],
+  [
+   9,
+   true,
+   3.003,
+   42.778
+  ]
+ ],
+ "spend_total": 3.75
+}
