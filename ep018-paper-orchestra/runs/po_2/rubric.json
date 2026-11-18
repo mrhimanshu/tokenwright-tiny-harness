@@ -1,0 +1,26 @@
+{
+ "credits_cram": {
+  "answer": "no",
+  "why": "CRAM is described as existing and re-implemented, but it is never attributed to Hoover, Blayney and Whittington. The only attribution is to Chen2026EnergybasedReasoners."
+ },
+ "cites_hoover": {
+  "answer": "no",
+  "why": "No Hoover et al. citation appears. CRAM is cited only via Chen2026EnergybasedReasoners and Bresler2014EfficientlyLearning."
+ },
+ "small_n": {
+  "answer": "yes",
+  "why": "\"5 puzzles each for Opus 5.5 and Sonnet 5.5, and 10 puzzles for Haiku 5.5\"; it also notes the statistical uncertainty of the small diagnostic sample."
+ },
+ "handset_caveat": {
+  "answer": "yes",
+  "why": "\"an untrained hand-set Hopfield-Tank baseline with a single scalar weight achieves identical accuracy (497/500 solved)\", compared against learned CRAM at 496--497."
+ },
+ "their_numbers": {
+  "answer": "yes",
+  "why": "The 99.996% and 42 ms figures are introduced with \"reportedly\" and kept apart from the authors' own 2.5 s fit. The H200 detail is omitted."
+ },
+ "no_new_claims": {
+  "answer": "no",
+  "why": "It adds details absent from the log: Wilson confidence intervals, Adam with lr 1e-2 over 50 epochs, a \"secure Python sandbox\", prompt texts, and trace and solver inspections (MRV, forward checking)."
+ }
+}

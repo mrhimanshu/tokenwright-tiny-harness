@@ -1,0 +1,369 @@
+{
+ "one_gem_1": {
+  "secs": 111.5,
+  "usd": 0.055,
+  "refs": {
+   "verified": 21,
+   "not_found": 3,
+   "title_ok_author_wrong": 1
+  },
+  "cites": {
+   "cite_calls": 47,
+   "unique_used": 25,
+   "defined": 25,
+   "missing": [],
+   "unused": []
+  },
+  "number_sentences": {
+   "supported": 58,
+   "wrong": 9,
+   "no_claim": 22,
+   "invented": 7
+  },
+  "rubric": {
+   "credits_cram": "yes",
+   "cites_hoover": "yes",
+   "small_n": "yes",
+   "handset_caveat": "yes",
+   "their_numbers": "yes",
+   "no_new_claims": "no"
+  },
+  "haiku_max_invented": true,
+  "memory_invented": [
+   "24"
+  ]
+ },
+ "one_gem_2": {
+  "secs": 89.3,
+  "usd": 0.043,
+  "refs": {
+   "verified": 16,
+   "not_found": 2
+  },
+  "cites": {
+   "cite_calls": 35,
+   "unique_used": 18,
+   "defined": 18,
+   "missing": [],
+   "unused": []
+  },
+  "number_sentences": {
+   "supported": 62,
+   "wrong": 2,
+   "no_claim": 22,
+   "invented": 1
+  },
+  "rubric": {
+   "credits_cram": "yes",
+   "cites_hoover": "yes",
+   "small_n": "yes",
+   "handset_caveat": "yes",
+   "their_numbers": "yes",
+   "no_new_claims": "no"
+  },
+  "haiku_max_invented": true,
+  "memory_invented": []
+ },
+ "one_gem_3": {
+  "secs": 122.3,
+  "usd": 0.054,
+  "refs": {
+   "verified": 23,
+   "title_ok_author_wrong": 1,
+   "not_found": 2
+  },
+  "cites": {
+   "cite_calls": 48,
+   "unique_used": 26,
+   "defined": 26,
+   "missing": [],
+   "unused": []
+  },
+  "number_sentences": {
+   "supported": 71,
+   "wrong": 5,
+   "no_claim": 21,
+   "invented": 10
+  },
+  "rubric": {
+   "credits_cram": "yes",
+   "cites_hoover": "yes",
+   "small_n": "yes",
+   "handset_caveat": "yes",
+   "their_numbers": "yes",
+   "no_new_claims": "no"
+  },
+  "haiku_max_invented": true,
+  "memory_invented": [
+   "24"
+  ]
+ },
+ "one_son_1": {
+  "secs": 83.7,
+  "usd": 0.207,
+  "refs": {
+   "verified": 15,
+   "not_found": 1
+  },
+  "cites": {
+   "cite_calls": 30,
+   "unique_used": 16,
+   "defined": 16,
+   "missing": [],
+   "unused": []
+  },
+  "number_sentences": {
+   "supported": 79,
+   "no_claim": 13,
+   "wrong": 3
+  },
+  "rubric": {
+   "credits_cram": "yes",
+   "cites_hoover": "yes",
+   "small_n": "yes",
+   "handset_caveat": "yes",
+   "their_numbers": "yes",
+   "no_new_claims": "no"
+  },
+  "haiku_max_invented": false,
+  "memory_invented": []
+ },
+ "one_son_2": {
+  "secs": 88.3,
+  "usd": 0.213,
+  "refs": {
+   "verified": 18,
+   "not_found": 1
+  },
+  "cites": {
+   "cite_calls": 32,
+   "unique_used": 19,
+   "defined": 19,
+   "missing": [],
+   "unused": []
+  },
+  "number_sentences": {
+   "supported": 75,
+   "no_claim": 5
+  },
+  "rubric": {
+   "credits_cram": "yes",
+   "cites_hoover": "yes",
+   "small_n": "yes",
+   "handset_caveat": "yes",
+   "their_numbers": "yes",
+   "no_new_claims": "yes"
+  },
+  "haiku_max_invented": false,
+  "memory_invented": []
+ },
+ "one_son_3": {
+  "secs": 89.4,
+  "usd": 0.213,
+  "refs": {
+   "verified": 19,
+   "not_found": 1,
+   "title_ok_author_wrong": 1
+  },
+  "cites": {
+   "cite_calls": 26,
+   "unique_used": 20,
+   "defined": 21,
+   "missing": [],
+   "unused": [
+    "hoover2026cram"
+   ]
+  },
+  "number_sentences": {
+   "supported": 67,
+   "no_claim": 5,
+   "invented": 1
+  },
+  "rubric": {
+   "credits_cram": "yes",
+   "cites_hoover": "no",
+   "small_n": "yes",
+   "handset_caveat": "yes",
+   "their_numbers": "yes",
+   "no_new_claims": "yes"
+  },
+  "haiku_max_invented": false,
+  "memory_invented": []
+ },
+ "po_1": {
+  "secs": 1579.7,
+  "llm_calls": 48,
+  "usd": 1.118,
+  "pages": 13,
+  "refs": {
+   "verified": 4
+  },
+  "cites": {
+   "cite_calls": 7,
+   "unique_used": 4,
+   "defined": 4,
+   "missing": [],
+   "unused": []
+  },
+  "number_sentences": {
+   "no_claim": 28,
+   "supported": 65,
+   "wrong": 6,
+   "invented": 6
+  },
+  "rubric": {
+   "credits_cram": "yes",
+   "cites_hoover": "no",
+   "small_n": "yes",
+   "handset_caveat": "yes",
+   "their_numbers": "yes",
+   "no_new_claims": "no"
+  },
+  "haiku_max_invented": true,
+  "memory_invented": [
+   "24"
+  ]
+ },
+ "po_2": {
+  "secs": 1323.2,
+  "llm_calls": 53,
+  "usd": 0.941,
+  "pages": 10,
+  "refs": {
+   "verified": 7
+  },
+  "cites": {
+   "cite_calls": 20,
+   "unique_used": 7,
+   "defined": 7,
+   "missing": [],
+   "unused": []
+  },
+  "number_sentences": {
+   "supported": 66,
+   "no_claim": 19,
+   "wrong": 3,
+   "invented": 2
+  },
+  "rubric": {
+   "credits_cram": "no",
+   "cites_hoover": "no",
+   "small_n": "yes",
+   "handset_caveat": "yes",
+   "their_numbers": "yes",
+   "no_new_claims": "no"
+  },
+  "haiku_max_invented": false,
+  "memory_invented": []
+ },
+ "po_3": {
+  "secs": 2039.5,
+  "llm_calls": 83,
+  "usd": 1.54,
+  "pages": 12,
+  "refs": {
+   "verified": 7
+  },
+  "cites": {
+   "cite_calls": 12,
+   "unique_used": 7,
+   "defined": 7,
+   "missing": [],
+   "unused": []
+  },
+  "number_sentences": {
+   "supported": 62,
+   "invented": 4,
+   "no_claim": 22,
+   "wrong": 7
+  },
+  "rubric": {
+   "credits_cram": "no",
+   "cites_hoover": "no",
+   "small_n": "yes",
+   "handset_caveat": "yes",
+   "their_numbers": "yes",
+   "no_new_claims": "no"
+  },
+  "haiku_max_invented": false,
+  "memory_invented": [
+   "48"
+  ]
+ },
+ "po_4": {
+  "secs": 835.5,
+  "llm_calls": 40,
+  "usd": 0.628,
+  "s2_lookups": 106,
+  "s2_status": {
+   "429": 94,
+   "200": 12
+  },
+  "pages": 11,
+  "refs": {
+   "verified": 7
+  },
+  "cites": {
+   "cite_calls": 21,
+   "unique_used": 7,
+   "defined": 7,
+   "missing": [],
+   "unused": []
+  },
+  "number_sentences": {
+   "supported": 59,
+   "wrong": 4,
+   "no_claim": 18,
+   "invented": 5
+  },
+  "rubric": {
+   "credits_cram": "yes",
+   "cites_hoover": "yes",
+   "small_n": "yes",
+   "handset_caveat": "yes",
+   "their_numbers": "yes",
+   "no_new_claims": "no"
+  },
+  "haiku_max_invented": false,
+  "memory_invented": [
+   "24"
+  ]
+ },
+ "po_5": {
+  "secs": 1411.6,
+  "llm_calls": 48,
+  "usd": 0.969,
+  "s2_lookups": 135,
+  "s2_status": {
+   "429": 129,
+   "200": 6
+  },
+  "pages": 11,
+  "refs": {
+   "verified": 4
+  },
+  "cites": {
+   "cite_calls": 10,
+   "unique_used": 4,
+   "defined": 4,
+   "missing": [],
+   "unused": []
+  },
+  "number_sentences": {
+   "no_claim": 30,
+   "supported": 82,
+   "invented": 8,
+   "wrong": 5
+  },
+  "rubric": {
+   "credits_cram": "no",
+   "cites_hoover": "no",
+   "small_n": "yes",
+   "handset_caveat": "yes",
+   "their_numbers": "yes",
+   "no_new_claims": "no"
+  },
+  "haiku_max_invented": false,
+  "memory_invented": []
+ }
+}

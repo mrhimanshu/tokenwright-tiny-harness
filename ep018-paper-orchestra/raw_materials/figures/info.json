@@ -1,0 +1,1 @@
+[{"name": "solve_rates.png", "caption": "Share of Sudoku-Extreme puzzles solved by each approach. LLM direct solving: Opus 5.5 3/5, Sonnet 5.5 3/5, Haiku 5.5 3/10. LLM-written solvers: 9/9 solved 500/500. CRAM re-implementation: learned energy 496-497/500 (3 seeds), hand-set one-weight energy 497/500."}]

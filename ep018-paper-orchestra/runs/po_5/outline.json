@@ -1,0 +1,262 @@
+{
+    "plotting_plan": [
+        {
+            "figure_id": "fig_methodology_three_paradigms_overview",
+            "title": "Three Paradigms for Constraint Satisfaction Reasoning on Sudoku-Extreme",
+            "plot_type": "diagram",
+            "data_source": "idea.md",
+            "objective": "Conceptual architecture diagram contrasting the three evaluated solver paradigms: (a) direct LLM autoregressive reasoning via chain-of-thought tokens, (b) LLM-synthesized deterministic standard-library backtracking Python solvers, and (c) classical Hopfield-style energy minimization (CRAM) trained via pseudolikelihood and solved via focused Gibbs search.",
+            "aspect_ratio": "16:9"
+        },
+        {
+            "figure_id": "fig_cost_vs_latency_tradeoff",
+            "title": "Inference Latency vs. Cost per Puzzle across Paradigms",
+            "plot_type": "plot",
+            "data_source": "experimental_log.md",
+            "objective": "Scatter plot (log-log scale) illustrating the trade-off between median inference latency (milliseconds to seconds) and monetary cost per puzzle (USD) across direct LLM prompting (Opus 5.5, Sonnet 5.5, Haiku 5.5), LLM-synthesized code execution, and CRAM energy minimization.",
+            "aspect_ratio": "4:3"
+        },
+        {
+            "figure_id": "fig_cram_learned_vs_true_coupling_matrix",
+            "title": "Recovered Pairwise Couplings vs. Ground-Truth Sudoku Constraints",
+            "plot_type": "plot",
+            "data_source": "experimental_log.md",
+            "objective": "Heatmap visualization showing the top-20 learned same-digit coupling weights across all 81 cells compared to the ground-truth Sudoku constraint graph (row, column, and 3x3 box peers), demonstrating 1.000 peer recovery.",
+            "aspect_ratio": "1:1"
+        }
+    ],
+    "intro_related_work_plan": {
+        "introduction_strategy": {
+            "hook_hypothesis": "Recent benchmark results on hard constraint-satisfaction tasks such as Sudoku-Extreme have motivated claims that recurrent neural networks and classical energy-based models learn genuine algorithmic reasoning.",
+            "problem_gap_hypothesis": "The relative cost, wall-clock efficiency, and reliability of energy-based reasoning models, direct frontier LLM chain-of-thought generation, and LLM-synthesized deterministic solvers have not been systematically evaluated under an identical hardware budget and test distribution.",
+            "search_directions": [
+                "Find foundational papers evaluating neural network reasoning and algorithmic extrapolation on Sudoku and graph constraint problems",
+                "Search for surveys and benchmarks on large language models applied to complex multi-step reasoning and search tasks",
+                "Identify benchmark papers establishing Sudoku-Extreme and looped or recurrent architectures for algorithmic reasoning"
+            ],
+            "citation_candidates": [
+                "Salvatori2026TinyRecursive",
+                "Bai2019DeepEquilibrium",
+                "Kong2026PositionCertified"
+            ]
+        },
+        "related_work_strategy": {
+            "overview": "Examine three methodology clusters in constraint solving and reasoning: energy-based recurrent models, direct LLM chain-of-thought reasoning, and LLM code generation for algorithmic tasks.",
+            "subsections": [
+                {
+                    "subsection_title": "2.1 Classical Energy Models and Neural Constraint Satisfaction",
+                    "methodology_cluster": "Hopfield Networks and Energy-Based Reasoning",
+                    "sota_investigation_mission": "Survey classical Hopfield and Tank networks alongside recent energy-based formulations like CRAM (Hoover et al., 2026) applied to combinatorial constraint problems prior to December 2026.",
+                    "limitation_hypothesis": "Learned energy formulations on Sudoku may trivially mirror hand-crafted pairwise constraint penalties, calling into question whether learned weights represent higher-level reasoning or simply local rule memorization.",
+                    "limitation_search_queries": [
+                        "Hopfield Tank network combinatorial optimization Sudoku limitations",
+                        "Energy based models pseudolikelihood constraint satisfaction graphs"
+                    ],
+                    "bridge_to_our_method": "We perform an independent CPU re-implementation of CRAM and evaluate both learned and hand-set single-weight energy landscapes on identical test partitions.",
+                    "citation_candidates": []
+                },
+                {
+                    "subsection_title": "2.2 Large Language Models as Direct Reasoning Engines",
+                    "methodology_cluster": "Autoregressive Chain-of-Thought and Test-Time Compute",
+                    "sota_investigation_mission": "Review frontier LLM test-time compute and adaptive thinking mechanisms applied to discrete mathematical and combinatorial puzzles.",
+                    "limitation_hypothesis": "Direct autoregressive token generation suffers from severe context-window exhaustion, high monetary cost, and subtle hallucinated errors in dense backtracking domains.",
+                    "limitation_search_queries": [
+                        "Chain of thought failure modes backtracking constraint satisfaction",
+                        "Large language model context exhaustion combinatorial puzzles"
+                    ],
+                    "bridge_to_our_method": "We measure direct inference across Claude 5.5 variants on Sudoku-Extreme to quantify exact failure modes, token limits, and cost per solved instance.",
+                    "citation_candidates": [
+                        "Valmeekam2023PlanningAbilities"
+                    ]
+                },
+                {
+                    "subsection_title": "2.3 Programmatic Synthesis for Algorithmic Reasoning",
+                    "methodology_cluster": "LLM Code Generation and Program-Aided Problem Solving",
+                    "sota_investigation_mission": "Investigate program-aided language models and code synthesis approaches that delegate search and constraint enforcement to external runtimes.",
+                    "limitation_hypothesis": "Prior evaluations frequently treat code generation as separate from reasoning benchmarks rather than directly measuring solver execution as a unified paradigm against learned weights.",
+                    "limitation_search_queries": [
+                        "Program aided language models constraint satisfaction backtracking",
+                        "Code generation versus direct chain of thought reasoning benchmarks"
+                    ],
+                    "bridge_to_our_method": "We benchmark zero-shot standard-library Python backtracking solvers written by LLMs across all 500 Sudoku-Extreme test puzzles on cost, execution speed, and accuracy.",
+                    "citation_candidates": []
+                }
+            ]
+        }
+    },
+    "section_plan": [
+        {
+            "section_title": "Abstract",
+            "subsections": [
+                {
+                    "subsection_title": "Abstract Content",
+                    "content_bullets": [
+                        "Contextualize the debate on whether looped models or classical energies learn algorithmic reasoning on combinatorial benchmarks such as Sudoku-Extreme.",
+                        "Formulate the comparative hypothesis evaluating three distinct paradigm families on identical puzzles under a strict low-cost CPU hardware budget: direct LLM reasoning, LLM-generated Python solvers, and classical Hopfield-style energy minimization (CRAM).",
+                        "Summarize the key experimental findings: direct LLM reasoning (Opus 5.5, Sonnet 5.5, Haiku 5.5) is slow (105-166 s median), expensive ($0.014-$0.426 per puzzle), and prone to context exhaustion; prompting the same LLMs to write Python backtracking solvers yields 100% accuracy (4,500/4,500 puzzle runs) at 1.0-1.8 ms per puzzle for pennies in code generation cost; an independent CPU re-implementation of CRAM solves 496-497/500 puzzles in 53-61 ms, matching a hand-set single-weight baseline (497/500).",
+                        "Conclude that Sudoku-Extreme does not sufficiently prove emergent algorithmic reasoning, and code synthesis represents the most cost-effective and reliable deployment path."
+                    ],
+                    "citation_candidates": []
+                }
+            ]
+        },
+        {
+            "section_title": "1. Introduction",
+            "subsections": [
+                {
+                    "subsection_title": "1.1 The Reasoning Debate: Energy Models vs. Foundation Models",
+                    "content_bullets": [
+                        "Introduce the rise of constraint-satisfaction benchmarks such as Sudoku-Extreme to substantiate claims of emergent reasoning in neural and energy architectures.",
+                        "Discuss the recent proposal of CRAM (Hoover et al., 2026), which reports 99.996% accuracy with sub-second GPU training, contrasting with frontier LLM direct chain-of-thought approaches.",
+                        "Establish the necessity of an apples-to-apples, hardware-constrained benchmark across speed, monetary cost, and algorithmic fidelity."
+                    ],
+                    "citation_candidates": []
+                },
+                {
+                    "subsection_title": "1.2 Contributions",
+                    "content_bullets": [
+                        "Independent CPU Replication of CRAM: Provide an independent NumPy/C implementation of classical Hopfield-style energy training and focused Gibbs search without proprietary GPU acceleration.",
+                        "Direct LLM Evaluation: Quantify token consumption, monetary expense, and error profiles of Claude 5.5 (Opus, Sonnet, Haiku) performing direct chain-of-thought puzzle solving.",
+                        "Programmatic Delegation Paradigm: Demonstrate that one-shot prompt-generated Python backtracking solvers achieve 100% solve rates at millisecond speeds.",
+                        "Constraint Recovery and Expressivity Analysis: Prove that learned CRAM couplings reproduce the exact Sudoku constraint graph (peer recovery = 1.000), but perform identically to an unlearned single-parameter energy."
+                    ],
+                    "citation_candidates": []
+                }
+            ]
+        },
+        {
+            "section_title": "2. Related Work",
+            "subsections": [
+                {
+                    "subsection_title": "2.1 Classical Energy Models and Neural Constraint Satisfaction",
+                    "content_bullets": [
+                        "Review Hopfield-Tank continuous energy formulations and discrete Ising/Boltzmann machines for combinatorial search.",
+                        "Detail modern energy-based architectures and pseudolikelihood estimation over discrete graphical models.",
+                        "Contextualize CRAM's claim of outperforming recurrent neural models by orders of magnitude."
+                    ],
+                    "citation_candidates": []
+                },
+                {
+                    "subsection_title": "2.2 Autoregressive LLMs and Programmatic Reasoning",
+                    "content_bullets": [
+                        "Discuss frontier LLMs with adaptive test-time compute, reasoning tokens, and chain-of-thought prompting.",
+                        "Examine programmatic reasoning, neuro-symbolic delegation, and program-aided language models that replace autoregressive rollouts with executable code."
+                    ],
+                    "citation_candidates": []
+                }
+            ]
+        },
+        {
+            "section_title": "3. Methodology",
+            "subsections": [
+                {
+                    "subsection_title": "3.1 Paradigm 1: Direct Autoregressive LLM Reasoning",
+                    "content_bullets": [
+                        "Formalize the direct prompt formulation on Sudoku-Extreme boards using adaptive thinking with effort set to high.",
+                        "Specify the output token budget capped at 32,000 tokens per instance.",
+                        "Define logging criteria for token-exhaustion failures, incorrect terminal boards, and wall-clock execution times."
+                    ],
+                    "citation_candidates": []
+                },
+                {
+                    "subsection_title": "3.2 Paradigm 2: LLM-Synthesized Algorithmic Solvers",
+                    "content_bullets": [
+                        "Specify the zero-shot prompt instructing frontier LLMs to output self-contained, standard-library Python Sudoku solvers.",
+                        "Explain the generation protocol: generating 3 independent solvers per model (Opus 5.5, Sonnet 5.5, Haiku 5.5) yielding 9 solvers total.",
+                        "Formalize the execution pipeline running each synthesized solver across the complete 500-puzzle test split."
+                    ],
+                    "citation_candidates": []
+                },
+                {
+                    "subsection_title": "3.3 Paradigm 3: Independent CRAM Energy Formulation and Inference",
+                    "content_bullets": [
+                        "Formalize the energy function $E(\\mathbf{X})$ over the $81 \\times 9$ discrete belief grid: negative entropy term, pairwise $9 \\times 9$ cell coupling matrices $\\mathbf{W}_{i,j}$, and unary bias vectors $\\mathbf{b}_i$.",
+                        "Detail the pseudolikelihood parameter estimation in NumPy over 1,000 solved training boards without giving the model row, column, or box coordinates (cells treated as opaque indices).",
+                        "Formulate the focused Gibbs search algorithm implemented in C: executing 4 parallel chains initialized from random boards on a single CPU core with a 10-million move budget.",
+                        "Define the hand-set energy baseline using Hopfield-Tank penalty rules governed by a single uniform weight without training."
+                    ],
+                    "citation_candidates": []
+                }
+            ]
+        },
+        {
+            "section_title": "4. Experiments",
+            "subsections": [
+                {
+                    "subsection_title": "4.1 Experimental Setup and Benchmark Protocol",
+                    "content_bullets": [
+                        "Describe the evaluation dataset: sapientinc/sudoku-extreme, 500 test puzzles drawn from 5 seeded random pages with a median of 26 clues per puzzle.",
+                        "Detail the training partition for CRAM: first 1,000 solved boards of the training split.",
+                        "Report the execution environment: single Apple M4 Pro laptop CPU, no GPU acceleration, with total LLM API budget capped at $3.75.",
+                        "Define evaluation metrics: solved rate, wrong-answer rate, token exhaustion rate, median/p90 latency, API dollar cost per puzzle and per solved puzzle, and constraint graph peer recovery score."
+                    ],
+                    "citation_candidates": []
+                },
+                {
+                    "subsection_title": "4.2 Direct LLM Reasoning Performance and Failure Modes",
+                    "content_bullets": [
+                        "Analyze direct solving results: Opus 5.5 (3/5 solved, median 124.9 s, $0.426/puzzle), Sonnet 5.5 (3/5 solved, median 166.1 s, $0.250/puzzle), and Haiku 5.5 (3/10 solved, median 105.7 s, $0.014/puzzle).",
+                        "Examine token exhaustion failures: Sonnet and Opus both exhausted the 32,000 token limit on the exact same two hard puzzles (difficulty ratings 88 and 15).",
+                        "Document catastrophic hallucination in Haiku 5.5: 2 wrong answers output as final completions with 74/81 and 78/81 cells correct."
+                    ],
+                    "citation_candidates": []
+                },
+                {
+                    "subsection_title": "4.3 Synthesized Programmatic Solvers: Efficiency and Accuracy",
+                    "content_bullets": [
+                        "Report programmatic solver evaluation: 9 out of 9 synthesized solvers solved all 500 puzzles perfectly (4,500/4,500 successful runs).",
+                        "Highlight runtime speed: median per-puzzle latency of 1.02-1.48 ms (Sonnet), 1.14-1.85 ms (Haiku), and 1.19-1.66 ms (Opus), processing 500 puzzles in under 1.8 seconds.",
+                        "Compare synthesis cost: $0.003-$0.005 (Haiku), $0.018-$0.020 (Sonnet), $0.051-$0.063 (Opus) across 96-128 lines of standard-library Python code written in 12-44 seconds."
+                    ],
+                    "citation_candidates": []
+                },
+                {
+                    "subsection_title": "4.4 CRAM Replication, Constraint Recovery, and Baseline Equivalence",
+                    "content_bullets": [
+                        "Evaluate learned CRAM across 3 training seeds: 496-497/500 solved puzzles, 0 wrong stops, median latency of 53.2-61.1 ms (p90 351-425 ms), fit time of 2.51-2.52 seconds on CPU.",
+                        "Evaluate hand-set single-weight baseline: solves 497/500 puzzles with 0 fit time, median latency 42.8 ms (p90 311 ms), perfectly matching or exceeding learned CRAM.",
+                        "Examine constraint graph recovery: learned same-digit couplings achieve 1.000 peer recovery, placing true row/column/box peers in the top-20 weights for all 81 cells.",
+                        "Verify direct comparison on LLM subsets: learned CRAM solves 10/10 LLM test puzzles (0.3 ms to 1.29 s), including the two instances that triggered token exhaustion in Opus and Sonnet (66 ms and 122 ms)."
+                    ],
+                    "citation_candidates": []
+                }
+            ]
+        },
+        {
+            "section_title": "5. Conclusion",
+            "subsections": [
+                {
+                    "subsection_title": "5.1 Summary of Findings and Implications for Reasoning Benchmarks",
+                    "content_bullets": [
+                        "Synthesize comparative findings across LLM direct thinking, LLM code generation, and classical energy optimization.",
+                        "Reiterate that delegating constraint satisfaction to synthesized code is 5 orders of magnitude faster and 100x cheaper than direct autoregression.",
+                        "Discuss the theoretical implication: because an unlearned single-weight energy matches learned CRAM, Sudoku-Extreme primarily benchmarks local consistency search rather than complex abstract reasoning."
+                    ],
+                    "citation_candidates": []
+                },
+                {
+                    "subsection_title": "5.2 Limitations and Future Work",
+                    "content_bullets": [
+                        "Acknowledge the small sample size (5-10 puzzles per model) for direct LLM solving necessitated by extreme API token consumption.",
+                        "Clarify that original CRAM 42 ms GPU training benchmarks are from Hoover et al., whereas our replication focuses on single-core CPU execution.",
+                        "Propose future directions on non-local constraint problems where single-weight energy landscapes provably fail."
+                    ],
+                    "citation_candidates": []
+                }
+            ]
+        },
+        {
+            "section_title": "Reproducibility Statement",
+            "subsections": [
+                {
+                    "subsection_title": "Reproducibility Details",
+                    "content_bullets": [
+                        "State full reproducibility parameters: exact Hugging Face dataset split, pseudorandom seeds (0, 1, 2), prompt text, and single-CPU execution environment.",
+                        "Document availability of C focused Gibbs search source code and Python driver scripts."
+                    ],
+                    "citation_candidates": []
+                }
+            ]
+        }
+    ]
+}

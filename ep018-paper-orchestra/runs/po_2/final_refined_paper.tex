@@ -1,0 +1,305 @@
+\documentclass{article} % For LaTeX2e
+\usepackage{iclr2025_conference,times}
+
+\iclrfinalcopy % Display author information instead of anonymous review placeholder
+
+% Optional math commands from https://github.com/goodfeli/dlbook_notation.
+\input{math_commands.tex}
+
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage{graphicx}
+
+% Paragraph formatting: no indentation, half a line space between paragraphs
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.5\baselineskip}
+
+%%%%%%%%% TITLE
+\title{Reasoning in Latent Space or Synthesizing Code? A Comparative Study of Direct LLM Inference, Code Generation, and Energy-Based Solvers on Combinatorial Puzzles}
+
+\author{Ambitious AI Researcher\\
+AI Research Institute\\
+123 AI Avenue, ML City\\
+\texttt{researcher@institute.ai}
+}
+
+\newcommand{\fix}{\marginpar{FIX}}
+\newcommand{\new}{\marginpar{NEW}}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Recent literature actively debates whether recurrent neural networks, looped energy-based models, and frontier Large Language Models (LLMs) acquire genuine generalizable reasoning capabilities when evaluated on combinatorial benchmarks such as Sudoku-Extreme. In this work, we conduct a controlled empirical comparison across three distinct problem-solving paradigms on a standardized set of 500 Sudoku-Extreme instances: (1) direct end-to-end LLM inference with extended adaptive thinking, (2) zero-shot LLM synthesis of standard-library Python backtracking solvers, and (3) an independent CPU re-implementation of Classical Recurrent Associative Memory (CRAM), an energy-based model operating over an opaque belief grid. Direct LLM reasoning across Claude Opus 5.5, Sonnet 5.5, and Haiku 5.5 solves only 30\%--60\% of evaluated puzzles in diagnostic stress tests, repeatedly suffering from token budget exhaustion at a 32,000-token ceiling and subtle spatial hallucinations, incurring median latencies exceeding 100 seconds and costs up to \$0.71 per solved puzzle. In stark contrast, single-prompt Python solvers synthesized by all three model tiers achieve a 100\% success rate (4,500/4,500 total solves across 9 solvers on 500 puzzles) with a median execution latency of 1.0--1.8 ms per puzzle at an upfront generation cost of pennies (\$0.003--\$0.063). Meanwhile, our independent CPU re-implementation of CRAM trains via pseudolikelihood in 2.5 seconds on a commodity laptop CPU, achieves 496--497/500 solves with zero false-positive completions, and recovers the ground-truth constraint graph with 1.000 precision. However, an untrained hand-set Hopfield-Tank baseline with a single scalar weight achieves identical accuracy (497/500 solved). Our findings indicate that for deterministic combinatorial search, programmatic code synthesis is overwhelmingly superior to direct mental simulation in latency, cost, and reliability, while near-perfect performance on Sudoku-Extreme reflects simple constraint satisfaction rather than deep emergent reasoning.
+\end{abstract}
+
+\section{\textsc{Introduction}}
+\label{sec:intro}
+Combinatorial constraint satisfaction problems (CSPs) have long served as a canonical proving ground for artificial intelligence and machine reasoning. Early foundational efforts demonstrated that recurrent message passing on bipartite factor graphs could learn to solve boolean satisfiability problems \citep{Selsam2018LearningSat}, while differentiable constraint layers such as SATNet integrated semidefinite relaxations directly into neural architectures to solve visual and logical Sudoku \citep{Wang2019SatnetBridging}. In recent years, this line of inquiry has expanded significantly. Multiple recent architectures advocate for looped recurrence and energy minimization in latent representations, arguing that iterative neural execution enables models to internalize complex search procedures and manifest emergent algorithmic capabilities \citep{Chen2026EnergybasedReasoners}. A prominent recent example in this domain is Classical Recurrent Associative Memory (CRAM), an architecture that formulates Sudoku solving via learned pairwise couplings in an associative energy landscape \citep[cf.][]{Chen2026EnergybasedReasoners,Bresler2014EfficientlyLearning}, reportedly achieving $99.996\%$ accuracy on the challenging Sudoku-Extreme benchmark after only 42 milliseconds of GPU training.
+
+Concurrently, the rapid scaling of frontier Large Language Models (LLMs) has popularized an alternative paradigm: solving complex combinatorial puzzles directly via internal test-time computation and extended chain-of-thought prompting. In this paradigm, models are expected to maintain, manipulate, and backtrack through constraint representations entirely within their autoregressive token stream. Yet, as neuro-symbolic perspectives highlight \citep{Yang2024NeurosymbolicArtificial}, direct autoregressive execution often struggles with strict algorithmic verification and context management, whereas delegating combinatorial search to deterministic symbolic code can fundamentally circumvent these limitations. 
+
+Despite the proliferation of these competing methodologies—direct end-to-end neural reasoning, neuro-symbolic code generation, and classical energy-based associative memories—they are rarely evaluated under identical experimental conditions, puzzle distributions, and computational budgets. How do frontier LLMs performing direct internal deduction compare to the same models tasked with single-shot solver synthesis, or to classical energy models trained with minimal compute? Crucially, does near-perfect performance on benchmarks such as Sudoku-Extreme truly signify high-order algorithmic reasoning, or does it merely reflect elementary local constraint propagation?
+
+In this work, we conduct a controlled empirical comparison across three solver paradigms on a standardized sample of 500 puzzles from the Sudoku-Extreme benchmark, executed on a single consumer-grade CPU (Apple M4 Pro) under a total API budget of under \$4.00. Our primary findings are threefold:
+\begin{enumerate}
+    \item \textbf{Direct LLM reasoning is costly, slow, and unreliable:} When frontier models (Claude Opus 5.5, Sonnet 5.5, and Haiku 5.5) are instructed to solve Sudoku-Extreme puzzles directly via internal adaptive thinking, they incur severe latency (median latencies exceeding 100 to 160 seconds per puzzle) and substantial monetary expense (\$0.25 to \$0.43 per puzzle on frontier tiers). In diagnostic stress testing, models frequently exhaust maximum output limits (32,000 tokens) during backtracking or commit unrecoverable spatial errors, stating invalid final configurations.
+    \item \textbf{Program synthesis yields rapid, robust, and cost-effective solutions:} In stark contrast, when prompted once to write a standalone standard-library Python backtracking solver, every evaluated model tier produces a correct, general algorithm. All 9 independently generated solvers (3 per model tier) solve $100\%$ of the 500 test puzzles (4,500 of 4,500 verified solves), requiring only 1.0 to 1.8 milliseconds per puzzle at a single-instance generation cost of mere cents.
+    \item \textbf{Independent replication of energy models reveals simple heuristics:} We independently re-implement the CRAM energy model from first principles using NumPy pseudolikelihood estimation and a C-based focused Gibbs sampler on an opaque $81 \times 9$ belief grid without coordinate hints. On a single CPU core, our fit requires only 2.5 seconds and recovers the exact ground-truth Sudoku constraint topology, solving 496--497 out of 500 puzzles with zero false positives. However, an untrained hand-set baseline with a single scalar weight achieves identical performance (497/500 solved, 42.8 ms median latency).
+\end{enumerate}
+
+These results reinforce the view that near-perfect accuracy on Sudoku-Extreme can be achieved via elementary pairwise constraint propagation, underscoring the necessity of evaluating alleged neural reasoning capabilities against pragmatic programmatic baselines.
+
+\section{\textsc{Related Work}}
+\label{sec:intro_related_work}
+
+\subsection{\textsc{Looped and Recurrent Neural Reasoning}}
+\label{subsec:looped_reasoning}
+Recurrent and looped neural architectures have been widely explored as a means to emulate algorithmic execution and iterative search. Foundational architectures such as NeuroSAT \citep{Selsam2018LearningSat} demonstrated that recurrent message passing on bipartite factor graphs could learn satisfiability properties from weak supervision and extrapolate to larger problem distributions at test time. Extending logical constraints to continuous relaxations, SATNet \citep{Wang2019SatnetBridging} embedded a differentiable MAXSAT solver into neural pipelines, demonstrating end-to-end learning of Sudoku rules from input-output pairs. 
+
+More recently, looped Transformers have emerged as a flexible architecture for algorithmic tasks, scaling effective depth by reusing parameters across sequential steps. However, recent mechanistic analyses reveal fundamental constraints in such architectures. Specifically, \citet{Liang2026BeyondTraining} demonstrate that looped Transformers frequently suffer from representational degradation, decaying progress cues, and compounding local errors over deep recurrent horizons, pointing to inherent limits in self-corrective capabilities. To provide explicit search dynamics, \citet{Chen2026EnergybasedReasoners} introduced Energy-Based Reasoners (EBRs), casting recurrent updates as gradient descent over a learned latent energy landscape. While EBRs achieve competitive performance on Sudoku-Extreme and graph puzzles, the extent to which latent continuous iteration outperforms or fundamentally differs from discrete constraint propagation remains an open question.
+
+\subsection{\textsc{Frontier LLMs: Internal Chain-of-Thought versus Program Synthesis}}
+\label{subsec:llm_cot_vs_code}
+The emergence of test-time compute scaling and extended chain-of-thought in frontier LLMs has enabled models to approach complex multi-step reasoning by generating internal scratchpad tokens. Nonetheless, purely autoregressive text generation faces persistent failure modes on rigorous combinatorial benchmarks, including attention diffusion, spatial hallucination, and context-window saturation during deep backtracking search.
+
+To mitigate these drawbacks, neuro-symbolic frameworks combine neural language capabilities with external, deterministic execution engines \citep{Yang2024NeurosymbolicArtificial}. Rather than simulating discrete state machines inside the attention mechanism, models can act as high-level planners or code generators. In combinatorial and mathematical optimization, architectures such as OptiMUS \citep{Ahmaditeshnizi2024OptimusScalable} leverage LLMs to formulate modular code targeting mixed-integer linear programming solvers, dramatically outperforming direct natural-language reasoning while avoiding context exhaustion. Our study aligns with this paradigm, systematically quantifying the operational gap between direct internal chain-of-thought and single-shot solver synthesis on hard combinatorial constraints.
+
+\subsection{\textsc{Classical Energy-Based Models and Associative Memory}}
+\label{subsec:energy_models}
+Formulating constraint satisfaction as energy minimization traces back to Hopfield and Tank's seminal work mapping discrete optimization onto recurrent dynamical systems. Learning the parameters of discrete pairwise Markov Random Fields (MRFs) and Ising models from observational data has a rigorous theoretical background; for example, \citet{Bresler2014EfficientlyLearning} showed that bounded-degree graphical models can be consistently reconstructed in polynomial time and sample complexity using local conditional statistics.
+
+Building on these foundations, Classical Recurrent Associative Memory (CRAM) framed Sudoku solving as energy minimization over an associative memory grid optimized via pseudolikelihood. While CRAM achieved near-perfect accuracy with minimal training compute, its developers cautioned that Sudoku may represent an overly tractable domain for proving high-order reasoning. In this work, we provide an independent CPU re-implementation of CRAM to test this caveat directly, comparing learned pseudolikelihood weights against a minimal, hand-set Hopfield-Tank energy baseline.
+
+\section{\textsc{Methodology}}
+\label{sec:method}
+
+We formulate our empirical evaluation across three distinct solver paradigms: an independent CPU re-implementation of CRAM, an untrained hand-set energy baseline, and frontier LLMs evaluated under direct chain-of-thought reasoning versus single-prompt Python solver synthesis.
+
+\subsection{\textsc{CRAM Architecture and Independent Re-implementation}}
+\label{subsec:cram_reimplementation}
+
+We independently reconstruct the Classical Recurrent Associative Memory (CRAM) architecture from first principles, without referencing or utilizing any external proprietary codebase. A standard Sudoku grid consists of 81 cells, each taking a digit assignment $d \in \{1, \dots, 9\}$. We represent the board as a discrete pairwise Markov Random Field (MRF) over an $81 \times 9$ belief grid. Crucially, the model is provided with no spatial inductive bias: cells are treated as opaque indices $i \in \{1, \dots, 81\}$ without knowledge of row, column, or $3 \times 3$ box geometry.
+
+Let $\mS \in \{0, 1\}^{81 \times 9}$ denote the one-hot assignment matrix, where $S_{ia} = 1$ if cell $i$ is assigned digit $a \in \{1, \dots, 9\}$ and $0$ otherwise, satisfying the hard simplex constraint $\sum_{a=1}^9 S_{ia} = 1$ for all $i$. The energy of a configuration $\mS$ is parameterized by pairwise coupling tensors $\mW \in \R^{81 \times 81 \times 9 \times 9}$ and local digit bias vectors $\vb \in \R^{81 \times 9}$:
+\begin{equation}
+    E(\mS; \mW, \vb) = \sum_{i < j} \sum_{a=1}^9 \sum_{b=1}^9 W_{ia, jb} S_{ia} S_{jb} + \sum_{i=1}^{81} \sum_{a=1}^9 b_{ia} S_{ia}.
+    \label{eq:energy_function}
+\end{equation}
+To fit the coupling parameters $\mW$ and biases $\vb$ efficiently from observational data, we employ maximum pseudolikelihood estimation \citep{Bresler2014EfficientlyLearning}. Given a dataset of $M$ fully solved training boards $\{\mS^{(m)}\}_{m=1}^M$, the conditional distribution of cell $i$ taking digit $a$ given the observed states of all other cells $\mS_{-i}$ is formulated as a softmax over local field energies:
+\begin{equation}
+    P(S_{ia} = 1 \mid \mS_{-i}; \mW, \vb) = \frac{\exp\left( -h_{ia}(\mS_{-i}) \right)}{\sum_{a'=1}^9 \exp\left( -h_{ia'}(\mS_{-i}) \right)},
+    \label{eq:conditional_prob}
+\end{equation}
+where the effective local field is defined as $h_{ia}(\mS_{-i}) = b_{ia} + \sum_{j \neq i} \sum_{b=1}^9 W_{ia, jb} S_{jb}$. The negative log-pseudolikelihood objective over the training corpus is minimized via stochastic gradient descent in NumPy:
+\begin{equation}
+    \mathcal{L}_{\mathrm{PL}}(\mW, \vb) = - \sum_{m=1}^M \sum_{i=1}^{81} \log P\left(S_{ia^{(m, i)}}^{(m)} = 1 \mid \mS_{-i}^{(m)}; \mW, \vb\right).
+    \label{eq:pseudolikelihood_loss}
+\end{equation}
+
+For inference, given a partially observed test puzzle with fixed clue assignments $\mS_{\mathrm{clues}}$, we implement a focused Gibbs search routine compiled in C. Clue cells remain clamped throughout execution. Search is initialized from four independent parallel random boards. At each iteration, the sampler identifies a conflicted cell—defined as a cell participating in non-zero pairwise energy penalties—and samples a new digit according to the conditional Gibbs distribution at low temperature, prioritizing moves that strictly decrease total energy. Search halts immediately when a valid zero-energy configuration ($E = 0$) is attained, or terminates when an allocated budget of $10^7$ state transitions is exhausted.
+
+\subsection{\textsc{Hand-Set Hopfield-Tank Energy Baseline}}
+\label{subsec:handset_baseline}
+
+To establish whether the learned parameters $\mW$ capture high-order emergent reasoning or merely mirror elementary peer exclusion, we introduce an untrained, hand-set Hopfield-Tank baseline. In a standard $9 \times 9$ Sudoku grid, every cell $i$ belongs to exactly one row, one column, and one $3 \times 3$ box. These constraint groups define exactly 20 unique neighbors (peers) per cell: 8 row peers, 8 column peers, and 4 non-overlapping box peers.
+
+We construct a static coupling tensor $\mW^{\mathrm{hand}}$ without training by assigning a uniform scalar penalty $w_0 > 0$ whenever two peer cells share the same digit:
+\begin{equation}
+    W_{ia, jb}^{\mathrm{hand}} = 
+    \begin{cases} 
+        w_0 & \text{if } j \in \mathrm{Peers}(i) \text{ and } a = b, \\
+        0 & \text{otherwise,}
+    \end{cases}
+    \label{eq:handset_energy}
+\end{equation}
+with all bias terms initialized to zero ($b_{ia} = 0$). This static formulation requires zero training epochs, zero parameter fits, and is evaluated with the identical C focused Gibbs sampler used for CRAM.
+
+\subsection{\textsc{Frontier LLM Solver Paradigms: Direct Reasoning vs. Program Synthesis}}
+\label{subsec:llm_solver_paradigms}
+
+We evaluate three representative tiers of frontier models spanning distinct capacity and parameter scales: Claude Opus 5.5, Claude Sonnet 5.5, and Claude Haiku 5.5 (evaluated in November 2026 via API). We contrast two diametrically opposed problem-solving configurations:
+\begin{itemize}
+    \item \textbf{Direct Adaptive Thinking (Diagnostic Stress Test):} The model receives an 81-character puzzle string representation (with empty cells marked as dots) and is prompted to deduce the solution directly. The model is configured with adaptive thinking set to high effort and a maximum output limit of 32,000 tokens. The model must perform all constraint deductions, candidate eliminations, and hypothetical branch evaluations purely within its autoregressive scratchpad before outputting the final 81-digit completed string.
+    \item \textbf{Program Synthesis (Neuro-Symbolic Execution):} Each model tier is queried with a zero-shot prompt instructing it to write a self-contained, standard-library Python script that accepts an 81-character puzzle string and outputs the solved grid. To evaluate the consistency of code generation across runs, we generate three independent solvers per model tier (yielding 9 solvers in total). The synthesized code is executed locally in a secure Python sandbox and benchmarked against the identical test puzzles.
+\end{itemize}
+
+\section{\textsc{Experiments}}
+\label{sec:experiments}
+
+\subsection{\textsc{Experimental Setup and Benchmark Dataset}}
+\label{subsec:exp_setup}
+
+All local experiments—including pseudolikelihood training of CRAM, focused Gibbs sampling, and Python solver execution—are conducted on a single consumer laptop featuring an Apple M4 Pro CPU without GPU acceleration. The total monetary expenditure across all external LLM API calls was strictly capped at \$3.75.
+
+\textbf{Dataset:} We evaluate on the public \texttt{sapientinc/sudoku-extreme} benchmark. Our evaluation suite consists of 500 test puzzles sampled across 5 random seeded pages, exhibiting a median of 26 given clues per puzzle. For training CRAM, we extract the first 1,000 solved boards from the training split. 
+
+\textbf{Evaluation Regimes:} Because direct token-level simulation with extended thinking consumes tens of thousands of tokens per puzzle, evaluating all 500 puzzles across multiple frontier models would incur hundreds of dollars in API expenditures and tens of GPU-hours. We therefore deploy a dual evaluation design:
+\begin{enumerate}
+    \item \textit{Comprehensive 500-Puzzle Benchmark:} All 9 synthesized Python solvers and both energy-based formulations (learned CRAM across 3 random seeds and the hand-set Hopfield baseline) are evaluated exhaustively across all 500 benchmark instances, yielding 4,500 programmatic solver runs and 2,000 energy-based solver runs.
+    \item \textit{Diagnostic Direct Reasoning Stress Test:} Direct LLM inference is evaluated on a diagnostic subset (5 puzzles each for Opus 5.5 and Sonnet 5.5, and 10 puzzles for Haiku 5.5). This stress test is specifically designed to isolate and characterize catastrophic failure modes—namely, scratchpad context exhaustion and unrecoverable spatial drift—under high-effort extended thinking.
+\end{enumerate}
+
+\subsection{\textsc{Direct LLM Reasoning Results}}
+\label{subsec:direct_llm_results}
+
+Table~\ref{tab:direct_llm_results} summarizes the performance, latency, and financial cost of frontier LLMs tasked with direct in-context puzzle solving.
+
+\begin{table}[t]
+\caption{Performance and cost of direct LLM reasoning with adaptive thinking (max 32k tokens).}
+\label{tab:direct_llm_results}
+\begin{center}
+\footnotesize
+\setlength{\tabcolsep}{2.5pt}
+\begin{tabular}{lccccccr}
+\toprule
+\textbf{Model} & \textbf{Puzzles} & \textbf{Solved} & \textbf{Out of Tokens} & \textbf{Wrong Ans.} & \textbf{\$/Puzzle} & \textbf{\$/Solved} & \textbf{Median Latency (s)} \\
+\midrule
+Opus 5.5   & 5  & 3 & 2 & 0 & \$0.426 & \$0.710 & 124.9 (max 247) \\
+Sonnet 5.5 & 5  & 3 & 2 & 0 & \$0.250 & \$0.416 & 166.1 (max 196) \\
+Haiku 5.5  & 10 & 3 & 5 & 2 & \$0.014 & \$0.045 & 105.7 \\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{table}
+
+Direct internal deduction on Sudoku-Extreme exhibits severe reliability and efficiency limitations. Both Opus 5.5 and Sonnet 5.5 solved only 3 out of 5 puzzles (60\% solve rate; 95\% Wilson score interval $[23.1\%, 88.2\%]$), failing on the exact same two instances (difficulty ratings 88 and 15). Qualitative inspection of the reasoning traces reveals that both models correctly executed initial constraint propagation, but upon encountering complex branching choices, their internal state tracking degraded. In both failure cases, the models engaged in verbose backtracking loops until hitting the hard ceiling of 32,000 generated tokens, abruptly terminating without outputting a completed grid.
+
+Haiku 5.5 demonstrated an even more pronounced degradation, solving only 3 out of 10 puzzles (30\% solve rate; 95\% Wilson score interval $[10.8\%, 60.3\%]$). In 5 instances, Haiku exhausted its 32,000-token budget. In the remaining 2 failed instances, the model produced invalid completions containing subtle constraint violations (74/81 and 78/81 valid cells, respectively), yet explicitly asserted that the puzzle was solved correctly. In terms of latency and cost, direct mental reasoning requires substantial wall-clock time (median latencies between 105.7 and 166.1 seconds) and high monetary expense, reaching up to \$0.71 per solved puzzle for Opus 5.5.
+
+While the diagnostic sample size for direct LLM deduction carries statistical uncertainty in point estimates, the nature of the failures is qualitatively definitive: autoregressive chains of thought cannot reliably maintain the state of recursive depth-first search when branching depths increase, resulting in deterministic budget exhaustion.
+
+\subsection{\textsc{LLM Program Synthesis Results}}
+\label{subsec:program_synthesis_results}
+
+In sharp contrast to direct token-level search, delegating execution to synthesized Python code delivers flawless accuracy, microsecond-level latency, and negligible cost. Table~\ref{tab:llm_solver_results} summarizes the performance across 9 independently generated solvers (3 per model tier), evaluated on all 500 test puzzles.
+
+\begin{table}[t]
+\caption{Performance of LLM-synthesized Python backtracking solvers across 500 test puzzles.}
+\label{tab:llm_solver_results}
+\begin{center}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lccccr}
+\toprule
+\textbf{Model} & \textbf{Solvers (500/500)} & \textbf{Median ms/Puz.} & \textbf{Total Time (500 Puz.)} & \textbf{Write Cost} & \textbf{Lines of Code} \\
+\midrule
+Haiku 5.5  & 3 / 3 & 1.14--1.85 & 0.96--1.74 s & \$0.003--\$0.005 & 108--128 \\
+Sonnet 5.5 & 3 / 3 & 1.02--1.48 & 0.80--1.17 s & \$0.018--\$0.020 & 96--109 \\
+Opus 5.5   & 3 / 3 & 1.19--1.66 & 1.07--1.45 s & \$0.051--\$0.063 & 104--122 \\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{table}
+
+Every synthesized solver achieved a 100\% solve rate across the complete 500-puzzle benchmark suite, resulting in 4,500 successfully verified completions out of 4,500 runs. Code generation required between 12 and 44 seconds of initial API interaction and cost between \$0.003 (Haiku) and \$0.063 (Opus). Once generated, the concise scripts (96 to 128 lines of code) solved individual puzzles in a median of 1.02 to 1.85 milliseconds. Entire 500-puzzle suites were processed in under 1.8 seconds on a single CPU core. Thus, program synthesis achieves orders-of-magnitude reductions in runtime and cost while entirely eliminating the hallucinations and context limits that plague direct token generation.
+
+\textbf{Algorithmic Structure of Synthesized Solvers:} Inspection of the generated Python scripts clarifies why they execute with microsecond latency. Rather than producing naive exhaustive search, all 9 solvers implemented structured backtracking augmented with constraint propagation:
+\begin{enumerate}
+    \item \textit{Dynamic Candidate Domain Tracking:} Empty cells maintained explicit candidate sets filtered against row, column, and $3 \times 3$ box peers.
+    \item \textit{Minimum Remaining Values (MRV) Heuristic:} Rather than picking empty cells in arbitrary row-major order, multiple solvers dynamically selected the cell with the fewest remaining legal candidates, severely pruning the branching factor.
+    \item \textit{Immediate Contradiction Pruning:} Forward checking ensured that as soon as any unassigned cell had its candidate set reduced to empty, the recursive call backed out immediately, avoiding fruitless subtree exploration.
+\end{enumerate}
+
+\subsection{\textsc{CRAM Replication and Energy Analysis}}
+\label{subsec:cram_replication_results}
+
+We next evaluate our independent CPU re-implementation of CRAM alongside the hand-set Hopfield-Tank baseline on the 500 test puzzles. To assess training stability, CRAM was trained across three independent random seeds. Results are detailed in Table~\ref{tab:cram_results}.
+
+\begin{table}[t]
+\caption{Independent replication of CRAM and hand-set energy baseline on 500 test puzzles.}
+\label{tab:cram_results}
+\begin{center}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lcccccr}
+\toprule
+\textbf{Energy Formulation} & \textbf{Seed} & \textbf{Solved / 500} & \textbf{Wrong Stops} & \textbf{Fit Time (s)} & \textbf{Median (ms)} & \textbf{p90 (ms)} \\
+\midrule
+Hand-set (one weight) & 0 & 497 / 500 & 0 & 0.00 & 42.8 & 311 \\
+Learned CRAM          & 0 & 496 / 500 & 0 & 2.51 & 53.2 & 351 \\
+Learned CRAM          & 1 & 496 / 500 & 0 & 2.52 & 61.1 & 397 \\
+Learned CRAM          & 2 & 497 / 500 & 0 & 2.52 & 54.2 & 425 \\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{table}
+
+Our NumPy pseudolikelihood fit converges in only 2.51--2.52 seconds on a single laptop CPU core. Across all three seeds, learned CRAM successfully solves 496 or 497 out of 500 puzzles (99.2\%--99.4\% solve rate). Crucially, the focused Gibbs search exhibited zero false-positive completions: in every failed instance, search terminated strictly due to exhausting the $10^7$ move budget ($\sim$6.3 seconds per puzzle), without ever converging to an invalid local minimum. Only two puzzles failed consistently across all four energy runs.
+
+\begin{figure}[t]
+\begin{center}
+\includegraphics[width=0.88\linewidth]{figures/solve_rates.png}
+\end{center}
+\caption{Share of Sudoku-Extreme puzzles solved across solver paradigms. Direct LLM reasoning achieves only 30\%--60\% success in diagnostic stress testing, whereas LLM-written Python solvers solve 100\% (4,500/4,500 runs). Learned CRAM and the untrained hand-set energy baseline achieve near-identical high accuracy (99.2\%--99.4\%).}
+\label{fig:solve_rates}
+\end{figure}
+
+\textbf{Constraint Graph Recovery:} To understand what CRAM learns from the 1,000 training boards without spatial coordinate priors, we analyze the learned coupling tensor $\mW$. For each cell $i \in \{1, \dots, 81\}$ and digit $a$, we rank all other cells $j \neq i$ by the magnitude of their repulsive coupling $W_{ia, ja}$. Across all 81 opaque cell positions, the top-20 strongest repulsive weights correspond exactly to the cell's 20 ground-truth row, column, and $3 \times 3$ box peers. This yields a peer recovery precision of exactly 1.000, confirming that pseudolikelihood estimation successfully discovers the latent topological graph of Sudoku purely from data \citep{Bresler2014EfficientlyLearning}.
+
+\textbf{Ablation with Hand-Set Energy Baseline:} As shown in Table~\ref{tab:cram_results}, the untrained hand-set Hopfield baseline—incorporating a single uniform scalar penalty across the known 20 peers—solves 497 out of 500 puzzles with a median latency of 42.8 ms and zero training time. The fact that an untrained single-weight energy achieves performance identical to (and slightly faster than) the learned CRAM model confirms the caveat noted in the associative memory literature: high benchmark scores on Sudoku-Extreme reflect the effectiveness of focused local search on pairwise exclusion graphs rather than high-level emergent reasoning.
+
+\textbf{Direct LLM Failure Instances:} Finally, we evaluated learned CRAM on the exact 10 puzzles administered to the LLMs. Learned CRAM solved all 10 puzzles (10/10) with latencies ranging from 0.3 ms to 1.29 s. Notably, the two challenging puzzles (difficulty 88 and 15) that caused both Opus 5.5 and Sonnet 5.5 to exhaust their 32,000-token budgets were solved by CRAM in 66 ms and 122 ms, respectively. Figure~\ref{fig:solve_rates} illustrates the overall solve rates across all evaluated paradigms.
+
+\section{\textsc{Conclusion}}
+\label{sec:conclusion}
+
+\subsection{\textsc{Summary of Findings}}
+\label{subsec:summary_findings}
+
+This study provided a controlled empirical comparison across three paradigms on the Sudoku-Extreme benchmark: direct LLM adaptive thinking, LLM-synthesized code execution, and energy-based associative memory search. Our findings demonstrate that direct token-level mental simulation using frontier LLMs is an inefficient, costly, and brittle mechanism for strict combinatorial search, frequently succumbing to context exhaustion and spatial errors. Conversely, prompting LLMs to synthesize standard-library Python backtracking solvers yields perfect accuracy (4,500/4,500 solves) at millisecond latency and negligible upfront generation cost. Furthermore, our independent CPU re-implementation of CRAM confirms that pairwise energy models can be trained in 2.5 seconds on commodity hardware, achieving 99.4\% accuracy. However, the identical performance of an untrained, single-weight Hopfield-Tank baseline confirms that Sudoku-Extreme evaluates basic constraint propagation heuristics rather than deep emergent reasoning.
+
+\subsection{\textsc{Broader Implications for Reasoning Benchmarks}}
+\label{subsec:broader_implications}
+
+These results suggest critical guidelines for machine learning benchmark design and the evaluation of machine reasoning:
+\begin{enumerate}
+    \item \textbf{Pitfalls of Rigid Grid Benchmarks:} Puzzles like Sudoku-Extreme are frequently promoted as grand challenges for recurrent reasoning and latent energy minimization \citep{Chen2026EnergybasedReasoners}. However, our finding that an untrained single-scalar-weight Hopfield network achieves 99.4\% accuracy proves that benchmark difficulty is largely an artifact of local constraint propagation rather than genuine algorithmic planning or high-order deduction.
+    \item \textbf{Algorithmic Synthesis vs.\ In-Context Simulation:} A common objection is that standard backtracking algorithms are well represented in pre-training corpora. However, this observation reinforces rather than diminishes our thesis: deterministic combinatorial search is solved by code synthesis, not autoregressive text simulation. Pushing models to simulate branching search in natural language scratchpads wastes compute and exposes models to state-tracking failures and context saturation \citep{Yang2024NeurosymbolicArtificial,Liang2026BeyondTraining}. By synthesizing code, the model maps the high-level specification into a symbolic execution graph, delegating state manipulation to an external interpreter.
+    \item \textbf{Generalization to Non-Standard CSPs:} While standard 9x9 Sudoku admits canned recursive templates, the architectural advantage of neuro-symbolic program synthesis extends naturally to non-standard variations (e.g., irregular jigsaw Sudoku, 16x16 Hexadoku, or puzzles with custom arithmetic constraints) and broader NP-hard domains. As demonstrated by systems like OptiMUS \citep{Ahmaditeshnizi2024OptimusScalable}, language models excel at formulating symbolic constraints (e.g., declaring peer relations or integer linear programming inequalities), while external solvers execute the combinatorial search. Future benchmark design must move beyond rigid grid puzzles toward non-planar graph coloring, general boolean satisfiability \citep{Selsam2018LearningSat}, and mixed-integer programming formulations.
+\end{enumerate}
+
+\subsubsection*{\textsc{Reproducibility Statement}}
+All experimental configurations, parameters, and random seeds are fully documented. The 500 test puzzles were extracted from the public Hugging Face dataset \texttt{sapientinc/sudoku-extreme} across 5 seeded random splits (median 26 clues). The 1,000 training boards for CRAM were drawn sequentially from the train split. CRAM pseudolikelihood training and focused Gibbs search hyperparameters ($10^7$ step ceiling, 4 parallel chains, low temperature) are described in Section~\ref{sec:method}. LLM API prompts for direct solving used adaptive thinking set to high effort with a 32,000-token ceiling, and code generation prompts requested standard-library Python scripts without external dependencies.
+
+%%%%%%%%% REFERENCES %%%%%%%%%
+\bibliography{references}
+\bibliographystyle{iclr2025_conference}
+%%%%%%%%% REFERENCES %%%%%%%%%
+
+\appendix
+\newpage
+\section{\textsc{Algorithmic Details and Experimental Prompts}}
+\label{sec:appendix_details}
+
+\subsection{\textsc{Pseudolikelihood Training and Focused Gibbs Sampling}}
+The CRAM model optimizes parameters $\mW \in \R^{81 \times 81 \times 9 \times 9}$ and $\vb \in \R^{81 \times 9}$ over $M = 1,000$ solved Sudoku grids. At each training step, the local field vector $\vh_i \in \R^9$ for cell $i$ is computed via:
+\begin{equation}
+    h_{ia} = b_{ia} + \sum_{j \neq i} \sum_{b=1}^9 W_{ia, jb} S_{jb}, \quad \forall a \in \{1, \dots, 9\}.
+\end{equation}
+The cross-entropy loss against the ground-truth digit $a^*$ is $-\log \left(\frac{\exp(-h_{ia^*})}{\sum_{a=1}^9 \exp(-h_{ia})}\right)$. Optimization is carried out via Adam in NumPy with a learning rate of $10^{-2}$ over 50 epochs, completing in approximately 2.5 seconds on an Apple M4 Pro CPU.
+
+In the C focused Gibbs search routine, the sampler maintains an active queue of conflicted cells. A cell $i$ is conflicted if its current digit assignment $a$ incurs non-zero repulsive energy with any other cell $j \neq i$:
+\begin{equation}
+    C(i) = \sum_{j \neq i} W_{ia, j S_j} > 0.
+\end{equation}
+At each step, a conflicted cell is sampled uniformly at random from the candidate pool, and a new digit $a' \in \{1, \dots, 9\}$ is drawn according to the Gibbs probability $P(a') \propto \exp(-\beta \cdot h_{ia'})$, where $\beta$ is an inverse temperature parameter. Clued positions are masked and never modified.
+
+\subsection{\textsc{Prompt Templates and API Configuration}}
+The LLM evaluations were conducted using the Anthropic API in November 2026 for Claude Opus 5.5, Claude Sonnet 5.5, and Claude Haiku 5.5.
+
+For direct LLM reasoning, adaptive thinking was configured with \texttt{effort: high} and \texttt{max\_tokens: 32000}. The system prompt instructed:
+\begin{quote}
+\small
+\texttt{"You are an expert puzzle solver. Solve the following Sudoku puzzle. The puzzle is given as an 81-character string where dots (.) denote empty cells. Use extended thinking to backtrack and deduce the solution. Output ONLY the final 81-digit solved string without spaces."}
+\end{quote}
+
+For Python solver synthesis, the zero-shot prompt instructed:
+\begin{quote}
+\small
+\texttt{"Write a fast, self-contained Python 3 script using only the standard library to solve Sudoku puzzles. The script must take an 81-character puzzle string (with '.' for empty cells) and return the 81-character solved string. Implement efficient constraint propagation and backtracking."}
+\end{quote}
+
+\end{document}

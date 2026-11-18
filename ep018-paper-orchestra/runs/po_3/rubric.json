@@ -1,0 +1,26 @@
+{
+ "credits_cram": {
+  "answer": "no",
+  "why": "The paper calls CRAM an existing framework and a re-implementation, but never names Hoover, Blayney and Whittington or attributes the method to them."
+ },
+ "cites_hoover": {
+  "answer": "no",
+  "why": "No \\cite to a CRAM paper appears. The only citations are to other works (Shah, Saunshi, Feinashley, etc.), and CRAM is described without a citation."
+ },
+ "small_n": {
+  "answer": "yes",
+  "why": "\"Direct solving was evaluated on 5 puzzles each for Opus 5.5 and Sonnet 5.5, and 10 puzzles for Haiku 5.5\"; the paper calls the sample size ($N=5$ to $10$) a limitation."
+ },
+ "handset_caveat": {
+  "answer": "yes",
+  "why": "\"an unlearned baseline with a single hand-set penalty weight achieves an identical 497/500 solved puzzles\"; the results also compare 496--497 for learned energy against 497 for hand-set."
+ },
+ "their_numbers": {
+  "answer": "yes",
+  "why": "The 42 ms figure is labelled \"reported on an NVIDIA H200 GPU in prior literature\", separate from the authors' own 2.5 s CPU fit. The 99.996% figure is not used."
+ },
+ "no_new_claims": {
+  "answer": "no",
+  "why": "It adds details absent from the log: 14 cores, 48GB, Clang 16, NumPy 1.26.4, Adam lr 0.01 with 150 epochs, beta=2.0, w0=1.0, a \"$200\" estimate, and failure-trace excerpts."
+ }
+}

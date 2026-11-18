@@ -1,0 +1,106 @@
+{"t": 1795041171.7396114, "q": "\"Neural\" Computation of Decisions in Optimization Problems", "status": 429, "n": null}
+{"t": 1795041173.4812055, "q": "Classical Energies Learn to Reason 1,000x Faster than Looped Models", "status": 200, "n": 1}
+{"t": 1795041174.9372692, "q": "Hierarchical Reasoning Model", "status": 429, "n": null}
+{"t": 1795041176.4236505, "q": "Statistical Analysis of Non-Lattice Data", "status": 429, "n": null}
+{"t": 1795041178.882184, "q": "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models", "status": 429, "n": null}
+{"t": 1795041180.2072036, "q": "Evaluating Large Language Models Trained on Code", "status": 429, "n": null}
+{"t": 1795041181.4390783, "q": "Array programming with NumPy", "status": 429, "n": null}
+{"t": 1795041182.9071255, "q": "Stochastic Relaxation, Gibbs Distributions, and the Bayesian Restoration of Images", "status": 429, "n": null}
+{"t": 1795041184.134151, "q": "Hierarchical Reasoning Model", "status": 429, "n": null}
+{"t": 1795041185.591106, "q": "\"Neural\" Computation of Decisions in Optimization Problems", "status": 429, "n": null}
+{"t": 1795041186.7941194, "q": "Hierarchical Reasoning Model", "status": 429, "n": null}
+{"t": 1795041188.3398764, "q": "Less is More: Recursive Reasoning with Tiny Networks", "status": 200, "n": 3}
+{"t": 1795041190.5469933, "q": "Energy-Based Reasoners: Your Recurrent Reasoner Should Be an Energy-Based Model", "status": 429, "n": null}
+{"t": 1795041191.7503605, "q": "Flow Reasoning Models: Turning Flows Into Efficient Recurrent Reasoners", "status": 429, "n": null}
+{"t": 1795041193.2084022, "q": "Lattice Deduction Transformers", "status": 429, "n": null}
+{"t": 1795041194.7051337, "q": "Probabilistic Tiny Recursive Model", "status": 429, "n": null}
+{"t": 1795041195.9459121, "q": "Symbol-Equivariant Recurrent Reasoning Models", "status": 429, "n": null}
+{"t": 1795041197.406226, "q": "Can a One-Layer Transformer Solve Hard Sudoku? Test-Time Compute, Generalization, and Mechanistic Analysis", "status": 429, "n": null}
+{"t": 1795041198.6063495, "q": "Measuring Sudoku Difficulty: Formulation, Propagation and Uniqueness Certification", "status": 429, "n": null}
+{"t": 1795041200.0851967, "q": "Recurrent Relational Networks", "status": 429, "n": null}
+{"t": 1795041201.5462563, "q": "SATNet: Bridging Deep Learning and Logical Reasoning Using a Differentiable Fast SAT Solver", "status": 429, "n": null}
+{"t": 1795041202.764379, "q": "Can You Learn an Algorithm? Generalizing from Easy to Hard Problems with Recurrent Networks", "status": 429, "n": null}
+{"t": 1795041204.244281, "q": "SatLM: Satisfiability-Aided Language Models Using Declarative Prompting", "status": 429, "n": null}
+{"t": 1795041205.5901117, "q": "Logic-LM: Empowering Large Language Models with Symbolic Solvers for Faithful Logical Reasoning", "status": 200, "n": 3}
+{"t": 1795041206.8125165, "q": "Tree of Thoughts: Deliberate Problem Solving with Large Language Models", "status": 429, "n": null}
+{"t": 1795041208.021416, "q": "To Backtrack or Not to Backtrack: When Sequential Search Limits Model Reasoning", "status": 429, "n": null}
+{"t": 1795041209.4741964, "q": "Can Transformers Learn to Verify During Backtracking Search?", "status": 429, "n": null}
+{"t": 1795041210.6733663, "q": "Navigating the Labyrinth: Evaluating and Enhancing LLMs' Ability to Reason About Search Problems", "status": 429, "n": null}
+{"t": 1795041212.1348388, "q": "Can Large Language Models Reason? A Characterization via 3-SAT", "status": 429, "n": null}
+{"t": 1795041213.3537753, "q": "On the Planning Abilities of Large Language Models: A Critical Investigation", "status": 429, "n": null}
+{"t": 1795041214.5552568, "q": "How Much Backtracking is Enough? Exploring the Interplay of SFT and RL in Enhancing LLM Reasoning", "status": 429, "n": null}
+{"t": 1795041215.766415, "q": "Teaching Transformers to Solve Combinatorial Problems through Efficient Trial & Error", "status": 429, "n": null}
+{"t": 1795041216.984368, "q": "Faith and Fate: Limits of Transformers on Compositional Tasks", "status": 429, "n": null}
+{"t": 1795041218.4558818, "q": "Beyond A*: Better Planning with Transformers via Search Dynamics Bootstrapping", "status": 429, "n": null}
+{"t": 1795041219.6709242, "q": "PAL: Program-Aided Language Models", "status": 429, "n": null}
+{"t": 1795041221.1257968, "q": "\"Neural\" Computation of Decisions in Optimization Problems", "status": 429, "n": null}
+{"t": 1795041222.3465714, "q": "A Tutorial on Energy-Based Learning", "status": 429, "n": null}
+{"t": 1795041223.5629885, "q": "OptNet: Differentiable Optimization as a Layer in Neural Networks", "status": 429, "n": null}
+{"t": 1795041225.0272036, "q": "Equilibrium Propagation: Bridging the Gap Between Energy-Based Models and Backpropagation", "status": 429, "n": null}
+{"t": 1795041227.656976, "q": "Learning Combinatorial Optimization Algorithms over Graphs", "status": 200, "n": 3}
+{"t": 1795041228.866452, "q": "Recurrent Relational Networks", "status": 429, "n": null}
+{"t": 1795041230.079743, "q": "Learning a SAT Solver from Single-Bit Supervision", "status": 429, "n": null}
+{"t": 1795041231.5296957, "q": "SATNet: Bridging Deep Learning and Logical Reasoning Using a Differentiable Satisfiability Solver", "status": 429, "n": null}
+{"t": 1795041232.9913735, "q": "Deep Equilibrium Models", "status": 429, "n": null}
+{"t": 1795041234.189032, "q": "Combinatorial Optimization with Physics-Inspired Graph Neural Networks", "status": 429, "n": null}
+{"t": 1795041235.5928154, "q": "Learning to Solve Constraint Satisfaction Problems with Recurrent Transformer", "status": 200, "n": 1}
+{"t": 1795041236.810002, "q": "Learning Iterative Reasoning through Energy Diffusion", "status": 429, "n": null}
+{"t": 1795041238.4171822, "q": "Are Your Reasoning Models Reasoning or Guessing? A Mechanistic Analysis of Hierarchical Reasoning Models", "status": 200, "n": 1}
+{"t": 1795041239.8773158, "q": "Classical Energies Learn to Reason 1,000\u00d7 Faster than Looped Models", "status": 429, "n": null}
+{"t": 1795041241.3516977, "q": "Hierarchical Reasoning Model", "status": 429, "n": null}
+{"t": 1795041242.834481, "q": "Classical Energies Learn to Reason 1,000\u00d7 Faster than Looped Models", "status": 429, "n": null}
+{"t": 1795041244.3153424, "q": "Energy-Based Reasoners: Your Recurrent Reasoner Should Be an Energy-Based Model", "status": 200, "n": 3}
+{"t": 1795041245.532285, "q": "An Energy-Based Perspective on Machine Learning", "status": 429, "n": null}
+{"t": 1795041247.0091271, "q": "Learning Iterative Reasoning through Energy Minimization", "status": 429, "n": null}
+{"t": 1795041249.2000942, "q": "\u201cNeural\u201d Computation of Decisions in Optimization Problems", "status": 200, "n": 3}
+{"t": 1795041250.4131157, "q": "Searching for Memories, Sudoku, Implicit Check-Bits, and the Iterative Use of Not-Always-Correct Rapid Neural Computation", "status": 429, "n": null}
+{"t": 1795041251.632184, "q": "SATNet: Bridging Deep Learning and Logical Reasoning Using a Differentiable Satisfiability Solver", "status": 429, "n": null}
+{"t": 1795041252.8305352, "q": "Recurrent Relational Networks", "status": 429, "n": null}
+{"t": 1795041254.2018356, "q": "A Pseudo-Semantic Loss for Deep Generative Models with Logical Constraints", "status": 200, "n": 0}
+{"t": 1795041255.410385, "q": "Hierarchical Reasoning Model", "status": 429, "n": null}
+{"t": 1795041256.6372185, "q": "Less is More: Recursive Reasoning with Tiny Networks", "status": 429, "n": null}
+{"t": 1795041258.1059008, "q": "Asymptotic Efficiency of Deterministic Estimators for Discrete Energy-Based Models: Ratio Matching and Pseudolikelihood", "status": 429, "n": null}
+{"t": 1795041259.5730772, "q": "Spatial Interaction and the Statistical Analysis of Lattice Systems", "status": 429, "n": null}
+{"t": 1795041260.7796807, "q": "Learning Discrete Energy-Based Models via Auxiliary-Variable Local Exploration", "status": 429, "n": null}
+{"t": 1795041263.3784814, "q": "Your Recurrent Reasoner Should Be an Energy-Based Model", "status": 200, "n": 1}
+{"t": 1795041264.9268458, "q": "Searching for memories, Sudoku, implicit check-bits, and the iterative use of not-always-correct rapid neural computation", "status": 429, "n": null}
+{"t": 1795041266.137039, "q": "'Neural' Computation of Decisions in Optimization Problems", "status": 429, "n": null}
+{"t": 1795041267.4340613, "q": "On the Stability of the TSP Problem Algorithm of Hopfield and Tank", "status": 200, "n": 0}
+{"t": 1795041268.6374784, "q": "Solving Sudoku puzzles by using Hopfield neural networks", "status": 429, "n": null}
+{"t": 1795041270.1215978, "q": "Recurrent Relational Networks", "status": 429, "n": null}
+{"t": 1795041271.3340333, "q": "SATNet: Bridging deep learning and logical reasoning using a differentiable satisfiability solver", "status": 429, "n": null}
+{"t": 1795041272.5530407, "q": "Learning Iterative Reasoning through Energy Diffusion", "status": 429, "n": null}
+{"t": 1795041273.7629893, "q": "Solving Constraint Satisfaction Problems with Networks of Spiking Neurons", "status": 429, "n": null}
+{"t": 1795041274.9743352, "q": "Solving Sudoku Using Oscillatory Neural Networks", "status": 429, "n": null}
+{"t": 1795041276.1921432, "q": "Not All Neuro-Symbolic Concepts Are Created Equal: Analysis and Mitigation of Reasoning Shortcuts", "status": 429, "n": null}
+{"t": 1795041277.6712072, "q": "Teaching Transformers to Solve Combinatorial Problems through Efficient Trial & Error", "status": 429, "n": null}
+{"t": 1795041278.8875964, "q": "Learning a SAT Solver from Single-Bit Supervision", "status": 429, "n": null}
+{"t": 1795041280.0993478, "q": "The Claude 3 Model Family: Opus, Sonnet, Haiku", "status": 429, "n": null}
+{"t": 1795041281.5636992, "q": "Array programming with NumPy", "status": 429, "n": null}
+{"t": 1795041283.771962, "q": "Stochastic Relaxation, Gibbs Distributions, and the Bayesian Restoration of Images", "status": 429, "n": null}
+{"t": 1795041286.5908787, "q": "PAL: Program-aided Language Models", "status": 200, "n": 3}
+{"t": 1795041287.8243842, "q": "Program of Thoughts Prompting: Disentangling Computation from Reasoning for Numerical Reasoning Tasks", "status": 429, "n": null}
+{"t": 1795041289.028475, "q": "SatLM: Satisfiability-Aided Language Models Using Declarative Prompting", "status": 429, "n": null}
+{"t": 1795041291.236273, "q": "LINC: A Neurosymbolic Approach for Logical Reasoning by Combining Language Models with First-Order Logic Provers", "status": 429, "n": null}
+{"t": 1795041292.525263, "q": "Faithful Chain-of-Thought Reasoning", "status": 429, "n": null}
+{"t": 1795041293.9872339, "q": "OptiMUS: Scalable Optimization Modeling with (MI)LP Solvers and Large Language Models", "status": 429, "n": null}
+{"t": 1795041295.4764261, "q": "Chain of Code: Reasoning with a Language Model-Augmented Code Emulator", "status": 429, "n": null}
+{"t": 1795041296.6875982, "q": "Position: LLMs Can't Plan, But Can Help Planning in LLM-Modulo Frameworks", "status": 429, "n": null}
+{"t": 1795041297.898414, "q": "On the Planning Abilities of Large Language Models: A Critical Investigation", "status": 429, "n": null}
+{"t": 1795041299.362079, "q": "Tree of Thoughts: Deliberate Problem Solving with Large Language Models", "status": 429, "n": null}
+{"t": 1795041300.8647397, "q": "Can Language Models Solve Graph Problems in Natural Language?", "status": 429, "n": null}
+{"t": 1795041302.539121, "q": "CRITIC: Large Language Models Can Self-Correct with Tool-Interactive Critiquing", "status": 429, "n": null}
+{"t": 1795041303.7957373, "q": "MathConstraint: Automated Generation of Verified Combinatorial Reasoning Instances for LLMs", "status": 429, "n": null}
+{"t": 1795041305.0114346, "q": "Looped Language Models: A Survey and Meta-Analysis of Recurrent-Depth Transformers", "status": 429, "n": null}
+{"t": 1795041306.4768517, "q": "Reasoning Beyond Language: A Comprehensive Survey on Latent Chain-of-Thought Reasoning", "status": 429, "n": null}
+{"t": 1795041307.6861634, "q": "A Systematic Survey on Large Language Models for Algorithm Design", "status": 429, "n": null}
+{"t": 1795041309.151675, "q": "Large Language Models and Operations Research: A Structured Survey", "status": 429, "n": null}
+{"t": 1795041310.3767498, "q": "Reasoning in a Combinatorial and Constrained World: Benchmarking LLMs on Natural-Language Combinatorial Optimization", "status": 429, "n": null}
+{"t": 1795041311.8455875, "q": "Reasoning with Large Language Models, a Survey", "status": 429, "n": null}
+{"t": 1795041313.0691886, "q": "Towards Structured Reasoning: A Comprehensive Survey of Chain-of-Thought Reasoning in Large Language Models", "status": 429, "n": null}
+{"t": 1795041314.2997806, "q": "Navigate through Enigmatic Labyrinth: A Survey of Chain of Thought Reasoning: Advances, Frontiers and Future", "status": 429, "n": null}
+{"t": 1795041315.5476012, "q": "Neural Combinatorial Optimization Algorithms for Solving Vehicle Routing Problems: A Comprehensive Survey with Perspectives", "status": 429, "n": null}
+{"t": 1795041317.011954, "q": "A Survey on Mathematical Reasoning and Optimization with Large Language Models", "status": 429, "n": null}
+{"t": 1795041320.221135, "q": "Flow Reasoning Models: Turning Flows Into Efficient Recurrent Reasoners", "status": 429, "n": null}
+{"t": 1795041321.6919575, "q": "Neural Algorithmic Reasoning Must Explain When Neuralization Adds Value", "status": 429, "n": null}
+{"t": 1795041323.1660948, "q": "The Claude 3 Model Family: Opus, Sonnet, Haiku", "status": 429, "n": null}

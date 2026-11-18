@@ -1,0 +1,26 @@
+{
+ "credits_cram": {
+  "answer": "yes",
+  "why": "Describes CRAM as what \\citet{hoover2026classical} 'introduced' and calls its own work a 're-implementation' of that method, never as a new contribution."
+ },
+ "cites_hoover": {
+  "answer": "yes",
+  "why": "Uses \\citet{hoover2026classical} repeatedly in the abstract, introduction, methods and results."
+ },
+ "small_n": {
+  "answer": "yes",
+  "why": "Limitations: 'direct LLM solving was measured on a subset of 5--10 puzzles per model.'"
+ },
+ "handset_caveat": {
+  "answer": "yes",
+  "why": "Reports the hand-set energy achieved 497/500 and 'matches or marginally exceeds the learned CRAM model' (496-497)."
+ },
+ "their_numbers": {
+  "answer": "yes",
+  "why": "The 99.996% and 42 ms H200 figures are attributed to Hoover et al. ('reported'), and the paper's own results are separate. A limitations line wrongly says the replication reproduces '~99.9%'."
+ },
+ "no_new_claims": {
+  "answer": "no",
+  "why": "Adds details absent from the log: exact prompt texts, sandboxing and syntax checks, an annealing schedule, quasi-Newton optimisation, 'cyclic backtracking loops', row/box duplicate analysis, and the authors' 'private codebase'."
+ }
+}

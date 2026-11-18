@@ -1,0 +1,26 @@
+{
+ "credits_cram": {
+  "answer": "yes",
+  "why": "Describes CRAM as introduced by \\citet{hoover2026cram} ('A recent prominent study ... introduced CRAM') and presents the authors' work as an independent re-implementation, not a new method."
+ },
+ "cites_hoover": {
+  "answer": "yes",
+  "why": "Uses \\citet{hoover2026cram} repeatedly in the abstract, introduction, related work and methodology."
+ },
+ "small_n": {
+  "answer": "yes",
+  "why": "States 'we evaluated Opus and Sonnet on 5 puzzles each, and Haiku on 10 puzzles' and the limitations section notes the restricted 5--10 puzzles per model."
+ },
+ "handset_caveat": {
+  "answer": "yes",
+  "why": "Reports the hand-set single-weight energy at 497/500 against learned CRAM at 496--497/500, and says it matches or exceeds the learned model."
+ },
+ "their_numbers": {
+  "answer": "yes",
+  "why": "Attributes 99.996% and 42 ms on an H200 to Hoover et al. ('reported a 42 ms training time on an NVIDIA H200'), and contrasts them with its own 2.52 s CPU fit."
+ },
+ "no_new_claims": {
+  "answer": "no",
+  "why": "Adds details absent from the log: 12 cores and 24 GB memory, per-model generation times, Haiku max time 189.4 s, a quoted prompt, 'fewer than 800 tokens', and 'proprietary codebase'."
+ }
+}

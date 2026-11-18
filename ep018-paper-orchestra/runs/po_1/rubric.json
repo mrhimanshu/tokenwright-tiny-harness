@@ -1,0 +1,26 @@
+{
+ "credits_cram": {
+  "answer": "yes",
+  "why": "It says 'Hoover et al. (2026) introduced CRAM' and calls the work an 'independent... re-implementation', so CRAM is not claimed as the authors' own. Blayney and Whittington are not named."
+ },
+ "cites_hoover": {
+  "answer": "no",
+  "why": "Hoover et al. (2026) appears only as plain text, never through \\cite/\\citep. The \\citep commands cover only Nye, Dehghani, Dziri and Pan."
+ },
+ "small_n": {
+  "answer": "yes",
+  "why": "'5 puzzles each for Opus 5.5 and Sonnet 5.5, and 10 puzzles for Haiku 5.5', described as an 'in-depth diagnostic probe'."
+ },
+ "handset_caveat": {
+  "answer": "yes",
+  "why": "'our unlearned hand-set baseline... solves 497 of 500 puzzles', matching the learned 496-497 results."
+ },
+ "their_numbers": {
+  "answer": "yes",
+  "why": "The 42 ms H200 figure is attributed to Hoover et al. ('compared to the 42 ms on an enterprise NVIDIA H200 GPU reported by Hoover et al.'), apart from the authors' own 2.5 s measurement."
+ },
+ "no_new_claims": {
+  "answer": "no",
+  "why": "It adds details absent from the log: a 6-MRV/3-DFS solver breakdown, Gibbs cooling schedule (T0, gamma), 24 GB memory, memory-footprint recording, Wilson CIs, an extrapolated $355/17-hour cost, and a Haiku solver listing."
+ }
+}

@@ -1,0 +1,12 @@
+{
+ "model": "gemini-3.8-flash",
+ "secs": 111.5,
+ "usage": {
+  "inp": 3097,
+  "out": 10926,
+  "think": 3031,
+  "tool": 0
+ },
+ "got_tex": true,
+ "got_bib": true
+}

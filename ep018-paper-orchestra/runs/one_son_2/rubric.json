@@ -1,0 +1,26 @@
+{
+ "credits_cram": {
+  "answer": "yes",
+  "why": "\"CRAM is the method of \\citet{hoover2026cram}, not ours.\" It is also described as a re-implementation. The authors' names are not spelled out, but it is clearly credited as an existing method."
+ },
+ "cites_hoover": {
+  "answer": "yes",
+  "why": "The body text uses \\citep{hoover2026cram} and \\citet{hoover2026cram} in the abstract, introduction, related work and analysis."
+ },
+ "small_n": {
+  "answer": "yes",
+  "why": "\"the direct-solving arm uses only 5--10 puzzles per model for cost reasons\"; the paper says its estimates are very uncertain."
+ },
+ "handset_caveat": {
+  "answer": "yes",
+  "why": "\"The one-weight energy solved 497/500 puzzles, equal to the best learned seed and within one puzzle of the others\", matching the original authors' caution."
+ },
+ "their_numbers": {
+  "answer": "yes",
+  "why": "\"The original paper reports 42 ms on an H200 GPU; this is their number and we did not measure it.\" The 99.996% figure is likewise attributed to the original paper."
+ },
+ "no_new_claims": {
+  "answer": "yes",
+  "why": "Every experiment and number traces to the log. Wilson intervals, the rule-of-three bound and the cost extrapolations are derived from logged counts and are labeled as such."
+ }
+}

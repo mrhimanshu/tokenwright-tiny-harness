@@ -1,0 +1,10 @@
+{
+ "model": "claude-sonnet-5-5",
+ "secs": 88.3,
+ "usage": {
+  "inp": 3788,
+  "out": 13443
+ },
+ "got_tex": true,
+ "got_bib": true
+}

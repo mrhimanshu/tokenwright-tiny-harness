@@ -1,0 +1,26 @@
+{
+ "credits_cram": {
+  "answer": "yes",
+  "why": "Says \"Hoover et al. (2026) introduced CRAM\" and calls its own work \"an independent, clean-room CPU re-implementation\" of CRAM, so it is not claimed as new."
+ },
+ "cites_hoover": {
+  "answer": "yes",
+  "why": "The body text uses \\citet{hoover2026classical} repeatedly, in the introduction, related work, methodology and results."
+ },
+ "small_n": {
+  "answer": "yes",
+  "why": "Limitations: \"our direct LLM evaluation was restricted to a sample of 5 to 10 puzzles per model tier\"; the setup section gives the same counts."
+ },
+ "handset_caveat": {
+  "answer": "yes",
+  "why": "Reports the hand-set energy solves 497/500, \"identical\" to the learned model's 496-497, and says this confirms Hoover et al.'s caution about Sudoku."
+ },
+ "their_numbers": {
+  "answer": "yes",
+  "why": "The 99.996% and 42 ms H200 figures are attributed to Hoover et al.; the authors' own runs are reported on an M4 Pro CPU at 2.5 s."
+ },
+ "no_new_claims": {
+  "answer": "no",
+  "why": "Adds details absent from the log: 24 GB memory, clue range 22-28, Python 3.12, per-model synthesis times, Haiku max 182.4 s, and a hand-set peer recovery of 1.000."
+ }
+}

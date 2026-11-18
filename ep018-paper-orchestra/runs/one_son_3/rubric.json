@@ -1,0 +1,26 @@
+{
+ "credits_cram": {
+  "answer": "yes",
+  "why": "\"CRAM is the method of Hoover et al.; we rebuild it independently from the paper description\" and \"This paper is a small replication-and-comparison study, not a new method.\""
+ },
+ "cites_hoover": {
+  "answer": "no",
+  "why": "Hoover et al. are named with an arXiv number in the text, but the only \\citep in that sentence is hopfield1985tsp. No \\cite points to the CRAM paper."
+ },
+ "small_n": {
+  "answer": "yes",
+  "why": "\"the direct-LLM condition uses only 5--10 puzzles per model because of cost, so its accuracy estimates carry wide uncertainty.\""
+ },
+ "handset_caveat": {
+  "answer": "yes",
+  "why": "\"a hand-set energy with one weight value and no training solves 497/500... matching the learned energies (496--497)\""
+ },
+ "their_numbers": {
+  "answer": "yes",
+  "why": "\"The original paper reports 42 ms on an H200 GPU; that figure is theirs and was not measured by us\"; the 99.996% figure is also marked as not verified here."
+ },
+ "no_new_claims": {
+  "answer": "yes",
+  "why": "All results match the log. The Wilson intervals and the 99.2% lower bound are derived from logged counts, not new experiments. No extra baselines or runs are introduced."
+ }
+}

@@ -1,0 +1,26 @@
+{
+ "credits_cram": {
+  "answer": "yes",
+  "why": "Describes CRAM as introduced by \\citet{Hoover2026ClassicalEnergies} and the work as an 'independent replication' and 're-implementation'. The paper does not name all three authors, but it clearly credits an existing method."
+ },
+ "cites_hoover": {
+  "answer": "yes",
+  "why": "Uses \\citet{Hoover2026ClassicalEnergies} repeatedly in the introduction, related work, methods and results."
+ },
+ "small_n": {
+  "answer": "yes",
+  "why": "States 'Opus 5.5 and Sonnet 5.5 on 5 puzzles each, and Haiku 5.5 on 10 puzzles' and 'constrained to 5--10 puzzles per model tier'."
+ },
+ "handset_caveat": {
+  "answer": "yes",
+  "why": "Reports the hand-set baseline 'achieved 497 out of 500 solves' versus learned 496--497, and discusses the original authors' caution."
+ },
+ "their_numbers": {
+  "answer": "yes",
+  "why": "Says 'In comparison, \\citet{Hoover2026ClassicalEnergies} reported 42 ms of training on a high-end Nvidia H200 GPU' and attributes 99.996% to the original paper, separate from the authors' own 2.5 s."
+ },
+ "no_new_claims": {
+  "answer": "no",
+  "why": "Adds details absent from the log: 24 GB memory, Python 3.12, clue range 22--29, Adam lr 0.05 with 250 iterations, gcc -O3, puzzle indices 134 and 382, and residual-conflict inspection."
+ }
+}

@@ -1,0 +1,180 @@
+\documentclass{article} % For LaTeX2e
+\usepackage{iclr2025_conference,times}
+
+% Optional math commands from https://github.com/goodfeli/dlbook_notation.
+\input{math_commands.tex}
+
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage{graphicx}
+
+%%%%%%%%% TITLE - PLEASE UPDATE TITLE HERE
+\title{Write the Solver, Don't Be the Solver: Comparing LLM Reasoning, LLM-Written Code, and a CPU Replication of CRAM on Sudoku-Extreme}
+
+\author{Anonymous authors}
+
+\newcommand{\fix}{\marginpar{FIX}}
+\newcommand{\new}{\marginpar{NEW}}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+%%%%%%%%% ABSTRACT %%%%%%%%%
+Sudoku-Extreme is widely used to argue that looped or recurrent neural models learn to reason. A recent proposal, CRAM \citep{hoover2026cram}, revives the Hopfield--Tank energy model with learned couplings and reports 99.996\% accuracy after 42 ms of training on one GPU. Meanwhile, practitioners increasingly ask frontier LLMs to solve such puzzles directly with long chain-of-thought. We compare these routes on one fixed sample of 500 Sudoku-Extreme test puzzles, using one laptop CPU and a total API budget of \$3.75. We test three families: (a) Claude models answering directly with adaptive thinking; (b) the same models writing a standard-library Python backtracking solver in a single prompt, which we then run on all 500 puzzles; and (c) an independent re-implementation of CRAM (NumPy pseudolikelihood fit plus a C focused Gibbs search, written from the paper without the authors' code) with a learned energy and with a hand-set, one-weight energy. Direct solving is slow, costly, and unreliable: 3/5 (Opus 5.5), 3/5 (Sonnet 5.5), and 3/10 (Haiku 5.5) puzzles were solved, at median times of 105--166 s and up to \$0.43 per puzzle. All 9 LLM-written solvers solved 500/500 puzzles in about 1--1.7 s total, at a writing cost of at most \$0.063. Our CRAM re-implementation solves 496--497/500 puzzles after a 2.5 s CPU fit, and its learned couplings recover the true row/column/box constraint graph exactly. However, a hand-set energy with a single weight solves 497/500, which supports the original authors' caution that Sudoku is too easy to demonstrate reasoning. The direct-solving arm is very small, so we regard its accuracy figures as indicative only.
+%%%%%%%%% ABSTRACT %%%%%%%%%
+\end{abstract}
+
+\section{Introduction}
+\label{sec:intro}
+%%%%%%%%% INTRODUCTION %%%%%%%%%
+Sudoku has become a standard probe of ``reasoning'' in neural networks. The Sudoku-Extreme benchmark, introduced with the Hierarchical Reasoning Model \citep{wang2025hrm} and used again by work on tiny recursive networks \citep{jolicoeur2025trm}, collects puzzles that are hard for human-style constraint propagation and requires substantial search. Strong results on it are often presented as evidence that looped or recurrent architectures learn to reason. Recently, \citet{hoover2026cram} proposed CRAM, a learned version of the Hopfield--Tank energy model \citep{hopfield1985neural}, and reported 99.996\% accuracy on Sudoku-Extreme after 42 ms of training on one H200 GPU. They also cautioned that Sudoku may be too easy to demonstrate reasoning.
+
+At the same time, there is a very different way to obtain a Sudoku solver: ask a frontier LLM. It can either reason about the puzzle token by token in a long chain of thought \citep{wei2022chain}, or it can write ordinary code that solves the puzzle, in the spirit of program-aided reasoning \citep{gao2023pal,chen2022program}. These routes differ greatly in cost, latency and reliability, yet they are rarely compared on the same puzzles and the same hardware budget.
+
+This paper is a small, single-machine replication and comparison study. CRAM is the method of \citet{hoover2026cram}, not ours. We make three contributions.
+\begin{itemize}
+    \item We measure, on a fixed sample of 500 Sudoku-Extreme test puzzles, how three Claude models fare when (i) answering directly with adaptive thinking and (ii) writing a Python solver in one prompt. Each of 9 independently written solvers is run on all 500 puzzles.
+    \item We provide an independent CPU re-implementation of CRAM, built from the paper (NumPy pseudolikelihood fit and a C focused Gibbs search) without the authors' code. It reaches 496--497/500 with a 2.5 s fit, and the learned couplings recover the Sudoku constraint graph exactly.
+    \item We show that a hand-set energy with a single weight value, following Hopfield--Tank rules and requiring no training, matches the learned energy (497/500). This is consistent with the original authors' caveat about the benchmark.
+\end{itemize}
+Our conclusion is deliberately unglamorous. On this benchmark the cheapest reliable option is to have an LLM write ordinary code, and CRAM is a fast, interesting, and reproducible solver whose Sudoku accuracy does not by itself demonstrate learned reasoning. We stress limits up front: the direct-solving arm uses only 5--10 puzzles per model for cost reasons, we ran on a CPU rather than a GPU, and we did not run the original code, so numbers attributed to the original paper are theirs.
+%%%%%%%%% INTRODUCTION %%%%%%%%%
+
+\section{Related Work}
+\label{sec:related_work}
+%%%%%%%%% RELATED WORK %%%%%%%%%
+\paragraph{Neural Sudoku solvers and looped models.} Sudoku has long served as a testbed for learning combinatorial reasoning. Recurrent Relational Networks \citep{palm2018recurrent} perform iterated message passing over the cell graph, and SATNet \citep{wang2019satnet} embeds a differentiable MAXSAT layer and learns Sudoku rules from examples. More recently, the Hierarchical Reasoning Model \citep{wang2025hrm} and Tiny Recursive Models \citep{jolicoeur2025trm} use recurrent computation with small networks and report strong results on Sudoku-Extreme. Adaptive or repeated computation of this kind has precedent in Universal Transformers \citep{dehghani2019universal} and adaptive computation time \citep{graves2016adaptive}. Our study does not evaluate these models; we concentrate on the energy-based alternative and on LLM baselines.
+
+\paragraph{Energy models and CRAM.} Hopfield networks \citep{hopfield1982neural} and Boltzmann machines \citep{ackley1985learning} cast computation as minimizing an energy. \citet{hopfield1985neural} showed how to encode constraint-satisfaction problems such as the travelling salesman problem by hand-designing weights. CRAM \citep{hoover2026cram} learns such an energy from solved examples. Our hand-set baseline follows the Hopfield--Tank recipe: penalize conflicting assignments with a single weight. Our learned model is fit by maximum pseudolikelihood \citep{besag1975statistical} and searched by Gibbs sampling \citep{geman1984stochastic}.
+
+\paragraph{LLMs: reasoning in text versus writing programs.} Chain-of-thought prompting \citep{wei2022chain} and deliberate search over thoughts \citep{yao2023tree} improve LLM performance on multi-step problems. A parallel line offloads the computation to an interpreter: program-aided language models \citep{gao2023pal} and Program of Thoughts \citep{chen2022program} have the model write code and let a runtime execute it. Sudoku is a natural case for this approach. A generic Sudoku is NP-complete \citep{yato2003complexity}, but well-known backtracking and constraint-propagation solvers handle $9\times 9$ instances in milliseconds \citep{norvig2006solving,knuth2000dancing}. Our contribution here is only an empirical, cost-aware measurement on a recent benchmark.
+%%%%%%%%% RELATED WORK %%%%%%%%%
+
+\section{Methodology}
+\label{sec:method}
+%%%%%%%%% METHOD %%%%%%%%%
+\subsection{Data}
+We use the Hugging Face dataset \texttt{sapientinc/sudoku-extreme}. Our evaluation set is 500 test puzzles drawn from 5 seeded random pages of the test split; the median puzzle has 26 clues. All solver families are evaluated on this same fixed sample, except that the direct-solving LLM arm uses a small subset for cost reasons (Section~\ref{sec:direct}). CRAM training data are the first 1,000 solved boards of the train split.
+
+\subsection{Family A: LLMs solving directly}
+\label{sec:direct}
+We give a puzzle to a Claude model (Opus 5.5, Sonnet 5.5, or Haiku 5.5) and ask for the completed grid as its final answer. We use adaptive thinking with effort set to high and a cap of 32,000 output tokens per puzzle. Because of cost, we ran Opus 5.5 and Sonnet 5.5 on 5 puzzles each and Haiku 5.5 on 10 puzzles. An attempt is \emph{solved} if the final grid is the correct solution, \emph{out of tokens} if the output limit is reached before an answer, and \emph{wrong} if a final answer is given but is incorrect. We record dollars per puzzle, dollars per solved puzzle, and wall-clock time.
+
+\subsection{Family B: LLMs writing a solver}
+For each model we use one prompt asking for a standard-library Python Sudoku solver, and we sample 3 independent solvers per model (9 in total). We then run each solver, unmodified, on all 500 puzzles. We record the number of puzzles solved, median and total time, the cost and time to write the solver, and lines of code. The prompt is issued once per solver and there is no iterative debugging.
+
+\subsection{Family C: CRAM re-implementation}
+We rebuilt CRAM from the paper, without using the authors' code. We describe our implementation; it may differ in details from the original.
+
+\paragraph{Energy.} The state is an $81\times 9$ grid of beliefs over digits for each cell. The energy comprises a negative-entropy term, pairwise couplings $W_{ij}\in\mathbb{R}^{9\times 9}$ between cells $i$ and $j$, and a per-cell, per-digit bias. Cells are opaque indices: the model is \emph{not} told which cells share a row, column or box. Given clues are clamped.
+
+\paragraph{Learned energy.} We fit couplings and biases by pseudolikelihood \citep{besag1975statistical} on the 1,000 training boards. That is, we maximize the conditional likelihood of each cell's digit given the rest of the board. The fit is implemented in NumPy on one CPU. We repeat it with 3 seeds.
+
+\paragraph{Hand-set energy.} As a baseline requiring no training, we use a Hopfield--Tank-style energy \citep{hopfield1985neural} with a single weight value that penalizes equal digits in cells that share a row, column or box. Unlike the learned model, this energy is given the true constraint graph. It is the same for all puzzles and has one free parameter.
+
+\paragraph{Inference.} We use a focused Gibbs search \citep{geman1984stochastic} written in C. It runs 4 chains from random boards on one CPU core, with a budget of 10 million moves per puzzle. The search stops when a board with no constraint violations is reached. As Sudoku-Extreme puzzles have unique solutions, such a board is the correct answer. A \emph{wrong stop} would be a stop at an incorrect board, and a failure is the budget running out.
+
+\paragraph{Constraint recovery.} For each cell, we rank the other cells by the learned same-digit coupling strength and check whether the top 20 are exactly its 20 true row/column/box peers. We report the fraction of cells for which this holds (peer recovery).
+%%%%%%%%% METHOD %%%%%%%%%
+
+\section{Experiments}
+\label{sec:experiments}
+%%%%%%%%% EXPERIMENTS %%%%%%%%%
+\subsection{Setup}
+All experiments ran on 16 Nov 2026 on one laptop CPU (Apple M4 Pro) with no GPU. The total API spend for all LLM runs was \$3.75. Figure~\ref{fig:solve_rates} summarizes the share of puzzles solved by each approach.
+
+\begin{figure}[t]
+    \centering
+    \includegraphics[width=0.85\linewidth]{figures/solve_rates.png}
+    \caption{Share of Sudoku-Extreme puzzles solved by each approach. LLM direct solving: Opus 5.5 3/5, Sonnet 5.5 3/5, Haiku 5.5 3/10. LLM-written solvers: 9/9 solved 500/500. CRAM re-implementation: learned energy 496--497/500 (3 seeds), hand-set one-weight energy 497/500. The direct-solving arms use very few puzzles, so their estimates are highly uncertain.}
+    \label{fig:solve_rates}
+\end{figure}
+
+\subsection{LLMs solving directly}
+Table~\ref{tab:direct} reports the direct-solving results. Opus 5.5 and Sonnet 5.5 each solved 3 of 5 puzzles, and Haiku 5.5 solved 3 of 10. Median wall-clock times were 105.7--166.1 s per puzzle. The Opus maximum was 247 s and the Sonnet maximum 196 s.
+
+\begin{table}[t]
+\centering
+\caption{Direct solving by LLMs with adaptive thinking (effort high, 32,000 max output tokens). ``Out of tokens'' means the limit was hit before an answer. Samples are tiny; 95\% Wilson intervals for the solve rate are roughly 23--88\% for 3/5 and 11--60\% for 3/10.}
+\label{tab:direct}
+\begin{tabular}{lrrrrrrr}
+\toprule
+model & puzzles & solved & out of tokens & wrong & \$/puzzle & \$/solved & median s \\
+\midrule
+Opus 5.5 & 5 & 3 & 2 & 0 & 0.426 & 0.71 & 124.9 (max 247) \\
+Sonnet 5.5 & 5 & 3 & 2 & 0 & 0.250 & 0.416 & 166.1 (max 196) \\
+Haiku 5.5 & 10 & 3 & 5 & 2 & 0.014 & 0.045 & 105.7 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Opus and Sonnet failed on the same two puzzles (difficulty ratings 88 and 15), and both hit the 32,000-token limit on them. A low difficulty rating therefore did not protect against failure. Haiku produced two wrong answers, with 74/81 and 78/81 cells correct, and both were stated as the final answer. An answer that is nearly right but presented as final is the most worrying failure mode, because it is not flagged as failure.
+
+If one extrapolates the per-puzzle cost and latency linearly to all 500 puzzles (we did not run this), Opus would cost roughly \$213 and take about 17 hours sequentially, Sonnet roughly \$125 and about 23 hours, and Haiku roughly \$7 and about 15 hours. These extrapolations assume that the small subset is representative, which we cannot verify.
+
+\subsection{LLMs writing a solver}
+Table~\ref{tab:write} reports the results for LLM-written solvers. All 9 of 9 solvers solved all 500 puzzles, for 4,500 of 4,500 solves. With zero failures in 4,500 attempts, a rule-of-three bound puts the per-puzzle failure rate of this solver population below roughly 0.07\% at 95\% confidence. Writing a solver took 12--44 s per solver and cost between \$0.003 and \$0.063. The cheapest model (Haiku 5.5) was as reliable as the most expensive one on this task, and Sonnet's solvers were slightly the fastest at run time (a difference that is small and unlikely to matter in practice).
+
+\begin{table}[t]
+\centering
+\caption{Solvers written by LLMs in one prompt (3 per model), each run on all 500 puzzles.}
+\label{tab:write}
+\begin{tabular}{lrrrrr}
+\toprule
+model & solvers solving all 500 & median ms/puzzle & total s (500) & cost to write (\$) & lines of code \\
+\midrule
+Haiku 5.5 & 3/3 & 1.14--1.85 & 0.96--1.74 & 0.003--0.005 & 108--128 \\
+Sonnet 5.5 & 3/3 & 1.02--1.48 & 0.80--1.17 & 0.018--0.020 & 96--109 \\
+Opus 5.5 & 3/3 & 1.19--1.66 & 1.07--1.45 & 0.051--0.063 & 104--122 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{CRAM re-implementation}
+Table~\ref{tab:cram} reports results on the 500 puzzles. The learned energy solved 496, 496, and 497 puzzles for seeds 0, 1, 2, after a fit of about 2.5 s. The hand-set one-weight energy solved 497 with no fit. Median solve times were 43--61 ms and the 90th percentile was 311--425 ms.
+
+\begin{table}[t]
+\centering
+\caption{CRAM re-implementation on 500 Sudoku-Extreme puzzles (4 chains, one CPU core, 10M-move budget).}
+\label{tab:cram}
+\begin{tabular}{lrrrrr}
+\toprule
+energy & seed & solved / 500 & wrong stops & fit seconds & median ms (p90 ms) \\
+\midrule
+hand-set (one weight) & 0 & 497 & 0 & 0 & 42.8 (311) \\
+learned & 0 & 496 & 0 & 2.51 & 53.2 (351) \\
+learned & 1 & 496 & 0 & 2.52 & 61.1 (397) \\
+learned & 2 & 497 & 0 & 2.52 & 54.2 (425) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{Constraint recovery.} For every cell, the top-20 learned same-digit partners were exactly its 20 true row/column/box peers, giving a peer recovery of 1.000. The learned energy therefore recovers the Sudoku constraint graph from 1,000 solved boards, without being told the graph.
+
+\paragraph{Failures.} Every failure was the move budget running out (about 6.3 s), and no search stopped at a wrong board. Two puzzles failed in all four runs. On the 10 puzzles used in the direct-solving condition, learned CRAM solved 10/10, with times from 0.3 ms to 1.29 s, including the two puzzles that defeated Opus and Sonnet (66 ms and 122 ms).
+
+\paragraph{Training time.} Our fit took about 2.5 s on a CPU. The original paper reports 42 ms on an H200 GPU; this is their number and we did not measure it. We did not attempt to match their hardware or their code, so we make no claim about the ratio between the two timings beyond noting that both are very short.
+
+\subsection{Analysis}
+\paragraph{Cost, speed, reliability.} Direct LLM reasoning took roughly two minutes and up to about \$0.43 per puzzle and still failed on 2 of 5 puzzles for the larger models; the failures were token-limit exhaustion for Opus and Sonnet, and confident wrong answers for Haiku. LLM-written solvers took on the order of a millisecond per puzzle, were written for a few cents or less, and solved everything. CRAM sits between these: it is not exactly perfect on our budget (99.2--99.4\%), but its failures are visible (the search runs out of budget rather than returning a wrong board), and each solve takes tens of milliseconds at the median on one CPU core.
+
+\paragraph{A hand-set energy matches the learned one.} The one-weight energy solved 497/500 puzzles, equal to the best learned seed and within one puzzle of the others. With 500 puzzles and a single run of the hand-set energy, a one-puzzle difference is within noise. The result is consistent with the caution of \citet{hoover2026cram} that Sudoku is too easy to demonstrate reasoning: if a fixed energy with one parameter and a generic search suffices, high Sudoku accuracy cannot discriminate between a system that has learned something and one that simply has the right constraints. What the learned model does show is that it can discover the constraint structure from data (peer recovery 1.000), which is a meaningful, if narrower, claim than ``learns to reason''.
+
+\paragraph{Limitations.} (i) The direct-solving arm is tiny (5--10 puzzles per model), so its accuracy estimates are very uncertain; wide intervals overlap across the three models and we draw no conclusion about their ranking. (ii) We did not run extended-thinking or tool-augmented settings in the direct condition, and we capped output at 32,000 tokens; a larger budget could change the results for Opus and Sonnet. (iii) The solver-writing condition uses one prompt per solver and a fixed sample of 500 puzzles, so it may not reveal rare bugs. (iv) The LLM-written solvers are conventional backtracking programs, and so are complete algorithms; their perfect scores reflect the algorithm, not any ``reasoning'' by the model at inference time. (v) Our CRAM is an independent re-implementation; differences from the original (hyperparameters, inference details, hardware) may account for the gap between our 99.2--99.4\% on 500 puzzles and the reported 99.996\%, and our sample is too small to resolve differences at the latter level. We did not evaluate the claim on the full test set. (vi) Timings are on a single laptop CPU and are not comparable to GPU numbers.
+%%%%%%%%% EXPERIMENTS %%%%%%%%%
+
+\section{Conclusion}
+\label{sec:conclusion}
+%%%%%%%%% CONCLUSION %%%%%%%%%
+On a fixed sample of 500 Sudoku-Extreme puzzles and a single-laptop budget, the cheapest reliable route to solving Sudoku was to ask an LLM to write ordinary code: all 9 solvers solved 4,500/4,500 puzzles in about a millisecond each, at no more than \$0.063 per solver. Having the same models reason directly was slow (roughly two minutes per puzzle), expensive (up to \$0.43 per puzzle), and unreliable on the small subset we could afford, including confident but wrong final answers. Our independent CPU re-implementation of CRAM reproduces near-perfect accuracy (496--497/500) after a 2.5 s fit and recovers the true constraint graph exactly, but a hand-set energy with one weight matches it, supporting the original authors' view that Sudoku is too easy to demonstrate reasoning. We view this study as a modest, reproducible reference point. Future work should repeat the direct-solving arm at larger scale, evaluate CRAM on the full test set and on harder problems where a hand-set energy is not available, and compare against the original implementation on matched hardware.
+%%%%%%%%% CONCLUSION %%%%%%%%%
+
+%%%%%%%%% REFERENCES %%%%%%%%%
+\bibliography{references}
+\bibliographystyle{iclr2025_conference}
+%%%%%%%%% REFERENCES %%%%%%%%%
+
+\end{document}
