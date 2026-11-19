@@ -1,0 +1,452 @@
+{
+ "labels": [
+  "spam",
+  "legal",
+  "priority",
+  "billing_dispute",
+  "refund_auto",
+  "refund_review",
+  "bug_critical",
+  "bug",
+  "account",
+  "shipping",
+  "feedback"
+ ],
+ "rules": [
+  "1 spam: unsolicited promotion / link to an unrelated offer",
+  "2 legal: mentions lawyer, legal action, chargeback or reporting the company",
+  "3 priority: Plan is Enterprise (anything not spam/legal)",
+  "4 billing_dispute: charged after cancelling, or a duplicate/double charge",
+  "5 refund_auto: refund request with amount <= 50 AND purchased <= 30 days ago",
+  "6 refund_review: any other refund request (amount > 50 or > 30 days)",
+  "7 bug_critical: bug that lost/deleted user data",
+  "8 bug: other bug",
+  "9 account: login/password/2FA problems, and digital orders whose key/download never arrived",
+  "10 shipping: physical package late/lost/tracking",
+  "11 feedback: feature request / suggestion"
+ ],
+ "evolve": [
+  {
+   "text": "Plan: Free | Order type: physical | Purchased: 28 days ago\nMessage: Hey. I cancelled my subscription last month but you charged me $51 again on the 3rd. Regards, Sam",
+   "gold": "billing_dispute",
+   "kind": "cancel_charge",
+   "id": 54
+  },
+  {
+   "text": "Plan: Free | Order type: physical | Purchased: 2 days ago\nMessage: Quick question - I cancelled my subscription last month but you charged me $50 again on the 3rd. - J",
+   "gold": "billing_dispute",
+   "kind": "cancel_charge",
+   "id": 65
+  },
+  {
+   "text": "Plan: Enterprise | Order type: physical | Purchased: 28 days ago\nMessage: Hey. Sync deleted three months of files from my workspace. ",
+   "gold": "priority",
+   "kind": "bug_loss",
+   "id": 63
+  },
+  {
+   "text": "Plan: Free | Order type: digital | Purchased: 5 days ago\nMessage: To whom it may concern, Boost your store sales 300% with our SEO bundle, only $51! Visit growfast-leads.biz Waiting for your reply.",
+   "gold": "spam",
+   "kind": "spam",
+   "id": 60
+  },
+  {
+   "text": "Plan: Enterprise | Order type: physical | Purchased: 33 days ago\nMessage: Urgent: Delivery was due Monday, still nothing. ",
+   "gold": "priority",
+   "kind": "late",
+   "id": 59
+  },
+  {
+   "text": "Plan: Free | Order type: digital | Purchased: 28 days ago\nMessage: Good morning, I'd like my money back ($79). The product doesn't fit my use case. Thanks.",
+   "gold": "refund_review",
+   "kind": "refund",
+   "id": 47
+  },
+  {
+   "text": "Plan: Team | Order type: digital | Purchased: 30 days ago\nMessage: Good morning, After the update all my saved notes disappeared. ",
+   "gold": "bug_critical",
+   "kind": "bug_loss",
+   "id": 16
+  },
+  {
+   "text": "Plan: Free | Order type: digital | Purchased: 5 days ago\nMessage: Quick question - Would love a keyboard shortcut for archiving. - J",
+   "gold": "feedback",
+   "kind": "feature",
+   "id": 41
+  },
+  {
+   "text": "Plan: Pro | Order type: digital | Purchased: 33 days ago\nMessage: I want my $39 back for the order from 33 days ago. If this isn't sorted I'm talking to my lawyer. Cheers",
+   "gold": "legal",
+   "kind": "legal_refund",
+   "id": 33
+  },
+  {
+   "text": "Plan: Pro | Order type: physical | Purchased: 90 days ago\nMessage: Good morning, Charts render blank on Safari. ",
+   "gold": "bug",
+   "kind": "bug",
+   "id": 23
+  },
+  {
+   "text": "Plan: Team | Order type: digital | Purchased: 45 days ago\nMessage: Good morning, Can I get a refund? It cost $39 and I don't need it anymore. Please help!!",
+   "gold": "refund_review",
+   "kind": "refund",
+   "id": 5
+  },
+  {
+   "text": "Plan: Team | Order type: physical | Purchased: 90 days ago\nMessage: Good morning, I can get you 10k followers this week. DM me or click promo-hub.net/offer Waiting for your reply.",
+   "gold": "spam",
+   "kind": "spam",
+   "id": 18
+  },
+  {
+   "text": "Plan: Pro | Order type: digital | Purchased: 31 days ago\nMessage: Good morning, I paid but never received my license key. Cheers",
+   "gold": "account",
+   "kind": "digital_missing",
+   "id": 21
+  },
+  {
+   "text": "Plan: Team | Order type: digital | Purchased: 45 days ago\nMessage: To whom it may concern, The dark mode toggle doesn't stick after restart. Thanks.",
+   "gold": "bug",
+   "kind": "bug",
+   "id": 1
+  },
+  {
+   "text": "Plan: Pro | Order type: digital | Purchased: 14 days ago\nMessage: Good morning, Please refund the $25 purchase, it's not what I expected. Please help!!",
+   "gold": "refund_auto",
+   "kind": "refund",
+   "id": 50
+  },
+  {
+   "text": "Plan: Team | Order type: digital | Purchased: 14 days ago\nMessage: I'd like my money back ($50). The product doesn't fit my use case. ",
+   "gold": "refund_auto",
+   "kind": "refund",
+   "id": 56
+  },
+  {
+   "text": "Plan: Pro | Order type: digital | Purchased: 14 days ago\nMessage: To whom it may concern, Boost your store sales 300% with our SEO bundle, only $59! Visit growfast-leads.biz Regards, Sam",
+   "gold": "spam",
+   "kind": "spam",
+   "id": 22
+  },
+  {
+   "text": "Plan: Team | Order type: physical | Purchased: 90 days ago\nMessage: Urgent: Delivery was due Monday, still nothing. ",
+   "gold": "shipping",
+   "kind": "late",
+   "id": 28
+  },
+  {
+   "text": "Plan: Free | Order type: digital | Purchased: 21 days ago\nMessage: Hi, I see two charges of $49 on my card for the same order. Regards, Sam",
+   "gold": "billing_dispute",
+   "kind": "double",
+   "id": 13
+  },
+  {
+   "text": "Plan: Pro | Order type: digital | Purchased: 31 days ago\nMessage: To whom it may concern, The download link in the email doesn't work and I have no key. Please help!!",
+   "gold": "account",
+   "kind": "digital_missing",
+   "id": 43
+  },
+  {
+   "text": "Plan: Enterprise | Order type: physical | Purchased: 9 days ago\nMessage: Hello team, Where is my parcel? Tracking says lost in transit. ",
+   "gold": "priority",
+   "kind": "late",
+   "id": 45
+  },
+  {
+   "text": "Plan: Free | Order type: digital | Purchased: 31 days ago\nMessage: Hey. Order says delivered but there's no download anywhere. - J",
+   "gold": "account",
+   "kind": "digital_missing",
+   "id": 27
+  },
+  {
+   "text": "Plan: Free | Order type: physical | Purchased: 9 days ago\nMessage: Hi, I'd like my money back ($50). The product doesn't fit my use case. Regards, Sam",
+   "gold": "refund_auto",
+   "kind": "refund",
+   "id": 3
+  },
+  {
+   "text": "Plan: Free | Order type: physical | Purchased: 90 days ago\nMessage: Quick question - After the update all my saved notes disappeared. Please help!!",
+   "gold": "bug_critical",
+   "kind": "bug_loss",
+   "id": 31
+  },
+  {
+   "text": "Plan: Enterprise | Order type: physical | Purchased: 30 days ago\nMessage: Hi, The export button crashes every time. I will report you to the consumer protection office. Please help!!",
+   "gold": "legal",
+   "kind": "legal_bug",
+   "id": 8
+  },
+  {
+   "text": "Plan: Team | Order type: physical | Purchased: 14 days ago\nMessage: I'd like my money back ($51). The product doesn't fit my use case. Thanks.",
+   "gold": "refund_review",
+   "kind": "refund",
+   "id": 12
+  },
+  {
+   "text": "Plan: Free | Order type: physical | Purchased: 30 days ago\nMessage: To whom it may concern, I see two charges of $19 on my card for the same order. Cheers",
+   "gold": "billing_dispute",
+   "kind": "double",
+   "id": 42
+  },
+  {
+   "text": "Plan: Pro | Order type: digital | Purchased: 21 days ago\nMessage: Hi, After the update all my saved notes disappeared. Regards, Sam",
+   "gold": "bug_critical",
+   "kind": "bug_loss",
+   "id": 2
+  },
+  {
+   "text": "Plan: Pro | Order type: physical | Purchased: 5 days ago\nMessage: Quick question - Can I get a refund? It cost $51 and I don't need it anymore. Please help!!",
+   "gold": "refund_review",
+   "kind": "refund",
+   "id": 14
+  },
+  {
+   "text": "Plan: Team | Order type: physical | Purchased: 30 days ago\nMessage: Quick question - I cancelled my subscription last month but you charged me $249 again on the 3rd. Thanks.",
+   "gold": "billing_dispute",
+   "kind": "cancel_charge",
+   "id": 19
+  }
+ ],
+ "heldout": [
+  {
+   "text": "Plan: Pro | Order type: physical | Purchased: 14 days ago\nMessage: I see two charges of $50 on my card for the same order. Cheers",
+   "gold": "billing_dispute",
+   "kind": "double",
+   "id": 52
+  },
+  {
+   "text": "Plan: Team | Order type: physical | Purchased: 31 days ago\nMessage: Quick question - Please refund the $50 purchase, it's not what I expected. - J",
+   "gold": "refund_review",
+   "kind": "refund",
+   "id": 30
+  },
+  {
+   "text": "Plan: Enterprise | Order type: physical | Purchased: 5 days ago\nMessage: Hi, Why was I billed $59? I cancelled before renewal. ",
+   "gold": "priority",
+   "kind": "cancel_charge",
+   "id": 6
+  },
+  {
+   "text": "Plan: Team | Order type: digital | Purchased: 5 days ago\nMessage: Quick question - I see two charges of $120 on my card for the same order. ",
+   "gold": "billing_dispute",
+   "kind": "double",
+   "id": 7
+  },
+  {
+   "text": "Plan: Free | Order type: digital | Purchased: 90 days ago\nMessage: To whom it may concern, Boost your store sales 300% with our SEO bundle, only $9! Visit growfast-leads.biz Waiting for your reply.",
+   "gold": "spam",
+   "kind": "spam",
+   "id": 64
+  },
+  {
+   "text": "Plan: Pro | Order type: physical | Purchased: 9 days ago\nMessage: Quick question - I see two charges of $19 on my card for the same order. Thanks.",
+   "gold": "billing_dispute",
+   "kind": "double",
+   "id": 69
+  },
+  {
+   "text": "Plan: Team | Order type: digital | Purchased: 60 days ago\nMessage: Hey. Search returns results in the wrong order. Cheers",
+   "gold": "bug",
+   "kind": "bug",
+   "id": 35
+  },
+  {
+   "text": "Plan: Free | Order type: digital | Purchased: 30 days ago\nMessage: Quick question - Please refund the $49 purchase, it's not what I expected. ",
+   "gold": "refund_auto",
+   "kind": "refund",
+   "id": 49
+  },
+  {
+   "text": "Plan: Free | Order type: physical | Purchased: 9 days ago\nMessage: To whom it may concern, My package is two weeks late and tracking hasn't moved. Cheers",
+   "gold": "shipping",
+   "kind": "late",
+   "id": 9
+  },
+  {
+   "text": "Plan: Team | Order type: physical | Purchased: 30 days ago\nMessage: Urgent: Why was I billed $25? I cancelled before renewal. Please help!!",
+   "gold": "billing_dispute",
+   "kind": "cancel_charge",
+   "id": 51
+  },
+  {
+   "text": "Plan: Free | Order type: physical | Purchased: 60 days ago\nMessage: To whom it may concern, Where is my parcel? Tracking says lost in transit. ",
+   "gold": "shipping",
+   "kind": "late",
+   "id": 10
+  },
+  {
+   "text": "Plan: Pro | Order type: physical | Purchased: 60 days ago\nMessage: Hi, You billed me twice ($79 each) this morning. Waiting for your reply.",
+   "gold": "billing_dispute",
+   "kind": "double",
+   "id": 46
+  },
+  {
+   "text": "Plan: Team | Order type: physical | Purchased: 9 days ago\nMessage: Quick question - Locked out of my account after changing phones. ",
+   "gold": "account",
+   "kind": "login",
+   "id": 17
+  },
+  {
+   "text": "Plan: Team | Order type: physical | Purchased: 31 days ago\nMessage: I want my $59 back for the order from 31 days ago. If this isn't sorted I'm talking to my lawyer. Waiting for your reply.",
+   "gold": "legal",
+   "kind": "legal_refund",
+   "id": 25
+  },
+  {
+   "text": "Plan: Enterprise | Order type: physical | Purchased: 33 days ago\nMessage: Hello team, You billed me twice ($59 each) this morning. Regards, Sam",
+   "gold": "priority",
+   "kind": "double",
+   "id": 29
+  },
+  {
+   "text": "Plan: Pro | Order type: digital | Purchased: 45 days ago\nMessage: To whom it may concern, Suggestion: let us pin favourite projects. Regards, Sam",
+   "gold": "feedback",
+   "kind": "feature",
+   "id": 34
+  },
+  {
+   "text": "Plan: Free | Order type: digital | Purchased: 2 days ago\nMessage: Quick question - Order says delivered but there's no download anywhere. Please help!!",
+   "gold": "account",
+   "kind": "digital_missing",
+   "id": 68
+  },
+  {
+   "text": "Plan: Pro | Order type: digital | Purchased: 45 days ago\nMessage: Good morning, I cancelled my subscription last month but you charged me $120 again on the 3rd. Please help!!",
+   "gold": "billing_dispute",
+   "kind": "cancel_charge",
+   "id": 58
+  },
+  {
+   "text": "Plan: Team | Order type: digital | Purchased: 28 days ago\nMessage: To whom it may concern, Search returns results in the wrong order. Thanks.",
+   "gold": "bug",
+   "kind": "bug",
+   "id": 38
+  },
+  {
+   "text": "Plan: Free | Order type: digital | Purchased: 14 days ago\nMessage: Urgent: The export button crashes every time. I will report you to the consumer protection office. Regards, Sam",
+   "gold": "legal",
+   "kind": "legal_bug",
+   "id": 37
+  },
+  {
+   "text": "Plan: Free | Order type: digital | Purchased: 45 days ago\nMessage: Good morning, Can I get a refund? It cost $120 and I don't need it anymore. Waiting for your reply.",
+   "gold": "refund_review",
+   "kind": "refund",
+   "id": 55
+  },
+  {
+   "text": "Plan: Enterprise | Order type: physical | Purchased: 14 days ago\nMessage: To whom it may concern, I want my $249 back for the order from 14 days ago. If this isn't sorted I'm talking to my lawyer. Please help!!",
+   "gold": "legal",
+   "kind": "legal_refund",
+   "id": 26
+  },
+  {
+   "text": "Plan: Pro | Order type: physical | Purchased: 14 days ago\nMessage: Quick question - Boost your store sales 300% with our SEO bundle, only $19! Visit growfast-leads.biz Cheers",
+   "gold": "spam",
+   "kind": "spam",
+   "id": 15
+  },
+  {
+   "text": "Plan: Pro | Order type: physical | Purchased: 45 days ago\nMessage: Hey. You billed me twice ($25 each) this morning. Thanks.",
+   "gold": "billing_dispute",
+   "kind": "double",
+   "id": 39
+  },
+  {
+   "text": "Plan: Pro | Order type: physical | Purchased: 60 days ago\nMessage: Can I get a refund? It cost $59 and I don't need it anymore. - J",
+   "gold": "refund_review",
+   "kind": "refund",
+   "id": 20
+  },
+  {
+   "text": "Plan: Free | Order type: physical | Purchased: 14 days ago\nMessage: Hey. My package is two weeks late and tracking hasn't moved. Regards, Sam",
+   "gold": "shipping",
+   "kind": "late",
+   "id": 32
+  },
+  {
+   "text": "Plan: Team | Order type: physical | Purchased: 5 days ago\nMessage: Hi, Boost your store sales 300% with our SEO bundle, only $120! Visit growfast-leads.biz Regards, Sam",
+   "gold": "spam",
+   "kind": "spam",
+   "id": 66
+  },
+  {
+   "text": "Plan: Team | Order type: digital | Purchased: 21 days ago\nMessage: Quick question - Your app wiped my project folder. I'm filing a chargeback with my bank today. Waiting for your reply.",
+   "gold": "legal",
+   "kind": "legal_bug",
+   "id": 24
+  },
+  {
+   "text": "Plan: Pro | Order type: digital | Purchased: 45 days ago\nMessage: Urgent: I want my $19 back for the order from 45 days ago. If this isn't sorted I'm talking to my lawyer. Thanks.",
+   "gold": "legal",
+   "kind": "legal_refund",
+   "id": 67
+  },
+  {
+   "text": "Plan: Free | Order type: physical | Purchased: 14 days ago\nMessage: Quick question - Please refund the $19 purchase, it's not what I expected. Thanks.",
+   "gold": "refund_auto",
+   "kind": "refund",
+   "id": 48
+  },
+  {
+   "text": "Plan: Free | Order type: physical | Purchased: 30 days ago\nMessage: I want my $120 back for the order from 30 days ago. If this isn't sorted I'm talking to my lawyer. Please help!!",
+   "gold": "legal",
+   "kind": "legal_refund",
+   "id": 36
+  },
+  {
+   "text": "Plan: Team | Order type: physical | Purchased: 9 days ago\nMessage: Hey. Boost your store sales 300% with our SEO bundle, only $51! Visit growfast-leads.biz Cheers",
+   "gold": "spam",
+   "kind": "spam",
+   "id": 61
+  },
+  {
+   "text": "Plan: Free | Order type: physical | Purchased: 90 days ago\nMessage: To whom it may concern, Can I get a refund? It cost $9 and I don't need it anymore. ",
+   "gold": "refund_review",
+   "kind": "refund",
+   "id": 62
+  },
+  {
+   "text": "Plan: Enterprise | Order type: digital | Purchased: 14 days ago\nMessage: Hello team, Sync deleted three months of files from my workspace. ",
+   "gold": "priority",
+   "kind": "bug_loss",
+   "id": 4
+  },
+  {
+   "text": "Plan: Team | Order type: physical | Purchased: 2 days ago\nMessage: Quick question - The app crashed and my draft is gone, nothing in history. Please help!!",
+   "gold": "bug_critical",
+   "kind": "bug_loss",
+   "id": 0
+  },
+  {
+   "text": "Plan: Team | Order type: digital | Purchased: 31 days ago\nMessage: Hello team, I want my $59 back for the order from 31 days ago. If this isn't sorted I'm talking to my lawyer. Waiting for your reply.",
+   "gold": "legal",
+   "kind": "legal_refund",
+   "id": 44
+  },
+  {
+   "text": "Plan: Pro | Order type: digital | Purchased: 21 days ago\nMessage: Urgent: Sync deleted three months of files from my workspace. Cheers",
+   "gold": "bug_critical",
+   "kind": "bug_loss",
+   "id": 11
+  },
+  {
+   "text": "Plan: Pro | Order type: physical | Purchased: 2 days ago\nMessage: Your app wiped my project folder. I'm filing a chargeback with my bank today. Please help!!",
+   "gold": "legal",
+   "kind": "legal_bug",
+   "id": 40
+  },
+  {
+   "text": "Plan: Enterprise | Order type: digital | Purchased: 30 days ago\nMessage: Quick question - Suggestion: let us pin favourite projects. Thanks.",
+   "gold": "priority",
+   "kind": "feature",
+   "id": 53
+  },
+  {
+   "text": "Plan: Team | Order type: physical | Purchased: 9 days ago\nMessage: Quick question - Delivery was due Monday, still nothing. Please help!!",
+   "gold": "shipping",
+   "kind": "late",
+   "id": 57
+  }
+ ]
+}

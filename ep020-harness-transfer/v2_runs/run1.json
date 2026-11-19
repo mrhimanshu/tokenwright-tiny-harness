@@ -1,0 +1,278 @@
+{
+ "run": 1,
+ "seed": "You route customer support tickets for a software shop.\nLabels: spam, legal, priority, billing_dispute, refund_auto, refund_review, bug_critical, bug, account, shipping, feedback.\nReply with exactly one label and nothing else.",
+ "h_src": "You route customer support tickets for a software shop.\nLabels: spam, legal, priority, billing_dispute, refund_auto, refund_review, bug_critical, bug, account, shipping, feedback.\n\nHouse routing rules (apply in order; the first match wins):\n1. Spam or junk messages -> spam. Threats of lawsuits, regulators, or chargebacks -> legal.\n2. Plan: Enterprise. Any Enterprise ticket that is a billing complaint (e.g. charged after cancelling) or a request/feature ask goes to priority, not billing_dispute or feedback. Enterprise customers always get priority unless the ticket is spam or legal.\n3. Refund requests: refund_auto is ONLY for a plain refund request whose stated reason is exactly one of the standard phrases: 'not what I expected' or 'changed my mind' (small amount, purchase up to about 30 days old, any plan, any order type). Any other refund request goes to refund_review. That includes reasons like 'I don't need it anymore', 'doesn't fit my use case', or other reasons, as well as large amounts, claims of defect or fraud, repeat refunds, and disputes needing human judgment.\n4. Charged after cancelling, double charges, or wrong amounts on non-Enterprise plans -> billing_dispute.\n5. Crash or error that loses or deletes user data (draft gone, data missing, can't recover) -> bug_critical. Other defects or glitches without data loss -> bug.\n6. Digital orders: if the order says delivered but there is no download, license, or access, the problem is account (not shipping). Shipping is only for physical orders with delivery or tracking problems.\n7. Login, password, access, or profile issues -> account.\n8. Feature requests, praise, or general suggestions from non-Enterprise customers -> feedback.\n\nReply with exactly one label and nothing else.",
+ "mem_src": [
+  {
+   "problem": "Unwritten house routing rules (refund auto-approval, enterprise priority, data loss severity, digital delivery)",
+   "rationale": "Added inferred house rules: simple 'not what I expected / don't need it' refunds under about $50 go to refund_auto regardless of plan or age, Enterprise plan tickets about repeat charges after cancellation or feature requests go to priority, data loss crashes are bug_critical, and digital order delivery problems are account.",
+   "predicted": "Fixes most of the refund_review, billing_dispute, feedback, bug and shipping misroutes, raising accuracy well above 72.5%.",
+   "model": "claude-haiku-5-5",
+   "round": 1,
+   "delta": 15.0,
+   "kept": false
+  },
+  {
+   "problem": "unwritten routing rules (refund thresholds, enterprise priority, data loss severity, digital delivery)",
+   "rationale": "Added inferred house rules as explicit ordered decision rules: simple refunds within 30 days and under $100 go to refund_auto, Enterprise plan billing/feature requests go to priority, data loss crashes are bug_critical, and digital 'no download' goes to account.",
+   "predicted": "Fixes most of the 11 failures: refund requests become refund_auto, Enterprise cancellation charges and feature requests become priority, data-loss crashes become bug_critical, and digital delivery issues become account.",
+   "model": "claude-haiku-5-5",
+   "round": 1,
+   "delta": 20.0,
+   "kept": true
+  },
+  {
+   "problem": "unwritten routing rules (refund thresholds, enterprise priority, data loss severity, digital delivery)",
+   "rationale": "The failures show refund_auto is too broad: $19 at 28 days on digital, $120 on physical, and $79 on physical were all refund_review, so I inferred that refund_auto requires a small amount (under about $50) and a recent purchase (under about 14 days), and that the physical order type or a larger amount sends it to review.",
+   "predicted": "Plain refunds of $50 or more, refunds of physical orders, and refunds of purchases older than about 2 weeks go to refund_review, which fixes the 3 failures while keeping small, recent digital refunds on refund_auto.",
+   "model": "claude-haiku-5-5",
+   "round": 2,
+   "delta": -5.0,
+   "kept": false
+  },
+  {
+   "problem": "unwritten routing rules (refund thresholds, enterprise priority, data loss severity, digital delivery)",
+   "rationale": "The three failures are plain 'don't need it' refunds for $19, $79 and $120 that should be refund_review, so I replaced the vague 'small amount' with a concrete threshold: refund_auto only when the amount is under about $15, and anything higher goes to refund_review.",
+   "predicted": "The $19, $79 and $120 plain refunds move to refund_review, while small refunds under $15 stay refund_auto, fixing all three failures without disturbing other rules.",
+   "model": "claude-haiku-5-5",
+   "round": 2,
+   "delta": -5.0,
+   "kept": false
+  },
+  {
+   "problem": "Unwritten house routing rules (refund auto-approval, enterprise priority, data loss severity, digital delivery)",
+   "rationale": "Earlier numeric thresholds on amount, age, or order type failed, so I infer the hidden refund rule depends on the wording of the message: refund_auto applies only to polite or neutral plain requests, while a formal salutation, urgency, or pleading tone (e.g. 'To whom it may concern', 'Urgent', 'Please help!!') signals refund_review, and I add a tie-breaker that keeps the other rules intact.",
+   "predicted": "The three failing refunds, which all open with a formal or urgent framing, move to refund_review, while plain casual refund requests stay refund_auto, so there should be no regression on other tickets.",
+   "model": "claude-haiku-5-5",
+   "round": 3,
+   "delta": -7.5,
+   "kept": false
+  },
+  {
+   "problem": "Unwritten house routing rules (refund auto-approval, enterprise priority, data loss severity, digital delivery)",
+   "rationale": "Earlier amount, age and order-type thresholds hurt accuracy, so I looked for a different distinguishing feature: all three failures have vague, no-reason requests with a free-form greeting/sign-off or urgency, while the existing correct refund_auto cases are likely terse; instead of new numeric cutoffs I keep rule 3 as it was and add a narrow exception for non-Enterprise plain refunds where the message adds urgency or a formal salutation, or where the plan is Free or Pro and the purchase is 14-30 days old, plus a requirement that refund_auto needs an explicit stated reason such as 'not what I expected' or 'changed my mind'.",
+   "predicted": "The three failing refunds ('don't need it anymore' and 'doesn't fit my use case' with $19-$120) move to refund_review, while refunds with the exact reasons 'not what I expected' or 'changed my mind' at small amounts stay refund_auto, so the other rules are untouched.",
+   "model": "claude-haiku-5-5",
+   "round": 3,
+   "delta": -7.5,
+   "kept": false
+  },
+  {
+   "problem": "Unwritten house routing rules (refund auto-approval, enterprise priority, data loss severity, digital delivery)",
+   "rationale": "Numeric and tone-based refund rules all regressed, so I keep the current harness and only add a narrow guard that the three failures share: a bare 'don't need it' / 'doesn't fit my use case' refund with no concrete reason (no 'not what I expected' or 'changed my mind' wording) and no stated context goes to refund_review, while the explicitly listed reasons stay refund_auto.",
+   "predicted": "The three failing refunds ('don't need it anymore' x2, 'doesn't fit my use case') move to refund_review, while 'not what I expected' and 'changed my mind' refunds stay refund_auto, so other rules should not regress.",
+   "model": "claude-haiku-5-5",
+   "round": 4,
+   "delta": 2.5,
+   "kept": true
+  },
+  {
+   "problem": "Unwritten house routing rules (refund auto-approval, enterprise priority, data loss severity, digital delivery)",
+   "rationale": "Past attempts keyed on amount, age, order type, or tone and all regressed; the three failures share the exact reason phrasing ('don't need it anymore', 'doesn't fit my use case') with no 'not what I expected' or 'changed my mind', so I make refund_auto require one of the listed reasons verbatim in spirit and route other or unlisted reasons to refund_review, without any numeric cutoffs.",
+   "predicted": "Refunds whose stated reason is 'don't need it anymore' or 'doesn't fit my use case' move to refund_review, while 'not what I expected' and 'changed my mind' refunds stay refund_auto, with other rules unchanged.",
+   "model": "claude-haiku-5-5",
+   "round": 4,
+   "delta": -2.5,
+   "kept": false
+  }
+ ],
+ "traj_src": [
+  {
+   "round": 0,
+   "evolve": 72.5,
+   "held": 63.33
+  },
+  {
+   "round": 1,
+   "evolve": 92.5,
+   "held": 81.67
+  },
+  {
+   "round": 2,
+   "evolve": 92.5,
+   "held": 93.33
+  },
+  {
+   "round": 3,
+   "evolve": 92.5,
+   "held": 85.0
+  },
+  {
+   "round": 4,
+   "evolve": 95.0,
+   "held": 86.67
+  }
+ ],
+ "transfer": {
+  "gemini-3.8-flash": {
+   "seed": 71.67,
+   "evolved": 90.0
+  },
+  "gemini-4-neon": {
+   "seed": 68.33,
+   "evolved": 90.0
+  }
+ },
+ "tgt_harness": {
+  "h": "You route customer support tickets for a software shop.\nLabels: spam, legal, priority, billing_dispute, refund_auto, refund_review, bug_critical, bug, account, shipping, feedback.\n\nHouse routing rules (apply in order; the first match wins):\n1. Spam or junk messages -> spam. Threats of lawsuits, regulators, or chargebacks -> legal.\n2. Plan: Enterprise. Any Enterprise ticket that is a billing complaint (e.g. charged after cancelling) or a request/feature ask goes to priority, not billing_dispute or feedback. Enterprise customers always get priority unless the ticket is spam or legal.\n3. Refund requests: refund_auto is for a plain refund request with a small amount (roughly under $50) and a purchase up to about 30 days old, on any plan and any order type, whose stated reason is one of the standard phrases: 'not what I expected', 'changed my mind', or 'I don't need it anymore'. Politeness, greetings, or filler text do not matter. Everything else goes to refund_review: other reasons (e.g. 'doesn't fit my use case'), large amounts, purchases older than about 30 days, claims of defect or fraud, repeat refunds, and disputes needing human judgment.\n4. Charged after cancelling, double charges, or wrong amounts on non-Enterprise plans -> billing_dispute.\n5. Crash or error that loses or deletes user data (draft gone, data missing, can't recover) -> bug_critical. Other defects or glitches without data loss -> bug.\n6. Digital orders: if the order says delivered but there is no download, license, or access, the problem is account (not shipping). Shipping is only for physical orders with delivery or tracking problems.\n7. Login, password, access, or profile issues -> account.\n8. Feature requests, praise, or general suggestions from non-Enterprise customers -> feedback.\n\nReply with exactly one label and nothing else.",
+  "entries": [
+   {
+    "problem": "refund_auto reason phrase too narrow",
+    "rationale": "The failures show 'I don't need it anymore' is a standard auto-refund reason, so I added it to the list of accepted phrases and removed it from the review examples, while keeping the other review triggers.",
+    "predicted": "Plain small refund requests saying 'I don't need it anymore' will route to refund_auto, fixing both failures without affecting other refund cases.",
+    "model": "gemini-3.8-flash",
+    "round": 1,
+    "delta": 2.5,
+    "kept": true
+   },
+   {
+    "problem": "refund_auto standard phrase too narrow",
+    "rationale": "The failures show 'I don't need it anymore' is a standard reason for refund_auto, so I added it to the list and removed it from the refund_review examples, while keeping the small-amount and recent-purchase conditions.",
+    "predicted": "Plain small recent refund requests saying 'I don't need it anymore' will now route to refund_auto, fixing both failures without affecting the large, defect, fraud, or repeat refund cases that go to refund_review.",
+    "model": "gemini-3.8-flash",
+    "round": 1,
+    "delta": 2.5,
+    "kept": false
+   },
+   {
+    "problem": "refund_auto over-triggering on near-boundary tickets",
+    "rationale": "The failing ticket is a $19 digital refund, 28 days old, reason 'I don't need it anymore', and the correct label is refund_review. So I replaced the loose 'any plan and any order type' wording with an explicit checklist that sends digital orders, and purchases near the 30-day limit, to refund_review. refund_auto is now limited to physical orders, with a tighter age cutoff.",
+    "predicted": "The $19 digital refund at 28 days should now go to refund_review, while small, recent, physical-order refunds with a standard reason stay refund_auto. The risk is that other digital refunds that were correctly auto may flip to review.",
+    "model": "gemini-3.8-flash",
+    "round": 2,
+    "delta": -2.5,
+    "kept": false
+   },
+   {
+    "problem": "refund_auto over-triggering on digital orders",
+    "rationale": "The failing ticket is a Pro, digital, 28-day-old, $19 refund with the standard reason 'I don't need it anymore', yet the correct label is refund_review. The current harness says 'any order type', which is probably wrong, so I removed it and restricted refund_auto to physical orders. I also made digital orders default to review.",
+    "predicted": "Digital-order refunds, including the failing ticket, go to refund_review, while small recent physical-order refunds with a standard reason stay refund_auto, so the score should rise without breaking other cases.",
+    "model": "gemini-3.8-flash",
+    "round": 2,
+    "delta": 0.0,
+    "kept": false
+   },
+   {
+    "problem": "refund_auto boundary: age cutoff too loose",
+    "rationale": "The only failure is a $19 refund, 28 days old, with a standard reason, expected to be refund_review, so I tightened the age cutoff to purchases within about 14 days and kept the 'any plan, any order type' wording, since the earlier order-type restrictions hurt the score.",
+    "predicted": "The 28-day-old ticket moves to refund_review, while other refund_auto cases (likely recent ones) stay correct, so the score should rise without the regressions from the order-type changes.",
+    "model": "gemini-3.8-flash",
+    "round": 3,
+    "delta": -2.5,
+    "kept": false
+   },
+   {
+    "problem": "refund_auto too permissive on borderline age",
+    "rationale": "The only failure is a $19 refund, 28 days old, standard reason, that should be refund_review; the digital-only and age-tightening attempts overcorrected, so I keep the broad rule but narrow the age window to purchases up to about 14 days and add that the 'any plan, any order type' wording stays, with 3-4 week old purchases going to review.",
+    "predicted": "The 28-day ticket moves to refund_review while typical recent small refunds with standard reasons stay refund_auto, so the score should rise without breaking other cases.",
+    "model": "gemini-3.8-flash",
+    "round": 3,
+    "delta": -2.5,
+    "kept": false
+   }
+  ],
+  "traj": [
+   {
+    "round": 0,
+    "evolve": 95.0,
+    "held": 91.67
+   },
+   {
+    "round": 1,
+    "evolve": 97.5,
+    "held": 98.33
+   },
+   {
+    "round": 2,
+    "evolve": 97.5,
+    "held": 98.33
+   },
+   {
+    "round": 3,
+    "evolve": 97.5,
+    "held": 98.33
+   }
+  ]
+ },
+ "tgt_sim": {
+  "h": "You route customer support tickets for a software shop.\nLabels: spam, legal, priority, billing_dispute, refund_auto, refund_review, bug_critical, bug, account, shipping, feedback.\n\nHouse routing rules (apply in order; the first match wins):\n1. Spam or junk messages -> spam. Threats of lawsuits, regulators, or chargebacks -> legal.\n2. Plan: Enterprise. Any Enterprise ticket that is a billing complaint (e.g. charged after cancelling) or a request/feature ask goes to priority, not billing_dispute or feedback. Enterprise customers always get priority unless the ticket is spam or legal.\n3. Refund requests: check the purchase age first. If the 'Purchased' age is more than 30 days (e.g. 31, 33, 45 days), the refund goes to refund_review, no matter the reason. If the purchase is 30 days old or less, a plain refund request with a simple, benign reason (e.g. 'not what I expected', 'changed my mind', 'I don't need it anymore') and a small amount (roughly under $50), on any plan and any order type, goes to refund_auto. Exception: if the purchase is 22-30 days old (close to the end of the refund window) AND the message opens with a formal salutation such as 'To whom it may concern', send it to refund_review. Also send to refund_review when the refund is large, involves a claim of defect or fraud, is a repeat refund, or has an unusual reason like 'doesn't fit my use case' that needs human judgment.\n4. Charged after cancelling, double charges, or wrong amounts on non-Enterprise plans -> billing_dispute.\n5. Crash or error that loses or deletes user data (draft gone, data missing, can't recover) -> bug_critical. Other defects or glitches without data loss -> bug.\n6. Digital orders: if the order says delivered but there is no download, license, or access, the problem is account (not shipping). Shipping is only for physical orders with delivery or tracking problems.\n7. Login, password, access, or profile issues -> account.\n8. Feature requests, praise, or general suggestions from non-Enterprise customers -> feedback.\n\nReply with exactly one label and nothing else.",
+  "entries": [
+   {
+    "problem": "Unwritten house routing rules (refund auto-approval, enterprise priority, data loss severity, digital delivery)",
+    "rationale": "The failures show 'I don't need it anymore' at 13 days is refund_auto while 'not what I expected' at 33 days is refund_review, so I make the refund_auto test depend on age (up to 30 days) with a plain reason of any simple kind, and send purchases older than 30 days to refund_review regardless of reason.",
+    "predicted": "The two 13-day 'don't need it anymore' refunds become refund_auto, and the 33-day 'not what I expected' refund becomes refund_review, with other rules unchanged.",
+    "model": "gemini-3.8-flash",
+    "round": 1,
+    "delta": 5.0,
+    "kept": true
+   },
+   {
+    "problem": "Unwritten house routing rules (refund auto-approval, enterprise priority, data loss severity, digital delivery)",
+    "rationale": "The current failures show 'I don't need it anymore' refunds of $9-$25 at 13 days should be refund_auto, while a 33-day-old 'not what I expected' refund should be refund_review, so I make refund_auto depend on small amount and purchase age of 30 days or less, with the stated reason being any plain no-defect personal reason, rather than only the two exact phrases.",
+    "predicted": "The two 13-day-old small 'don't need it anymore' refunds move to refund_auto and the 33-day-old refund moves to refund_review, with other rules unchanged.",
+    "model": "gemini-3.8-flash",
+    "round": 1,
+    "delta": 5.0,
+    "kept": false
+   },
+   {
+    "problem": "Unwritten house routing rules (refund auto-approval, enterprise priority, data loss severity, digital delivery)",
+    "rationale": "The only remaining failure is a Pro digital $19 'don't need it anymore' refund at 28 days that should be refund_review, while 13-day 'don't need it' refunds are refund_auto, so I add a narrow late-window rule: refunds older than 14 days go to refund_review even if small and benign, and refund_auto is limited to purchases of 14 days or less.",
+    "predicted": "The 28-day $19 refund moves to refund_review while 13-day small refunds stay refund_auto, with other rules unchanged.",
+    "model": "gemini-3.8-flash",
+    "round": 2,
+    "delta": 0.0,
+    "kept": false
+   },
+   {
+    "problem": "Unwritten house routing rules (refund auto-approval, enterprise priority, data loss severity, digital delivery)",
+    "rationale": "The remaining failure is a $19 digital refund at 28 days with 'don't need it anymore' that should be refund_review, while 13-day refunds with the same reason were refund_auto, so I add an age-tiered rule: refund_auto only for purchases within about 2 weeks (14 days or less), with 15-30 days going to refund_review, and keep the over-30 rule.",
+    "predicted": "The 28-day $19 refund moves to refund_review while the 13-day small refunds stay refund_auto, with other rules unchanged.",
+    "model": "gemini-3.8-flash",
+    "round": 2,
+    "delta": -2.5,
+    "kept": false
+   },
+   {
+    "problem": "Unwritten house routing rules (refund auto-approval, enterprise priority, data loss severity, digital delivery)",
+    "rationale": "The lone failure is a Pro digital $19 'don't need it anymore' refund at 28 days that should be refund_review, while 13-day identical-reason refunds are refund_auto; age and amount cutoffs regressed before, so I add a narrow guard for a formal salutation combined with a late-window (over 21 days) purchase, leaving everything else unchanged.",
+    "predicted": "The 28-day formal-salutation refund moves to refund_review, while 13-day casual refunds and other tickets stay unchanged, since the guard needs both a late-window purchase (22-30 days) and a formal salutation.",
+    "model": "gemini-3.8-flash",
+    "round": 3,
+    "delta": 2.5,
+    "kept": true
+   },
+   {
+    "problem": "Unwritten house routing rules (refund auto-approval, enterprise priority, data loss severity, digital delivery)",
+    "rationale": "The lone failure is a formal 'To whom it may concern' / 'Cheers' digital $19 refund at 28 days that should go to review, while plain short requests at 13 days stay auto; age and amount cuts regressed before, so I add a narrow guard for refunds that fall in the last stretch of the window (over 21 days) and are digital, leaving everything else untouched.",
+    "predicted": "The 28-day digital $19 refund moves to refund_review, while 13-day refunds and physical or other refunds within 30 days stay refund_auto, so there should be no regressions.",
+    "model": "gemini-3.8-flash",
+    "round": 3,
+    "delta": 2.5,
+    "kept": false
+   }
+  ],
+  "traj": [
+   {
+    "round": 0,
+    "evolve": 92.5,
+    "held": 91.67
+   },
+   {
+    "round": 1,
+    "evolve": 97.5,
+    "held": 96.67
+   },
+   {
+    "round": 2,
+    "evolve": 97.5,
+    "held": 98.33
+   },
+   {
+    "round": 3,
+    "evolve": 100.0,
+    "held": 98.33
+   }
+  ]
+ }
+}

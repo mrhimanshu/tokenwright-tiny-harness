@@ -1,0 +1,953 @@
+{
+ "v1_easy": {
+  "cost": {
+   "claude-haiku-5-5": {
+    "calls": 1410,
+    "usd": 0.1
+   },
+   "proposer": {
+    "calls": 60,
+    "usd": 0.81
+   },
+   "gemini-3.8-flash": {
+    "calls": 2460,
+    "usd": 1.89
+   },
+   "gemini-4-neon": {
+    "calls": 240,
+    "usd": 0.85
+   }
+  },
+  "total_usd": 3.65,
+  "runs": [
+   {
+    "run": 0,
+    "src_seed_held": 65.0,
+    "src_final_held": 92.5,
+    "src_traj": [
+     {
+      "round": 0,
+      "evolve": 60.0,
+      "held": 65.0
+     },
+     {
+      "round": 1,
+      "evolve": 96.67,
+      "held": 92.5
+     },
+     {
+      "round": 2,
+      "evolve": 100.0,
+      "held": 90.0
+     },
+     {
+      "round": 3,
+      "evolve": 100.0,
+      "held": 92.5
+     },
+     {
+      "round": 4,
+      "evolve": 100.0,
+      "held": 92.5
+     }
+    ],
+    "transfer": {
+     "gemini-3.8-flash": {
+      "seed": 77.5,
+      "evolved": 92.5
+     },
+     "gemini-4-neon": {
+      "seed": 77.5,
+      "evolved": 90.0
+     }
+    },
+    "tgt_harness": [
+     {
+      "round": 0,
+      "evolve": 100.0,
+      "held": 92.5
+     },
+     {
+      "round": 1,
+      "evolve": 100.0,
+      "held": 92.5
+     },
+     {
+      "round": 2,
+      "evolve": 100.0,
+      "held": 92.5
+     },
+     {
+      "round": 3,
+      "evolve": 100.0,
+      "held": 92.5
+     }
+    ],
+    "tgt_harness_kept": 0,
+    "tgt_sim": [
+     {
+      "round": 0,
+      "evolve": 100.0,
+      "held": 92.5
+     },
+     {
+      "round": 1,
+      "evolve": 100.0,
+      "held": 92.5
+     },
+     {
+      "round": 2,
+      "evolve": 100.0,
+      "held": 92.5
+     },
+     {
+      "round": 3,
+      "evolve": 100.0,
+      "held": 92.5
+     }
+    ],
+    "tgt_sim_kept": 0,
+    "src_edits_kept": 2,
+    "src_harness_chars": 1983
+   },
+   {
+    "run": 1,
+    "src_seed_held": 65.0,
+    "src_final_held": 90.0,
+    "src_traj": [
+     {
+      "round": 0,
+      "evolve": 63.33,
+      "held": 65.0
+     },
+     {
+      "round": 1,
+      "evolve": 96.67,
+      "held": 90.0
+     },
+     {
+      "round": 2,
+      "evolve": 100.0,
+      "held": 90.0
+     },
+     {
+      "round": 3,
+      "evolve": 100.0,
+      "held": 90.0
+     },
+     {
+      "round": 4,
+      "evolve": 100.0,
+      "held": 90.0
+     }
+    ],
+    "transfer": {
+     "gemini-3.8-flash": {
+      "seed": 77.5,
+      "evolved": 92.5
+     },
+     "gemini-4-neon": {
+      "seed": 80.0,
+      "evolved": 90.0
+     }
+    },
+    "tgt_harness": [
+     {
+      "round": 0,
+      "evolve": 100.0,
+      "held": 92.5
+     },
+     {
+      "round": 1,
+      "evolve": 100.0,
+      "held": 92.5
+     },
+     {
+      "round": 2,
+      "evolve": 100.0,
+      "held": 92.5
+     },
+     {
+      "round": 3,
+      "evolve": 100.0,
+      "held": 92.5
+     }
+    ],
+    "tgt_harness_kept": 0,
+    "tgt_sim": [
+     {
+      "round": 0,
+      "evolve": 100.0,
+      "held": 92.5
+     },
+     {
+      "round": 1,
+      "evolve": 100.0,
+      "held": 92.5
+     },
+     {
+      "round": 2,
+      "evolve": 100.0,
+      "held": 92.5
+     },
+     {
+      "round": 3,
+      "evolve": 100.0,
+      "held": 90.0
+     }
+    ],
+    "tgt_sim_kept": 0,
+    "src_edits_kept": 2,
+    "src_harness_chars": 1927
+   },
+   {
+    "run": 2,
+    "src_seed_held": 67.5,
+    "src_final_held": 87.5,
+    "src_traj": [
+     {
+      "round": 0,
+      "evolve": 56.67,
+      "held": 67.5
+     },
+     {
+      "round": 1,
+      "evolve": 93.33,
+      "held": 90.0
+     },
+     {
+      "round": 2,
+      "evolve": 96.67,
+      "held": 87.5
+     },
+     {
+      "round": 3,
+      "evolve": 96.67,
+      "held": 87.5
+     },
+     {
+      "round": 4,
+      "evolve": 96.67,
+      "held": 87.5
+     }
+    ],
+    "transfer": {
+     "gemini-3.8-flash": {
+      "seed": 77.5,
+      "evolved": 87.5
+     },
+     "gemini-4-neon": {
+      "seed": 77.5,
+      "evolved": 87.5
+     }
+    },
+    "tgt_harness": [
+     {
+      "round": 0,
+      "evolve": 96.67,
+      "held": 85.0
+     },
+     {
+      "round": 1,
+      "evolve": 96.67,
+      "held": 87.5
+     },
+     {
+      "round": 2,
+      "evolve": 96.67,
+      "held": 87.5
+     },
+     {
+      "round": 3,
+      "evolve": 100.0,
+      "held": 90.0
+     }
+    ],
+    "tgt_harness_kept": 1,
+    "tgt_sim": [
+     {
+      "round": 0,
+      "evolve": 96.67,
+      "held": 87.5
+     },
+     {
+      "round": 1,
+      "evolve": 100.0,
+      "held": 87.5
+     },
+     {
+      "round": 2,
+      "evolve": 100.0,
+      "held": 87.5
+     },
+     {
+      "round": 3,
+      "evolve": 100.0,
+      "held": 85.0
+     }
+    ],
+    "tgt_sim_kept": 1,
+    "src_edits_kept": 2,
+    "src_harness_chars": 2022
+   }
+  ],
+  "transfer_mean": {
+   "gemini-3.8-flash": {
+    "seed": 77.5,
+    "evolved": 90.83,
+    "seeds": [
+     77.5,
+     77.5,
+     77.5
+    ],
+    "evolveds": [
+     92.5,
+     92.5,
+     87.5
+    ]
+   },
+   "gemini-4-neon": {
+    "seed": 78.33,
+    "evolved": 89.17,
+    "seeds": [
+     77.5,
+     80.0,
+     77.5
+    ],
+    "evolveds": [
+     90.0,
+     90.0,
+     87.5
+    ]
+   }
+  },
+  "noise_same_harness": [
+   {
+    "run": 0,
+    "model": "claude-haiku-5-5",
+    "h": "32122d85b7",
+    "scores": [
+     90.0,
+     92.5,
+     92.5
+    ]
+   },
+   {
+    "run": 2,
+    "model": "gemini-3.8-flash",
+    "h": "7ffb1f7cf2",
+    "scores": [
+     87.5,
+     85.0,
+     87.5,
+     87.5,
+     87.5
+    ]
+   },
+   {
+    "run": 1,
+    "model": "gemini-3.8-flash",
+    "h": "332ea4b190",
+    "scores": [
+     92.5,
+     92.5,
+     92.5,
+     92.5,
+     92.5,
+     92.5,
+     92.5,
+     92.5,
+     90.0
+    ]
+   },
+   {
+    "run": 2,
+    "model": "gemini-3.8-flash",
+    "h": "14faf57af4",
+    "scores": [
+     87.5,
+     87.5,
+     85.0
+    ]
+   }
+  ]
+ },
+ "v2_main": {
+  "cost": {
+   "claude-haiku-5-5": {
+    "calls": 1980,
+    "usd": 0.14
+   },
+   "proposer": {
+    "calls": 60,
+    "usd": 0.82
+   },
+   "gemini-3.8-flash": {
+    "calls": 3480,
+    "usd": 2.41
+   },
+   "gemini-4-neon": {
+    "calls": 360,
+    "usd": 1.46
+   }
+  },
+  "total_usd": 4.83,
+  "runs": [
+   {
+    "run": 0,
+    "src_seed_held": 63.33,
+    "src_final_held": 91.67,
+    "src_traj": [
+     {
+      "round": 0,
+      "evolve": 72.5,
+      "held": 63.33
+     },
+     {
+      "round": 1,
+      "evolve": 97.5,
+      "held": 91.67
+     },
+     {
+      "round": 2,
+      "evolve": 97.5,
+      "held": 95.0
+     },
+     {
+      "round": 3,
+      "evolve": 100.0,
+      "held": 91.67
+     },
+     {
+      "round": 4,
+      "evolve": 100.0,
+      "held": 91.67
+     }
+    ],
+    "transfer": {
+     "gemini-3.8-flash": {
+      "seed": 71.67,
+      "evolved": 91.67
+     },
+     "gemini-4-neon": {
+      "seed": 70.0,
+      "evolved": 88.33
+     }
+    },
+    "tgt_harness": [
+     {
+      "round": 0,
+      "evolve": 100.0,
+      "held": 91.67
+     },
+     {
+      "round": 1,
+      "evolve": 100.0,
+      "held": 91.67
+     },
+     {
+      "round": 2,
+      "evolve": 100.0,
+      "held": 91.67
+     },
+     {
+      "round": 3,
+      "evolve": 100.0,
+      "held": 91.67
+     }
+    ],
+    "tgt_harness_kept": 0,
+    "tgt_sim": [
+     {
+      "round": 0,
+      "evolve": 100.0,
+      "held": 91.67
+     },
+     {
+      "round": 1,
+      "evolve": 100.0,
+      "held": 91.67
+     },
+     {
+      "round": 2,
+      "evolve": 100.0,
+      "held": 91.67
+     },
+     {
+      "round": 3,
+      "evolve": 100.0,
+      "held": 91.67
+     }
+    ],
+    "tgt_sim_kept": 0,
+    "src_edits_kept": 2,
+    "src_harness_chars": 2022
+   },
+   {
+    "run": 1,
+    "src_seed_held": 63.33,
+    "src_final_held": 86.67,
+    "src_traj": [
+     {
+      "round": 0,
+      "evolve": 72.5,
+      "held": 63.33
+     },
+     {
+      "round": 1,
+      "evolve": 92.5,
+      "held": 81.67
+     },
+     {
+      "round": 2,
+      "evolve": 92.5,
+      "held": 93.33
+     },
+     {
+      "round": 3,
+      "evolve": 92.5,
+      "held": 85.0
+     },
+     {
+      "round": 4,
+      "evolve": 95.0,
+      "held": 86.67
+     }
+    ],
+    "transfer": {
+     "gemini-3.8-flash": {
+      "seed": 71.67,
+      "evolved": 90.0
+     },
+     "gemini-4-neon": {
+      "seed": 68.33,
+      "evolved": 90.0
+     }
+    },
+    "tgt_harness": [
+     {
+      "round": 0,
+      "evolve": 95.0,
+      "held": 91.67
+     },
+     {
+      "round": 1,
+      "evolve": 97.5,
+      "held": 98.33
+     },
+     {
+      "round": 2,
+      "evolve": 97.5,
+      "held": 98.33
+     },
+     {
+      "round": 3,
+      "evolve": 97.5,
+      "held": 98.33
+     }
+    ],
+    "tgt_harness_kept": 1,
+    "tgt_sim": [
+     {
+      "round": 0,
+      "evolve": 92.5,
+      "held": 91.67
+     },
+     {
+      "round": 1,
+      "evolve": 97.5,
+      "held": 96.67
+     },
+     {
+      "round": 2,
+      "evolve": 97.5,
+      "held": 98.33
+     },
+     {
+      "round": 3,
+      "evolve": 100.0,
+      "held": 98.33
+     }
+    ],
+    "tgt_sim_kept": 2,
+    "src_edits_kept": 2,
+    "src_harness_chars": 1760
+   },
+   {
+    "run": 2,
+    "src_seed_held": 63.33,
+    "src_final_held": 88.33,
+    "src_traj": [
+     {
+      "round": 0,
+      "evolve": 72.5,
+      "held": 63.33
+     },
+     {
+      "round": 1,
+      "evolve": 82.5,
+      "held": 78.33
+     },
+     {
+      "round": 2,
+      "evolve": 97.5,
+      "held": 83.33
+     },
+     {
+      "round": 3,
+      "evolve": 100.0,
+      "held": 86.67
+     },
+     {
+      "round": 4,
+      "evolve": 100.0,
+      "held": 88.33
+     }
+    ],
+    "transfer": {
+     "gemini-3.8-flash": {
+      "seed": 75.0,
+      "evolved": 86.67
+     },
+     "gemini-4-neon": {
+      "seed": 70.0,
+      "evolved": 86.67
+     }
+    },
+    "tgt_harness": [
+     {
+      "round": 0,
+      "evolve": 100.0,
+      "held": 86.67
+     },
+     {
+      "round": 1,
+      "evolve": 100.0,
+      "held": 86.67
+     },
+     {
+      "round": 2,
+      "evolve": 100.0,
+      "held": 86.67
+     },
+     {
+      "round": 3,
+      "evolve": 100.0,
+      "held": 86.67
+     }
+    ],
+    "tgt_harness_kept": 0,
+    "tgt_sim": [
+     {
+      "round": 0,
+      "evolve": 100.0,
+      "held": 86.67
+     },
+     {
+      "round": 1,
+      "evolve": 100.0,
+      "held": 86.67
+     },
+     {
+      "round": 2,
+      "evolve": 100.0,
+      "held": 86.67
+     },
+     {
+      "round": 3,
+      "evolve": 100.0,
+      "held": 86.67
+     }
+    ],
+    "tgt_sim_kept": 0,
+    "src_edits_kept": 3,
+    "src_harness_chars": 1789
+   }
+  ],
+  "transfer_mean": {
+   "gemini-3.8-flash": {
+    "seed": 72.78,
+    "evolved": 89.45,
+    "seeds": [
+     71.67,
+     71.67,
+     75.0
+    ],
+    "evolveds": [
+     91.67,
+     90.0,
+     86.67
+    ]
+   },
+   "gemini-4-neon": {
+    "seed": 69.44,
+    "evolved": 88.33,
+    "seeds": [
+     70.0,
+     68.33,
+     70.0
+    ],
+    "evolveds": [
+     88.33,
+     90.0,
+     86.67
+    ]
+   }
+  },
+  "noise_same_harness": [
+   {
+    "run": 1,
+    "model": "claude-haiku-5-5",
+    "h": "1dbe4c33e9",
+    "scores": [
+     81.67,
+     93.33,
+     85.0
+    ]
+   },
+   {
+    "run": 0,
+    "model": "claude-haiku-5-5",
+    "h": "a569386eb1",
+    "scores": [
+     91.67,
+     95.0
+    ]
+   },
+   {
+    "run": 2,
+    "model": "claude-haiku-5-5",
+    "h": "b087336f2e",
+    "scores": [
+     86.67,
+     88.33
+    ]
+   },
+   {
+    "run": 1,
+    "model": "gemini-3.8-flash",
+    "h": "58efb36160",
+    "scores": [
+     90.0,
+     91.67,
+     91.67
+    ]
+   },
+   {
+    "run": 1,
+    "model": "gemini-3.8-flash",
+    "h": "e059e61301",
+    "scores": [
+     96.67,
+     98.33
+    ]
+   }
+  ]
+ },
+ "v2_reverse": {
+  "cost": {
+   "gemini-3.8-flash": {
+    "calls": 1980,
+    "usd": 1.22
+   },
+   "proposer": {
+    "calls": 24,
+    "usd": 0.3
+   },
+   "claude-haiku-5-5": {
+    "calls": 360,
+    "usd": 0.02
+   },
+   "claude-sonnet-5-5": {
+    "calls": 360,
+    "usd": 0.34
+   }
+  },
+  "total_usd": 1.88,
+  "runs": [
+   {
+    "run": 0,
+    "src_seed_held": 71.67,
+    "src_final_held": 86.67,
+    "src_traj": [
+     {
+      "round": 0,
+      "evolve": 77.5,
+      "held": 71.67
+     },
+     {
+      "round": 1,
+      "evolve": 80.0,
+      "held": 73.33
+     },
+     {
+      "round": 2,
+      "evolve": 92.5,
+      "held": 85.0
+     },
+     {
+      "round": 3,
+      "evolve": 92.5,
+      "held": 86.67
+     },
+     {
+      "round": 4,
+      "evolve": 92.5,
+      "held": 86.67
+     }
+    ],
+    "transfer": {
+     "claude-haiku-5-5": {
+      "seed": 63.33,
+      "evolved": 83.33
+     },
+     "claude-sonnet-5-5": {
+      "seed": 65.0,
+      "evolved": 83.33
+     }
+    },
+    "src_edits_kept": 2,
+    "src_harness_chars": 1536
+   },
+   {
+    "run": 1,
+    "src_seed_held": 73.33,
+    "src_final_held": 85.0,
+    "src_traj": [
+     {
+      "round": 0,
+      "evolve": 75.0,
+      "held": 73.33
+     },
+     {
+      "round": 1,
+      "evolve": 92.5,
+      "held": 88.33
+     },
+     {
+      "round": 2,
+      "evolve": 92.5,
+      "held": 88.33
+     },
+     {
+      "round": 3,
+      "evolve": 97.5,
+      "held": 83.33
+     },
+     {
+      "round": 4,
+      "evolve": 97.5,
+      "held": 85.0
+     }
+    ],
+    "transfer": {
+     "claude-haiku-5-5": {
+      "seed": 65.0,
+      "evolved": 76.67
+     },
+     "claude-sonnet-5-5": {
+      "seed": 65.0,
+      "evolved": 83.33
+     }
+    },
+    "src_edits_kept": 2,
+    "src_harness_chars": 1672
+   },
+   {
+    "run": 2,
+    "src_seed_held": 70.0,
+    "src_final_held": 83.33,
+    "src_traj": [
+     {
+      "round": 0,
+      "evolve": 75.0,
+      "held": 70.0
+     },
+     {
+      "round": 1,
+      "evolve": 95.0,
+      "held": 80.0
+     },
+     {
+      "round": 2,
+      "evolve": 100.0,
+      "held": 83.33
+     },
+     {
+      "round": 3,
+      "evolve": 100.0,
+      "held": 83.33
+     },
+     {
+      "round": 4,
+      "evolve": 100.0,
+      "held": 83.33
+     }
+    ],
+    "transfer": {
+     "claude-haiku-5-5": {
+      "seed": 63.33,
+      "evolved": 80.0
+     },
+     "claude-sonnet-5-5": {
+      "seed": 66.67,
+      "evolved": 83.33
+     }
+    },
+    "src_edits_kept": 2,
+    "src_harness_chars": 1704
+   }
+  ],
+  "transfer_mean": {
+   "claude-haiku-5-5": {
+    "seed": 63.89,
+    "evolved": 80.0,
+    "seeds": [
+     63.33,
+     65.0,
+     63.33
+    ],
+    "evolveds": [
+     83.33,
+     76.67,
+     80.0
+    ]
+   },
+   "claude-sonnet-5-5": {
+    "seed": 65.56,
+    "evolved": 83.33,
+    "seeds": [
+     65.0,
+     65.0,
+     66.67
+    ],
+    "evolveds": [
+     83.33,
+     83.33,
+     83.33
+    ]
+   }
+  },
+  "noise_same_harness": [
+   {
+    "run": 0,
+    "model": "gemini-3.8-flash",
+    "h": "9423248121",
+    "scores": [
+     85.0,
+     86.67,
+     86.67
+    ]
+   },
+   {
+    "run": 1,
+    "model": "gemini-3.8-flash",
+    "h": "8d1a1778b8",
+    "scores": [
+     83.33,
+     85.0
+    ]
+   }
+  ]
+ }
+}

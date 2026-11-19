@@ -1,0 +1,116 @@
+{
+ "run": 0,
+ "seed": "You route customer support tickets for a software shop.\nLabels: spam, legal, priority, billing_dispute, refund_auto, refund_review, bug_critical, bug, account, shipping, feedback.\nReply with exactly one label and nothing else.",
+ "h_src": "You route customer support tickets for a software shop. Each ticket begins with a header line (Plan, Order type, Purchased days ago) followed by the message.\nLabels: spam, legal, priority, billing_dispute, refund_auto, refund_review, bug_critical, bug, account, shipping, feedback.\n\nHouse rules (apply in this order):\n1. Plan: Enterprise -> priority, for any ordinary request, question, complaint, billing issue or feature request (except clear spam or legal threats, which keep their own labels).\n2. Simple refund requests (customer just wants their money back, e.g. 'don't need it', 'not what I expected', 'doesn't fit my use case'): decide ONLY by the 'Purchased days ago' field, ignoring order type, plan and amount.\n   - Purchased 30 days ago or fewer -> refund_auto.\n   - Purchased more than 30 days ago -> refund_review.\n3. Non-Enterprise complaints about being charged wrongly (e.g. charged after cancelling, double charge) -> billing_dispute.\n4. Otherwise choose by content: spam for junk or promotions, legal for lawsuits or legal threats, bug_critical for outages, data loss or security, bug for ordinary defects, account for login, account changes, or digital orders where access or download is missing (digital orders have no shipping, so never use shipping for them), shipping for delivery issues on physical orders, feedback for suggestions or feature requests.\n\nIgnore politeness, greetings, and urgency words in the message; rely on the header fields and the core request.\nReply with exactly one label and nothing else.",
+ "mem_src": [
+  {
+   "problem": "Unwritten house rules for refunds and enterprise escalation",
+   "rationale": "Added inferred rules: refunds on physical orders within ~30 days are refund_auto, digital refunds go to refund_review, and any Enterprise ticket (billing complaint or feature request) becomes priority.",
+   "predicted": "Fixes the refund_auto/refund_review confusions and the Enterprise-to-priority misroutes, raising accuracy by roughly 20 points.",
+   "model": "gemini-3.8-flash",
+   "round": 1,
+   "delta": 0.0,
+   "kept": false
+  },
+  {
+   "problem": "unwritten house rules for refunds and enterprise escalation",
+   "rationale": "Added inferred house rules: physical-order refunds within ~30 days go to refund_auto while digital ones go to refund_review, and any Enterprise plan ticket (billing complaints or feature requests) routes to priority.",
+   "predicted": "Fixes the refund_auto/refund_review confusion (physical vs digital) and the Enterprise cases misrouted as billing_dispute or feedback, raising accuracy above 77.5%.",
+   "model": "gemini-3.8-flash",
+   "round": 1,
+   "delta": 2.5,
+   "kept": true
+  },
+  {
+   "problem": "Unwritten house rules for refunds and enterprise escalation",
+   "rationale": "The failures show refund routing depends on days since purchase rather than order type: a simple refund within about 30 days goes to refund_auto and one after 30 days goes to refund_review, whether physical or digital. I also added a rule that 'delivered but no download' on a digital order is an account issue, not shipping.",
+   "predicted": "Fixes the refund failures, since a digital refund at 2 days becomes refund_auto and physical refunds at 33, 45 and 60 days become refund_review. It also fixes the digital-delivery ticket that was misrouted to shipping.",
+   "model": "gemini-3.8-flash",
+   "round": 2,
+   "delta": 12.5,
+   "kept": true
+  },
+  {
+   "problem": "Unwritten house rules for refunds and enterprise escalation",
+   "rationale": "Reversed the refund rule: physical refunds go to refund_review, digital refunds go to refund_auto only when purchased within about 7 days (otherwise refund_review), and digital download or delivery problems go to account.",
+   "predicted": "Fixes the physical-refund misroutes, the recent digital refund case, and the digital 'no download' ticket misrouted as shipping.",
+   "model": "gemini-3.8-flash",
+   "round": 2,
+   "delta": 7.5,
+   "kept": false
+  },
+  {
+   "problem": "Unwritten house rules for refunds and enterprise escalation",
+   "rationale": "Failures show simple refunds at 14 and 28 days are refund_review, so I lowered the refund_auto cutoff from 30 days to 7 days, still ignoring order type, plan and amount.",
+   "predicted": "The three refund tickets at 14 and 28 days now route to refund_review, while very recent refunds (about 7 days or fewer) stay refund_auto, with no change elsewhere.",
+   "model": "gemini-3.8-flash",
+   "round": 3,
+   "delta": -2.5,
+   "kept": false
+  },
+  {
+   "problem": "Unwritten house rules for refunds and enterprise escalation",
+   "rationale": "The three failures are simple refunds at 14-28 days, on both digital and physical orders, that should be refund_review, so the real threshold is likely lower than 30 days (somewhere between 7 and 14 days), and I replaced the 30-day cutoff with a 7-day one.",
+   "predicted": "Simple refunds purchased 14 and 28 days ago now go to refund_review while refunds within 7 days stay refund_auto, fixing all three failures without disturbing the other categories.",
+   "model": "gemini-3.8-flash",
+   "round": 3,
+   "delta": -2.5,
+   "kept": false
+  },
+  {
+   "problem": "Unwritten house rules for refunds and enterprise escalation",
+   "rationale": "The failures are simple refunds at 14 and 28 days that should be refund_review while the current 30-day rule gives refund_auto, so the refund_auto condition probably depends on something other than days alone (perhaps order type plus recency), and I replaced the pure-days rule with a combined one.",
+   "predicted": "Refunds at 14 and 28 days on digital and physical Free/Pro orders now go to refund_review, and only very recent purchases (7 days or fewer) stay refund_auto, while the other categories are unchanged.",
+   "model": "gemini-3.8-flash",
+   "round": 4,
+   "delta": -2.5,
+   "kept": false
+  },
+  {
+   "problem": "Unwritten house rules for refunds and enterprise escalation",
+   "rationale": "The failures are non-Enterprise simple refunds at 14 and 28 days that should be refund_review, while 30-day or fewer refunds were presumably auto in other cases, so the real driver is likely the message wording, such as a polite opener, 'To whom it may concern', or 'Urgent', rather than days; I made the rule a combination of days and the amount, treating refunds above a modest amount or with certain phrasing as review, and kept ordinary short-term cases as auto.",
+   "predicted": "Refunds in the failure set ($19 at 28 days, $120 at 14 days, $79 at 14 days) go to refund_review, while low-amount, very recent refunds stay refund_auto, with no change to other categories.",
+   "model": "gemini-3.8-flash",
+   "round": 4,
+   "delta": -2.5,
+   "kept": false
+  }
+ ],
+ "traj_src": [
+  {
+   "round": 0,
+   "evolve": 77.5,
+   "held": 71.67
+  },
+  {
+   "round": 1,
+   "evolve": 80.0,
+   "held": 73.33
+  },
+  {
+   "round": 2,
+   "evolve": 92.5,
+   "held": 85.0
+  },
+  {
+   "round": 3,
+   "evolve": 92.5,
+   "held": 86.67
+  },
+  {
+   "round": 4,
+   "evolve": 92.5,
+   "held": 86.67
+  }
+ ],
+ "transfer": {
+  "claude-haiku-5-5": {
+   "seed": 63.33,
+   "evolved": 83.33
+  },
+  "claude-sonnet-5-5": {
+   "seed": 65.0,
+   "evolved": 83.33
+  }
+ }
+}

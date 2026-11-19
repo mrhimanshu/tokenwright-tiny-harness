@@ -1,0 +1,116 @@
+{
+ "run": 2,
+ "seed": "You route customer support tickets for a software shop.\nLabels: spam, legal, priority, billing_dispute, refund_auto, refund_review, bug_critical, bug, account, shipping, feedback.\nReply with exactly one label and nothing else.",
+ "h_src": "You route customer support tickets for a software shop.\nLabels: spam, legal, priority, billing_dispute, refund_auto, refund_review, bug_critical, bug, account, shipping, feedback.\n\nHouse rules (apply in order, they override your intuition):\n1. Enterprise plan: any non-spam, non-legal ticket that is a billing complaint (e.g. charged after cancelling) or a feature request goes to priority, not billing_dispute or feedback.\n2. Refund requests (customer simply wants money back, e.g. 'don't need it', 'not what I expected'):\n - Physical orders: the refund window is tiered. If purchased 7 days ago or less: refund_auto. If purchased 8-30 days ago: refund_auto only when the amount is small (under about $50) or the plan is Pro/Enterprise; a Free-plan physical order of 8+ days with a larger amount (about $50 or more) is refund_review. Over 30 days: refund_review.\n - Digital orders: refund_auto only if purchased 14 days ago or less (and amount small); otherwise refund_review.\n - If the amount is not stated, judge by days and order type only.\n3. Digital order where it says delivered but the download/access is missing: account (not shipping). shipping is only for physical order delivery problems.\n4. Non-Enterprise charges after cancellation or incorrect charges: billing_dispute.\n5. Threats, lawsuits, GDPR, or lawyers: legal. Obvious ads/junk: spam. Crashes or data loss: bug_critical; minor defects: bug. Feature ideas or praise from non-Enterprise: feedback. Login/access/password issues: account.\n\nIgnore greetings, sign-offs and filler like 'Urgent' or 'Quick question'. Judge by plan, order type, days since purchase, amount and the core request.\nReply with exactly one label and nothing else.",
+ "mem_src": [
+  {
+   "problem": "Unwritten house routing rules (refund window, enterprise priority, digital delivery)",
+   "rationale": "Added inferred house rules: refunds within 14 days (or physical orders up to 30 days) go to refund_auto, others to refund_review; Enterprise plan tickets with billing or feature requests go to priority; digital 'delivered but no download' goes to account.",
+   "predicted": "Fixes refund_auto vs refund_review confusion, Enterprise priority escalations, and digital delivery misroutes, raising accuracy above 75%.",
+   "model": "gemini-3.8-flash",
+   "round": 1,
+   "delta": 20.0,
+   "kept": true
+  },
+  {
+   "problem": "Unwritten house rules for refunds, enterprise priority, and digital delivery",
+   "rationale": "Added inferred house rules: refunds within 14 days (physical) auto-approved vs digital or later reviewed, Enterprise plan tickets about charges or feature requests go to priority, and digital 'no download' issues go to account.",
+   "predicted": "Fixes refund_auto vs refund_review confusion, Enterprise priority cases, and digital delivery misroutes, raising accuracy above 75%.",
+   "model": "gemini-3.8-flash",
+   "round": 1,
+   "delta": 15.0,
+   "kept": false
+  },
+  {
+   "problem": "Unwritten house routing rules (refund window, enterprise priority, digital delivery)",
+   "rationale": "The failures are Free-plan physical orders bought 14 days ago that were routed refund_auto but should be refund_review, so physical refund_auto likely depends on a high amount or on the plan; I made the rule an explicit amount-and-plan check instead of 'regardless of amount'.",
+   "predicted": "Physical refunds of $79-$120 on Free plan at 14 days now go to refund_review, while small or recent physical refunds and digital cases stay correct.",
+   "model": "gemini-3.8-flash",
+   "round": 2,
+   "delta": 5.0,
+   "kept": true
+  },
+  {
+   "problem": "Unwritten house routing rules (refund window, enterprise priority, digital delivery)",
+   "rationale": "The failures show physical orders at 14 days with Free plan going to refund_review, so the physical 30-day auto rule does not hold for Free plan or for amounts of $79 and above; I made physical refund_auto conditional on a small amount and gave an explicit decision procedure with amount thresholds.",
+   "predicted": "Free-plan physical refunds of $79-$120 at 14 days now go to refund_review while small-amount refunds stay refund_auto, fixing both failures without breaking other refund cases.",
+   "model": "gemini-3.8-flash",
+   "round": 2,
+   "delta": 0.0,
+   "kept": false
+  },
+  {
+   "problem": "Unwritten house routing rules (refund window, enterprise priority, digital delivery)",
+   "rationale": "The current harness already scores 100% on the evolve set, so I kept every rule and only added a few unambiguous tie-breakers (rule precedence, boundary days, missing fields) to help it generalize to unseen tickets without changing known behavior.",
+   "predicted": "Evolve accuracy stays at 100%, and edge cases such as exactly 7, 14, or 30 days, an Enterprise legal threat, or a missing amount or plan should route more consistently on held-out tickets.",
+   "model": "gemini-3.8-flash",
+   "round": 3,
+   "delta": 0.0,
+   "kept": false
+  },
+  {
+   "problem": "Unwritten house routing rules (refund window, enterprise priority, digital delivery)",
+   "rationale": "The current harness already scores 100% on the evolve set, so I kept every rule and its thresholds and only added a fixed evaluation order, explicit tie-breakers, and edge-case handling (boundary days, missing amounts, mixed signals) to make it more robust on unseen tickets.",
+   "predicted": "Accuracy stays at 100% on the evolve set and generalizes better to held-out tickets with boundary values, missing fields, or mixed signals.",
+   "model": "gemini-3.8-flash",
+   "round": 3,
+   "delta": 0.0,
+   "kept": false
+  },
+  {
+   "problem": "Unwritten house routing rules (refund window, enterprise priority, digital delivery)",
+   "rationale": "The harness already scores 100% on the evolve set, so I kept every rule and threshold unchanged and only added a worked-examples block and a short ordered checklist that restate the existing rules, to help generalization without changing known behavior.",
+   "predicted": "Evolve accuracy stays at 100%, and unseen tickets should route more consistently because the refund tiers and the Enterprise and digital rules are illustrated with concrete cases.",
+   "model": "gemini-3.8-flash",
+   "round": 4,
+   "delta": 0.0,
+   "kept": false
+  },
+  {
+   "problem": "Unwritten house routing rules (refund window, enterprise priority, digital delivery)",
+   "rationale": "The harness already scores 100% on evolve, so I kept every rule and threshold unchanged and only restructured the text into a compact step-by-step decision flow with one worked example per branch, to help generalization without changing known behavior.",
+   "predicted": "Evolve accuracy stays at 100% and held-out tickets near the refund tier boundaries, Enterprise cases and digital delivery cases route more consistently.",
+   "model": "gemini-3.8-flash",
+   "round": 4,
+   "delta": 0.0,
+   "kept": false
+  }
+ ],
+ "traj_src": [
+  {
+   "round": 0,
+   "evolve": 75.0,
+   "held": 70.0
+  },
+  {
+   "round": 1,
+   "evolve": 95.0,
+   "held": 80.0
+  },
+  {
+   "round": 2,
+   "evolve": 100.0,
+   "held": 83.33
+  },
+  {
+   "round": 3,
+   "evolve": 100.0,
+   "held": 83.33
+  },
+  {
+   "round": 4,
+   "evolve": 100.0,
+   "held": 83.33
+  }
+ ],
+ "transfer": {
+  "claude-haiku-5-5": {
+   "seed": 63.33,
+   "evolved": 80.0
+  },
+  "claude-sonnet-5-5": {
+   "seed": 66.67,
+   "evolved": 83.33
+  }
+ }
+}

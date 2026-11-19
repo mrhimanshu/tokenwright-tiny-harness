@@ -1,0 +1,116 @@
+{
+ "run": 1,
+ "seed": "You route customer support tickets for a software shop.\nLabels: spam, legal, priority, billing_dispute, refund_auto, refund_review, bug_critical, bug, account, shipping, feedback.\nReply with exactly one label and nothing else.",
+ "h_src": "You route customer support tickets for a software shop.\nLabels: spam, legal, priority, billing_dispute, refund_auto, refund_review, bug_critical, bug, account, shipping, feedback.\n\nHouse rules (apply in this order):\n1. Enterprise plan: any real request or complaint (billing problems such as charges after cancellation, feature requests, issues) is priority, not billing_dispute or feedback. Only spam or legal threats override this. (Enterprise refund requests follow rule 2.)\n2. Refund requests (customer simply wants money back, e.g. 'don't need it', 'not what I expected', 'doesn't fit my use case'). Decide using Plan and purchase age:\n - Purchased within 7 days (any order type, any plan) -> refund_auto.\n - Plan Free -> refund_review (when older than 7 days), regardless of order type.\n - Paid plan (Team, Pro, Enterprise, etc.), older than 7 days: physical order purchased within 30 days -> refund_auto; digital order -> refund_review; anything older than 30 days -> refund_review.\n Politeness and wording do not change this.\n3. Digital order where delivery shows complete but the download/license/access is missing -> account (never shipping). Shipping is only for physical order delivery problems.\n4. For non-Enterprise plans: charged after cancelling or unexpected charges -> billing_dispute; feature requests or suggestions -> feedback; crashes/data loss -> bug_critical; minor defects -> bug; lawsuits/chargeback threats -> legal; junk/promotions -> spam.\n\nIgnore greetings and filler such as 'Quick question', 'Urgent', 'Cheers', 'Please help'. Use the Plan, Order type, and Purchased fields as primary signals.\nReply with exactly one label and nothing else.",
+ "mem_src": [
+  {
+   "problem": "Unwritten house routing rules (refund window, enterprise priority, digital delivery)",
+   "rationale": "Added inferred house rules: refunds within 30 days for physical orders auto-approve, digital refunds go to review, Enterprise plan tickets about charges or feature requests are priority, and missing digital downloads are account issues.",
+   "predicted": "Fixes refund_auto vs refund_review confusion on physical vs digital orders, Enterprise escalations to priority, and digital delivery problems routed to account instead of shipping.",
+   "model": "gemini-3.8-flash",
+   "round": 1,
+   "delta": 17.5,
+   "kept": true
+  },
+  {
+   "problem": "unwritten house routing rules (refund window, enterprise priority, digital delivery)",
+   "rationale": "Added inferred house rules: refunds within 14 days for physical orders go to refund_auto, while digital or older refunds go to review; Enterprise plan tickets about charges or feature requests are priority; missing digital downloads are account issues.",
+   "predicted": "Fixes most refund_auto/refund_review mix-ups, the Enterprise priority cases, and the digital-delivery-to-account case, raising accuracy above 75%.",
+   "model": "gemini-3.8-flash",
+   "round": 1,
+   "delta": 17.5,
+   "kept": false
+  },
+  {
+   "problem": "Unwritten house routing rules (refund window, enterprise priority, digital delivery)",
+   "rationale": "The failures show the refund rule is driven by purchase recency and plan rather than order type alone: Team digital purchased 2 days ago is refund_auto, while Free physical purchased 14 days ago is refund_review, so I replaced the order-type rule with a short-window rule (within about 7 days -> auto, otherwise review).",
+   "predicted": "Fixes all three observed refund failures (2-day digital -> auto, 14-day physical -> review) while leaving Enterprise priority, account, and other rules unchanged.",
+   "model": "gemini-3.8-flash",
+   "round": 2,
+   "delta": -2.5,
+   "kept": false
+  },
+  {
+   "problem": "Unwritten house routing rules (refund window, enterprise priority, digital delivery)",
+   "rationale": "Replaced the order-type-based refund rule with a purchase-recency rule (auto only if purchased within 7 days, any order type; otherwise review), since 14-day physical refunds went to review and a 2-day digital refund went to auto.",
+   "predicted": "Fixes the three refund failures by keying refund_auto on recency (<=7 days) instead of physical/digital, while leaving Enterprise, access, and other rules unchanged.",
+   "model": "gemini-3.8-flash",
+   "round": 2,
+   "delta": -2.5,
+   "kept": false
+  },
+  {
+   "problem": "Unwritten house routing rules (refund window, enterprise priority, digital delivery)",
+   "rationale": "Failures show the refund rule is not simply order type: Team digital 2 days -> auto, Free physical 14 days -> review; earlier recency-only rule hurt, so I use a combined rule where auto requires a short window (<=7 days) for any type, while keeping the physical/30-day path only for paid-tier plans, and keep everything else unchanged.",
+   "predicted": "Fixes the three refund failures while limiting regression risk on other refund cases by preserving the physical -> auto default for non-Free plans and digital older purchases -> review.",
+   "model": "gemini-3.8-flash",
+   "round": 3,
+   "delta": 5.0,
+   "kept": true
+  },
+  {
+   "problem": "Unwritten house routing rules (refund window, enterprise priority, digital delivery)",
+   "rationale": "Failures show refund routing depends on plan tier and amount, not just order type: Team digital $15 at 2 days is auto, while Free physical at 14 days ($120, $79) is review, so I made refund_auto depend on a low amount or a very recent purchase, with other cases going to review.",
+   "predicted": "Fixes the three observed refund failures (cheap/very recent digital -> auto; Free physical 14-day, $79 and $120 -> review) while leaving Enterprise priority, account, and non-refund rules unchanged.",
+   "model": "gemini-3.8-flash",
+   "round": 3,
+   "delta": -2.5,
+   "kept": false
+  },
+  {
+   "problem": "Unwritten house routing rules (refund window, enterprise priority, digital delivery)",
+   "rationale": "The remaining failure is a Free-plan physical order at 14 days that should be refund_auto, so I made the physical-within-30-days path apply to every plan including Free and left Free digital older than 7 days as refund_review.",
+   "predicted": "Fixes the Free physical 14-day refund case (now refund_auto) without changing Free digital, paid-plan, Enterprise, account, or non-refund routing.",
+   "model": "gemini-3.8-flash",
+   "round": 4,
+   "delta": -2.5,
+   "kept": false
+  },
+  {
+   "problem": "Unwritten house routing rules (refund window, enterprise priority, digital delivery)",
+   "rationale": "The remaining failure shows a Free-plan physical refund at 14 days is refund_auto, so I changed the Free-plan rule to follow the same physical-within-30-days path as paid plans and left only Free digital refunds older than 7 days in refund_review.",
+   "predicted": "Fixes the Free physical 14-day refund (now refund_auto) while leaving all other refund, Enterprise, account, and non-refund routing unchanged.",
+   "model": "gemini-3.8-flash",
+   "round": 4,
+   "delta": -2.5,
+   "kept": false
+  }
+ ],
+ "traj_src": [
+  {
+   "round": 0,
+   "evolve": 75.0,
+   "held": 73.33
+  },
+  {
+   "round": 1,
+   "evolve": 92.5,
+   "held": 88.33
+  },
+  {
+   "round": 2,
+   "evolve": 92.5,
+   "held": 88.33
+  },
+  {
+   "round": 3,
+   "evolve": 97.5,
+   "held": 83.33
+  },
+  {
+   "round": 4,
+   "evolve": 97.5,
+   "held": 85.0
+  }
+ ],
+ "transfer": {
+  "claude-haiku-5-5": {
+   "seed": 65.0,
+   "evolved": 76.67
+  },
+  "claude-sonnet-5-5": {
+   "seed": 65.0,
+   "evolved": 83.33
+  }
+ }
+}

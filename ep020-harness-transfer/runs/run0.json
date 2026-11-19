@@ -1,0 +1,278 @@
+{
+ "run": 0,
+ "seed": "You route customer support tickets for a software shop.\nLabels: spam, legal, priority, billing_dispute, refund_auto, refund_review, bug_critical, bug, account, shipping, feedback.\nReply with exactly one label and nothing else.",
+ "h_src": "You route customer support tickets for a software shop.\nLabels: spam, legal, priority, billing_dispute, refund_auto, refund_review, bug_critical, bug, account, shipping, feedback.\n\nHouse rules (apply in this order; first match wins):\n1. Legal: any threat of lawsuit, regulator, consumer protection office, chargeback-by-law, or attorney -> legal (even if the message also describes a bug or another issue).\n2. Spam: unsolicited ads or junk -> spam.\n3. Priority: Enterprise plan customers with a shipping/delivery problem (late, lost, not arrived, tracking issue) -> priority. Also Enterprise data loss.\n4. bug_critical: any data loss, such as disappeared, deleted, or missing files, notes, or work, after an update or sync, regardless of plan (except Enterprise, which is priority). Also crashes that block all use or security problems. Ordinary glitches, crashes of one feature, or UI problems -> bug.\n5. Refunds: first read the 'Purchased: N days ago' field and the amount.\n   - refund_auto ONLY when ALL are true: the customer wants money back for change of mind / no longer needed / did not fit needs / not what they expected, the amount is about $50 or less, AND the purchase was made 30 days ago or fewer.\n   - refund_review: any other refund request, in particular ANY purchase older than 30 days (31+ days, e.g. 45 days) even if the amount is small and the reason is simple, or amounts over $50, or complicated or disputed circumstances. Plan type and order type do not change this.\n   - billing_dispute: charged wrongly, double-charged, or unrecognized charge.\n6. Digital orders (Order type: digital): a missing download link, missing key, or 'delivered but no download' is an account issue -> account, not shipping and not bug. The shipping label is only for physical orders with delivery problems from non-Enterprise customers.\n7. Login, password, access, or plan-change issues -> account. Praise or suggestions -> feedback.\n\nReply with exactly one label and nothing else.",
+ "mem_src": [
+  {
+   "problem": "unwritten house routing rules",
+   "rationale": "Added inferred house rules covering enterprise shipping escalation, data-loss severity, auto-refund criteria, missing digital deliveries, and legal threats, with a precedence order.",
+   "predicted": "Fixes most of the observed failures (priority for Enterprise, bug_critical for data loss, refund_auto for small early refunds, account for digital delivery problems, legal for threats) and raises accuracy well above 60%.",
+   "model": "claude-haiku-5-5",
+   "round": 1,
+   "delta": 36.67,
+   "kept": true
+  },
+  {
+   "problem": "Unwritten house routing rules (plan/order-type/age cues, data loss, legal threats, refund policy)",
+   "rationale": "Added explicit inferred house rules in priority order: legal threats, Enterprise shipping to priority, data loss to bug_critical, digital delivery problems to account, and simple refunds within 30 days to refund_auto.",
+   "predicted": "Fixes most of the observed failures (enterprise shipping, data-loss bugs, simple refunds, digital download issues, legal threats) and lifts accuracy well above 60%.",
+   "model": "claude-haiku-5-5",
+   "round": 1,
+   "delta": 30.0,
+   "kept": false
+  },
+  {
+   "problem": "unwritten house routing rules",
+   "rationale": "Made the refund_auto rule strict: the 30-day purchase window is a hard cutoff, so any purchase older than 30 days goes to refund_review, even for small amounts and even on digital orders.",
+   "predicted": "Fixes the 45-day, $39 digital refund ticket (refund_review) while keeping small refunds within 30 days as refund_auto, with no regressions on other rules.",
+   "model": "claude-haiku-5-5",
+   "round": 2,
+   "delta": 0.0,
+   "kept": false
+  },
+  {
+   "problem": "unwritten house routing rules",
+   "rationale": "Made the refund rule require BOTH a small amount and a purchase within 30 days, stated explicitly that any purchase older than 30 days (e.g. 45 days) goes to refund_review regardless of amount or reason, and added a pre-check step for the purchase age.",
+   "predicted": "Fixes the 45-day, $39 digital refund miss (now refund_review) without disturbing other correct cases, since all other rules are unchanged.",
+   "model": "claude-haiku-5-5",
+   "round": 2,
+   "delta": 3.3299999999999983,
+   "kept": true
+  },
+  {
+   "problem": "unwritten house routing rules",
+   "rationale": "The harness already scores 100% on the evolve set, so I kept every rule and only added a compact decision checklist plus tie-break notes for edge cases likely to appear on unseen tickets (Enterprise digital orders, Enterprise non-shipping bugs, mixed legal/spam, refunds at exactly 30 days or exactly $50).",
+   "predicted": "Evolve accuracy stays at 100%, and generalization to unseen tickets improves because boundary cases and rule interactions are now explicit.",
+   "model": "claude-haiku-5-5",
+   "round": 3,
+   "delta": 0.0,
+   "kept": false
+  },
+  {
+   "problem": "unwritten house routing rules",
+   "rationale": "Kept every existing rule but restructured the harness into a field-extraction checklist (plan, order type, days since purchase, amount, reason) that the model completes silently before applying the ordered rules, and added worked examples of edge cases to guard against regressions.",
+   "predicted": "Holds the 100% evolve accuracy and improves generalization to unseen tickets with edge cases such as 31+ day refunds, Enterprise data loss, digital download issues, and legal threats mixed with bugs.",
+   "model": "claude-haiku-5-5",
+   "round": 3,
+   "delta": 0.0,
+   "kept": false
+  },
+  {
+   "problem": "unwritten house routing rules",
+   "rationale": "The harness already scores 100% on the evolve set and earlier rewrites that restructured it were rejected, so I kept every rule verbatim and only added a short tie-break section for uncovered cases, plus a note to read the ticket's plan and order-type fields before applying the ordered rules.",
+   "predicted": "Evolve accuracy stays at 100%, with a small chance of better generalization on unseen boundary cases such as Enterprise digital orders and refunds at exactly 30 days or $50.",
+   "model": "claude-haiku-5-5",
+   "round": 4,
+   "delta": -3.3299999999999983,
+   "kept": false
+  },
+  {
+   "problem": "unwritten house routing rules",
+   "rationale": "The harness already scores 100% on the evolve set, so I kept every rule and its order and only added a short note on handling ambiguous or unseen cases, without restructuring the rules, since earlier checklist rewrites gave no gain.",
+   "predicted": "Evolve accuracy stays at 100%, with a small gain on unseen tickets where a message touches more than one rule.",
+   "model": "claude-haiku-5-5",
+   "round": 4,
+   "delta": 0.0,
+   "kept": false
+  }
+ ],
+ "traj_src": [
+  {
+   "round": 0,
+   "evolve": 60.0,
+   "held": 65.0
+  },
+  {
+   "round": 1,
+   "evolve": 96.67,
+   "held": 92.5
+  },
+  {
+   "round": 2,
+   "evolve": 100.0,
+   "held": 90.0
+  },
+  {
+   "round": 3,
+   "evolve": 100.0,
+   "held": 92.5
+  },
+  {
+   "round": 4,
+   "evolve": 100.0,
+   "held": 92.5
+  }
+ ],
+ "transfer": {
+  "gemini-3.8-flash": {
+   "seed": 77.5,
+   "evolved": 92.5
+  },
+  "gemini-4-neon": {
+   "seed": 77.5,
+   "evolved": 90.0
+  }
+ },
+ "tgt_harness": {
+  "h": "You route customer support tickets for a software shop.\nLabels: spam, legal, priority, billing_dispute, refund_auto, refund_review, bug_critical, bug, account, shipping, feedback.\n\nHouse rules (apply in this order; first match wins):\n1. Legal: any threat of lawsuit, regulator, consumer protection office, chargeback-by-law, or attorney -> legal (even if the message also describes a bug or another issue).\n2. Spam: unsolicited ads or junk -> spam.\n3. Priority: Enterprise plan customers with a shipping/delivery problem (late, lost, not arrived, tracking issue) -> priority. Also Enterprise data loss.\n4. bug_critical: any data loss, such as disappeared, deleted, or missing files, notes, or work, after an update or sync, regardless of plan (except Enterprise, which is priority). Also crashes that block all use or security problems. Ordinary glitches, crashes of one feature, or UI problems -> bug.\n5. Refunds: first read the 'Purchased: N days ago' field and the amount.\n   - refund_auto ONLY when ALL are true: the customer wants money back for change of mind / no longer needed / did not fit needs / not what they expected, the amount is about $50 or less, AND the purchase was made 30 days ago or fewer.\n   - refund_review: any other refund request, in particular ANY purchase older than 30 days (31+ days, e.g. 45 days) even if the amount is small and the reason is simple, or amounts over $50, or complicated or disputed circumstances. Plan type and order type do not change this.\n   - billing_dispute: charged wrongly, double-charged, or unrecognized charge.\n6. Digital orders (Order type: digital): a missing download link, missing key, or 'delivered but no download' is an account issue -> account, not shipping and not bug. The shipping label is only for physical orders with delivery problems from non-Enterprise customers.\n7. Login, password, access, or plan-change issues -> account. Praise or suggestions -> feedback.\n\nReply with exactly one label and nothing else.",
+  "entries": [
+   {
+    "problem": "Robustness of routing rules on unseen tickets (generalization beyond evolve set)",
+    "rationale": "The current harness already scores 100%, so I kept every rule intact and added a short step-by-step checklist (read plan, order type, days, amount; then apply rules in order) plus tie-break guidance for ambiguous cases like mixed issues and borderline amounts, to reduce hidden-set errors.",
+    "predicted": "Evolve score stays at 100% while held-out tickets with mixed signals, boundary values (30 vs 31 days, $50 vs $51), and digital/physical confusion are routed more consistently.",
+    "model": "gemini-3.8-flash",
+    "round": 1,
+    "delta": 0.0,
+    "kept": false
+   },
+   {
+    "problem": "rule-ordering ambiguity and generalization to unseen edge cases",
+    "rationale": "Kept every existing rule but restructured it as a step-by-step decision procedure with explicit tie-breakers and worked examples, so the model handles unseen edge cases such as mixed issues, borderline amounts, and exactly 30 days.",
+    "predicted": "Stays at 100% on the evolve set and generalizes better on held-out tickets with overlapping signals, such as a legal threat plus a bug, or an Enterprise digital order.",
+    "model": "gemini-3.8-flash",
+    "round": 1,
+    "delta": 0.0,
+    "kept": false
+   },
+   {
+    "problem": "hidden-set generalization with no observed failures",
+    "rationale": "Kept all rules and their order verbatim, and added only a brief clarification of the boundary cases the current text leaves implicit (exactly 30 days, about $50, non-refund billing wording, Enterprise data loss versus legal threats), without adding a checklist or examples.",
+    "predicted": "Stays at 100% on the evolve set and may resolve a few ambiguous hidden-set edge cases, with little risk of regression since no rule changed.",
+    "model": "gemini-3.8-flash",
+    "round": 2,
+    "delta": 0.0,
+    "kept": false
+   },
+   {
+    "problem": "hidden-set generalization of unwritten routing rules",
+    "rationale": "Kept every rule and its order, but added a compact list of explicit boundary clarifications (exactly 30 days, about $50, mixed refund and billing reasons, Enterprise non-shipping issues, digital orders with Enterprise) and a required silent field-extraction step, rather than the worked examples or checklist tried earlier.",
+    "predicted": "Stays at 100% on the evolve set and should reduce errors on unseen boundary cases such as day 30 versus 31, $50 versus $51, and Enterprise digital orders.",
+    "model": "gemini-3.8-flash",
+    "round": 2,
+    "delta": 0.0,
+    "kept": false
+   },
+   {
+    "problem": "No failures on the evolve set; hidden-set robustness for rule precedence and boundary cases",
+    "rationale": "Kept every rule and its order verbatim, and added a short label-definition glossary plus an explicit note that rules are checked top to bottom and the first match is final, so the model need not reconcile later rules once an earlier one fires.",
+    "predicted": "Score stays at 100% on the evolve set, with a small chance of fewer precedence mistakes on unseen mixed-issue tickets.",
+    "model": "gemini-3.8-flash",
+    "round": 3,
+    "delta": 0.0,
+    "kept": false
+   },
+   {
+    "problem": "No failures on evolve set; hidden-set robustness for unseen edge cases",
+    "rationale": "Instead of adding checklists or examples, I kept every rule verbatim but tightened the wording so each label has a short precise definition (including the labels not covered by rules, such as bug vs bug_critical and shipping) and added a one-line instruction to ignore customer tone or urgency claims when applying the rules.",
+    "predicted": "Same 100% on the evolve set, with a slight gain on hidden tickets where emotional wording or claimed urgency might otherwise pull the model away from the rule order.",
+    "model": "gemini-3.8-flash",
+    "round": 3,
+    "delta": 0.0,
+    "kept": false
+   }
+  ],
+  "traj": [
+   {
+    "round": 0,
+    "evolve": 100.0,
+    "held": 92.5
+   },
+   {
+    "round": 1,
+    "evolve": 100.0,
+    "held": 92.5
+   },
+   {
+    "round": 2,
+    "evolve": 100.0,
+    "held": 92.5
+   },
+   {
+    "round": 3,
+    "evolve": 100.0,
+    "held": 92.5
+   }
+  ]
+ },
+ "tgt_sim": {
+  "h": "You route customer support tickets for a software shop.\nLabels: spam, legal, priority, billing_dispute, refund_auto, refund_review, bug_critical, bug, account, shipping, feedback.\n\nHouse rules (apply in this order; first match wins):\n1. Legal: any threat of lawsuit, regulator, consumer protection office, chargeback-by-law, or attorney -> legal (even if the message also describes a bug or another issue).\n2. Spam: unsolicited ads or junk -> spam.\n3. Priority: Enterprise plan customers with a shipping/delivery problem (late, lost, not arrived, tracking issue) -> priority. Also Enterprise data loss.\n4. bug_critical: any data loss, such as disappeared, deleted, or missing files, notes, or work, after an update or sync, regardless of plan (except Enterprise, which is priority). Also crashes that block all use or security problems. Ordinary glitches, crashes of one feature, or UI problems -> bug.\n5. Refunds: first read the 'Purchased: N days ago' field and the amount.\n   - refund_auto ONLY when ALL are true: the customer wants money back for change of mind / no longer needed / did not fit needs / not what they expected, the amount is about $50 or less, AND the purchase was made 30 days ago or fewer.\n   - refund_review: any other refund request, in particular ANY purchase older than 30 days (31+ days, e.g. 45 days) even if the amount is small and the reason is simple, or amounts over $50, or complicated or disputed circumstances. Plan type and order type do not change this.\n   - billing_dispute: charged wrongly, double-charged, or unrecognized charge.\n6. Digital orders (Order type: digital): a missing download link, missing key, or 'delivered but no download' is an account issue -> account, not shipping and not bug. The shipping label is only for physical orders with delivery problems from non-Enterprise customers.\n7. Login, password, access, or plan-change issues -> account. Praise or suggestions -> feedback.\n\nReply with exactly one label and nothing else.",
+  "entries": [
+   {
+    "problem": "unwritten house routing rules",
+    "rationale": "The harness already scores 100% and past rewrites were rejected, so I kept every rule and its order verbatim and only added one short line stating that the plan and order-type fields apply to the rules, which clarifies Enterprise digital orders without changing any existing behavior.",
+    "predicted": "Evolve accuracy stays at 100%, with a small chance of better handling of unseen Enterprise digital-order tickets.",
+    "model": "gemini-3.8-flash",
+    "round": 1,
+    "delta": 0.0,
+    "kept": false
+   },
+   {
+    "problem": "unwritten house routing rules",
+    "rationale": "The harness already scores 100% and restructurings were rejected, so I kept every rule and its order verbatim and added only a short set of compact worked examples (one per rule) to anchor the model on the boundary cases.",
+    "predicted": "Evolve accuracy stays at 100%, with possible modest gains on unseen tickets near rule boundaries (31+ day refunds, Enterprise data loss, digital download issues, legal threats mixed with bugs).",
+    "model": "gemini-3.8-flash",
+    "round": 1,
+    "delta": 0.0,
+    "kept": false
+   },
+   {
+    "problem": "unwritten house routing rules",
+    "rationale": "The harness already scores 100% and earlier additions (examples, checklists, tie-break notes) were rejected, so I changed only the final instruction to stress that the output must be one bare label from the list, which reduces format-related errors without touching any rule.",
+    "predicted": "Evolve accuracy stays at 100%, with a slightly lower chance of malformed or multi-word outputs on unseen tickets.",
+    "model": "gemini-3.8-flash",
+    "round": 2,
+    "delta": 0.0,
+    "kept": false
+   },
+   {
+    "problem": "unwritten house routing rules",
+    "rationale": "The harness already scores 100% and every earlier rewrite or addition was rejected, so I kept the rules and their order word for word and changed only the closing output instruction, to reinforce the single-label reply format.",
+    "predicted": "Evolve accuracy stays at 100%, and the reply format is slightly more robust, so there is no behavior change on routing.",
+    "model": "gemini-3.8-flash",
+    "round": 2,
+    "delta": 0.0,
+    "kept": false
+   },
+   {
+    "problem": "unwritten house routing rules",
+    "rationale": "The harness already scores 100% and every earlier addition was rejected, so I keep it nearly identical and fix only one ambiguity: rule 3's wording that Enterprise customers with shipping problems go to priority, which could be misread for digital orders, by explicitly applying the digital rule only to non-delivery-problem physical cases.",
+    "predicted": "Evolve accuracy stays at 100%, with a small chance of better handling of unseen Enterprise digital-order tickets and no change to existing behavior.",
+    "model": "gemini-3.8-flash",
+    "round": 3,
+    "delta": 0.0,
+    "kept": false
+   },
+   {
+    "problem": "unwritten house routing rules",
+    "rationale": "The harness already scores 100% and additive edits were rejected, so I changed only the framing: a one-line priority-ordered label cheat sheet placed after the rules, with every rule text unchanged, to give the model a compact lookup without altering any rule semantics.",
+    "predicted": "Evolve accuracy stays at 100%, with slightly better consistency on unseen tickets that touch several rules.",
+    "model": "gemini-3.8-flash",
+    "round": 3,
+    "delta": 0.0,
+    "kept": false
+   }
+  ],
+  "traj": [
+   {
+    "round": 0,
+    "evolve": 100.0,
+    "held": 92.5
+   },
+   {
+    "round": 1,
+    "evolve": 100.0,
+    "held": 92.5
+   },
+   {
+    "round": 2,
+    "evolve": 100.0,
+    "held": 92.5
+   },
+   {
+    "round": 3,
+    "evolve": 100.0,
+    "held": 92.5
+   }
+  ]
+ }
+}
