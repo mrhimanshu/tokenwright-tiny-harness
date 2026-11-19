@@ -1,0 +1,257 @@
+{
+ "claude-haiku-5-5": {
+  "n": 720,
+  "accuracy": 99.2,
+  "mean_conf": 93.4,
+  "ece": 5.9,
+  "wrong": 6,
+  "wrong_conf_mean": 69.5,
+  "wrong_conf_ge90": 0,
+  "auto_approved": 617,
+  "auto_share": 85.7,
+  "auto_error_rate": 0.0,
+  "absent_n": 141,
+  "made_up": 0,
+  "made_up_conf_mean": 0.0,
+  "missed_present": 0,
+  "agree_auto": 720,
+  "agree_auto_error_rate": 0.83,
+  "agree_ece": 0.8,
+  "conf_hist": [
+   [
+    90,
+    617
+   ],
+   [
+    80,
+    84
+   ],
+   [
+    70,
+    15
+   ],
+   [
+    60,
+    3
+   ],
+   [
+    50,
+    1
+   ]
+  ],
+  "by_question": {
+   "amount_due": {
+    "n": 120,
+    "acc": 100.0,
+    "mean_conf": 87.2,
+    "wrong": 0,
+    "wrong_conf_ge90": 0
+   },
+   "due_date": {
+    "n": 120,
+    "acc": 95.0,
+    "mean_conf": 91.5,
+    "wrong": 6,
+    "wrong_conf_ge90": 0
+   },
+   "invoice_number": {
+    "n": 120,
+    "acc": 100.0,
+    "mean_conf": 97.1,
+    "wrong": 0,
+    "wrong_conf_ge90": 0
+   },
+   "po_number": {
+    "n": 120,
+    "acc": 100.0,
+    "mean_conf": 95.6,
+    "wrong": 0,
+    "wrong_conf_ge90": 0
+   },
+   "units": {
+    "n": 120,
+    "acc": 100.0,
+    "mean_conf": 94.5,
+    "wrong": 0,
+    "wrong_conf_ge90": 0
+   },
+   "vat_number": {
+    "n": 120,
+    "acc": 100.0,
+    "mean_conf": 94.7,
+    "wrong": 0,
+    "wrong_conf_ge90": 0
+   }
+  }
+ },
+ "claude-sonnet-5-5": {
+  "n": 720,
+  "accuracy": 99.6,
+  "mean_conf": 93.8,
+  "ece": 6.1,
+  "wrong": 3,
+  "wrong_conf_mean": 59.7,
+  "wrong_conf_ge90": 0,
+  "auto_approved": 632,
+  "auto_share": 87.8,
+  "auto_error_rate": 0.0,
+  "absent_n": 141,
+  "made_up": 0,
+  "made_up_conf_mean": 0.0,
+  "missed_present": 0,
+  "agree_auto": 720,
+  "agree_auto_error_rate": 0.42,
+  "agree_ece": 0.4,
+  "conf_hist": [
+   [
+    90,
+    632
+   ],
+   [
+    80,
+    75
+   ],
+   [
+    70,
+    6
+   ],
+   [
+    50,
+    4
+   ],
+   [
+    60,
+    3
+   ]
+  ],
+  "by_question": {
+   "amount_due": {
+    "n": 120,
+    "acc": 100.0,
+    "mean_conf": 91.1,
+    "wrong": 0,
+    "wrong_conf_ge90": 0
+   },
+   "due_date": {
+    "n": 120,
+    "acc": 97.5,
+    "mean_conf": 90.6,
+    "wrong": 3,
+    "wrong_conf_ge90": 0
+   },
+   "invoice_number": {
+    "n": 120,
+    "acc": 100.0,
+    "mean_conf": 97.0,
+    "wrong": 0,
+    "wrong_conf_ge90": 0
+   },
+   "po_number": {
+    "n": 120,
+    "acc": 100.0,
+    "mean_conf": 93.3,
+    "wrong": 0,
+    "wrong_conf_ge90": 0
+   },
+   "units": {
+    "n": 120,
+    "acc": 100.0,
+    "mean_conf": 96.1,
+    "wrong": 0,
+    "wrong_conf_ge90": 0
+   },
+   "vat_number": {
+    "n": 120,
+    "acc": 100.0,
+    "mean_conf": 94.5,
+    "wrong": 0,
+    "wrong_conf_ge90": 0
+   }
+  }
+ },
+ "claude-opus-5-5": {
+  "n": 720,
+  "accuracy": 99.2,
+  "mean_conf": 93.0,
+  "ece": 7.0,
+  "wrong": 6,
+  "wrong_conf_mean": 60.3,
+  "wrong_conf_ge90": 0,
+  "auto_approved": 563,
+  "auto_share": 78.2,
+  "auto_error_rate": 0.0,
+  "absent_n": 141,
+  "made_up": 0,
+  "made_up_conf_mean": 0.0,
+  "missed_present": 0,
+  "agree_auto": 720,
+  "agree_auto_error_rate": 0.83,
+  "agree_ece": 0.8,
+  "conf_hist": [
+   [
+    90,
+    563
+   ],
+   [
+    80,
+    144
+   ],
+   [
+    70,
+    6
+   ],
+   [
+    60,
+    5
+   ],
+   [
+    50,
+    2
+   ]
+  ],
+  "by_question": {
+   "amount_due": {
+    "n": 120,
+    "acc": 100.0,
+    "mean_conf": 91.1,
+    "wrong": 0,
+    "wrong_conf_ge90": 0
+   },
+   "due_date": {
+    "n": 120,
+    "acc": 95.0,
+    "mean_conf": 89.2,
+    "wrong": 6,
+    "wrong_conf_ge90": 0
+   },
+   "invoice_number": {
+    "n": 120,
+    "acc": 100.0,
+    "mean_conf": 96.8,
+    "wrong": 0,
+    "wrong_conf_ge90": 0
+   },
+   "po_number": {
+    "n": 120,
+    "acc": 100.0,
+    "mean_conf": 92.2,
+    "wrong": 0,
+    "wrong_conf_ge90": 0
+   },
+   "units": {
+    "n": 120,
+    "acc": 100.0,
+    "mean_conf": 95.1,
+    "wrong": 0,
+    "wrong_conf_ge90": 0
+   },
+   "vat_number": {
+    "n": 120,
+    "acc": 100.0,
+    "mean_conf": 93.8,
+    "wrong": 0,
+    "wrong_conf_ge90": 0
+   }
+  }
+ }
+}

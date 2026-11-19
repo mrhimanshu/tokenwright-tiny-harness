@@ -1,0 +1,152 @@
+{
+ "claude-haiku-5-5": [
+  {
+   "th": 50,
+   "auto_share": 99.6,
+   "errors_auto": 16,
+   "correct_sent_to_human": 1
+  },
+  {
+   "th": 60,
+   "auto_share": 97.5,
+   "errors_auto": 12,
+   "correct_sent_to_human": 8
+  },
+  {
+   "th": 70,
+   "auto_share": 92.4,
+   "errors_auto": 3,
+   "correct_sent_to_human": 26
+  },
+  {
+   "th": 75,
+   "auto_share": 85.8,
+   "errors_auto": 1,
+   "correct_sent_to_human": 59
+  },
+  {
+   "th": 80,
+   "auto_share": 83.7,
+   "errors_auto": 1,
+   "correct_sent_to_human": 70
+  },
+  {
+   "th": 85,
+   "auto_share": 75.4,
+   "errors_auto": 0,
+   "correct_sent_to_human": 113
+  },
+  {
+   "th": 90,
+   "auto_share": 68.4,
+   "errors_auto": 0,
+   "correct_sent_to_human": 150
+  },
+  {
+   "th": 95,
+   "auto_share": 39.2,
+   "errors_auto": 0,
+   "correct_sent_to_human": 304
+  }
+ ],
+ "claude-opus-5-5": [
+  {
+   "th": 50,
+   "auto_share": 100.0,
+   "errors_auto": 0,
+   "correct_sent_to_human": 0
+  },
+  {
+   "th": 60,
+   "auto_share": 100.0,
+   "errors_auto": 0,
+   "correct_sent_to_human": 0
+  },
+  {
+   "th": 70,
+   "auto_share": 99.4,
+   "errors_auto": 0,
+   "correct_sent_to_human": 3
+  },
+  {
+   "th": 75,
+   "auto_share": 97.2,
+   "errors_auto": 0,
+   "correct_sent_to_human": 15
+  },
+  {
+   "th": 80,
+   "auto_share": 95.6,
+   "errors_auto": 0,
+   "correct_sent_to_human": 24
+  },
+  {
+   "th": 85,
+   "auto_share": 88.3,
+   "errors_auto": 0,
+   "correct_sent_to_human": 63
+  },
+  {
+   "th": 90,
+   "auto_share": 70.0,
+   "errors_auto": 0,
+   "correct_sent_to_human": 162
+  },
+  {
+   "th": 95,
+   "auto_share": 44.4,
+   "errors_auto": 0,
+   "correct_sent_to_human": 300
+  }
+ ],
+ "claude-sonnet-5-5": [
+  {
+   "th": 50,
+   "auto_share": 100.0,
+   "errors_auto": 0,
+   "correct_sent_to_human": 0
+  },
+  {
+   "th": 60,
+   "auto_share": 100.0,
+   "errors_auto": 0,
+   "correct_sent_to_human": 0
+  },
+  {
+   "th": 70,
+   "auto_share": 99.6,
+   "errors_auto": 0,
+   "correct_sent_to_human": 2
+  },
+  {
+   "th": 75,
+   "auto_share": 98.1,
+   "errors_auto": 0,
+   "correct_sent_to_human": 10
+  },
+  {
+   "th": 80,
+   "auto_share": 98.1,
+   "errors_auto": 0,
+   "correct_sent_to_human": 10
+  },
+  {
+   "th": 85,
+   "auto_share": 95.2,
+   "errors_auto": 0,
+   "correct_sent_to_human": 26
+  },
+  {
+   "th": 90,
+   "auto_share": 78.3,
+   "errors_auto": 0,
+   "correct_sent_to_human": 117
+  },
+  {
+   "th": 95,
+   "auto_share": 58.5,
+   "errors_auto": 0,
+   "correct_sent_to_human": 224
+  }
+ ]
+}
