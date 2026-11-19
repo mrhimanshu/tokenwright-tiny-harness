@@ -22,8 +22,9 @@
 - Calibration error (10-bin ECE, points; Liquid's metric): easy / hard set: Haiku 5.9 / 8.8, Sonnet 6.1 / 7.0, Opus 7.0 / 9.0.
   So "six to nine points" vs Liquid's own 0.8 for d1.2-ultra. But the gap is all **under-confidence**: Claude says ~91–93 and is right 98–99.8%.
 - Where the errors were:
-  - 15 answers (all 3 models) on two EUR invoices with "Date: 04/06/2026" + "net 14/30 days": read as US mm/dd. Truth (dd/mm, EUR) 2026-04-20 / 2026-05-11.
-    Confidence on these 50–85. All three models gave the same wrong date in every run.
+  - 15 answers on two invoices with ambiguous day/month dates: d27 (EUR, "Date: 04/06/2026", net 14) read as US mm/dd by all 3 models in every run
+    (answer 2026-06-18, truth 2026-04-20; 9 answers), and d38 (USD, "Payment due by 05/11/2026") read as day-first by Haiku and Opus in every run
+    (answer 2026-11-05, truth 2026-05-11; 6 answers). Convention in the generator: EUR/GBP = dd/mm, USD = mm/dd. Confidence on these 50–85.
   - 17 Haiku answers on the hard "units of exactly X" question: it skipped lines where the scan doubled a space ("Toner  cartridge") and once
     the page-2 lines. Confidence 45–80. Sonnet and Opus got all 90 unit questions right.
 - Threshold sweep (auto-approve if confidence >= T; errors that slip through):
