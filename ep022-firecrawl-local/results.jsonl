@@ -1,0 +1,435 @@
+{"tool": "fc_local", "round": 1, "id": "wiki_rust", "kind": "static", "secs": 0.303, "chars": 206821, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_local", "round": 1, "id": "wiki_webscraping", "kind": "static", "secs": 0.045, "chars": 53080, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_local", "round": 1, "id": "wiki_transformer", "kind": "static", "secs": 0.103, "chars": 153463, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_local", "round": 1, "id": "py_asyncio", "kind": "docs", "secs": 0.051, "chars": 61387, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_local", "round": 1, "id": "py_json", "kind": "docs", "secs": 0.026, "chars": 35375, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_local", "round": 1, "id": "mdn_fetch", "kind": "docs", "secs": 0.03, "chars": 33417, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_local", "round": 1, "id": "rust_book_own", "kind": "docs", "secs": 0.039, "chars": 27834, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_local", "round": 1, "id": "fastapi_first", "kind": "docs", "secs": 0.073, "chars": 13960, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_local", "round": 1, "id": "anth_docs_models", "kind": "docs", "secs": 0.336, "chars": 19504, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_local", "round": 1, "id": "gh_readme_fc", "kind": "github", "secs": 0.078, "chars": 30879, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_local", "round": 1, "id": "gh_readme_requests", "kind": "github", "secs": 0.028, "chars": 10899, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_local", "round": 1, "id": "gh_issue", "kind": "github", "secs": 0.036, "chars": 22963, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_local", "round": 1, "id": "arxiv_abs", "kind": "paper", "secs": 0.02, "chars": 8053, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_local", "round": 1, "id": "arxiv_pdf", "kind": "pdf", "secs": 0.204, "chars": 41552, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_local", "round": 1, "id": "bbc_tech", "kind": "news", "secs": 0.066, "chars": 28860, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_local", "round": 1, "id": "verge", "kind": "news", "secs": 0.06, "chars": 37038, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_local", "round": 1, "id": "blog_simonw", "kind": "blog", "secs": 0.064, "chars": 83749, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_local", "round": 1, "id": "blog_karpathy", "kind": "blog", "secs": 0.037, "chars": 52855, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_local", "round": 1, "id": "so_question", "kind": "forum", "secs": 0.152, "chars": 0, "http": 200, "warning": "This site did not serve the page to this machine (status 403), so the content is missing or is a bot check. Firecrawl cloud can fetch pages like this when FIRECRAWL_CLOUD is auto.", "source": "local", "blocked": true, "status": 403}
+{"tool": "fc_local", "round": 1, "id": "books_toscrape", "kind": "static", "secs": 0.383, "chars": 1825, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_local", "round": 1, "id": "quotes_static", "kind": "static", "secs": 0.398, "chars": 4239, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_local", "round": 1, "id": "quotes_js", "kind": "js", "secs": 0.337, "chars": 94, "http": 200, "warning": "This page builds its content with JavaScript, so this result is probably incomplete. The local Chrome could not render it. Chrome at /opt/ms-playwright/chromium-1254/chrome-linux64/chrome could not start its sandbox, which usually means a container or system policy blocks user namespaces. In Docker, run the container with a seccomp profile that allows them; the Firecrawl Local README shows one. On Ubuntu 23.10 or newer, allow user namespaces for Chrome. Firecrawl Local does not run Chrome without its sandbox.", "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_local", "round": 1, "id": "quotes_js_delay", "kind": "js", "secs": 0.348, "chars": 94, "http": 200, "warning": "This page builds its content with JavaScript, so this result is probably incomplete. The local Chrome could not render it. Chrome at /opt/ms-playwright/chromium-1254/chrome-linux64/chrome could not start its sandbox, which usually means a container or system policy blocks user namespaces. In Docker, run the container with a seccomp profile that allows them; the Firecrawl Local README shows one. On Ubuntu 23.10 or newer, allow user namespaces for Chrome. Firecrawl Local does not run Chrome without its sandbox.", "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_local", "round": 1, "id": "scrapethissite_ajax", "kind": "js", "secs": 0.387, "chars": 1180, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_local", "round": 1, "id": "react_dev", "kind": "js", "secs": 0.056, "chars": 15888, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_local", "round": 1, "id": "hf_model", "kind": "js", "secs": 0.331, "chars": 5931, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_local", "round": 1, "id": "pypi_page", "kind": "static", "secs": 0.085, "chars": 71897, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_local", "round": 1, "id": "npm_page", "kind": "js", "secs": 0.15, "chars": 0, "http": 200, "warning": "This site did not serve the page to this machine (status 403), so the content is missing or is a bot check. Firecrawl cloud can fetch pages like this when FIRECRAWL_CLOUD is auto.", "source": "local", "blocked": true, "status": 403}
+{"tool": "fc_local", "round": 1, "id": "crates_page", "kind": "js", "secs": 0.467, "chars": 0, "http": 200, "warning": "This page builds its content with JavaScript, so this result is probably incomplete. The local Chrome could not render it. Chrome at /opt/ms-playwright/chromium-1254/chrome-linux64/chrome could not start its sandbox, which usually means a container or system policy blocks user namespaces. In Docker, run the container with a seccomp profile that allows them; the Firecrawl Local README shows one. On Ubuntu 23.10 or newer, allow user namespaces for Chrome. Firecrawl Local does not run Chrome without its sandbox.", "source": "local", "blocked": null, "status": 200}
+{"tool": "trafilatura", "round": 1, "id": "wiki_rust", "kind": "static", "secs": 0.689, "chars": 80487, "status": 200}
+{"tool": "trafilatura", "round": 1, "id": "wiki_webscraping", "kind": "static", "secs": 0.1, "chars": 27159, "status": 200}
+{"tool": "trafilatura", "round": 1, "id": "wiki_transformer", "kind": "static", "secs": 0.331, "chars": 72610, "status": 200}
+{"tool": "trafilatura", "round": 1, "id": "py_asyncio", "kind": "docs", "secs": 0.233, "chars": 44310, "status": 200}
+{"tool": "trafilatura", "round": 1, "id": "py_json", "kind": "docs", "secs": 0.108, "chars": 25839, "status": 200}
+{"tool": "trafilatura", "round": 1, "id": "mdn_fetch", "kind": "docs", "secs": 0.074, "chars": 22866, "status": 200}
+{"tool": "trafilatura", "round": 1, "id": "rust_book_own", "kind": "docs", "secs": 0.084, "chars": 22110, "status": 200}
+{"tool": "trafilatura", "round": 1, "id": "fastapi_first", "kind": "docs", "secs": 0.105, "chars": 13023, "status": 200}
+{"tool": "trafilatura", "round": 1, "id": "anth_docs_models", "kind": "docs", "secs": 0.62, "chars": 7949, "status": 200}
+{"tool": "trafilatura", "round": 1, "id": "gh_readme_fc", "kind": "github", "secs": 0.609, "chars": 15545, "status": 200}
+{"tool": "trafilatura", "round": 1, "id": "gh_readme_requests", "kind": "github", "secs": 0.722, "chars": 1776, "status": 200}
+{"tool": "trafilatura", "round": 1, "id": "gh_issue", "kind": "github", "secs": 1.145, "chars": 10959, "status": 200}
+{"tool": "trafilatura", "round": 1, "id": "arxiv_abs", "kind": "paper", "secs": 0.065, "chars": 2908, "status": 200}
+{"tool": "trafilatura", "round": 1, "id": "arxiv_pdf", "kind": "pdf", "secs": 0.034, "chars": 0, "status": 200}
+{"tool": "trafilatura", "round": 1, "id": "bbc_tech", "kind": "news", "secs": 0.165, "chars": 2472, "status": 200}
+{"tool": "trafilatura", "round": 1, "id": "verge", "kind": "news", "secs": 0.139, "chars": 8823, "status": 200}
+{"tool": "trafilatura", "round": 1, "id": "blog_simonw", "kind": "blog", "secs": 0.133, "chars": 34488, "status": 200}
+{"tool": "trafilatura", "round": 1, "id": "blog_karpathy", "kind": "blog", "secs": 0.196, "chars": 46387, "status": 200}
+{"tool": "trafilatura", "round": 1, "id": "so_question", "kind": "forum", "secs": 0.207, "chars": 41, "status": 403}
+{"tool": "trafilatura", "round": 1, "id": "books_toscrape", "kind": "static", "secs": 0.417, "chars": 1478, "status": 200}
+{"tool": "trafilatura", "round": 1, "id": "quotes_static", "kind": "static", "secs": 0.657, "chars": 1619, "status": 200}
+{"tool": "trafilatura", "round": 1, "id": "quotes_js", "kind": "js", "secs": 0.104, "chars": 29, "status": 200}
+{"tool": "trafilatura", "round": 1, "id": "quotes_js_delay", "kind": "js", "secs": 0.104, "chars": 29, "status": 200}
+{"tool": "trafilatura", "round": 1, "id": "scrapethissite_ajax", "kind": "js", "secs": 0.312, "chars": 365, "status": 200}
+{"tool": "trafilatura", "round": 1, "id": "react_dev", "kind": "js", "secs": 0.21, "chars": 12475, "status": 200}
+{"tool": "trafilatura", "round": 1, "id": "hf_model", "kind": "js", "secs": 0.255, "chars": 7734, "status": 200}
+{"tool": "trafilatura", "round": 1, "id": "pypi_page", "kind": "static", "secs": 0.19, "chars": 5826, "status": 200}
+{"tool": "trafilatura", "round": 1, "id": "npm_page", "kind": "js", "secs": 0.053, "chars": 41, "status": 403}
+{"tool": "trafilatura", "round": 1, "id": "crates_page", "kind": "js", "secs": 0.344, "chars": 0, "status": 404}
+{"tool": "crawl4ai", "round": 1, "id": "wiki_rust", "kind": "static", "secs": 1.626, "chars": 269282, "status": 200, "success": true, "error": null}
+{"tool": "crawl4ai", "round": 1, "id": "wiki_webscraping", "kind": "static", "secs": 0.684, "chars": 73713, "status": 200, "success": true, "error": null}
+{"tool": "crawl4ai", "round": 1, "id": "wiki_transformer", "kind": "static", "secs": 1.876, "chars": 261237, "status": 200, "success": true, "error": null}
+{"tool": "crawl4ai", "round": 1, "id": "py_asyncio", "kind": "docs", "secs": 0.716, "chars": 77709, "status": 200, "success": true, "error": null}
+{"tool": "crawl4ai", "round": 1, "id": "py_json", "kind": "docs", "secs": 0.463, "chars": 46197, "status": 200, "success": true, "error": null}
+{"tool": "crawl4ai", "round": 1, "id": "mdn_fetch", "kind": "docs", "secs": 0.601, "chars": 37481, "status": 200, "success": true, "error": null}
+{"tool": "crawl4ai", "round": 1, "id": "rust_book_own", "kind": "docs", "secs": 0.553, "chars": 43624, "status": 200, "success": true, "error": null}
+{"tool": "crawl4ai", "round": 1, "id": "fastapi_first", "kind": "docs", "secs": 1.154, "chars": 39189, "status": 200, "success": true, "error": null}
+{"tool": "crawl4ai", "round": 1, "id": "anth_docs_models", "kind": "docs", "secs": 1.122, "chars": 25736, "status": 301, "success": true, "error": null}
+{"tool": "crawl4ai", "round": 1, "id": "gh_readme_fc", "kind": "github", "secs": 2.015, "chars": 39955, "status": 200, "success": true, "error": null}
+{"tool": "crawl4ai", "round": 1, "id": "gh_readme_requests", "kind": "github", "secs": 2.878, "chars": 18917, "status": 200, "success": true, "error": null}
+{"tool": "crawl4ai", "round": 1, "id": "gh_issue", "kind": "github", "secs": 2.704, "chars": 29197, "status": 200, "success": true, "error": null}
+{"tool": "crawl4ai", "round": 1, "id": "arxiv_abs", "kind": "paper", "secs": 0.426, "chars": 9612, "status": 200, "success": true, "error": null}
+{"tool": "crawl4ai", "round": 1, "id": "arxiv_pdf", "kind": "pdf", "secs": 0.063, "chars": 0, "status": null, "success": false, "error": "Unexpected error in _crawl_web at line 799 in _crawl_web (.venv/lib/python3.11/site-packages/crawl4ai/async_crawler_strategy.py):\nError: Failed on navigating ACS-GOTO:\nPage.goto: Download is starting\nCall log:\n  - navigating to \"https://arxiv.org/pdf/1706.03762\", waiting until \"domcontentloaded\"\n\n\nC"}
+{"tool": "crawl4ai", "round": 1, "id": "bbc_tech", "kind": "news", "secs": 1.768, "chars": 31271, "status": 302, "success": true, "error": null}
+{"tool": "crawl4ai", "round": 1, "id": "verge", "kind": "news", "secs": 1.73, "chars": 48937, "status": 200, "success": true, "error": null}
+{"tool": "crawl4ai", "round": 1, "id": "blog_simonw", "kind": "blog", "secs": 0.47, "chars": 86945, "status": 200, "success": true, "error": null}
+{"tool": "crawl4ai", "round": 1, "id": "blog_karpathy", "kind": "blog", "secs": 0.55, "chars": 53022, "status": 200, "success": true, "error": null}
+{"tool": "crawl4ai", "round": 1, "id": "so_question", "kind": "forum", "secs": 0.363, "chars": 1, "status": 307, "success": false, "error": "Blocked by anti-bot protection: Cloudflare JS challenge"}
+{"tool": "crawl4ai", "round": 1, "id": "books_toscrape", "kind": "static", "secs": 0.964, "chars": 1933, "status": 200, "success": true, "error": null}
+{"tool": "crawl4ai", "round": 1, "id": "quotes_static", "kind": "static", "secs": 0.388, "chars": 4375, "status": 200, "success": true, "error": null}
+{"tool": "crawl4ai", "round": 1, "id": "quotes_js", "kind": "js", "secs": 0.478, "chars": 1666, "status": 200, "success": true, "error": null}
+{"tool": "crawl4ai", "round": 1, "id": "quotes_js_delay", "kind": "js", "secs": 0.47, "chars": 263, "status": 200, "success": true, "error": null}
+{"tool": "crawl4ai", "round": 1, "id": "scrapethissite_ajax", "kind": "js", "secs": 0.845, "chars": 1502, "status": 200, "success": true, "error": null}
+{"tool": "crawl4ai", "round": 1, "id": "react_dev", "kind": "js", "secs": 0.718, "chars": 27297, "status": 200, "success": true, "error": null}
+{"tool": "crawl4ai", "round": 1, "id": "hf_model", "kind": "js", "secs": 1.29, "chars": 15694, "status": 200, "success": true, "error": null}
+{"tool": "crawl4ai", "round": 1, "id": "pypi_page", "kind": "static", "secs": 1.101, "chars": 77600, "status": 200, "success": true, "error": null}
+{"tool": "crawl4ai", "round": 1, "id": "npm_page", "kind": "js", "secs": 0.368, "chars": 503, "status": 307, "success": false, "error": "Blocked by anti-bot protection: Cloudflare JS challenge"}
+{"tool": "crawl4ai", "round": 1, "id": "crates_page", "kind": "js", "secs": 0.694, "chars": 1, "status": 200, "success": true, "error": null}
+{"tool": "trafilatura", "round": 2, "id": "wiki_rust", "kind": "static", "secs": 0.648, "chars": 80487, "status": 200}
+{"tool": "trafilatura", "round": 2, "id": "wiki_webscraping", "kind": "static", "secs": 0.084, "chars": 27159, "status": 200}
+{"tool": "trafilatura", "round": 2, "id": "wiki_transformer", "kind": "static", "secs": 0.295, "chars": 72610, "status": 200}
+{"tool": "trafilatura", "round": 2, "id": "py_asyncio", "kind": "docs", "secs": 0.214, "chars": 44310, "status": 200}
+{"tool": "trafilatura", "round": 2, "id": "py_json", "kind": "docs", "secs": 0.102, "chars": 25839, "status": 200}
+{"tool": "trafilatura", "round": 2, "id": "mdn_fetch", "kind": "docs", "secs": 0.079, "chars": 22866, "status": 200}
+{"tool": "trafilatura", "round": 2, "id": "rust_book_own", "kind": "docs", "secs": 0.1, "chars": 22110, "status": 200}
+{"tool": "trafilatura", "round": 2, "id": "fastapi_first", "kind": "docs", "secs": 0.122, "chars": 13023, "status": 200}
+{"tool": "trafilatura", "round": 2, "id": "anth_docs_models", "kind": "docs", "secs": 0.555, "chars": 7949, "status": 200}
+{"tool": "trafilatura", "round": 2, "id": "gh_readme_fc", "kind": "github", "secs": 0.699, "chars": 15545, "status": 200}
+{"tool": "trafilatura", "round": 2, "id": "gh_readme_requests", "kind": "github", "secs": 0.445, "chars": 1776, "status": 200}
+{"tool": "trafilatura", "round": 2, "id": "gh_issue", "kind": "github", "secs": 1.048, "chars": 10959, "status": 200}
+{"tool": "trafilatura", "round": 2, "id": "arxiv_abs", "kind": "paper", "secs": 0.072, "chars": 2908, "status": 200}
+{"tool": "trafilatura", "round": 2, "id": "arxiv_pdf", "kind": "pdf", "secs": 0.037, "chars": 0, "status": 200}
+{"tool": "trafilatura", "round": 2, "id": "bbc_tech", "kind": "news", "secs": 0.164, "chars": 2472, "status": 200}
+{"tool": "trafilatura", "round": 2, "id": "verge", "kind": "news", "secs": 0.132, "chars": 8823, "status": 200}
+{"tool": "trafilatura", "round": 2, "id": "blog_simonw", "kind": "blog", "secs": 0.163, "chars": 34488, "status": 200}
+{"tool": "trafilatura", "round": 2, "id": "blog_karpathy", "kind": "blog", "secs": 0.085, "chars": 46387, "status": 200}
+{"tool": "trafilatura", "round": 2, "id": "so_question", "kind": "forum", "secs": 0.202, "chars": 41, "status": 403}
+{"tool": "trafilatura", "round": 2, "id": "books_toscrape", "kind": "static", "secs": 0.324, "chars": 1478, "status": 200}
+{"tool": "trafilatura", "round": 2, "id": "quotes_static", "kind": "static", "secs": 0.35, "chars": 1619, "status": 200}
+{"tool": "trafilatura", "round": 2, "id": "quotes_js", "kind": "js", "secs": 0.104, "chars": 29, "status": 200}
+{"tool": "trafilatura", "round": 2, "id": "quotes_js_delay", "kind": "js", "secs": 0.107, "chars": 29, "status": 200}
+{"tool": "trafilatura", "round": 2, "id": "scrapethissite_ajax", "kind": "js", "secs": 0.347, "chars": 365, "status": 200}
+{"tool": "trafilatura", "round": 2, "id": "react_dev", "kind": "js", "secs": 0.183, "chars": 12475, "status": 200}
+{"tool": "trafilatura", "round": 2, "id": "hf_model", "kind": "js", "secs": 0.28, "chars": 7734, "status": 200}
+{"tool": "trafilatura", "round": 2, "id": "pypi_page", "kind": "static", "secs": 0.186, "chars": 5826, "status": 200}
+{"tool": "trafilatura", "round": 2, "id": "npm_page", "kind": "js", "secs": 0.051, "chars": 41, "status": 403}
+{"tool": "trafilatura", "round": 2, "id": "crates_page", "kind": "js", "secs": 0.135, "chars": 0, "status": 404}
+{"tool": "crawl4ai", "round": 2, "id": "wiki_rust", "kind": "static", "secs": 1.6, "chars": 269282, "status": 200, "success": true, "error": null}
+{"tool": "crawl4ai", "round": 2, "id": "wiki_webscraping", "kind": "static", "secs": 0.655, "chars": 73713, "status": 200, "success": true, "error": null}
+{"tool": "crawl4ai", "round": 2, "id": "wiki_transformer", "kind": "static", "secs": 1.744, "chars": 246996, "status": 200, "success": true, "error": null}
+{"tool": "crawl4ai", "round": 2, "id": "py_asyncio", "kind": "docs", "secs": 0.514, "chars": 77709, "status": 200, "success": true, "error": null}
+{"tool": "crawl4ai", "round": 2, "id": "py_json", "kind": "docs", "secs": 0.435, "chars": 46197, "status": 200, "success": true, "error": null}
+{"tool": "crawl4ai", "round": 2, "id": "mdn_fetch", "kind": "docs", "secs": 0.595, "chars": 37481, "status": 200, "success": true, "error": null}
+{"tool": "crawl4ai", "round": 2, "id": "rust_book_own", "kind": "docs", "secs": 0.529, "chars": 43624, "status": 200, "success": true, "error": null}
+{"tool": "crawl4ai", "round": 2, "id": "fastapi_first", "kind": "docs", "secs": 1.221, "chars": 39189, "status": 200, "success": true, "error": null}
+{"tool": "crawl4ai", "round": 2, "id": "anth_docs_models", "kind": "docs", "secs": 1.231, "chars": 25736, "status": 301, "success": true, "error": null}
+{"tool": "crawl4ai", "round": 2, "id": "gh_readme_fc", "kind": "github", "secs": 2.045, "chars": 39309, "status": 200, "success": true, "error": null}
+{"tool": "crawl4ai", "round": 2, "id": "gh_readme_requests", "kind": "github", "secs": 1.64, "chars": 18917, "status": 200, "success": true, "error": null}
+{"tool": "crawl4ai", "round": 2, "id": "gh_issue", "kind": "github", "secs": 5.187, "chars": 29197, "status": 200, "success": true, "error": null}
+{"tool": "crawl4ai", "round": 2, "id": "arxiv_abs", "kind": "paper", "secs": 0.68, "chars": 9612, "status": 200, "success": true, "error": null}
+{"tool": "crawl4ai", "round": 2, "id": "arxiv_pdf", "kind": "pdf", "secs": 0.109, "chars": 0, "status": null, "success": false, "error": "Unexpected error in _crawl_web at line 799 in _crawl_web (.venv/lib/python3.11/site-packages/crawl4ai/async_crawler_strategy.py):\nError: Failed on navigating ACS-GOTO:\nPage.goto: Download is starting\nCall log:\n  - navigating to \"https://arxiv.org/pdf/1706.03762\", waiting until \"domcontentloaded\"\n\n\nC"}
+{"tool": "crawl4ai", "round": 2, "id": "bbc_tech", "kind": "news", "secs": 2.276, "chars": 31271, "status": 302, "success": true, "error": null}
+{"tool": "crawl4ai", "round": 2, "id": "verge", "kind": "news", "secs": 2.263, "chars": 48937, "status": 200, "success": true, "error": null}
+{"tool": "crawl4ai", "round": 2, "id": "blog_simonw", "kind": "blog", "secs": 0.534, "chars": 86982, "status": 200, "success": true, "error": null}
+{"tool": "crawl4ai", "round": 2, "id": "blog_karpathy", "kind": "blog", "secs": 0.625, "chars": 52999, "status": 200, "success": true, "error": null}
+{"tool": "crawl4ai", "round": 2, "id": "so_question", "kind": "forum", "secs": 0.368, "chars": 1, "status": 307, "success": false, "error": "Blocked by anti-bot protection: Cloudflare JS challenge"}
+{"tool": "crawl4ai", "round": 2, "id": "books_toscrape", "kind": "static", "secs": 0.949, "chars": 1933, "status": 200, "success": true, "error": null}
+{"tool": "crawl4ai", "round": 2, "id": "quotes_static", "kind": "static", "secs": 0.375, "chars": 4375, "status": 200, "success": true, "error": null}
+{"tool": "crawl4ai", "round": 2, "id": "quotes_js", "kind": "js", "secs": 0.459, "chars": 1666, "status": 200, "success": true, "error": null}
+{"tool": "crawl4ai", "round": 2, "id": "quotes_js_delay", "kind": "js", "secs": 0.456, "chars": 263, "status": 200, "success": true, "error": null}
+{"tool": "crawl4ai", "round": 2, "id": "scrapethissite_ajax", "kind": "js", "secs": 0.782, "chars": 1502, "status": 200, "success": true, "error": null}
+{"tool": "crawl4ai", "round": 2, "id": "react_dev", "kind": "js", "secs": 0.846, "chars": 27297, "status": 200, "success": true, "error": null}
+{"tool": "crawl4ai", "round": 2, "id": "hf_model", "kind": "js", "secs": 1.32, "chars": 15694, "status": 200, "success": true, "error": null}
+{"tool": "crawl4ai", "round": 2, "id": "pypi_page", "kind": "static", "secs": 0.99, "chars": 77600, "status": 200, "success": true, "error": null}
+{"tool": "crawl4ai", "round": 2, "id": "npm_page", "kind": "js", "secs": 0.418, "chars": 503, "status": 307, "success": false, "error": "Blocked by anti-bot protection: Cloudflare JS challenge"}
+{"tool": "crawl4ai", "round": 2, "id": "crates_page", "kind": "js", "secs": 0.647, "chars": 1, "status": 200, "success": true, "error": null}
+{"tool": "fc_local", "round": 2, "id": "wiki_rust", "kind": "static", "secs": 0.283, "chars": 206821, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_local", "round": 2, "id": "wiki_webscraping", "kind": "static", "secs": 0.048, "chars": 53080, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_local", "round": 2, "id": "wiki_transformer", "kind": "static", "secs": 0.111, "chars": 153463, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_local", "round": 2, "id": "py_asyncio", "kind": "docs", "secs": 0.053, "chars": 61387, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_local", "round": 2, "id": "py_json", "kind": "docs", "secs": 0.029, "chars": 35375, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_local", "round": 2, "id": "mdn_fetch", "kind": "docs", "secs": 0.037, "chars": 33417, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_local", "round": 2, "id": "rust_book_own", "kind": "docs", "secs": 0.073, "chars": 27834, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_local", "round": 2, "id": "fastapi_first", "kind": "docs", "secs": 0.065, "chars": 13960, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_local", "round": 2, "id": "anth_docs_models", "kind": "docs", "secs": 0.51, "chars": 19504, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_local", "round": 2, "id": "gh_readme_fc", "kind": "github", "secs": 0.755, "chars": 30879, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_local", "round": 2, "id": "gh_readme_requests", "kind": "github", "secs": 0.76, "chars": 10899, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_local", "round": 2, "id": "gh_issue", "kind": "github", "secs": 1.375, "chars": 22963, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_local", "round": 2, "id": "arxiv_abs", "kind": "paper", "secs": 0.023, "chars": 8053, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_local", "round": 2, "id": "arxiv_pdf", "kind": "pdf", "secs": 0.193, "chars": 41552, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_local", "round": 2, "id": "bbc_tech", "kind": "news", "secs": 0.054, "chars": 28860, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_local", "round": 2, "id": "verge", "kind": "news", "secs": 0.032, "chars": 37077, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_local", "round": 2, "id": "blog_simonw", "kind": "blog", "secs": 0.043, "chars": 83749, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_local", "round": 2, "id": "blog_karpathy", "kind": "blog", "secs": 0.025, "chars": 52855, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_local", "round": 2, "id": "so_question", "kind": "forum", "secs": 0.121, "chars": 0, "http": 200, "warning": "This site did not serve the page to this machine (status 403), so the content is missing or is a bot check. Firecrawl cloud can fetch pages like this when FIRECRAWL_CLOUD is auto.", "source": "local", "blocked": true, "status": 403}
+{"tool": "fc_local", "round": 2, "id": "books_toscrape", "kind": "static", "secs": 0.64, "chars": 1825, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_local", "round": 2, "id": "quotes_static", "kind": "static", "secs": 0.389, "chars": 4239, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_local", "round": 2, "id": "quotes_js", "kind": "js", "secs": 0.214, "chars": 94, "http": 200, "warning": "This page builds its content with JavaScript, so this result is probably incomplete. The local Chrome could not render it. Chrome at /opt/ms-playwright/chromium-1254/chrome-linux64/chrome could not start its sandbox, which usually means a container or system policy blocks user namespaces. In Docker, run the container with a seccomp profile that allows them; the Firecrawl Local README shows one. On Ubuntu 23.10 or newer, allow user namespaces for Chrome. Firecrawl Local does not run Chrome without its sandbox.", "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_local", "round": 2, "id": "quotes_js_delay", "kind": "js", "secs": 0.2, "chars": 94, "http": 200, "warning": "This page builds its content with JavaScript, so this result is probably incomplete. The local Chrome could not render it. Chrome at /opt/ms-playwright/chromium-1254/chrome-linux64/chrome could not start its sandbox, which usually means a container or system policy blocks user namespaces. In Docker, run the container with a seccomp profile that allows them; the Firecrawl Local README shows one. On Ubuntu 23.10 or newer, allow user namespaces for Chrome. Firecrawl Local does not run Chrome without its sandbox.", "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_local", "round": 2, "id": "scrapethissite_ajax", "kind": "js", "secs": 0.212, "chars": 1180, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_local", "round": 2, "id": "react_dev", "kind": "js", "secs": 0.085, "chars": 15888, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_local", "round": 2, "id": "hf_model", "kind": "js", "secs": 0.216, "chars": 5931, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_local", "round": 2, "id": "pypi_page", "kind": "static", "secs": 0.074, "chars": 71897, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_local", "round": 2, "id": "npm_page", "kind": "js", "secs": 0.126, "chars": 0, "http": 200, "warning": "This site did not serve the page to this machine (status 403), so the content is missing or is a bot check. Firecrawl cloud can fetch pages like this when FIRECRAWL_CLOUD is auto.", "source": "local", "blocked": true, "status": 403}
+{"tool": "fc_local", "round": 2, "id": "crates_page", "kind": "js", "secs": 0.433, "chars": 0, "http": 200, "warning": "This page builds its content with JavaScript, so this result is probably incomplete. The local Chrome could not render it. Chrome at /opt/ms-playwright/chromium-1254/chrome-linux64/chrome could not start its sandbox, which usually means a container or system policy blocks user namespaces. In Docker, run the container with a seccomp profile that allows them; the Firecrawl Local README shows one. On Ubuntu 23.10 or newer, allow user namespaces for Chrome. Firecrawl Local does not run Chrome without its sandbox.", "source": "local", "blocked": null, "status": 200}
+{"tool": "trafilatura", "round": 3, "id": "wiki_rust", "kind": "static", "secs": 0.665, "chars": 80487, "status": 200}
+{"tool": "trafilatura", "round": 3, "id": "wiki_webscraping", "kind": "static", "secs": 0.093, "chars": 27159, "status": 200}
+{"tool": "trafilatura", "round": 3, "id": "wiki_transformer", "kind": "static", "secs": 0.332, "chars": 72610, "status": 200}
+{"tool": "trafilatura", "round": 3, "id": "py_asyncio", "kind": "docs", "secs": 0.204, "chars": 44310, "status": 200}
+{"tool": "trafilatura", "round": 3, "id": "py_json", "kind": "docs", "secs": 0.101, "chars": 25839, "status": 200}
+{"tool": "trafilatura", "round": 3, "id": "mdn_fetch", "kind": "docs", "secs": 0.079, "chars": 22866, "status": 200}
+{"tool": "trafilatura", "round": 3, "id": "rust_book_own", "kind": "docs", "secs": 0.079, "chars": 22110, "status": 200}
+{"tool": "trafilatura", "round": 3, "id": "fastapi_first", "kind": "docs", "secs": 0.158, "chars": 13023, "status": 200}
+{"tool": "trafilatura", "round": 3, "id": "anth_docs_models", "kind": "docs", "secs": 0.768, "chars": 7949, "status": 200}
+{"tool": "trafilatura", "round": 3, "id": "gh_readme_fc", "kind": "github", "secs": 0.692, "chars": 15545, "status": 200}
+{"tool": "trafilatura", "round": 3, "id": "gh_readme_requests", "kind": "github", "secs": 0.608, "chars": 1776, "status": 200}
+{"tool": "trafilatura", "round": 3, "id": "gh_issue", "kind": "github", "secs": 1.156, "chars": 10959, "status": 200}
+{"tool": "trafilatura", "round": 3, "id": "arxiv_abs", "kind": "paper", "secs": 0.06, "chars": 2908, "status": 200}
+{"tool": "trafilatura", "round": 3, "id": "arxiv_pdf", "kind": "pdf", "secs": 0.031, "chars": 0, "status": 200}
+{"tool": "trafilatura", "round": 3, "id": "bbc_tech", "kind": "news", "secs": 0.155, "chars": 2472, "status": 200}
+{"tool": "trafilatura", "round": 3, "id": "verge", "kind": "news", "secs": 0.136, "chars": 8823, "status": 200}
+{"tool": "trafilatura", "round": 3, "id": "blog_simonw", "kind": "blog", "secs": 0.128, "chars": 34488, "status": 200}
+{"tool": "trafilatura", "round": 3, "id": "blog_karpathy", "kind": "blog", "secs": 0.088, "chars": 46387, "status": 200}
+{"tool": "trafilatura", "round": 3, "id": "so_question", "kind": "forum", "secs": 0.213, "chars": 41, "status": 403}
+{"tool": "trafilatura", "round": 3, "id": "books_toscrape", "kind": "static", "secs": 0.326, "chars": 1478, "status": 200}
+{"tool": "trafilatura", "round": 3, "id": "quotes_static", "kind": "static", "secs": 0.332, "chars": 1619, "status": 200}
+{"tool": "trafilatura", "round": 3, "id": "quotes_js", "kind": "js", "secs": 0.108, "chars": 29, "status": 200}
+{"tool": "trafilatura", "round": 3, "id": "quotes_js_delay", "kind": "js", "secs": 0.105, "chars": 29, "status": 200}
+{"tool": "trafilatura", "round": 3, "id": "scrapethissite_ajax", "kind": "js", "secs": 0.288, "chars": 365, "status": 200}
+{"tool": "trafilatura", "round": 3, "id": "react_dev", "kind": "js", "secs": 0.168, "chars": 12475, "status": 200}
+{"tool": "trafilatura", "round": 3, "id": "hf_model", "kind": "js", "secs": 0.253, "chars": 7734, "status": 200}
+{"tool": "trafilatura", "round": 3, "id": "pypi_page", "kind": "static", "secs": 0.174, "chars": 5826, "status": 200}
+{"tool": "trafilatura", "round": 3, "id": "npm_page", "kind": "js", "secs": 0.041, "chars": 41, "status": 403}
+{"tool": "trafilatura", "round": 3, "id": "crates_page", "kind": "js", "secs": 0.353, "chars": 0, "status": 404}
+{"tool": "crawl4ai", "round": 3, "id": "wiki_rust", "kind": "static", "secs": 1.587, "chars": 269282, "status": 200, "success": true, "error": null}
+{"tool": "crawl4ai", "round": 3, "id": "wiki_webscraping", "kind": "static", "secs": 0.658, "chars": 73713, "status": 200, "success": true, "error": null}
+{"tool": "crawl4ai", "round": 3, "id": "wiki_transformer", "kind": "static", "secs": 1.757, "chars": 246996, "status": 200, "success": true, "error": null}
+{"tool": "crawl4ai", "round": 3, "id": "py_asyncio", "kind": "docs", "secs": 0.602, "chars": 77709, "status": 200, "success": true, "error": null}
+{"tool": "crawl4ai", "round": 3, "id": "py_json", "kind": "docs", "secs": 0.449, "chars": 46197, "status": 200, "success": true, "error": null}
+{"tool": "crawl4ai", "round": 3, "id": "mdn_fetch", "kind": "docs", "secs": 0.543, "chars": 37481, "status": 200, "success": true, "error": null}
+{"tool": "crawl4ai", "round": 3, "id": "rust_book_own", "kind": "docs", "secs": 0.528, "chars": 43624, "status": 200, "success": true, "error": null}
+{"tool": "crawl4ai", "round": 3, "id": "fastapi_first", "kind": "docs", "secs": 1.152, "chars": 39189, "status": 200, "success": true, "error": null}
+{"tool": "crawl4ai", "round": 3, "id": "anth_docs_models", "kind": "docs", "secs": 3.771, "chars": 25736, "status": 301, "success": true, "error": null}
+{"tool": "crawl4ai", "round": 3, "id": "gh_readme_fc", "kind": "github", "secs": 2.537, "chars": 39309, "status": 200, "success": true, "error": null}
+{"tool": "crawl4ai", "round": 3, "id": "gh_readme_requests", "kind": "github", "secs": 1.564, "chars": 18917, "status": 200, "success": true, "error": null}
+{"tool": "crawl4ai", "round": 3, "id": "gh_issue", "kind": "github", "secs": 2.58, "chars": 29197, "status": 200, "success": true, "error": null}
+{"tool": "crawl4ai", "round": 3, "id": "arxiv_abs", "kind": "paper", "secs": 0.454, "chars": 9612, "status": 200, "success": true, "error": null}
+{"tool": "crawl4ai", "round": 3, "id": "arxiv_pdf", "kind": "pdf", "secs": 0.058, "chars": 0, "status": null, "success": false, "error": "Unexpected error in _crawl_web at line 799 in _crawl_web (.venv/lib/python3.11/site-packages/crawl4ai/async_crawler_strategy.py):\nError: Failed on navigating ACS-GOTO:\nPage.goto: Download is starting\nCall log:\n  - navigating to \"https://arxiv.org/pdf/1706.03762\", waiting until \"domcontentloaded\"\n\n\nC"}
+{"tool": "crawl4ai", "round": 3, "id": "bbc_tech", "kind": "news", "secs": 1.77, "chars": 31271, "status": 302, "success": true, "error": null}
+{"tool": "crawl4ai", "round": 3, "id": "verge", "kind": "news", "secs": 1.742, "chars": 49045, "status": 200, "success": true, "error": null}
+{"tool": "crawl4ai", "round": 3, "id": "blog_simonw", "kind": "blog", "secs": 1.137, "chars": 86981, "status": 200, "success": true, "error": null}
+{"tool": "crawl4ai", "round": 3, "id": "blog_karpathy", "kind": "blog", "secs": 0.435, "chars": 53022, "status": 200, "success": true, "error": null}
+{"tool": "crawl4ai", "round": 3, "id": "so_question", "kind": "forum", "secs": 0.309, "chars": 1, "status": 307, "success": false, "error": "Blocked by anti-bot protection: Cloudflare JS challenge"}
+{"tool": "crawl4ai", "round": 3, "id": "books_toscrape", "kind": "static", "secs": 0.933, "chars": 1933, "status": 200, "success": true, "error": null}
+{"tool": "crawl4ai", "round": 3, "id": "quotes_static", "kind": "static", "secs": 0.339, "chars": 4375, "status": 200, "success": true, "error": null}
+{"tool": "crawl4ai", "round": 3, "id": "quotes_js", "kind": "js", "secs": 0.467, "chars": 1666, "status": 200, "success": true, "error": null}
+{"tool": "crawl4ai", "round": 3, "id": "quotes_js_delay", "kind": "js", "secs": 0.442, "chars": 263, "status": 200, "success": true, "error": null}
+{"tool": "crawl4ai", "round": 3, "id": "scrapethissite_ajax", "kind": "js", "secs": 0.654, "chars": 1502, "status": 200, "success": true, "error": null}
+{"tool": "crawl4ai", "round": 3, "id": "react_dev", "kind": "js", "secs": 0.739, "chars": 27305, "status": 200, "success": true, "error": null}
+{"tool": "crawl4ai", "round": 3, "id": "hf_model", "kind": "js", "secs": 1.236, "chars": 15694, "status": 200, "success": true, "error": null}
+{"tool": "crawl4ai", "round": 3, "id": "pypi_page", "kind": "static", "secs": 1.065, "chars": 78028, "status": 200, "success": true, "error": null}
+{"tool": "crawl4ai", "round": 3, "id": "npm_page", "kind": "js", "secs": 0.376, "chars": 503, "status": 307, "success": false, "error": "Blocked by anti-bot protection: Cloudflare JS challenge"}
+{"tool": "crawl4ai", "round": 3, "id": "crates_page", "kind": "js", "secs": 0.634, "chars": 1, "status": 200, "success": true, "error": null}
+{"tool": "fc_local", "round": 3, "id": "wiki_rust", "kind": "static", "secs": 0.286, "chars": 206821, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_local", "round": 3, "id": "wiki_webscraping", "kind": "static", "secs": 0.049, "chars": 53080, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_local", "round": 3, "id": "wiki_transformer", "kind": "static", "secs": 0.099, "chars": 153463, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_local", "round": 3, "id": "py_asyncio", "kind": "docs", "secs": 0.053, "chars": 61387, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_local", "round": 3, "id": "py_json", "kind": "docs", "secs": 0.024, "chars": 35375, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_local", "round": 3, "id": "mdn_fetch", "kind": "docs", "secs": 0.043, "chars": 33417, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_local", "round": 3, "id": "rust_book_own", "kind": "docs", "secs": 0.043, "chars": 27834, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_local", "round": 3, "id": "fastapi_first", "kind": "docs", "secs": 0.053, "chars": 13960, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_local", "round": 3, "id": "anth_docs_models", "kind": "docs", "secs": 0.37, "chars": 19504, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_local", "round": 3, "id": "gh_readme_fc", "kind": "github", "secs": 0.489, "chars": 30879, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_local", "round": 3, "id": "gh_readme_requests", "kind": "github", "secs": 0.52, "chars": 10899, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_local", "round": 3, "id": "gh_issue", "kind": "github", "secs": 1.214, "chars": 22963, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_local", "round": 3, "id": "arxiv_abs", "kind": "paper", "secs": 0.021, "chars": 8053, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_local", "round": 3, "id": "arxiv_pdf", "kind": "pdf", "secs": 0.197, "chars": 41552, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_local", "round": 3, "id": "bbc_tech", "kind": "news", "secs": 0.044, "chars": 28860, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_local", "round": 3, "id": "verge", "kind": "news", "secs": 0.056, "chars": 37077, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_local", "round": 3, "id": "blog_simonw", "kind": "blog", "secs": 0.07, "chars": 83749, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_local", "round": 3, "id": "blog_karpathy", "kind": "blog", "secs": 0.023, "chars": 52855, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_local", "round": 3, "id": "so_question", "kind": "forum", "secs": 0.124, "chars": 0, "http": 200, "warning": "This site did not serve the page to this machine (status 403), so the content is missing or is a bot check. Firecrawl cloud can fetch pages like this when FIRECRAWL_CLOUD is auto.", "source": "local", "blocked": true, "status": 403}
+{"tool": "fc_local", "round": 3, "id": "books_toscrape", "kind": "static", "secs": 0.381, "chars": 1825, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_local", "round": 3, "id": "quotes_static", "kind": "static", "secs": 0.397, "chars": 4239, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_local", "round": 3, "id": "quotes_js", "kind": "js", "secs": 0.199, "chars": 94, "http": 200, "warning": "This page builds its content with JavaScript, so this result is probably incomplete. The local Chrome could not render it. Chrome at /opt/ms-playwright/chromium-1254/chrome-linux64/chrome could not start its sandbox, which usually means a container or system policy blocks user namespaces. In Docker, run the container with a seccomp profile that allows them; the Firecrawl Local README shows one. On Ubuntu 23.10 or newer, allow user namespaces for Chrome. Firecrawl Local does not run Chrome without its sandbox.", "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_local", "round": 3, "id": "quotes_js_delay", "kind": "js", "secs": 0.205, "chars": 94, "http": 200, "warning": "This page builds its content with JavaScript, so this result is probably incomplete. The local Chrome could not render it. Chrome at /opt/ms-playwright/chromium-1254/chrome-linux64/chrome could not start its sandbox, which usually means a container or system policy blocks user namespaces. In Docker, run the container with a seccomp profile that allows them; the Firecrawl Local README shows one. On Ubuntu 23.10 or newer, allow user namespaces for Chrome. Firecrawl Local does not run Chrome without its sandbox.", "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_local", "round": 3, "id": "scrapethissite_ajax", "kind": "js", "secs": 0.237, "chars": 1180, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_local", "round": 3, "id": "react_dev", "kind": "js", "secs": 0.06, "chars": 15888, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_local", "round": 3, "id": "hf_model", "kind": "js", "secs": 0.202, "chars": 5931, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_local", "round": 3, "id": "pypi_page", "kind": "static", "secs": 0.066, "chars": 71897, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_local", "round": 3, "id": "npm_page", "kind": "js", "secs": 0.12, "chars": 0, "http": 200, "warning": "This site did not serve the page to this machine (status 403), so the content is missing or is a bot check. Firecrawl cloud can fetch pages like this when FIRECRAWL_CLOUD is auto.", "source": "local", "blocked": true, "status": 403}
+{"tool": "fc_local", "round": 3, "id": "crates_page", "kind": "js", "secs": 0.442, "chars": 0, "http": 200, "warning": "This page builds its content with JavaScript, so this result is probably incomplete. The local Chrome could not render it. Chrome at /opt/ms-playwright/chromium-1254/chrome-linux64/chrome could not start its sandbox, which usually means a container or system policy blocks user namespaces. In Docker, run the container with a seccomp profile that allows them; the Firecrawl Local README shows one. On Ubuntu 23.10 or newer, allow user namespaces for Chrome. Firecrawl Local does not run Chrome without its sandbox.", "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 1, "id": "wiki_rust", "kind": "static", "secs": 0.277, "chars": 206821, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 1, "id": "wiki_webscraping", "kind": "static", "secs": 0.607, "chars": 53092, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 1, "id": "wiki_transformer", "kind": "static", "secs": 0.115, "chars": 153463, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 1, "id": "py_asyncio", "kind": "docs", "secs": 0.301, "chars": 61387, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 1, "id": "py_json", "kind": "docs", "secs": 0.028, "chars": 35375, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 1, "id": "mdn_fetch", "kind": "docs", "secs": 0.024, "chars": 33417, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 1, "id": "rust_book_own", "kind": "docs", "secs": 0.053, "chars": 27834, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 1, "id": "fastapi_first", "kind": "docs", "secs": 0.049, "chars": 13960, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 1, "id": "anth_docs_models", "kind": "docs", "secs": 0.336, "chars": 19504, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 1, "id": "gh_readme_fc", "kind": "github", "secs": 0.081, "chars": 30879, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 1, "id": "gh_readme_requests", "kind": "github", "secs": 0.031, "chars": 10899, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 1, "id": "gh_issue", "kind": "github", "secs": 0.043, "chars": 22963, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 1, "id": "arxiv_abs", "kind": "paper", "secs": 0.022, "chars": 8053, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 1, "id": "arxiv_pdf", "kind": "pdf", "secs": 0.182, "chars": 41552, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 1, "id": "bbc_tech", "kind": "news", "secs": 0.057, "chars": 28860, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 1, "id": "verge", "kind": "news", "secs": 0.043, "chars": 37077, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 1, "id": "blog_simonw", "kind": "blog", "secs": 0.061, "chars": 83749, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 1, "id": "blog_karpathy", "kind": "blog", "secs": 0.023, "chars": 52855, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 1, "id": "so_question", "kind": "forum", "secs": 0.02, "chars": 0, "http": 200, "warning": "This site did not serve the page to this machine (status 403), so the content is missing or is a bot check. Firecrawl cloud can fetch pages like this when FIRECRAWL_CLOUD is auto.", "source": "local", "blocked": true, "status": 403}
+{"tool": "fc_static", "round": 1, "id": "books_toscrape", "kind": "static", "secs": 0.385, "chars": 1825, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 1, "id": "quotes_static", "kind": "static", "secs": 0.39, "chars": 4239, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 1, "id": "quotes_js", "kind": "js", "secs": 0.099, "chars": 94, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 1, "id": "quotes_js_delay", "kind": "js", "secs": 0.099, "chars": 94, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 1, "id": "scrapethissite_ajax", "kind": "js", "secs": 0.354, "chars": 1180, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 1, "id": "react_dev", "kind": "js", "secs": 0.072, "chars": 15888, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 1, "id": "hf_model", "kind": "js", "secs": 0.265, "chars": 5931, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 1, "id": "pypi_page", "kind": "static", "secs": 0.074, "chars": 71897, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 1, "id": "npm_page", "kind": "js", "secs": 0.017, "chars": 0, "http": 200, "warning": "This site did not serve the page to this machine (status 403), so the content is missing or is a bot check. Firecrawl cloud can fetch pages like this when FIRECRAWL_CLOUD is auto.", "source": "local", "blocked": true, "status": 403}
+{"tool": "fc_static", "round": 1, "id": "crates_page", "kind": "js", "secs": 0.321, "chars": 0, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 1, "id": "wiki_rust", "kind": "static", "secs": 0.286, "chars": 206821, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 1, "id": "wiki_webscraping", "kind": "static", "secs": 0.05, "chars": 53080, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 1, "id": "wiki_transformer", "kind": "static", "secs": 0.104, "chars": 153463, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 1, "id": "py_asyncio", "kind": "docs", "secs": 0.056, "chars": 61387, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 1, "id": "py_json", "kind": "docs", "secs": 0.028, "chars": 35375, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 1, "id": "mdn_fetch", "kind": "docs", "secs": 0.028, "chars": 33417, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 1, "id": "rust_book_own", "kind": "docs", "secs": 0.059, "chars": 27834, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 1, "id": "fastapi_first", "kind": "docs", "secs": 0.064, "chars": 13960, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 1, "id": "anth_docs_models", "kind": "docs", "secs": 0.337, "chars": 19504, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 1, "id": "gh_readme_fc", "kind": "github", "secs": 0.074, "chars": 30879, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 1, "id": "gh_readme_requests", "kind": "github", "secs": 0.034, "chars": 10899, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 1, "id": "gh_issue", "kind": "github", "secs": 0.045, "chars": 22963, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 1, "id": "arxiv_abs", "kind": "paper", "secs": 0.019, "chars": 8053, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 1, "id": "arxiv_pdf", "kind": "pdf", "secs": 0.158, "chars": 41552, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 1, "id": "bbc_tech", "kind": "news", "secs": 0.041, "chars": 28860, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 1, "id": "verge", "kind": "news", "secs": 0.046, "chars": 37077, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 1, "id": "blog_simonw", "kind": "blog", "secs": 0.041, "chars": 83749, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 1, "id": "blog_karpathy", "kind": "blog", "secs": 0.023, "chars": 52855, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 1, "id": "so_question", "kind": "forum", "secs": 4.947, "chars": 130021, "http": 200, "warning": null, "source": "firecrawl-cloud", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 1, "id": "books_toscrape", "kind": "static", "secs": 0.38, "chars": 1825, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 1, "id": "quotes_static", "kind": "static", "secs": 0.388, "chars": 4239, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 1, "id": "quotes_js", "kind": "js", "secs": 0.213, "chars": 94, "http": 200, "warning": "This page builds its content with JavaScript, so this result is probably incomplete. The local Chrome could not render it. Chrome at /opt/ms-playwright/chromium-1254/chrome-linux64/chrome could not start its sandbox, which usually means a container or system policy blocks user namespaces. In Docker, run the container with a seccomp profile that allows them; the Firecrawl Local README shows one. On Ubuntu 23.10 or newer, allow user namespaces for Chrome. Firecrawl Local does not run Chrome without its sandbox.", "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 1, "id": "quotes_js_delay", "kind": "js", "secs": 0.214, "chars": 94, "http": 200, "warning": "This page builds its content with JavaScript, so this result is probably incomplete. The local Chrome could not render it. Chrome at /opt/ms-playwright/chromium-1254/chrome-linux64/chrome could not start its sandbox, which usually means a container or system policy blocks user namespaces. In Docker, run the container with a seccomp profile that allows them; the Firecrawl Local README shows one. On Ubuntu 23.10 or newer, allow user namespaces for Chrome. Firecrawl Local does not run Chrome without its sandbox.", "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 1, "id": "scrapethissite_ajax", "kind": "js", "secs": 0.241, "chars": 1180, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 1, "id": "react_dev", "kind": "js", "secs": 0.05, "chars": 15888, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 1, "id": "hf_model", "kind": "js", "secs": 0.219, "chars": 5931, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 1, "id": "pypi_page", "kind": "static", "secs": 0.066, "chars": 71897, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 1, "id": "npm_page", "kind": "js", "secs": 0.428, "chars": 22195, "http": 200, "warning": null, "source": "firecrawl-cloud", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 1, "id": "crates_page", "kind": "js", "secs": 0.253, "chars": 0, "http": 200, "warning": "This page builds its content with JavaScript, so this result is probably incomplete. The local Chrome could not render it. Chrome at /opt/ms-playwright/chromium-1254/chrome-linux64/chrome could not start its sandbox, which usually means a container or system policy blocks user namespaces. In Docker, run the container with a seccomp profile that allows them; the Firecrawl Local README shows one. On Ubuntu 23.10 or newer, allow user namespaces for Chrome. Firecrawl Local does not run Chrome without its sandbox.", "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 2, "id": "wiki_rust", "kind": "static", "secs": 0.332, "chars": 206821, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 2, "id": "wiki_webscraping", "kind": "static", "secs": 0.059, "chars": 53080, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 2, "id": "wiki_transformer", "kind": "static", "secs": 0.128, "chars": 153463, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 2, "id": "py_asyncio", "kind": "docs", "secs": 0.062, "chars": 61387, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 2, "id": "py_json", "kind": "docs", "secs": 0.031, "chars": 35375, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 2, "id": "mdn_fetch", "kind": "docs", "secs": 0.041, "chars": 33417, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 2, "id": "rust_book_own", "kind": "docs", "secs": 0.038, "chars": 27834, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 2, "id": "fastapi_first", "kind": "docs", "secs": 0.089, "chars": 13960, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 2, "id": "anth_docs_models", "kind": "docs", "secs": 0.371, "chars": 19504, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 2, "id": "gh_readme_fc", "kind": "github", "secs": 0.104, "chars": 30879, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 2, "id": "gh_readme_requests", "kind": "github", "secs": 0.038, "chars": 10899, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 2, "id": "gh_issue", "kind": "github", "secs": 0.052, "chars": 22963, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 2, "id": "arxiv_abs", "kind": "paper", "secs": 0.023, "chars": 8053, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 2, "id": "arxiv_pdf", "kind": "pdf", "secs": 0.196, "chars": 41552, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 2, "id": "bbc_tech", "kind": "news", "secs": 0.055, "chars": 28860, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 2, "id": "verge", "kind": "news", "secs": 0.059, "chars": 37077, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 2, "id": "blog_simonw", "kind": "blog", "secs": 0.071, "chars": 83749, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 2, "id": "blog_karpathy", "kind": "blog", "secs": 0.024, "chars": 52855, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 2, "id": "so_question", "kind": "forum", "secs": 0.025, "chars": 0, "http": 200, "warning": "This site did not serve the page to this machine (status 403), so the content is missing or is a bot check. Firecrawl cloud can fetch pages like this when FIRECRAWL_CLOUD is auto.", "source": "local", "blocked": true, "status": 403}
+{"tool": "fc_static", "round": 2, "id": "books_toscrape", "kind": "static", "secs": 0.384, "chars": 1825, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 2, "id": "quotes_static", "kind": "static", "secs": 0.395, "chars": 4239, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 2, "id": "quotes_js", "kind": "js", "secs": 0.1, "chars": 94, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 2, "id": "quotes_js_delay", "kind": "js", "secs": 0.101, "chars": 94, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 2, "id": "scrapethissite_ajax", "kind": "js", "secs": 0.235, "chars": 1180, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 2, "id": "react_dev", "kind": "js", "secs": 0.049, "chars": 15888, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 2, "id": "hf_model", "kind": "js", "secs": 0.195, "chars": 5931, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 2, "id": "pypi_page", "kind": "static", "secs": 0.068, "chars": 71897, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 2, "id": "npm_page", "kind": "js", "secs": 0.021, "chars": 0, "http": 200, "warning": "This site did not serve the page to this machine (status 403), so the content is missing or is a bot check. Firecrawl cloud can fetch pages like this when FIRECRAWL_CLOUD is auto.", "source": "local", "blocked": true, "status": 403}
+{"tool": "fc_static", "round": 2, "id": "crates_page", "kind": "js", "secs": 0.325, "chars": 0, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 2, "id": "wiki_rust", "kind": "static", "secs": 0.293, "chars": 206821, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 2, "id": "wiki_webscraping", "kind": "static", "secs": 0.062, "chars": 53080, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 2, "id": "wiki_transformer", "kind": "static", "secs": 0.118, "chars": 153463, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 2, "id": "py_asyncio", "kind": "docs", "secs": 0.067, "chars": 61387, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 2, "id": "py_json", "kind": "docs", "secs": 0.039, "chars": 35375, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 2, "id": "mdn_fetch", "kind": "docs", "secs": 0.04, "chars": 33417, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 2, "id": "rust_book_own", "kind": "docs", "secs": 0.037, "chars": 27834, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 2, "id": "fastapi_first", "kind": "docs", "secs": 0.092, "chars": 13960, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 2, "id": "anth_docs_models", "kind": "docs", "secs": 0.338, "chars": 19504, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 2, "id": "gh_readme_fc", "kind": "github", "secs": 0.08, "chars": 30879, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 2, "id": "gh_readme_requests", "kind": "github", "secs": 0.031, "chars": 10899, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 2, "id": "gh_issue", "kind": "github", "secs": 0.039, "chars": 22963, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 2, "id": "arxiv_abs", "kind": "paper", "secs": 0.02, "chars": 8053, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 2, "id": "arxiv_pdf", "kind": "pdf", "secs": 0.191, "chars": 41552, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 2, "id": "bbc_tech", "kind": "news", "secs": 0.05, "chars": 28860, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 2, "id": "verge", "kind": "news", "secs": 0.04, "chars": 37077, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 2, "id": "blog_simonw", "kind": "blog", "secs": 0.053, "chars": 83749, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 2, "id": "blog_karpathy", "kind": "blog", "secs": 0.035, "chars": 52855, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 2, "id": "so_question", "kind": "forum", "secs": 1.084, "chars": 130021, "http": 200, "warning": null, "source": "firecrawl-cloud", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 2, "id": "books_toscrape", "kind": "static", "secs": 0.387, "chars": 1825, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 2, "id": "quotes_static", "kind": "static", "secs": 0.384, "chars": 4239, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 2, "id": "quotes_js", "kind": "js", "secs": 0.209, "chars": 94, "http": 200, "warning": "This page builds its content with JavaScript, so this result is probably incomplete. The local Chrome could not render it. Chrome at /opt/ms-playwright/chromium-1254/chrome-linux64/chrome could not start its sandbox, which usually means a container or system policy blocks user namespaces. In Docker, run the container with a seccomp profile that allows them; the Firecrawl Local README shows one. On Ubuntu 23.10 or newer, allow user namespaces for Chrome. Firecrawl Local does not run Chrome without its sandbox.", "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 2, "id": "quotes_js_delay", "kind": "js", "secs": 0.216, "chars": 94, "http": 200, "warning": "This page builds its content with JavaScript, so this result is probably incomplete. The local Chrome could not render it. Chrome at /opt/ms-playwright/chromium-1254/chrome-linux64/chrome could not start its sandbox, which usually means a container or system policy blocks user namespaces. In Docker, run the container with a seccomp profile that allows them; the Firecrawl Local README shows one. On Ubuntu 23.10 or newer, allow user namespaces for Chrome. Firecrawl Local does not run Chrome without its sandbox.", "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 2, "id": "scrapethissite_ajax", "kind": "js", "secs": 0.249, "chars": 1180, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 2, "id": "react_dev", "kind": "js", "secs": 0.047, "chars": 15888, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 2, "id": "hf_model", "kind": "js", "secs": 0.364, "chars": 5931, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 2, "id": "pypi_page", "kind": "static", "secs": 0.084, "chars": 71897, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 2, "id": "npm_page", "kind": "js", "secs": 0.429, "chars": 22195, "http": 200, "warning": null, "source": "firecrawl-cloud", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 2, "id": "crates_page", "kind": "js", "secs": 0.205, "chars": 0, "http": 200, "warning": "This page builds its content with JavaScript, so this result is probably incomplete. The local Chrome could not render it. Chrome at /opt/ms-playwright/chromium-1254/chrome-linux64/chrome could not start its sandbox, which usually means a container or system policy blocks user namespaces. In Docker, run the container with a seccomp profile that allows them; the Firecrawl Local README shows one. On Ubuntu 23.10 or newer, allow user namespaces for Chrome. Firecrawl Local does not run Chrome without its sandbox.", "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 3, "id": "wiki_rust", "kind": "static", "secs": 0.266, "chars": 206821, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 3, "id": "wiki_webscraping", "kind": "static", "secs": 0.05, "chars": 53080, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 3, "id": "wiki_transformer", "kind": "static", "secs": 0.115, "chars": 153463, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 3, "id": "py_asyncio", "kind": "docs", "secs": 0.053, "chars": 61387, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 3, "id": "py_json", "kind": "docs", "secs": 0.028, "chars": 35375, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 3, "id": "mdn_fetch", "kind": "docs", "secs": 0.034, "chars": 33417, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 3, "id": "rust_book_own", "kind": "docs", "secs": 0.039, "chars": 27834, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 3, "id": "fastapi_first", "kind": "docs", "secs": 0.091, "chars": 13960, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 3, "id": "anth_docs_models", "kind": "docs", "secs": 0.331, "chars": 19504, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 3, "id": "gh_readme_fc", "kind": "github", "secs": 0.087, "chars": 30879, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 3, "id": "gh_readme_requests", "kind": "github", "secs": 0.031, "chars": 10899, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 3, "id": "gh_issue", "kind": "github", "secs": 0.038, "chars": 22963, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 3, "id": "arxiv_abs", "kind": "paper", "secs": 0.024, "chars": 8053, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 3, "id": "arxiv_pdf", "kind": "pdf", "secs": 0.171, "chars": 41552, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 3, "id": "bbc_tech", "kind": "news", "secs": 0.053, "chars": 28860, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 3, "id": "verge", "kind": "news", "secs": 0.038, "chars": 37077, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 3, "id": "blog_simonw", "kind": "blog", "secs": 0.043, "chars": 83749, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 3, "id": "blog_karpathy", "kind": "blog", "secs": 0.024, "chars": 52855, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 3, "id": "so_question", "kind": "forum", "secs": 0.018, "chars": 0, "http": 200, "warning": "This site did not serve the page to this machine (status 403), so the content is missing or is a bot check. Firecrawl cloud can fetch pages like this when FIRECRAWL_CLOUD is auto.", "source": "local", "blocked": true, "status": 403}
+{"tool": "fc_static", "round": 3, "id": "books_toscrape", "kind": "static", "secs": 0.383, "chars": 1825, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 3, "id": "quotes_static", "kind": "static", "secs": 0.388, "chars": 4239, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 3, "id": "quotes_js", "kind": "js", "secs": 0.099, "chars": 94, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 3, "id": "quotes_js_delay", "kind": "js", "secs": 0.1, "chars": 94, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 3, "id": "scrapethissite_ajax", "kind": "js", "secs": 0.25, "chars": 1180, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 3, "id": "react_dev", "kind": "js", "secs": 0.085, "chars": 15888, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 3, "id": "hf_model", "kind": "js", "secs": 0.223, "chars": 5931, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 3, "id": "pypi_page", "kind": "static", "secs": 0.068, "chars": 71897, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_static", "round": 3, "id": "npm_page", "kind": "js", "secs": 0.015, "chars": 0, "http": 200, "warning": "This site did not serve the page to this machine (status 403), so the content is missing or is a bot check. Firecrawl cloud can fetch pages like this when FIRECRAWL_CLOUD is auto.", "source": "local", "blocked": true, "status": 403}
+{"tool": "fc_static", "round": 3, "id": "crates_page", "kind": "js", "secs": 0.321, "chars": 0, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 3, "id": "wiki_rust", "kind": "static", "secs": 0.263, "chars": 206821, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 3, "id": "wiki_webscraping", "kind": "static", "secs": 0.05, "chars": 53080, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 3, "id": "wiki_transformer", "kind": "static", "secs": 0.113, "chars": 153463, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 3, "id": "py_asyncio", "kind": "docs", "secs": 0.054, "chars": 61387, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 3, "id": "py_json", "kind": "docs", "secs": 0.025, "chars": 35375, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 3, "id": "mdn_fetch", "kind": "docs", "secs": 0.033, "chars": 33417, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 3, "id": "rust_book_own", "kind": "docs", "secs": 0.038, "chars": 27834, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 3, "id": "fastapi_first", "kind": "docs", "secs": 0.082, "chars": 13960, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 3, "id": "anth_docs_models", "kind": "docs", "secs": 0.35, "chars": 19504, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 3, "id": "gh_readme_fc", "kind": "github", "secs": 0.081, "chars": 30879, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 3, "id": "gh_readme_requests", "kind": "github", "secs": 0.034, "chars": 10899, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 3, "id": "gh_issue", "kind": "github", "secs": 0.039, "chars": 22963, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 3, "id": "arxiv_abs", "kind": "paper", "secs": 0.027, "chars": 8053, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 3, "id": "arxiv_pdf", "kind": "pdf", "secs": 0.171, "chars": 41552, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 3, "id": "bbc_tech", "kind": "news", "secs": 0.049, "chars": 28860, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 3, "id": "verge", "kind": "news", "secs": 0.048, "chars": 37077, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 3, "id": "blog_simonw", "kind": "blog", "secs": 0.047, "chars": 83749, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 3, "id": "blog_karpathy", "kind": "blog", "secs": 0.037, "chars": 52855, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 3, "id": "so_question", "kind": "forum", "secs": 2.91, "chars": 130021, "http": 200, "warning": null, "source": "firecrawl-cloud", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 3, "id": "books_toscrape", "kind": "static", "secs": 0.391, "chars": 1825, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 3, "id": "quotes_static", "kind": "static", "secs": 0.393, "chars": 4239, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 3, "id": "quotes_js", "kind": "js", "secs": 0.226, "chars": 94, "http": 200, "warning": "This page builds its content with JavaScript, so this result is probably incomplete. The local Chrome could not render it. Chrome at /opt/ms-playwright/chromium-1254/chrome-linux64/chrome could not start its sandbox, which usually means a container or system policy blocks user namespaces. In Docker, run the container with a seccomp profile that allows them; the Firecrawl Local README shows one. On Ubuntu 23.10 or newer, allow user namespaces for Chrome. Firecrawl Local does not run Chrome without its sandbox.", "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 3, "id": "quotes_js_delay", "kind": "js", "secs": 0.202, "chars": 94, "http": 200, "warning": "This page builds its content with JavaScript, so this result is probably incomplete. The local Chrome could not render it. Chrome at /opt/ms-playwright/chromium-1254/chrome-linux64/chrome could not start its sandbox, which usually means a container or system policy blocks user namespaces. In Docker, run the container with a seccomp profile that allows them; the Firecrawl Local README shows one. On Ubuntu 23.10 or newer, allow user namespaces for Chrome. Firecrawl Local does not run Chrome without its sandbox.", "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 3, "id": "scrapethissite_ajax", "kind": "js", "secs": 0.257, "chars": 1180, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 3, "id": "react_dev", "kind": "js", "secs": 0.145, "chars": 15888, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 3, "id": "hf_model", "kind": "js", "secs": 0.23, "chars": 5931, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 3, "id": "pypi_page", "kind": "static", "secs": 0.069, "chars": 71897, "http": 200, "warning": null, "source": "local", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 3, "id": "npm_page", "kind": "js", "secs": 0.412, "chars": 22195, "http": 200, "warning": null, "source": "firecrawl-cloud", "blocked": null, "status": 200}
+{"tool": "fc_cloud", "round": 3, "id": "crates_page", "kind": "js", "secs": 0.431, "chars": 0, "http": 200, "warning": "This page builds its content with JavaScript, so this result is probably incomplete. The local Chrome could not render it. Chrome at /opt/ms-playwright/chromium-1254/chrome-linux64/chrome could not start its sandbox, which usually means a container or system policy blocks user namespaces. In Docker, run the container with a seccomp profile that allows them; the Firecrawl Local README shows one. On Ubuntu 23.10 or newer, allow user namespaces for Chrome. Firecrawl Local does not run Chrome without its sandbox.", "source": "local", "blocked": null, "status": 200}

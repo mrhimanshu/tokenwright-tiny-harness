@@ -1,0 +1,147 @@
+[
+ {
+  "id": "wiki_rust",
+  "kind": "static",
+  "url": "https://en.wikipedia.org/wiki/Rust_(programming_language)"
+ },
+ {
+  "id": "wiki_webscraping",
+  "kind": "static",
+  "url": "https://en.wikipedia.org/wiki/Web_scraping"
+ },
+ {
+  "id": "wiki_transformer",
+  "kind": "static",
+  "url": "https://en.wikipedia.org/wiki/Transformer_(deep_learning)"
+ },
+ {
+  "id": "py_asyncio",
+  "kind": "docs",
+  "url": "https://docs.python.org/3/library/asyncio-task.html"
+ },
+ {
+  "id": "py_json",
+  "kind": "docs",
+  "url": "https://docs.python.org/3/library/json.html"
+ },
+ {
+  "id": "mdn_fetch",
+  "kind": "docs",
+  "url": "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch"
+ },
+ {
+  "id": "rust_book_own",
+  "kind": "docs",
+  "url": "https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html"
+ },
+ {
+  "id": "fastapi_first",
+  "kind": "docs",
+  "url": "https://fastapi.tiangolo.com/tutorial/first-steps/"
+ },
+ {
+  "id": "anth_docs_models",
+  "kind": "docs",
+  "url": "https://docs.anthropic.com/en/docs/about-claude/models/overview"
+ },
+ {
+  "id": "gh_readme_fc",
+  "kind": "github",
+  "url": "https://github.com/firecrawl/firecrawl"
+ },
+ {
+  "id": "gh_readme_requests",
+  "kind": "github",
+  "url": "https://github.com/psf/requests"
+ },
+ {
+  "id": "gh_issue",
+  "kind": "github",
+  "url": "https://github.com/python/cpython/issues/91351"
+ },
+ {
+  "id": "arxiv_abs",
+  "kind": "paper",
+  "url": "https://arxiv.org/abs/1706.03762"
+ },
+ {
+  "id": "arxiv_pdf",
+  "kind": "pdf",
+  "url": "https://arxiv.org/pdf/1706.03762"
+ },
+ {
+  "id": "bbc_tech",
+  "kind": "news",
+  "url": "https://www.bbc.com/news/technology"
+ },
+ {
+  "id": "verge",
+  "kind": "news",
+  "url": "https://www.theverge.com/tech"
+ },
+ {
+  "id": "blog_simonw",
+  "kind": "blog",
+  "url": "https://simonwillison.net/"
+ },
+ {
+  "id": "blog_karpathy",
+  "kind": "blog",
+  "url": "https://karpathy.github.io/2015/05/21/rnn-effectiveness/"
+ },
+ {
+  "id": "so_question",
+  "kind": "forum",
+  "url": "https://stackoverflow.com/questions/231767/what-does-the-yield-keyword-do-in-python"
+ },
+ {
+  "id": "books_toscrape",
+  "kind": "static",
+  "url": "https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html"
+ },
+ {
+  "id": "quotes_static",
+  "kind": "static",
+  "url": "https://quotes.toscrape.com/"
+ },
+ {
+  "id": "quotes_js",
+  "kind": "js",
+  "url": "https://quotes.toscrape.com/js/"
+ },
+ {
+  "id": "quotes_js_delay",
+  "kind": "js",
+  "url": "https://quotes.toscrape.com/js-delayed/"
+ },
+ {
+  "id": "scrapethissite_ajax",
+  "kind": "js",
+  "url": "https://www.scrapethissite.com/pages/ajax-javascript/#2015"
+ },
+ {
+  "id": "react_dev",
+  "kind": "js",
+  "url": "https://react.dev/learn"
+ },
+ {
+  "id": "hf_model",
+  "kind": "js",
+  "url": "https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct"
+ },
+ {
+  "id": "pypi_page",
+  "kind": "static",
+  "url": "https://pypi.org/project/requests/"
+ },
+ {
+  "id": "npm_page",
+  "kind": "js",
+  "url": "https://www.npmjs.com/package/firecrawl"
+ },
+ {
+  "id": "crates_page",
+  "kind": "js",
+  "url": "https://crates.io/crates/firecrawl-local"
+ }
+]
