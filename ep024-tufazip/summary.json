@@ -1,0 +1,200 @@
+{
+ "classic": {
+  "gzip -9 @65536": {
+   "bpb_mean": 3.05,
+   "per_slice": [
+    3.029,
+    3.117,
+    3.003
+   ],
+   "bytes_per_s_mean": 20359030
+  },
+  "bzip2 -9 @65536": {
+   "bpb_mean": 2.734,
+   "per_slice": [
+    2.721,
+    2.797,
+    2.684
+   ],
+   "bytes_per_s_mean": 13286653
+  },
+  "xz -9e @65536": {
+   "bpb_mean": 2.807,
+   "per_slice": [
+    2.824,
+    2.824,
+    2.774
+   ],
+   "bytes_per_s_mean": 772071
+  },
+  "zstd -22 @65536": {
+   "bpb_mean": 2.9,
+   "per_slice": [
+    2.885,
+    2.946,
+    2.868
+   ],
+   "bytes_per_s_mean": 3862874
+  },
+  "brotli -q11 @65536": {
+   "bpb_mean": 2.467,
+   "per_slice": [
+    2.458,
+    2.49,
+    2.452
+   ],
+   "bytes_per_s_mean": 753424
+  },
+  "gzip -9 @1000000": {
+   "bpb_mean": 2.885,
+   "per_slice": [
+    2.931,
+    2.877,
+    2.846
+   ],
+   "bytes_per_s_mean": 18095295
+  },
+  "bzip2 -9 @1000000": {
+   "bpb_mean": 2.341,
+   "per_slice": [
+    2.36,
+    2.33,
+    2.334
+   ],
+   "bytes_per_s_mean": 15017724
+  },
+  "xz -9e @1000000": {
+   "bpb_mean": 2.386,
+   "per_slice": [
+    2.419,
+    2.373,
+    2.368
+   ],
+   "bytes_per_s_mean": 2156284
+  },
+  "zstd -22 @1000000": {
+   "bpb_mean": 2.46,
+   "per_slice": [
+    2.49,
+    2.45,
+    2.44
+   ],
+   "bytes_per_s_mean": 3024181
+  },
+  "brotli -q11 @1000000": {
+   "bpb_mean": 2.304,
+   "per_slice": [
+    2.335,
+    2.291,
+    2.286
+   ],
+   "bytes_per_s_mean": 547734
+  }
+ },
+ "pretrained_llm": {
+  "HuggingFaceTB/SmolLM2-135M": {
+   "bpb_mean": 0.938,
+   "per_slice": [
+    0.9,
+    0.992,
+    0.923
+   ],
+   "bytes_per_s_mean": 948,
+   "params": 134515008,
+   "weights_mb_bf16": 269.0,
+   "tokenizer_roundtrip": true
+  },
+  "HuggingFaceTB/SmolLM2-360M": {
+   "bpb_mean": 0.824,
+   "per_slice": [
+    0.8,
+    0.863,
+    0.81
+   ],
+   "bytes_per_s_mean": 424,
+   "params": 361821120,
+   "weights_mb_bf16": 723.6,
+   "tokenizer_roundtrip": true
+  },
+  "Qwen/Qwen2.5-0.5B": {
+   "bpb_mean": 0.878,
+   "per_slice": [
+    0.849,
+    0.909,
+    0.877
+   ],
+   "bytes_per_s_mean": 346,
+   "params": 494032768,
+   "weights_mb_bf16": 988.1,
+   "tokenizer_roundtrip": true
+  }
+ },
+ "roundtrip": [
+  {
+   "method": "roundtrip_llm",
+   "model": "HuggingFaceTB/SmolLM2-135M",
+   "offset": 10000000,
+   "bytes": 4096,
+   "tokens": 1307,
+   "bytes_out": 596,
+   "bpb": 1.1640625,
+   "identical": true,
+   "sha_in": "8561dfc8e336398fbf3e553658d68ddf7053f53ebb457dc0951960d644967ecb",
+   "sha_out": "8561dfc8e336398fbf3e553658d68ddf7053f53ebb457dc0951960d644967ecb",
+   "enc_seconds": 94.55023765563965,
+   "dec_seconds": 94.95958995819092,
+   "enc_bytes_per_s": 43.32088529399572,
+   "dec_bytes_per_s": 43.134137392583504
+  }
+ ],
+ "online_1MB": {
+  "config": {
+   "D": 128,
+   "layers": 2,
+   "B": 8,
+   "lr": 0.01,
+   "replay": 6,
+   "params": 495616
+  },
+  "bpb_per_slice": [
+   3.247,
+   3.27,
+   3.163
+  ],
+  "bpb_mean": 3.227,
+  "seconds_mean": 684
+ },
+ "classic_full_enwik9": [
+  {
+   "tool": "gzip -9",
+   "file": "enwik9",
+   "bytes_in": 1000000000,
+   "bytes_out": 322591988,
+   "seconds": null
+  },
+  {
+   "tool": "bzip2 -9",
+   "file": "enwik9",
+   "bytes_in": 1000000000,
+   "bytes_out": 253977891,
+   "seconds": null
+  },
+  {
+   "tool": "xz -9",
+   "file": "enwik9",
+   "bytes_in": 1000000000,
+   "bytes_out": 213370900,
+   "seconds": null
+  },
+  {
+   "method": "classic_full",
+   "tool": "zstd -3 (python zstandard)",
+   "file": "enwik9",
+   "bytes_in": 1000000000,
+   "bytes_out": 311786472,
+   "seconds": 8.5,
+   "dec_seconds": 3.2,
+   "note": "CPU shared with online-learner runs"
+  }
+ ]
+}

@@ -1,0 +1,35 @@
+{
+ "HuggingFaceTB/SmolLM2-135M": {
+  "path": "(local HF cache)",
+  "sha": "93efa2f097d58c2a74874c7e644dbc9b0cee75a2",
+  "files": {
+   "model.safetensors": {
+    "sha256": "80521b40281d6ce74e35c9282c22539e75aa0ac8578892b2a59955ef78d55da1",
+    "ok": true,
+    "size": 269060552
+   }
+  }
+ },
+ "HuggingFaceTB/SmolLM2-360M": {
+  "path": "(local HF cache)",
+  "sha": "f8027fd0eaeea54caa13c31d31b9fdc459c38b49",
+  "files": {
+   "model.safetensors": {
+    "sha256": "7aaff6661428bed033abba9522bec81938678642cca3181fe752b6ca9e1e540f",
+    "ok": true,
+    "size": 723674912
+   }
+  }
+ },
+ "Qwen/Qwen2.5-0.5B": {
+  "path": "(local HF cache)",
+  "sha": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+  "files": {
+   "model.safetensors": {
+    "sha256": "88c142557820ccad55bb59756bfcfcf891de9cc6202816bd346445188a0ed342",
+    "ok": true,
+    "size": 988097824
+   }
+  }
+ }
+}

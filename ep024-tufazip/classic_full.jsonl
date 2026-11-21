@@ -1,0 +1,4 @@
+{"tool":"gzip -9","file":"enwik9","bytes_in":1000000000,"bytes_out":322591988,"seconds":null}
+{"tool":"bzip2 -9","file":"enwik9","bytes_in":1000000000,"bytes_out":253977891,"seconds":null}
+{"tool":"xz -9","file":"enwik9","bytes_in":1000000000,"bytes_out":213370900,"seconds":null}
+{"method":"classic_full","tool":"zstd -3 (python zstandard)","file":"enwik9","bytes_in":1000000000,"bytes_out":311786472,"seconds":8.5,"dec_seconds":3.2,"note":"CPU shared with online-learner runs"}
