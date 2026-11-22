@@ -1,0 +1,253 @@
+{
+ "mean_size": 198.21875,
+ "lists": [
+  {
+   "list": 100,
+   "size": 937,
+   "x_mean": 4.73,
+   "size_2018": 51,
+   "by_year": {
+    "2017": 30,
+    "2018": 21,
+    "2019": 17,
+    "2020": 25,
+    "2021": 28,
+    "2022": 425,
+    "2023": 186,
+    "2024": 125,
+    "2025": 80
+   },
+   "covid_titles": 8,
+   "old_examples": [
+    "Trump 'compromising' claims: How and why did we get here?",
+    "Russia and the art of 'kompromat'",
+    "Russian media no longer dazzled by Trump",
+    "Newspaper headlines: Russia 'assassination plot' and Brexit 'limbo'",
+    "Is Russia's Arctic presence 'aggressive?'",
+    "The pull of Putin"
+   ],
+   "new_examples": [
+    "Ukraine war: Prince Charles praises people's bravery amid Russian aggression",
+    "Former Putin-appointed governor guilty of breaching UK sanctions",
+    "UK targets Russian military with further sanctions",
+    "'Push Russia harder', Zelensky urges as war reaches 1,000th day",
+    "Ukraine war: Russian journalist Oksana Baulina killed in Kyiv shelling",
+    "Ukraine war latest: More drones coming, Ukraine tells Russia after skyscraper hit",
+    "Ukraine war: Rishi Sunak visits President Zelensky in Kyiv as he pledges \u00a350m in aid",
+    "Ukraine invasion: Missiles hit Kyiv as fight for capital looms"
+   ]
+  },
+  {
+   "list": 7,
+   "size": 920,
+   "x_mean": 4.64,
+   "size_2018": 76,
+   "by_year": {
+    "2017": 39,
+    "2018": 37,
+    "2019": 45,
+    "2020": 277,
+    "2021": 275,
+    "2022": 113,
+    "2023": 76,
+    "2024": 45,
+    "2025": 13
+   },
+   "covid_titles": 527,
+   "old_examples": [
+    "NHS England makes slight improvement",
+    "Reality Check: Was 27 December the busiest NHS day?",
+    "Newspaper headlines: 'Broken' A&E and Streep takes on Trump",
+    "NHS staff shortages: Why so persistent?",
+    "Reality Check: Will one-third of NHS beds in England be cut?",
+    "Fewer beds, higher patient demand - NHS pressure mounts"
+   ],
+   "new_examples": [
+    "Newspaper headlines: Storm Kathleen 'fury' and ONS 'strike over WFH'",
+    "Meeting to avert junior doctors' strike in England fails",
+    "East Kent hospitals: Care watchdog inspects trust after baby death apology",
+    "Coronavirus lockdown restrictions eased in Wales",
+    "Physiotherapists join NHS strike in one-day walkout",
+    "Hospital waiting list at 6.5 million in England",
+    "Coronavirus: Antrim Hospital 'beyond capacity' amid Covid surge",
+    "Number of hay fever sufferers seeking NHS advice triples"
+   ]
+  },
+  {
+   "list": 199,
+   "size": 869,
+   "x_mean": 4.38,
+   "size_2018": 122,
+   "by_year": {
+    "2017": 46,
+    "2018": 76,
+    "2019": 116,
+    "2020": 69,
+    "2021": 106,
+    "2022": 119,
+    "2023": 152,
+    "2024": 149,
+    "2025": 36
+   },
+   "covid_titles": 3,
+   "old_examples": [
+    "Domestic abuse victim's hands severed by ex-partner",
+    "Newspaper review: Did author murderer 'kill ex-wife too'?",
+    "How Victoria Gayle hid her dead son for over a decade",
+    "Seeking funds to say a final farewell to sons on death row",
+    "Rachel Nickell stabbing: 'The day I saw my mum get killed'",
+    "Spalding murders: Daughter Kim Edwards named as killer"
+   ],
+   "new_examples": [
+    "Emma Caldwell suspect 'attacked woman in same woods'",
+    "Gabby Petito: Boyfriend of blogger 'responsible' for her murder",
+    "Wembley park stabbing deaths: Sisters killed in 'sacrificial deal'",
+    "Sarah Everard: Baroness Louise Casey to lead review into Met Police",
+    "Sutton murder arrest after woman hit by van dies",
+    "Thornaby death: Woman charged with murder",
+    "Father charged with murdering his two children in Ilford",
+    "Dudley woman banned from teaching after stabbing ex-lover's wife"
+   ]
+  },
+  {
+   "list": 198,
+   "size": 817,
+   "x_mean": 4.12,
+   "size_2018": 74,
+   "by_year": {
+    "2017": 26,
+    "2018": 48,
+    "2019": 50,
+    "2020": 271,
+    "2021": 241,
+    "2022": 58,
+    "2023": 43,
+    "2024": 54,
+    "2025": 26
+   },
+   "covid_titles": 471,
+   "old_examples": [
+    "Jeremy Corbyn: Red Cross NHS warning 'unprecedented'",
+    "NHS Health Check: How one GP practice tackled waiting times",
+    "Afghanistan: The only gynaecologist for hundreds of miles",
+    "Stand by for a quiet revolution in the NHS",
+    "Mo Farah: Doctor to face MPs over administering controversial supplement",
+    "Wanted: Top doctor to care for 7 billion people"
+   ],
+   "new_examples": [
+    "Covid: Sir Keir Starmer calls for 'round the clock' vaccinations",
+    "Coronavirus: Lifting lockdown requires balanced judgement - Gove",
+    "Covid PCR tests end for asymptomatic cases in England",
+    "Covid: Nightclub industry anger at passport plan",
+    "Bloomsbury staff must be vaccinated before office return",
+    "Physician associates graduate to 'no jobs'",
+    "Covid: 12 countries on England's travel green list",
+    "Covid-19: UK should send vaccines to poorer nations now - WTO chief"
+   ]
+  },
+  {
+   "list": 34,
+   "size": 730,
+   "x_mean": 3.68,
+   "size_2018": 119,
+   "by_year": {
+    "2017": 61,
+    "2018": 58,
+    "2019": 60,
+    "2020": 105,
+    "2021": 111,
+    "2022": 115,
+    "2023": 87,
+    "2024": 90,
+    "2025": 43
+   },
+   "covid_titles": 78,
+   "old_examples": [
+    "Reality Check: Is North of England getting a big boost?",
+    "Public finances and the shadow of Osborne",
+    "Newspaper headlines: NHS 'returns to 1950s' and tax bills to rise",
+    "Reality Check: Is a \u00a33.7bn cut in disabled funding planned?",
+    "Reality Check: Is government giving away \u00a370bn to the rich?",
+    "Reality Check: Are taxes going up to 1986 levels?"
+   ],
+   "new_examples": [
+    "Self-employed to get more financial help",
+    "Budget 2021: Domestic abuse extra money welcomed, but 'shortfall remains'",
+    "BBC funding: TV licence fee to rise by \u00a310.50, government says",
+    "Spending Review: Key points from Rishi Sunak's statement",
+    "Rachel Reeves resists calls to lift two-child benefit cap",
+    "Chris Mason: Jeremy Hunt looks likely to cut taxes - the question is where?",
+    "Rayner does not confirm if two-child benefit cap to be abolished",
+    "Election 2021: Welsh care workers should get \u00a310 an hour, Senedd told"
+   ]
+  },
+  {
+   "list": 56,
+   "size": 724,
+   "x_mean": 3.65,
+   "size_2018": 103,
+   "by_year": {
+    "2017": 51,
+    "2018": 52,
+    "2019": 75,
+    "2020": 192,
+    "2021": 144,
+    "2022": 61,
+    "2023": 90,
+    "2024": 42,
+    "2025": 17
+   },
+   "covid_titles": 216,
+   "old_examples": [
+    "Us/Them play revisits Beslan school siege",
+    "How schools promote pupils' mental wellbeing",
+    "Is school funding the next crisis?",
+    "School funding plans spark passionate protests",
+    "Reality Check: Is education spending at a record level?",
+    "The pupils stuck in a cycle of maths and English resits"
+   ],
+   "new_examples": [
+    "The Glasgow school where qualifications are life-changing",
+    "Students want exam results upgraded across UK",
+    "Ukrainian teen in Coventry who spoke no English celebrates GCSEs",
+    "Top A-levels fall, with steepest drop in England",
+    "Coronavirus in Scotland: Where have school pupils tested positive?",
+    "Part-time return for all secondary pupils in Scotland from 15 March",
+    "Coronavirus in Scotland: What's your council's plan for opening schools?",
+    "Covid: Doubts that ex-teachers will return by January"
+   ]
+  }
+ ],
+ "covid": {
+  "articles": 4231,
+  "lists_used": 199,
+  "top3_lists_share": 0.301,
+  "top_lists": [
+   [
+    7,
+    527
+   ],
+   [
+    198,
+    471
+   ],
+   [
+    12,
+    277
+   ],
+   [
+    56,
+    216
+   ],
+   [
+    32,
+    187
+   ]
+  ]
+ },
+ "covid_fresh": {
+  "lists_used": 193,
+  "top3_lists_share": 0.203,
+  "biggest_list": 506
+ }
+}
