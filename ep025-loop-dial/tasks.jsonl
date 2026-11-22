@@ -1,0 +1,90 @@
+{"set": 1, "id": "s1_add0", "kind": "add", "q": "What is 700 + 122?", "a": 822}
+{"set": 1, "id": "s1_add1", "kind": "add", "q": "What is 471 + 153?", "a": 624}
+{"set": 1, "id": "s1_add2", "kind": "add", "q": "What is 188 + 766?", "a": 954}
+{"set": 1, "id": "s1_add3", "kind": "add", "q": "What is 715 + 707?", "a": 1422}
+{"set": 1, "id": "s1_add4", "kind": "add", "q": "What is 143 + 682?", "a": 825}
+{"set": 1, "id": "s1_add5", "kind": "add", "q": "What is 863 + 819?", "a": 1682}
+{"set": 1, "id": "s1_add6", "kind": "add", "q": "What is 742 + 274?", "a": 1016}
+{"set": 1, "id": "s1_add7", "kind": "add", "q": "What is 734 + 158?", "a": 892}
+{"set": 1, "id": "s1_mul0", "kind": "mul", "q": "What is 28 * 26?", "a": 728}
+{"set": 1, "id": "s1_mul1", "kind": "mul", "q": "What is 21 * 14?", "a": 294}
+{"set": 1, "id": "s1_mul2", "kind": "mul", "q": "What is 39 * 14?", "a": 546}
+{"set": 1, "id": "s1_mul3", "kind": "mul", "q": "What is 34 * 17?", "a": 578}
+{"set": 1, "id": "s1_mul4", "kind": "mul", "q": "What is 39 * 27?", "a": 1053}
+{"set": 1, "id": "s1_mul5", "kind": "mul", "q": "What is 34 * 21?", "a": 714}
+{"set": 1, "id": "s1_mul6", "kind": "mul", "q": "What is 36 * 25?", "a": 900}
+{"set": 1, "id": "s1_mul7", "kind": "mul", "q": "What is 22 * 27?", "a": 594}
+{"set": 1, "id": "s1_ch0", "kind": "chain2", "q": "x = 8. y = x + 6. z = y * 4. What is z?", "a": 56}
+{"set": 1, "id": "s1_ch1", "kind": "chain2", "q": "x = 2. y = x + 9. z = y * 3. What is z?", "a": 33}
+{"set": 1, "id": "s1_ch2", "kind": "chain2", "q": "x = 5. y = x + 9. z = y * 2. What is z?", "a": 28}
+{"set": 1, "id": "s1_ch3", "kind": "chain2", "q": "x = 5. y = x + 4. z = y * 3. What is z?", "a": 27}
+{"set": 1, "id": "s1_ch4", "kind": "chain2", "q": "x = 5. y = x + 4. z = y * 4. What is z?", "a": 36}
+{"set": 1, "id": "s1_ch5", "kind": "chain2", "q": "x = 6. y = x + 9. z = y * 4. What is z?", "a": 60}
+{"set": 1, "id": "s1_ch6", "kind": "chain2", "q": "x = 7. y = x + 2. z = y * 2. What is z?", "a": 18}
+{"set": 1, "id": "s1_cap0", "kind": "capital", "q": "What is the capital city of France?", "a": "Paris"}
+{"set": 1, "id": "s1_cap1", "kind": "capital", "q": "What is the capital city of Japan?", "a": "Tokyo"}
+{"set": 1, "id": "s1_cap2", "kind": "capital", "q": "What is the capital city of Canada?", "a": "Ottawa"}
+{"set": 1, "id": "s1_cap3", "kind": "capital", "q": "What is the capital city of Australia?", "a": "Canberra"}
+{"set": 1, "id": "s1_cap4", "kind": "capital", "q": "What is the capital city of Brazil?", "a": "Brasilia"}
+{"set": 1, "id": "s1_cap5", "kind": "capital", "q": "What is the capital city of Egypt?", "a": "Cairo"}
+{"set": 1, "id": "s1_cap6", "kind": "capital", "q": "What is the capital city of Kenya?", "a": "Nairobi"}
+{"set": 2, "id": "s2_add0", "kind": "add", "q": "What is 844 + 100?", "a": 944}
+{"set": 2, "id": "s2_add1", "kind": "add", "q": "What is 612 + 431?", "a": 1043}
+{"set": 2, "id": "s2_add2", "kind": "add", "q": "What is 896 + 756?", "a": 1652}
+{"set": 2, "id": "s2_add3", "kind": "add", "q": "What is 677 + 216?", "a": 893}
+{"set": 2, "id": "s2_add4", "kind": "add", "q": "What is 357 + 402?", "a": 759}
+{"set": 2, "id": "s2_add5", "kind": "add", "q": "What is 712 + 870?", "a": 1582}
+{"set": 2, "id": "s2_add6", "kind": "add", "q": "What is 101 + 215?", "a": 316}
+{"set": 2, "id": "s2_add7", "kind": "add", "q": "What is 373 + 624?", "a": 997}
+{"set": 2, "id": "s2_mul0", "kind": "mul", "q": "What is 31 * 14?", "a": 434}
+{"set": 2, "id": "s2_mul1", "kind": "mul", "q": "What is 15 * 22?", "a": 330}
+{"set": 2, "id": "s2_mul2", "kind": "mul", "q": "What is 35 * 23?", "a": 805}
+{"set": 2, "id": "s2_mul3", "kind": "mul", "q": "What is 13 * 27?", "a": 351}
+{"set": 2, "id": "s2_mul4", "kind": "mul", "q": "What is 12 * 17?", "a": 204}
+{"set": 2, "id": "s2_mul5", "kind": "mul", "q": "What is 37 * 23?", "a": 851}
+{"set": 2, "id": "s2_mul6", "kind": "mul", "q": "What is 44 * 28?", "a": 1232}
+{"set": 2, "id": "s2_mul7", "kind": "mul", "q": "What is 48 * 24?", "a": 1152}
+{"set": 2, "id": "s2_ch0", "kind": "chain2", "q": "x = 2. y = x + 9. z = y * 4. What is z?", "a": 44}
+{"set": 2, "id": "s2_ch1", "kind": "chain2", "q": "x = 2. y = x + 6. z = y * 3. What is z?", "a": 24}
+{"set": 2, "id": "s2_ch2", "kind": "chain2", "q": "x = 9. y = x + 2. z = y * 4. What is z?", "a": 44}
+{"set": 2, "id": "s2_ch3", "kind": "chain2", "q": "x = 7. y = x + 6. z = y * 3. What is z?", "a": 39}
+{"set": 2, "id": "s2_ch4", "kind": "chain2", "q": "x = 7. y = x + 9. z = y * 4. What is z?", "a": 64}
+{"set": 2, "id": "s2_ch5", "kind": "chain2", "q": "x = 2. y = x + 3. z = y * 3. What is z?", "a": 15}
+{"set": 2, "id": "s2_ch6", "kind": "chain2", "q": "x = 8. y = x + 8. z = y * 3. What is z?", "a": 48}
+{"set": 2, "id": "s2_cap0", "kind": "capital", "q": "What is the capital city of Norway?", "a": "Oslo"}
+{"set": 2, "id": "s2_cap1", "kind": "capital", "q": "What is the capital city of Peru?", "a": "Lima"}
+{"set": 2, "id": "s2_cap2", "kind": "capital", "q": "What is the capital city of Poland?", "a": "Warsaw"}
+{"set": 2, "id": "s2_cap3", "kind": "capital", "q": "What is the capital city of Spain?", "a": "Madrid"}
+{"set": 2, "id": "s2_cap4", "kind": "capital", "q": "What is the capital city of Turkey?", "a": "Ankara"}
+{"set": 2, "id": "s2_cap5", "kind": "capital", "q": "What is the capital city of Vietnam?", "a": "Hanoi"}
+{"set": 2, "id": "s2_cap6", "kind": "capital", "q": "What is the capital city of Chile?", "a": "Santiago"}
+{"set": 3, "id": "s3_add0", "kind": "add", "q": "What is 215 + 830?", "a": 1045}
+{"set": 3, "id": "s3_add1", "kind": "add", "q": "What is 671 + 809?", "a": 1480}
+{"set": 3, "id": "s3_add2", "kind": "add", "q": "What is 326 + 390?", "a": 716}
+{"set": 3, "id": "s3_add3", "kind": "add", "q": "What is 414 + 783?", "a": 1197}
+{"set": 3, "id": "s3_add4", "kind": "add", "q": "What is 508 + 849?", "a": 1357}
+{"set": 3, "id": "s3_add5", "kind": "add", "q": "What is 824 + 201?", "a": 1025}
+{"set": 3, "id": "s3_add6", "kind": "add", "q": "What is 819 + 270?", "a": 1089}
+{"set": 3, "id": "s3_add7", "kind": "add", "q": "What is 445 + 399?", "a": 844}
+{"set": 3, "id": "s3_mul0", "kind": "mul", "q": "What is 16 * 22?", "a": 352}
+{"set": 3, "id": "s3_mul1", "kind": "mul", "q": "What is 36 * 17?", "a": 612}
+{"set": 3, "id": "s3_mul2", "kind": "mul", "q": "What is 44 * 24?", "a": 1056}
+{"set": 3, "id": "s3_mul3", "kind": "mul", "q": "What is 49 * 26?", "a": 1274}
+{"set": 3, "id": "s3_mul4", "kind": "mul", "q": "What is 34 * 14?", "a": 476}
+{"set": 3, "id": "s3_mul5", "kind": "mul", "q": "What is 13 * 23?", "a": 299}
+{"set": 3, "id": "s3_mul6", "kind": "mul", "q": "What is 41 * 22?", "a": 902}
+{"set": 3, "id": "s3_mul7", "kind": "mul", "q": "What is 29 * 25?", "a": 725}
+{"set": 3, "id": "s3_ch0", "kind": "chain2", "q": "x = 3. y = x + 7. z = y * 3. What is z?", "a": 30}
+{"set": 3, "id": "s3_ch1", "kind": "chain2", "q": "x = 2. y = x + 3. z = y * 3. What is z?", "a": 15}
+{"set": 3, "id": "s3_ch2", "kind": "chain2", "q": "x = 6. y = x + 9. z = y * 2. What is z?", "a": 30}
+{"set": 3, "id": "s3_ch3", "kind": "chain2", "q": "x = 3. y = x + 4. z = y * 2. What is z?", "a": 14}
+{"set": 3, "id": "s3_ch4", "kind": "chain2", "q": "x = 6. y = x + 5. z = y * 3. What is z?", "a": 33}
+{"set": 3, "id": "s3_ch5", "kind": "chain2", "q": "x = 2. y = x + 5. z = y * 4. What is z?", "a": 28}
+{"set": 3, "id": "s3_ch6", "kind": "chain2", "q": "x = 2. y = x + 6. z = y * 3. What is z?", "a": 24}
+{"set": 3, "id": "s3_cap0", "kind": "capital", "q": "What is the capital city of Greece?", "a": "Athens"}
+{"set": 3, "id": "s3_cap1", "kind": "capital", "q": "What is the capital city of Portugal?", "a": "Lisbon"}
+{"set": 3, "id": "s3_cap2", "kind": "capital", "q": "What is the capital city of Sweden?", "a": "Stockholm"}
+{"set": 3, "id": "s3_cap3", "kind": "capital", "q": "What is the capital city of Thailand?", "a": "Bangkok"}
+{"set": 3, "id": "s3_cap4", "kind": "capital", "q": "What is the capital city of Ireland?", "a": "Dublin"}
+{"set": 3, "id": "s3_cap5", "kind": "capital", "q": "What is the capital city of Argentina?", "a": "Buenos Aires"}
+{"set": 3, "id": "s3_cap6", "kind": "capital", "q": "What is the capital city of Austria?", "a": "Vienna"}

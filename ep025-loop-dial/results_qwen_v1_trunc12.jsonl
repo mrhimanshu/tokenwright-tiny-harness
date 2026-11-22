@@ -1,0 +1,180 @@
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s1_add0", "set": 1, "kind": "add", "gold": 822, "out": "822", "pred": 822, "ok": true, "wall_s": 3.36}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s1_add1", "set": 1, "kind": "add", "gold": 624, "out": "624", "pred": 624, "ok": true, "wall_s": 3.89}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s1_add2", "set": 1, "kind": "add", "gold": 954, "out": "954", "pred": 954, "ok": true, "wall_s": 4.2}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s1_add3", "set": 1, "kind": "add", "gold": 1422, "out": "1422", "pred": 1422, "ok": true, "wall_s": 4.11}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s1_add4", "set": 1, "kind": "add", "gold": 825, "out": "825", "pred": 825, "ok": true, "wall_s": 5.94}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s1_add5", "set": 1, "kind": "add", "gold": 1682, "out": "1682", "pred": 1682, "ok": true, "wall_s": 4.28}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s1_add6", "set": 1, "kind": "add", "gold": 1016, "out": "1016", "pred": 1016, "ok": true, "wall_s": 3.02}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s1_add7", "set": 1, "kind": "add", "gold": 892, "out": "892", "pred": 892, "ok": true, "wall_s": 2.82}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s1_mul0", "set": 1, "kind": "mul", "gold": 728, "out": "728", "pred": 728, "ok": true, "wall_s": 2.91}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s1_mul1", "set": 1, "kind": "mul", "gold": 294, "out": "294", "pred": 294, "ok": true, "wall_s": 2.82}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s1_mul2", "set": 1, "kind": "mul", "gold": 546, "out": "546", "pred": 546, "ok": true, "wall_s": 2.53}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s1_mul3", "set": 1, "kind": "mul", "gold": 578, "out": "578", "pred": 578, "ok": true, "wall_s": 2.86}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s1_mul4", "set": 1, "kind": "mul", "gold": 1053, "out": "1053", "pred": 1053, "ok": true, "wall_s": 3.17}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s1_mul5", "set": 1, "kind": "mul", "gold": 714, "out": "714", "pred": 714, "ok": true, "wall_s": 2.61}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s1_mul6", "set": 1, "kind": "mul", "gold": 900, "out": "900", "pred": 900, "ok": true, "wall_s": 2.45}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s1_mul7", "set": 1, "kind": "mul", "gold": 594, "out": "594", "pred": 594, "ok": true, "wall_s": 1.99}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s1_ch0", "set": 1, "kind": "chain2", "gold": 56, "out": "32", "pred": 32, "ok": false, "wall_s": 1.76}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s1_ch1", "set": 1, "kind": "chain2", "gold": 33, "out": "27", "pred": 27, "ok": false, "wall_s": 1.71}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s1_ch2", "set": 1, "kind": "chain2", "gold": 28, "out": "10", "pred": 10, "ok": false, "wall_s": 1.78}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s1_ch3", "set": 1, "kind": "chain2", "gold": 27, "out": "15", "pred": 15, "ok": false, "wall_s": 1.7}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s1_ch4", "set": 1, "kind": "chain2", "gold": 36, "out": "20", "pred": 20, "ok": false, "wall_s": 1.74}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s1_ch5", "set": 1, "kind": "chain2", "gold": 60, "out": "24", "pred": 24, "ok": false, "wall_s": 1.87}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s1_ch6", "set": 1, "kind": "chain2", "gold": 18, "out": "14", "pred": 14, "ok": false, "wall_s": 1.71}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s1_cap0", "set": 1, "kind": "capital", "gold": "Paris", "out": "Paris", "pred": null, "ok": true, "wall_s": 1.16}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s1_cap1", "set": 1, "kind": "capital", "gold": "Tokyo", "out": "Tokyo", "pred": null, "ok": true, "wall_s": 1.53}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s1_cap2", "set": 1, "kind": "capital", "gold": "Ottawa", "out": "Ottawa", "pred": null, "ok": true, "wall_s": 1.93}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s1_cap3", "set": 1, "kind": "capital", "gold": "Canberra", "out": "Canberra", "pred": null, "ok": true, "wall_s": 1.45}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s1_cap4", "set": 1, "kind": "capital", "gold": "Brasilia", "out": "Bras\u00edlia", "pred": null, "ok": false, "wall_s": 1.92}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s1_cap5", "set": 1, "kind": "capital", "gold": "Cairo", "out": "Cairo", "pred": null, "ok": true, "wall_s": 1.53}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s1_cap6", "set": 1, "kind": "capital", "gold": "Nairobi", "out": "Nairobi", "pred": null, "ok": true, "wall_s": 1.58}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s2_add0", "set": 2, "kind": "add", "gold": 944, "out": "944", "pred": 944, "ok": true, "wall_s": 2.22}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s2_add1", "set": 2, "kind": "add", "gold": 1043, "out": "1043", "pred": 1043, "ok": true, "wall_s": 3.64}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s2_add2", "set": 2, "kind": "add", "gold": 1652, "out": "1652", "pred": 1652, "ok": true, "wall_s": 2.59}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s2_add3", "set": 2, "kind": "add", "gold": 893, "out": "893", "pred": 893, "ok": true, "wall_s": 2.17}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s2_add4", "set": 2, "kind": "add", "gold": 759, "out": "759", "pred": 759, "ok": true, "wall_s": 1.97}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s2_add5", "set": 2, "kind": "add", "gold": 1582, "out": "1582", "pred": 1582, "ok": true, "wall_s": 2.43}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s2_add6", "set": 2, "kind": "add", "gold": 316, "out": "316", "pred": 316, "ok": true, "wall_s": 1.99}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s2_add7", "set": 2, "kind": "add", "gold": 997, "out": "997", "pred": 997, "ok": true, "wall_s": 1.93}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s2_mul0", "set": 2, "kind": "mul", "gold": 434, "out": "434", "pred": 434, "ok": true, "wall_s": 1.94}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s2_mul1", "set": 2, "kind": "mul", "gold": 330, "out": "330", "pred": 330, "ok": true, "wall_s": 1.98}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s2_mul2", "set": 2, "kind": "mul", "gold": 805, "out": "805", "pred": 805, "ok": true, "wall_s": 1.94}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s2_mul3", "set": 2, "kind": "mul", "gold": 351, "out": "351", "pred": 351, "ok": true, "wall_s": 1.89}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s2_mul4", "set": 2, "kind": "mul", "gold": 204, "out": "204", "pred": 204, "ok": true, "wall_s": 1.86}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s2_mul5", "set": 2, "kind": "mul", "gold": 851, "out": "851", "pred": 851, "ok": true, "wall_s": 1.96}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s2_mul6", "set": 2, "kind": "mul", "gold": 1232, "out": "1232", "pred": 1232, "ok": true, "wall_s": 2.44}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s2_mul7", "set": 2, "kind": "mul", "gold": 1152, "out": "1152", "pred": 1152, "ok": true, "wall_s": 2.37}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s2_ch0", "set": 2, "kind": "chain2", "gold": 44, "out": "80", "pred": 80, "ok": false, "wall_s": 1.68}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s2_ch1", "set": 2, "kind": "chain2", "gold": 24, "out": "18", "pred": 18, "ok": false, "wall_s": 1.82}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s2_ch2", "set": 2, "kind": "chain2", "gold": 44, "out": "36", "pred": 36, "ok": false, "wall_s": 1.65}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s2_ch3", "set": 2, "kind": "chain2", "gold": 39, "out": "21", "pred": 21, "ok": false, "wall_s": 1.8}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s2_ch4", "set": 2, "kind": "chain2", "gold": 64, "out": "28", "pred": 28, "ok": false, "wall_s": 1.66}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s2_ch5", "set": 2, "kind": "chain2", "gold": 15, "out": "6", "pred": 6, "ok": false, "wall_s": 1.25}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s2_ch6", "set": 2, "kind": "chain2", "gold": 48, "out": "24", "pred": 24, "ok": false, "wall_s": 1.67}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s2_cap0", "set": 2, "kind": "capital", "gold": "Oslo", "out": "Oslo", "pred": null, "ok": true, "wall_s": 1.46}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s2_cap1", "set": 2, "kind": "capital", "gold": "Lima", "out": "Lima", "pred": null, "ok": true, "wall_s": 1.56}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s2_cap2", "set": 2, "kind": "capital", "gold": "Warsaw", "out": "Warsaw", "pred": null, "ok": true, "wall_s": 1.58}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s2_cap3", "set": 2, "kind": "capital", "gold": "Madrid", "out": "Madrid", "pred": null, "ok": true, "wall_s": 1.56}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s2_cap4", "set": 2, "kind": "capital", "gold": "Ankara", "out": "Ankara", "pred": null, "ok": true, "wall_s": 1.93}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s2_cap5", "set": 2, "kind": "capital", "gold": "Hanoi", "out": "Hanoi", "pred": null, "ok": true, "wall_s": 1.51}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s2_cap6", "set": 2, "kind": "capital", "gold": "Santiago", "out": "Santiago", "pred": null, "ok": true, "wall_s": 1.72}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s3_add0", "set": 3, "kind": "add", "gold": 1045, "out": "1045", "pred": 1045, "ok": true, "wall_s": 2.38}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s3_add1", "set": 3, "kind": "add", "gold": 1480, "out": "1480", "pred": 1480, "ok": true, "wall_s": 3.51}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s3_add2", "set": 3, "kind": "add", "gold": 716, "out": "716", "pred": 716, "ok": true, "wall_s": 2.62}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s3_add3", "set": 3, "kind": "add", "gold": 1197, "out": "1197", "pred": 1197, "ok": true, "wall_s": 2.44}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s3_add4", "set": 3, "kind": "add", "gold": 1357, "out": "1347", "pred": 1347, "ok": false, "wall_s": 2.52}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s3_add5", "set": 3, "kind": "add", "gold": 1025, "out": "1025", "pred": 1025, "ok": true, "wall_s": 2.4}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s3_add6", "set": 3, "kind": "add", "gold": 1089, "out": "1089", "pred": 1089, "ok": true, "wall_s": 2.46}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s3_add7", "set": 3, "kind": "add", "gold": 844, "out": "844", "pred": 844, "ok": true, "wall_s": 1.91}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s3_mul0", "set": 3, "kind": "mul", "gold": 352, "out": "352", "pred": 352, "ok": true, "wall_s": 1.91}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s3_mul1", "set": 3, "kind": "mul", "gold": 612, "out": "612", "pred": 612, "ok": true, "wall_s": 1.95}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s3_mul2", "set": 3, "kind": "mul", "gold": 1056, "out": "1056", "pred": 1056, "ok": true, "wall_s": 2.34}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s3_mul3", "set": 3, "kind": "mul", "gold": 1274, "out": "1274", "pred": 1274, "ok": true, "wall_s": 2.34}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s3_mul4", "set": 3, "kind": "mul", "gold": 476, "out": "476", "pred": 476, "ok": true, "wall_s": 1.9}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s3_mul5", "set": 3, "kind": "mul", "gold": 299, "out": "299", "pred": 299, "ok": true, "wall_s": 1.95}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s3_mul6", "set": 3, "kind": "mul", "gold": 902, "out": "902", "pred": 902, "ok": true, "wall_s": 1.97}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s3_mul7", "set": 3, "kind": "mul", "gold": 725, "out": "725", "pred": 725, "ok": true, "wall_s": 1.98}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s3_ch0", "set": 3, "kind": "chain2", "gold": 30, "out": "27", "pred": 27, "ok": false, "wall_s": 1.72}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s3_ch1", "set": 3, "kind": "chain2", "gold": 15, "out": "6", "pred": 6, "ok": false, "wall_s": 1.37}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s3_ch2", "set": 3, "kind": "chain2", "gold": 30, "out": "18", "pred": 18, "ok": false, "wall_s": 1.75}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s3_ch3", "set": 3, "kind": "chain2", "gold": 14, "out": "6", "pred": 6, "ok": false, "wall_s": 1.27}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s3_ch4", "set": 3, "kind": "chain2", "gold": 33, "out": "18", "pred": 18, "ok": false, "wall_s": 1.7}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s3_ch5", "set": 3, "kind": "chain2", "gold": 28, "out": "8", "pred": 8, "ok": false, "wall_s": 1.35}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s3_ch6", "set": 3, "kind": "chain2", "gold": 24, "out": "18", "pred": 18, "ok": false, "wall_s": 1.67}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s3_cap0", "set": 3, "kind": "capital", "gold": "Athens", "out": "Athens", "pred": null, "ok": true, "wall_s": 1.44}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s3_cap1", "set": 3, "kind": "capital", "gold": "Lisbon", "out": "Lisbon", "pred": null, "ok": true, "wall_s": 1.91}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s3_cap2", "set": 3, "kind": "capital", "gold": "Stockholm", "out": "Stockholm", "pred": null, "ok": true, "wall_s": 1.56}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s3_cap3", "set": 3, "kind": "capital", "gold": "Bangkok", "out": "Bangkok", "pred": null, "ok": true, "wall_s": 1.83}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s3_cap4", "set": 3, "kind": "capital", "gold": "Dublin", "out": "Dublin", "pred": null, "ok": true, "wall_s": 1.54}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s3_cap5", "set": 3, "kind": "capital", "gold": "Buenos Aires", "out": "Buenos Aires", "pred": null, "ok": true, "wall_s": 2.31}
+{"model": "qwen2.5-1.5b-instruct", "loops": 1, "depth": 28, "id": "s3_cap6", "set": 3, "kind": "capital", "gold": "Vienna", "out": "Vienna", "pred": null, "ok": true, "wall_s": 1.5}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s1_add0", "set": 1, "kind": "add", "gold": 822, "out": "700 + 122 = 84", "pred": 84, "ok": false, "wall_s": 8.71}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s1_add1", "set": 1, "kind": "add", "gold": 624, "out": "471 + 153 = 62", "pred": 62, "ok": false, "wall_s": 10.46}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s1_add2", "set": 1, "kind": "add", "gold": 954, "out": "188 + 766 = 18", "pred": 18, "ok": false, "wall_s": 8.93}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s1_add3", "set": 1, "kind": "add", "gold": 1422, "out": "715 + 707 = 28", "pred": 28, "ok": false, "wall_s": 8.59}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s1_add4", "set": 1, "kind": "add", "gold": 825, "out": "705\n\nThis question requires no further explanation, as", "pred": 705, "ok": false, "wall_s": 9.43}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s1_add5", "set": 1, "kind": "add", "gold": 1682, "out": "863 + 819 = 86", "pred": 86, "ok": false, "wall_s": 8.44}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s1_add6", "set": 1, "kind": "add", "gold": 1016, "out": "742 + 274 = 10", "pred": 10, "ok": false, "wall_s": 8.37}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s1_add7", "set": 1, "kind": "add", "gold": 892, "out": "734 + 158 = 73", "pred": 73, "ok": false, "wall_s": 8.3}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s1_mul0", "set": 1, "kind": "mul", "gold": 728, "out": "700", "pred": 700, "ok": false, "wall_s": 4.3}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s1_mul1", "set": 1, "kind": "mul", "gold": 294, "out": "280\n\nThis question asks for the multiplication of two", "pred": 280, "ok": false, "wall_s": 9.37}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s1_mul2", "set": 1, "kind": "mul", "gold": 546, "out": "587\n\nThis question asks for the multiplication of two", "pred": 587, "ok": false, "wall_s": 8.13}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s1_mul3", "set": 1, "kind": "mul", "gold": 578, "out": "590\n\nThis question asks for the multiplication of two", "pred": 590, "ok": false, "wall_s": 8.18}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s1_mul4", "set": 1, "kind": "mul", "gold": 1053, "out": "1048", "pred": 1048, "ok": false, "wall_s": 3.67}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s1_mul5", "set": 1, "kind": "mul", "gold": 714, "out": "780\n\nThis question asks for the multiplication of two", "pred": 780, "ok": false, "wall_s": 8.11}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s1_mul6", "set": 1, "kind": "mul", "gold": 900, "out": "1000\nThe answer to 36 *", "pred": 36, "ok": false, "wall_s": 8.37}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s1_mul7", "set": 1, "kind": "mul", "gold": 594, "out": "14 58", "pred": 58, "ok": false, "wall_s": 4.3}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s1_ch0", "set": 1, "kind": "chain2", "gold": 56, "out": "32\n\nThe answer is 32.\n\nExplanation:\n", "pred": 32, "ok": false, "wall_s": 9.22}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s1_ch1", "set": 1, "kind": "chain2", "gold": 33, "out": "60\n\nExplanation: \nGiven that \\(y\\) is", "pred": 60, "ok": false, "wall_s": 10.01}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s1_ch2", "set": 1, "kind": "chain2", "gold": 28, "out": "10.", "pred": 10, "ok": false, "wall_s": 3.38}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s1_ch3", "set": 1, "kind": "chain2", "gold": 27, "out": "10\n\nThe answer is 10.\n\nExplanation:\n", "pred": 10, "ok": false, "wall_s": 8.46}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s1_ch4", "set": 1, "kind": "chain2", "gold": 36, "out": "20\n\nThe answer is 20.\n\nExplanation:\n", "pred": 20, "ok": false, "wall_s": 8.51}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s1_ch5", "set": 1, "kind": "chain2", "gold": 60, "out": "28.", "pred": 28, "ok": false, "wall_s": 3.27}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s1_ch6", "set": 1, "kind": "chain2", "gold": 18, "out": "14.", "pred": 14, "ok": false, "wall_s": 3.22}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s1_cap0", "set": 1, "kind": "capital", "gold": "Paris", "out": "Paris\n\nThe capital city of France is Paris.", "pred": null, "ok": true, "wall_s": 7.43}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s1_cap1", "set": 1, "kind": "capital", "gold": "Tokyo", "out": "Tokyo\n\nThe capital city of Japan is Tokyo.", "pred": null, "ok": true, "wall_s": 8.16}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s1_cap2", "set": 1, "kind": "capital", "gold": "Ottawa", "out": "Toronto, Ontario\n\nThe capital city of Canada is Toronto,", "pred": null, "ok": false, "wall_s": 10.44}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s1_cap3", "set": 1, "kind": "capital", "gold": "Canberra", "out": "Australia's capital city is Canberra.", "pred": null, "ok": true, "wall_s": 7.03}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s1_cap4", "set": 1, "kind": "capital", "gold": "Brasilia", "out": "Brazilian Capital City: Rio de Janeiro\n\nThe capital city", "pred": null, "ok": false, "wall_s": 8.77}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s1_cap5", "set": 1, "kind": "capital", "gold": "Cairo", "out": "Egypt's capital city is Cairo.", "pred": null, "ok": true, "wall_s": 5.64}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s1_cap6", "set": 1, "kind": "capital", "gold": "Nairobi", "out": "Nairobi\n\nThe capital city of Kenya is Nairobi.", "pred": null, "ok": true, "wall_s": 8.51}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s2_add0", "set": 2, "kind": "add", "gold": 944, "out": "844 + 100 = 84", "pred": 84, "ok": false, "wall_s": 8.44}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s2_add1", "set": 2, "kind": "add", "gold": 1043, "out": "612 + 431 = 61", "pred": 61, "ok": false, "wall_s": 8.27}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s2_add2", "set": 2, "kind": "add", "gold": 1652, "out": "1042", "pred": 1042, "ok": false, "wall_s": 3.73}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s2_add3", "set": 2, "kind": "add", "gold": 893, "out": "677 + 216 = 67", "pred": 67, "ok": false, "wall_s": 9.05}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s2_add4", "set": 2, "kind": "add", "gold": 759, "out": "689\n\nThis question asks for the sum of two", "pred": 689, "ok": false, "wall_s": 8.49}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s2_add5", "set": 2, "kind": "add", "gold": 1582, "out": "1593\n\nThis question asks for the sum of", "pred": 1593, "ok": false, "wall_s": 8.36}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s2_add6", "set": 2, "kind": "add", "gold": 316, "out": "315\n\nThis question asks for the sum of two", "pred": 315, "ok": false, "wall_s": 8.35}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s2_add7", "set": 2, "kind": "add", "gold": 997, "out": "1000\n\nThis question asks for the sum of", "pred": 1000, "ok": false, "wall_s": 8.13}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s2_mul0", "set": 2, "kind": "mul", "gold": 434, "out": "70\n\nThis question asks for the multiplication of 3", "pred": 3, "ok": false, "wall_s": 8.2}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s2_mul1", "set": 2, "kind": "mul", "gold": 330, "out": "340", "pred": 340, "ok": false, "wall_s": 3.16}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s2_mul2", "set": 2, "kind": "mul", "gold": 805, "out": "700\n\nThis question asks for the multiplication of two", "pred": 700, "ok": false, "wall_s": 8.23}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s2_mul3", "set": 2, "kind": "mul", "gold": 351, "out": "480", "pred": 480, "ok": false, "wall_s": 3.36}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s2_mul4", "set": 2, "kind": "mul", "gold": 204, "out": "180\n\nThis question asks for the multiplication of two", "pred": 180, "ok": false, "wall_s": 10.58}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s2_mul5", "set": 2, "kind": "mul", "gold": 851, "out": "689", "pred": 689, "ok": false, "wall_s": 3.02}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s2_mul6", "set": 2, "kind": "mul", "gold": 1232, "out": "1000", "pred": 1000, "ok": false, "wall_s": 3.71}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s2_mul7", "set": 2, "kind": "mul", "gold": 1152, "out": "4,800", "pred": 4800, "ok": false, "wall_s": 4.45}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s2_ch0", "set": 2, "kind": "chain2", "gold": 44, "out": "100\n\nExplanation: \nGiven that \\(y\\)", "pred": 100, "ok": false, "wall_s": 8.67}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s2_ch1", "set": 2, "kind": "chain2", "gold": 24, "out": "18\n\nThe answer is 18.\n\nExplanation:\n", "pred": 18, "ok": false, "wall_s": 8.33}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s2_ch2", "set": 2, "kind": "chain2", "gold": 44, "out": "30.", "pred": 30, "ok": false, "wall_s": 3.26}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s2_ch3", "set": 2, "kind": "chain2", "gold": 39, "out": "18", "pred": 18, "ok": false, "wall_s": 2.63}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s2_ch4", "set": 2, "kind": "chain2", "gold": 64, "out": "28.", "pred": 28, "ok": false, "wall_s": 3.4}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s2_ch5", "set": 2, "kind": "chain2", "gold": 15, "out": "6\n\nThis question involves solving for the value of z,", "pred": 6, "ok": false, "wall_s": 8.31}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s2_ch6", "set": 2, "kind": "chain2", "gold": 48, "out": "24", "pred": 24, "ok": false, "wall_s": 3.28}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s2_cap0", "set": 2, "kind": "capital", "gold": "Oslo", "out": "Oslo\nThe capital city of Norway is Oslo.\nNo", "pred": null, "ok": true, "wall_s": 11.02}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s2_cap1", "set": 2, "kind": "capital", "gold": "Lima", "out": "Peru\n\nThe capital city of Peru is Lima.", "pred": null, "ok": true, "wall_s": 8.45}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s2_cap2", "set": 2, "kind": "capital", "gold": "Warsaw", "out": "Warsaw\n\nThe capital city of Poland is Warsaw.", "pred": null, "ok": true, "wall_s": 8.0}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s2_cap3", "set": 2, "kind": "capital", "gold": "Madrid", "out": "Madrid\n\nThis question asks for the capital city of Spain", "pred": null, "ok": true, "wall_s": 8.4}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s2_cap4", "set": 2, "kind": "capital", "gold": "Ankara", "out": "Turkey's capital city is Ankara.", "pred": null, "ok": true, "wall_s": 5.92}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s2_cap5", "set": 2, "kind": "capital", "gold": "Hanoi", "out": "Hanoi\n\nThe capital city of Vietnam is Hanoi.\n\n", "pred": null, "ok": true, "wall_s": 8.21}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s2_cap6", "set": 2, "kind": "capital", "gold": "Santiago", "out": "Santiago\n\nThe capital city of Chile is Santiago.", "pred": null, "ok": true, "wall_s": 8.12}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s3_add0", "set": 3, "kind": "add", "gold": 1045, "out": "215 + 830 = 21", "pred": 21, "ok": false, "wall_s": 10.59}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s3_add1", "set": 3, "kind": "add", "gold": 1480, "out": "671 + 809 = 24", "pred": 24, "ok": false, "wall_s": 8.35}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s3_add2", "set": 3, "kind": "add", "gold": 716, "out": "718\n\nThis question asks for the sum of two", "pred": 718, "ok": false, "wall_s": 8.29}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s3_add3", "set": 3, "kind": "add", "gold": 1197, "out": "1009\n\nThis question asks for the sum of", "pred": 1009, "ok": false, "wall_s": 8.35}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s3_add4", "set": 3, "kind": "add", "gold": 1357, "out": "1327\n\nThis question asks for the sum of", "pred": 1327, "ok": false, "wall_s": 8.79}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s3_add5", "set": 3, "kind": "add", "gold": 1025, "out": "824 + 201 = 82", "pred": 82, "ok": false, "wall_s": 8.59}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s3_add6", "set": 3, "kind": "add", "gold": 1089, "out": "819 + 270 = 34", "pred": 34, "ok": false, "wall_s": 8.42}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s3_add7", "set": 3, "kind": "add", "gold": 844, "out": "445 + 399 = 78", "pred": 78, "ok": false, "wall_s": 12.19}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s3_mul0", "set": 3, "kind": "mul", "gold": 352, "out": "340", "pred": 340, "ok": false, "wall_s": 3.51}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s3_mul1", "set": 3, "kind": "mul", "gold": 612, "out": "540\n\nThis question asks for the multiplication of two", "pred": 540, "ok": false, "wall_s": 8.65}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s3_mul2", "set": 3, "kind": "mul", "gold": 1056, "out": "1080\n\nThis question asks for the multiplication of", "pred": 1080, "ok": false, "wall_s": 9.31}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s3_mul3", "set": 3, "kind": "mul", "gold": 1274, "out": "1007", "pred": 1007, "ok": false, "wall_s": 3.7}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s3_mul4", "set": 3, "kind": "mul", "gold": 476, "out": "4\n\nThe answer to 34 * 14", "pred": 14, "ok": false, "wall_s": 8.52}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s3_mul5", "set": 3, "kind": "mul", "gold": 299, "out": "270", "pred": 270, "ok": false, "wall_s": 3.34}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s3_mul6", "set": 3, "kind": "mul", "gold": 902, "out": "41 * 22 = 432\n\n", "pred": 432, "ok": false, "wall_s": 8.21}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s3_mul7", "set": 3, "kind": "mul", "gold": 725, "out": "700\nThe final answer is 700", "pred": 700, "ok": false, "wall_s": 9.66}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s3_ch0", "set": 3, "kind": "chain2", "gold": 30, "out": "10", "pred": 10, "ok": false, "wall_s": 2.79}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s3_ch1", "set": 3, "kind": "chain2", "gold": 15, "out": "6\n\nThis question involves solving for the value of z,", "pred": 6, "ok": false, "wall_s": 8.34}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s3_ch2", "set": 3, "kind": "chain2", "gold": 30, "out": "14\n\nThe answer is 14.\n\nExplanation:\n", "pred": 14, "ok": false, "wall_s": 8.28}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s3_ch3", "set": 3, "kind": "chain2", "gold": 14, "out": "10\n\nExplanation: \nGiven:\ny = x +", "pred": 10, "ok": false, "wall_s": 8.32}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s3_ch4", "set": 3, "kind": "chain2", "gold": 33, "out": "18\n\nThe answer is 18.\n\nExplanation:\n", "pred": 18, "ok": false, "wall_s": 8.53}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s3_ch5", "set": 3, "kind": "chain2", "gold": 28, "out": "10\n\nThe answer is 10.\n\nExplanation:\n", "pred": 10, "ok": false, "wall_s": 8.4}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s3_ch6", "set": 3, "kind": "chain2", "gold": 24, "out": "18\n\nThe answer is 18.\n\nExplanation:\n", "pred": 18, "ok": false, "wall_s": 8.46}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s3_cap0", "set": 3, "kind": "capital", "gold": "Athens", "out": "Greece's capital city is Athens.", "pred": null, "ok": true, "wall_s": 8.51}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s3_cap1", "set": 3, "kind": "capital", "gold": "Lisbon", "out": "Porto, Lisbon, Porto, and Lisbon. The capital", "pred": null, "ok": true, "wall_s": 8.08}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s3_cap2", "set": 3, "kind": "capital", "gold": "Stockholm", "out": "Stockholm\n\nThis question asks for the capital city of Sweden", "pred": null, "ok": true, "wall_s": 9.7}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s3_cap3", "set": 3, "kind": "capital", "gold": "Bangkok", "out": "Thailand's capital city is Bangkok.", "pred": null, "ok": true, "wall_s": 7.51}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s3_cap4", "set": 3, "kind": "capital", "gold": "Dublin", "out": "Dublin\n\nThe capital city of Ireland is Dublin.", "pred": null, "ok": true, "wall_s": 9.71}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s3_cap5", "set": 3, "kind": "capital", "gold": "Buenos Aires", "out": "Argentina's capital city is Buenos Aires.", "pred": null, "ok": true, "wall_s": 7.32}
+{"model": "qwen2.5-1.5b-instruct", "loops": 2, "depth": 48, "id": "s3_cap6", "set": 3, "kind": "capital", "gold": "Vienna", "out": "Vienna\n\nThe capital city of Austria is Vienna.", "pred": null, "ok": true, "wall_s": 12.29}
