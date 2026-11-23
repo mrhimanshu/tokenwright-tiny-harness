@@ -1,0 +1,1016 @@
+[
+ {
+  "id": "loan_seed",
+  "fam": "loan",
+  "kind": "money",
+  "split": "seed",
+  "q": "A business takes out a loan of $22,000 at 8.4% annual interest, compounded monthly, repaid in 36 equal monthly payments. What is the monthly payment, to the cent?",
+  "answer": 693.47,
+  "params": {
+   "P": 22000,
+   "r": 8.4,
+   "n": 36
+  }
+ },
+ {
+  "id": "loan_v0",
+  "fam": "loan",
+  "kind": "money",
+  "split": "same",
+  "q": "A business takes out a loan of $77,500 at 7.1% annual interest, compounded monthly, repaid in 72 equal monthly payments. What is the monthly payment, to the cent?",
+  "answer": 1325.02,
+  "params": {
+   "P": 77500,
+   "r": 7.1,
+   "n": 72
+  }
+ },
+ {
+  "id": "loan_v1",
+  "fam": "loan",
+  "kind": "money",
+  "split": "same",
+  "q": "You borrow $30,500. The bank charges 4.75% a year (monthly compounding) and you pay it back over 36 months with equal payments. How much is each payment in dollars and cents?",
+  "answer": 910.69,
+  "params": {
+   "P": 30500,
+   "r": 4.75,
+   "n": 36
+  }
+ },
+ {
+  "id": "loan_v2",
+  "fam": "loan",
+  "kind": "money",
+  "split": "same",
+  "q": "Equal monthly instalments: principal $89,500, nominal yearly rate 6.25%, term 48 months. Find the instalment (round to cents).",
+  "answer": 2112.18,
+  "params": {
+   "P": 89500,
+   "r": 6.25,
+   "n": 48
+  }
+ },
+ {
+  "id": "loan_v3",
+  "fam": "loan",
+  "kind": "money",
+  "split": "same",
+  "q": "A business takes out a loan of $34,500 at 4.75% annual interest, compounded monthly, repaid in 36 equal monthly payments. What is the monthly payment, to the cent?",
+  "answer": 1030.13,
+  "params": {
+   "P": 34500,
+   "r": 4.75,
+   "n": 36
+  }
+ },
+ {
+  "id": "loan_v4",
+  "fam": "loan",
+  "kind": "money",
+  "split": "same",
+  "q": "You borrow $58,000. The bank charges 4.75% a year (monthly compounding) and you pay it back over 36 months with equal payments. How much is each payment in dollars and cents?",
+  "answer": 1731.81,
+  "params": {
+   "P": 58000,
+   "r": 4.75,
+   "n": 36
+  }
+ },
+ {
+  "id": "loan_v5",
+  "fam": "loan",
+  "kind": "money",
+  "split": "same",
+  "q": "Equal monthly instalments: principal $85,500, nominal yearly rate 4.75%, term 36 months. Find the instalment (round to cents).",
+  "answer": 2552.93,
+  "params": {
+   "P": 85500,
+   "r": 4.75,
+   "n": 36
+  }
+ },
+ {
+  "id": "loan_v6",
+  "fam": "loan",
+  "kind": "money",
+  "split": "same",
+  "q": "A business takes out a loan of $11,500 at 6.25% annual interest, compounded monthly, repaid in 36 equal monthly payments. What is the monthly payment, to the cent?",
+  "answer": 351.16,
+  "params": {
+   "P": 11500,
+   "r": 6.25,
+   "n": 36
+  }
+ },
+ {
+  "id": "loan_v7",
+  "fam": "loan",
+  "kind": "money",
+  "split": "same",
+  "q": "You borrow $16,500. The bank charges 3.9% a year (monthly compounding) and you pay it back over 48 months with equal payments. How much is each payment in dollars and cents?",
+  "answer": 371.82,
+  "params": {
+   "P": 16500,
+   "r": 3.9,
+   "n": 48
+  }
+ },
+ {
+  "id": "loan_x0",
+  "fam": "loan",
+  "kind": "money",
+  "split": "shift",
+  "q": "A business takes out a loan of $48,000 at 8.4% annual interest, compounded monthly, repaid in 36 equal monthly payments. What is the monthly payment, to the cent? The bank also adds a $450 arrangement fee to the amount borrowed.",
+  "answer": 1527.2,
+  "params": {
+   "P": 48000,
+   "r": 8.4,
+   "n": 36,
+   "fee": 450
+  }
+ },
+ {
+  "id": "loan_x1",
+  "fam": "loan",
+  "kind": "money",
+  "split": "shift",
+  "q": "You borrow $72,500. The bank charges 7.1% a year (monthly compounding) and you pay it back over 72 months with equal payments. How much is each payment in dollars and cents? The bank also adds a $1,200 arrangement fee to the amount borrowed.",
+  "answer": 1260.05,
+  "params": {
+   "P": 72500,
+   "r": 7.1,
+   "n": 72,
+   "fee": 1200
+  }
+ },
+ {
+  "id": "loan_x2",
+  "fam": "loan",
+  "kind": "money",
+  "split": "shift",
+  "q": "Equal monthly instalments: principal $42,500, nominal yearly rate 7.1%, term 36 months. Find the instalment (round to cents). The bank also adds a $1,200 arrangement fee to the amount borrowed.",
+  "answer": 1351.33,
+  "params": {
+   "P": 42500,
+   "r": 7.1,
+   "n": 36,
+   "fee": 1200
+  }
+ },
+ {
+  "id": "savings_seed",
+  "fam": "savings",
+  "kind": "money",
+  "split": "seed",
+  "q": "A savings account starts with $14,750. It earns 3.2% a year compounded monthly, and $120 is deposited at the end of every month. What is the balance after 18 months, to the cent?",
+  "answer": 17683.94,
+  "params": {
+   "S": 14750,
+   "D": 120,
+   "r": 3.2,
+   "n": 18
+  }
+ },
+ {
+  "id": "savings_v0",
+  "fam": "savings",
+  "kind": "money",
+  "split": "same",
+  "q": "A savings account starts with $9,500. It earns 4.1% a year compounded monthly, and $400 is deposited at the end of every month. What is the balance after 18 months, to the cent?",
+  "answer": 17514.49,
+  "params": {
+   "S": 9500,
+   "D": 400,
+   "r": 4.1,
+   "n": 18
+  }
+ },
+ {
+  "id": "savings_v1",
+  "fam": "savings",
+  "kind": "money",
+  "split": "same",
+  "q": "Maya opens an account with $17,000 and adds $310 at the end of each month. Interest is 4.1% per year, compounded monthly. How much is in the account after 18 months?",
+  "answer": 23821.47,
+  "params": {
+   "S": 17000,
+   "D": 310,
+   "r": 4.1,
+   "n": 18
+  }
+ },
+ {
+  "id": "savings_v2",
+  "fam": "savings",
+  "kind": "money",
+  "split": "same",
+  "q": "Initial deposit $18,750; monthly end-of-month contribution $230; nominal annual rate 3.2% compounded monthly; horizon 30 months. Final balance (cents)?",
+  "answer": 27483.03,
+  "params": {
+   "S": 18750,
+   "D": 230,
+   "r": 3.2,
+   "n": 30
+  }
+ },
+ {
+  "id": "savings_v3",
+  "fam": "savings",
+  "kind": "money",
+  "split": "same",
+  "q": "A savings account starts with $12,250. It earns 2.5% a year compounded monthly, and $75 is deposited at the end of every month. What is the balance after 55 months, to the cent?",
+  "answer": 18101.39,
+  "params": {
+   "S": 12250,
+   "D": 75,
+   "r": 2.5,
+   "n": 55
+  }
+ },
+ {
+  "id": "savings_v4",
+  "fam": "savings",
+  "kind": "money",
+  "split": "same",
+  "q": "Maya opens an account with $16,000 and adds $150 at the end of each month. Interest is 3.2% per year, compounded monthly. How much is in the account after 55 months?",
+  "answer": 27396.85,
+  "params": {
+   "S": 16000,
+   "D": 150,
+   "r": 3.2,
+   "n": 55
+  }
+ },
+ {
+  "id": "savings_v5",
+  "fam": "savings",
+  "kind": "money",
+  "split": "same",
+  "q": "Initial deposit $8,500; monthly end-of-month contribution $230; nominal annual rate 5.3% compounded monthly; horizon 30 months. Final balance (cents)?",
+  "answer": 17062.1,
+  "params": {
+   "S": 8500,
+   "D": 230,
+   "r": 5.3,
+   "n": 30
+  }
+ },
+ {
+  "id": "savings_v6",
+  "fam": "savings",
+  "kind": "money",
+  "split": "same",
+  "q": "A savings account starts with $7,750. It earns 4.1% a year compounded monthly, and $120 is deposited at the end of every month. What is the balance after 66 months, to the cent?",
+  "answer": 18573.78,
+  "params": {
+   "S": 7750,
+   "D": 120,
+   "r": 4.1,
+   "n": 66
+  }
+ },
+ {
+  "id": "savings_v7",
+  "fam": "savings",
+  "kind": "money",
+  "split": "same",
+  "q": "Maya opens an account with $6,500 and adds $400 at the end of each month. Interest is 5.3% per year, compounded monthly. How much is in the account after 55 months?",
+  "answer": 33123.33,
+  "params": {
+   "S": 6500,
+   "D": 400,
+   "r": 5.3,
+   "n": 55
+  }
+ },
+ {
+  "id": "savings_x0",
+  "fam": "savings",
+  "kind": "money",
+  "split": "shift",
+  "q": "A savings account starts with $1,250. It earns 3.2% a year compounded monthly, and $120 is deposited at the end of every month. What is the balance after 18 months, to the cent? After month 10 the deposits stop, but the money keeps earning interest.",
+  "answer": 2552.03,
+  "params": {
+   "S": 1250,
+   "D": 120,
+   "r": 3.2,
+   "n": 18,
+   "stop": 10
+  }
+ },
+ {
+  "id": "savings_x1",
+  "fam": "savings",
+  "kind": "money",
+  "split": "shift",
+  "q": "Maya opens an account with $11,750 and adds $400 at the end of each month. Interest is 4.8% per year, compounded monthly. How much is in the account after 18 months? After month 10 the deposits stop, but the money keeps earning interest.",
+  "answer": 16830.33,
+  "params": {
+   "S": 11750,
+   "D": 400,
+   "r": 4.8,
+   "n": 18,
+   "stop": 10
+  }
+ },
+ {
+  "id": "savings_x2",
+  "fam": "savings",
+  "kind": "money",
+  "split": "shift",
+  "q": "Initial deposit $5,250; monthly end-of-month contribution $400; nominal annual rate 4.8% compounded monthly; horizon 66 months. Final balance (cents)? After month 6 the deposits stop, but the money keeps earning interest.",
+  "answer": 9912.77,
+  "params": {
+   "S": 5250,
+   "D": 400,
+   "r": 4.8,
+   "n": 66,
+   "stop": 6
+  }
+ },
+ {
+  "id": "shipping_seed",
+  "fam": "shipping",
+  "kind": "money",
+  "split": "seed",
+  "q": "A courier charges $5.1 per kg for the first 5 kg, $3.9 per kg for each kg from 5 to 20 kg, and $2.15 per kg above 20 kg. A 7.5% fuel surcharge is added to that, then a 20% discount code is applied to the total. What does a 23.6 kg parcel cost, to the cent?",
+  "answer": 78.9,
+  "params": {
+   "w": 23.6,
+   "a": 5.1,
+   "b": 3.9,
+   "c": 2.15,
+   "s": 7.5,
+   "d": 20
+  }
+ },
+ {
+  "id": "shipping_v0",
+  "fam": "shipping",
+  "kind": "money",
+  "split": "same",
+  "q": "A courier charges $4.2 per kg for the first 5 kg, $3.35 per kg for each kg from 5 to 20 kg, and $2.15 per kg above 20 kg. A 9% fuel surcharge is added to that, then a 10% discount code is applied to the total. What does a 18.4 kg parcel cost, to the cent?",
+  "answer": 64.64,
+  "params": {
+   "w": 18.4,
+   "a": 4.2,
+   "b": 3.35,
+   "c": 2.15,
+   "s": 9,
+   "d": 10
+  }
+ },
+ {
+  "id": "shipping_v1",
+  "fam": "shipping",
+  "kind": "money",
+  "split": "same",
+  "q": "Shipping a 7.2 kg box: rates are $4.2/kg up to 5 kg, $2.8/kg for the part between 5 and 20 kg, $2.15/kg for anything over 20 kg. Add 9% fuel surcharge, then take 20% off with a promo code. Final price?",
+  "answer": 23.68,
+  "params": {
+   "w": 7.2,
+   "a": 4.2,
+   "b": 2.8,
+   "c": 2.15,
+   "s": 9,
+   "d": 20
+  }
+ },
+ {
+  "id": "shipping_v2",
+  "fam": "shipping",
+  "kind": "money",
+  "split": "same",
+  "q": "Tiered freight: tier 1 (0-5 kg) $5.1/kg, tier 2 (5-20 kg) $3.35/kg, tier 3 (over 20 kg) $1.6/kg. Surcharge 12.5% on the freight; afterwards a 20% discount. Parcel weight 23.6 kg. Total in dollars and cents?",
+  "answer": 73.36,
+  "params": {
+   "w": 23.6,
+   "a": 5.1,
+   "b": 3.35,
+   "c": 1.6,
+   "s": 12.5,
+   "d": 20
+  }
+ },
+ {
+  "id": "shipping_v3",
+  "fam": "shipping",
+  "kind": "money",
+  "split": "same",
+  "q": "A courier charges $4.2 per kg for the first 5 kg, $3.9 per kg for each kg from 5 to 20 kg, and $2.15 per kg above 20 kg. A 9% fuel surcharge is added to that, then a 20% discount code is applied to the total. What does a 23.6 kg parcel cost, to the cent?",
+  "answer": 76.07,
+  "params": {
+   "w": 23.6,
+   "a": 4.2,
+   "b": 3.9,
+   "c": 2.15,
+   "s": 9,
+   "d": 20
+  }
+ },
+ {
+  "id": "shipping_v4",
+  "fam": "shipping",
+  "kind": "money",
+  "split": "same",
+  "q": "Shipping a 12.8 kg box: rates are $4.2/kg up to 5 kg, $2.8/kg for the part between 5 and 20 kg, $2.15/kg for anything over 20 kg. Add 7.5% fuel surcharge, then take 20% off with a promo code. Final price?",
+  "answer": 36.84,
+  "params": {
+   "w": 12.8,
+   "a": 4.2,
+   "b": 2.8,
+   "c": 2.15,
+   "s": 7.5,
+   "d": 20
+  }
+ },
+ {
+  "id": "shipping_v5",
+  "fam": "shipping",
+  "kind": "money",
+  "split": "same",
+  "q": "Tiered freight: tier 1 (0-5 kg) $6.0/kg, tier 2 (5-20 kg) $2.8/kg, tier 3 (over 20 kg) $1.6/kg. Surcharge 12.5% on the freight; afterwards a 20% discount. Parcel weight 3.5 kg. Total in dollars and cents?",
+  "answer": 18.9,
+  "params": {
+   "w": 3.5,
+   "a": 6.0,
+   "b": 2.8,
+   "c": 1.6,
+   "s": 12.5,
+   "d": 20
+  }
+ },
+ {
+  "id": "shipping_v6",
+  "fam": "shipping",
+  "kind": "money",
+  "split": "same",
+  "q": "A courier charges $6.0 per kg for the first 5 kg, $3.9 per kg for each kg from 5 to 20 kg, and $2.4 per kg above 20 kg. A 9% fuel surcharge is added to that, then a 10% discount code is applied to the total. What does a 12.8 kg parcel cost, to the cent?",
+  "answer": 59.27,
+  "params": {
+   "w": 12.8,
+   "a": 6.0,
+   "b": 3.9,
+   "c": 2.4,
+   "s": 9,
+   "d": 10
+  }
+ },
+ {
+  "id": "shipping_v7",
+  "fam": "shipping",
+  "kind": "money",
+  "split": "same",
+  "q": "Shipping a 7.2 kg box: rates are $4.2/kg up to 5 kg, $2.8/kg for the part between 5 and 20 kg, $2.4/kg for anything over 20 kg. Add 7.5% fuel surcharge, then take 15% off with a promo code. Final price?",
+  "answer": 24.82,
+  "params": {
+   "w": 7.2,
+   "a": 4.2,
+   "b": 2.8,
+   "c": 2.4,
+   "s": 7.5,
+   "d": 15
+  }
+ },
+ {
+  "id": "shipping_x0",
+  "fam": "shipping",
+  "kind": "money",
+  "split": "shift",
+  "q": "A courier charges $5.1 per kg for the first 5 kg, $3.9 per kg for each kg from 5 to 20 kg, and $2.15 per kg above 20 kg. A 12.5% fuel surcharge is added to that, then a 20% discount code is applied to the total. What does a 23.6 kg parcel cost, to the cent? The address is in a remote area, so a flat $12 remote fee is added after the surcharge and before the discount.",
+  "answer": 92.17,
+  "params": {
+   "w": 23.6,
+   "a": 5.1,
+   "b": 3.9,
+   "c": 2.15,
+   "s": 12.5,
+   "d": 20,
+   "remote": 12
+  }
+ },
+ {
+  "id": "shipping_x1",
+  "fam": "shipping",
+  "kind": "money",
+  "split": "shift",
+  "q": "Shipping a 18.4 kg box: rates are $5.1/kg up to 5 kg, $3.9/kg for the part between 5 and 20 kg, $1.6/kg for anything over 20 kg. Add 9% fuel surcharge, then take 10% off with a promo code. Final price? The address is in a remote area, so a flat $15.75 remote fee is added after the surcharge and before the discount.",
+  "answer": 90.46,
+  "params": {
+   "w": 18.4,
+   "a": 5.1,
+   "b": 3.9,
+   "c": 1.6,
+   "s": 9,
+   "d": 10,
+   "remote": 15.75
+  }
+ },
+ {
+  "id": "shipping_x2",
+  "fam": "shipping",
+  "kind": "money",
+  "split": "shift",
+  "q": "Tiered freight: tier 1 (0-5 kg) $6.0/kg, tier 2 (5-20 kg) $3.9/kg, tier 3 (over 20 kg) $2.4/kg. Surcharge 9% on the freight; afterwards a 20% discount. Parcel weight 12.8 kg. Total in dollars and cents? The address is in a remote area, so a flat $8.5 remote fee is added after the surcharge and before the discount.",
+  "answer": 59.49,
+  "params": {
+   "w": 12.8,
+   "a": 6.0,
+   "b": 3.9,
+   "c": 2.4,
+   "s": 9,
+   "d": 20,
+   "remote": 8.5
+  }
+ },
+ {
+  "id": "trains_seed",
+  "fam": "trains",
+  "kind": "clock",
+  "split": "seed",
+  "q": "Two towns are 312 km apart on a straight line. Train A leaves the first town at 08:06 going 64 km/h toward the second. Train B leaves the second town at 08:32 going 110 km/h toward the first. At what clock time (HH:MM, 24-hour, nearest minute) do they meet?",
+  "answer": "10:10",
+  "params": {
+   "D": 312,
+   "t1": "08:06",
+   "v1": 64,
+   "t2": "08:32",
+   "v2": 110
+  }
+ },
+ {
+  "id": "trains_v0",
+  "fam": "trains",
+  "kind": "clock",
+  "split": "same",
+  "q": "Two towns are 390 km apart on a straight line. Train A leaves the first town at 08:55 going 72 km/h toward the second. Train B leaves the second town at 08:43 going 58 km/h toward the first. At what clock time (HH:MM, 24-hour, nearest minute) do they meet?",
+  "answer": "11:50",
+  "params": {
+   "D": 390,
+   "t1": "08:55",
+   "v1": 72,
+   "t2": "08:43",
+   "v2": 58
+  }
+ },
+ {
+  "id": "trains_v1",
+  "fam": "trains",
+  "kind": "clock",
+  "split": "same",
+  "q": "A freight train sets off from Ashford at 09:30 at 72 km/h heading for Brookvale, 180 km away. A passenger train leaves Brookvale at 09:18 toward Ashford at 96 km/h on a parallel track. When do they pass each other? Give HH:MM.",
+  "answer": "10:27",
+  "params": {
+   "D": 180,
+   "t1": "09:30",
+   "v1": 72,
+   "t2": "09:18",
+   "v2": 96
+  }
+ },
+ {
+  "id": "trains_v2",
+  "fam": "trains",
+  "kind": "clock",
+  "split": "same",
+  "q": "Line length 180 km. Train 1: departs end A at 06:07, speed 72 km/h. Train 2: departs end B at 06:33, speed 110 km/h, opposite direction. Meeting time to the nearest minute (24h HH:MM)?",
+  "answer": "07:22",
+  "params": {
+   "D": 180,
+   "t1": "06:07",
+   "v1": 72,
+   "t2": "06:33",
+   "v2": 110
+  }
+ },
+ {
+  "id": "trains_v3",
+  "fam": "trains",
+  "kind": "clock",
+  "split": "same",
+  "q": "Two towns are 180 km apart on a straight line. Train A leaves the first town at 06:49 going 72 km/h toward the second. Train B leaves the second town at 07:15 going 58 km/h toward the first. At what clock time (HH:MM, 24-hour, nearest minute) do they meet?",
+  "answer": "08:24",
+  "params": {
+   "D": 180,
+   "t1": "06:49",
+   "v1": 72,
+   "t2": "07:15",
+   "v2": 58
+  }
+ },
+ {
+  "id": "trains_v4",
+  "fam": "trains",
+  "kind": "clock",
+  "split": "same",
+  "q": "A freight train sets off from Ashford at 09:30 at 64 km/h heading for Brookvale, 180 km away. A passenger train leaves Brookvale at 09:48 toward Ashford at 96 km/h on a parallel track. When do they pass each other? Give HH:MM.",
+  "answer": "10:48",
+  "params": {
+   "D": 180,
+   "t1": "09:30",
+   "v1": 64,
+   "t2": "09:48",
+   "v2": 96
+  }
+ },
+ {
+  "id": "trains_v5",
+  "fam": "trains",
+  "kind": "clock",
+  "split": "same",
+  "q": "Line length 312 km. Train 1: departs end A at 07:31, speed 90 km/h. Train 2: departs end B at 06:56, speed 96 km/h, opposite direction. Meeting time to the nearest minute (24h HH:MM)?",
+  "answer": "08:54",
+  "params": {
+   "D": 312,
+   "t1": "07:31",
+   "v1": 90,
+   "t2": "06:56",
+   "v2": 96
+  }
+ },
+ {
+  "id": "trains_v6",
+  "fam": "trains",
+  "kind": "clock",
+  "split": "same",
+  "q": "Two towns are 312 km apart on a straight line. Train A leaves the first town at 08:27 going 72 km/h toward the second. Train B leaves the second town at 09:11 going 58 km/h toward the first. At what clock time (HH:MM, 24-hour, nearest minute) do they meet?",
+  "answer": "11:11",
+  "params": {
+   "D": 312,
+   "t1": "08:27",
+   "v1": 72,
+   "t2": "09:11",
+   "v2": 58
+  }
+ },
+ {
+  "id": "trains_v7",
+  "fam": "trains",
+  "kind": "clock",
+  "split": "same",
+  "q": "A freight train sets off from Ashford at 06:28 at 64 km/h heading for Brookvale, 180 km away. A passenger train leaves Brookvale at 05:53 toward Ashford at 96 km/h on a parallel track. When do they pass each other? Give HH:MM.",
+  "answer": "07:15",
+  "params": {
+   "D": 180,
+   "t1": "06:28",
+   "v1": 64,
+   "t2": "05:53",
+   "v2": 96
+  }
+ },
+ {
+  "id": "trains_x0",
+  "fam": "trains",
+  "kind": "clock",
+  "split": "shift",
+  "q": "Two towns are 455 km apart on a straight line. Train A leaves the first town at 09:58 going 72 km/h toward the second. Train B leaves the second town at 10:16 going 77 km/h toward the first. At what clock time (HH:MM, 24-hour, nearest minute) do they meet? Train A stops for 25 minutes at a station exactly halfway along the line.",
+  "answer": "13:13",
+  "params": {
+   "D": 455,
+   "t1": "09:58",
+   "v1": 72,
+   "t2": "10:16",
+   "v2": 77,
+   "stop": 25
+  }
+ },
+ {
+  "id": "trains_x1",
+  "fam": "trains",
+  "kind": "clock",
+  "split": "shift",
+  "q": "A freight train sets off from Ashford at 09:51 at 90 km/h heading for Brookvale, 390 km away. A passenger train leaves Brookvale at 09:39 toward Ashford at 110 km/h on a parallel track. When do they pass each other? Give HH:MM. Train A stops for 15 minutes at a station exactly halfway along the line.",
+  "answer": "11:41",
+  "params": {
+   "D": 390,
+   "t1": "09:51",
+   "v1": 90,
+   "t2": "09:39",
+   "v2": 110,
+   "stop": 15
+  }
+ },
+ {
+  "id": "trains_x2",
+  "fam": "trains",
+  "kind": "clock",
+  "split": "shift",
+  "q": "Line length 312 km. Train 1: departs end A at 07:31, speed 90 km/h. Train 2: departs end B at 07:57, speed 96 km/h, opposite direction. Meeting time to the nearest minute (24h HH:MM)? Train A stops for 15 minutes at a station exactly halfway along the line.",
+  "answer": "09:32",
+  "params": {
+   "D": 312,
+   "t1": "07:31",
+   "v1": 90,
+   "t2": "07:57",
+   "v2": 96,
+   "stop": 15
+  }
+ },
+ {
+  "id": "workrate_seed",
+  "fam": "workrate",
+  "kind": "int",
+  "split": "seed",
+  "q": "Ana can paint a fence alone in 5 hours; Ben can paint it alone in 12 hours. They paint together for 1.25 hours, then Ana leaves and Ben finishes alone. How many minutes after they started is the fence finished (nearest minute)?",
+  "answer": 540,
+  "params": {
+   "a": 5,
+   "b": 12,
+   "t": 1.25
+  }
+ },
+ {
+  "id": "workrate_v0",
+  "fam": "workrate",
+  "kind": "int",
+  "split": "same",
+  "q": "Ana can paint a fence alone in 5 hours; Ben can paint it alone in 10 hours. They paint together for 1.5 hours, then Ana leaves and Ben finishes alone. How many minutes after they started is the fence finished (nearest minute)?",
+  "answer": 420,
+  "params": {
+   "a": 5,
+   "b": 10,
+   "t": 1.5
+  }
+ },
+ {
+  "id": "workrate_v1",
+  "fam": "workrate",
+  "kind": "int",
+  "split": "same",
+  "q": "Pump A fills a tank in 5 hours, pump B in 14 hours. Both run for 1.5 hours, then pump A breaks and B finishes the job. Total time from the start, in minutes, rounded?",
+  "answer": 588,
+  "params": {
+   "a": 5,
+   "b": 14,
+   "t": 1.5
+  }
+ },
+ {
+  "id": "workrate_v2",
+  "fam": "workrate",
+  "kind": "int",
+  "split": "same",
+  "q": "Worker rates: A completes the job in 7.5 h, B in 9 h. Joint work for 2 h, then only B. Total elapsed minutes (nearest)?",
+  "answer": 396,
+  "params": {
+   "a": 7.5,
+   "b": 9,
+   "t": 2
+  }
+ },
+ {
+  "id": "workrate_v3",
+  "fam": "workrate",
+  "kind": "int",
+  "split": "same",
+  "q": "Ana can paint a fence alone in 5 hours; Ben can paint it alone in 8 hours. They paint together for 1.5 hours, then Ana leaves and Ben finishes alone. How many minutes after they started is the fence finished (nearest minute)?",
+  "answer": 336,
+  "params": {
+   "a": 5,
+   "b": 8,
+   "t": 1.5
+  }
+ },
+ {
+  "id": "workrate_v4",
+  "fam": "workrate",
+  "kind": "int",
+  "split": "same",
+  "q": "Pump A fills a tank in 4.5 hours, pump B in 10 hours. Both run for 2 hours, then pump A breaks and B finishes the job. Total time from the start, in minutes, rounded?",
+  "answer": 333,
+  "params": {
+   "a": 4.5,
+   "b": 10,
+   "t": 2
+  }
+ },
+ {
+  "id": "workrate_v5",
+  "fam": "workrate",
+  "kind": "int",
+  "split": "same",
+  "q": "Worker rates: A completes the job in 4.5 h, B in 10 h. Joint work for 1.25 h, then only B. Total elapsed minutes (nearest)?",
+  "answer": 433,
+  "params": {
+   "a": 4.5,
+   "b": 10,
+   "t": 1.25
+  }
+ },
+ {
+  "id": "workrate_v6",
+  "fam": "workrate",
+  "kind": "int",
+  "split": "same",
+  "q": "Ana can paint a fence alone in 5 hours; Ben can paint it alone in 14 hours. They paint together for 2 hours, then Ana leaves and Ben finishes alone. How many minutes after they started is the fence finished (nearest minute)?",
+  "answer": 504,
+  "params": {
+   "a": 5,
+   "b": 14,
+   "t": 2
+  }
+ },
+ {
+  "id": "workrate_v7",
+  "fam": "workrate",
+  "kind": "int",
+  "split": "same",
+  "q": "Pump A fills a tank in 3 hours, pump B in 12 hours. Both run for 0.75 hours, then pump A breaks and B finishes the job. Total time from the start, in minutes, rounded?",
+  "answer": 540,
+  "params": {
+   "a": 3,
+   "b": 12,
+   "t": 0.75
+  }
+ },
+ {
+  "id": "workrate_x0",
+  "fam": "workrate",
+  "kind": "int",
+  "split": "shift",
+  "q": "Ana can paint a fence alone in 3 hours; Ben can paint it alone in 14 hours. They paint together for 1.5 hours, then Ana leaves and Ben finishes alone. How many minutes after they started is the fence finished (nearest minute)? As soon as A stops, a third worker C, who could do the whole job alone in 15 hours, joins B until it is done.",
+  "answer": 261,
+  "params": {
+   "a": 3,
+   "b": 14,
+   "t": 1.5,
+   "c": 15
+  }
+ },
+ {
+  "id": "workrate_x1",
+  "fam": "workrate",
+  "kind": "int",
+  "split": "shift",
+  "q": "Pump A fills a tank in 3 hours, pump B in 12 hours. Both run for 1.5 hours, then pump A breaks and B finishes the job. Total time from the start, in minutes, rounded? As soon as A stops, a third worker C, who could do the whole job alone in 9 hours, joins B until it is done.",
+  "answer": 206,
+  "params": {
+   "a": 3,
+   "b": 12,
+   "t": 1.5,
+   "c": 9
+  }
+ },
+ {
+  "id": "workrate_x2",
+  "fam": "workrate",
+  "kind": "int",
+  "split": "shift",
+  "q": "Worker rates: A completes the job in 7.5 h, B in 10 h. Joint work for 2 h, then only B. Total elapsed minutes (nearest)? As soon as A stops, a third worker C, who could do the whole job alone in 9 hours, joins B until it is done.",
+  "answer": 272,
+  "params": {
+   "a": 7.5,
+   "b": 10,
+   "t": 2,
+   "c": 9
+  }
+ },
+ {
+  "id": "bizdays_seed",
+  "fam": "bizdays",
+  "kind": "date",
+  "split": "seed",
+  "q": "An invoice is dated 2026-03-02. Payment is due 23 business days later (Saturdays and Sundays don't count; the invoice date itself doesn't count). What is the due date (YYYY-MM-DD)?",
+  "answer": "2026-04-02",
+  "params": {
+   "d": "2026-03-02",
+   "n": 23
+  }
+ },
+ {
+  "id": "bizdays_v0",
+  "fam": "bizdays",
+  "kind": "date",
+  "split": "same",
+  "q": "An invoice is dated 2026-02-12. Payment is due 23 business days later (Saturdays and Sundays don't count; the invoice date itself doesn't count). What is the due date (YYYY-MM-DD)?",
+  "answer": "2026-03-17",
+  "params": {
+   "d": "2026-02-12",
+   "n": 23
+  }
+ },
+ {
+  "id": "bizdays_v1",
+  "fam": "bizdays",
+  "kind": "date",
+  "split": "same",
+  "q": "We shipped on 2026-03-24 and the client has 9 working days (Mon-Fri) to pay, counting from the day after shipping. On what date is payment due? Answer as YYYY-MM-DD.",
+  "answer": "2026-04-06",
+  "params": {
+   "d": "2026-03-24",
+   "n": 9
+  }
+ },
+ {
+  "id": "bizdays_v2",
+  "fam": "bizdays",
+  "kind": "date",
+  "split": "same",
+  "q": "Start date 2026-08-20. Add 38 business days, skipping weekends. Result date (ISO)?",
+  "answer": "2026-10-13",
+  "params": {
+   "d": "2026-08-20",
+   "n": 38
+  }
+ },
+ {
+  "id": "bizdays_v3",
+  "fam": "bizdays",
+  "kind": "date",
+  "split": "same",
+  "q": "An invoice is dated 2026-05-31. Payment is due 17 business days later (Saturdays and Sundays don't count; the invoice date itself doesn't count). What is the due date (YYYY-MM-DD)?",
+  "answer": "2026-06-23",
+  "params": {
+   "d": "2026-05-31",
+   "n": 17
+  }
+ },
+ {
+  "id": "bizdays_v4",
+  "fam": "bizdays",
+  "kind": "date",
+  "split": "same",
+  "q": "We shipped on 2026-09-26 and the client has 14 working days (Mon-Fri) to pay, counting from the day after shipping. On what date is payment due? Answer as YYYY-MM-DD.",
+  "answer": "2026-10-15",
+  "params": {
+   "d": "2026-09-26",
+   "n": 14
+  }
+ },
+ {
+  "id": "bizdays_v5",
+  "fam": "bizdays",
+  "kind": "date",
+  "split": "same",
+  "q": "Start date 2026-08-22. Add 38 business days, skipping weekends. Result date (ISO)?",
+  "answer": "2026-10-14",
+  "params": {
+   "d": "2026-08-22",
+   "n": 38
+  }
+ },
+ {
+  "id": "bizdays_v6",
+  "fam": "bizdays",
+  "kind": "date",
+  "split": "same",
+  "q": "An invoice is dated 2026-04-03. Payment is due 23 business days later (Saturdays and Sundays don't count; the invoice date itself doesn't count). What is the due date (YYYY-MM-DD)?",
+  "answer": "2026-05-06",
+  "params": {
+   "d": "2026-04-03",
+   "n": 23
+  }
+ },
+ {
+  "id": "bizdays_v7",
+  "fam": "bizdays",
+  "kind": "date",
+  "split": "same",
+  "q": "We shipped on 2026-05-15 and the client has 30 working days (Mon-Fri) to pay, counting from the day after shipping. On what date is payment due? Answer as YYYY-MM-DD.",
+  "answer": "2026-06-26",
+  "params": {
+   "d": "2026-05-15",
+   "n": 30
+  }
+ },
+ {
+  "id": "bizdays_x0",
+  "fam": "bizdays",
+  "kind": "date",
+  "split": "shift",
+  "q": "An invoice is dated 2026-07-13. Payment is due 9 business days later (Saturdays and Sundays don't count; the invoice date itself doesn't count). What is the due date (YYYY-MM-DD)? 2026-07-22 is a public holiday and does not count as a business day either.",
+  "answer": "2026-07-27",
+  "params": {
+   "d": "2026-07-13",
+   "n": 9,
+   "holiday": "2026-07-22"
+  }
+ },
+ {
+  "id": "bizdays_x1",
+  "fam": "bizdays",
+  "kind": "date",
+  "split": "shift",
+  "q": "We shipped on 2026-08-06 and the client has 23 working days (Mon-Fri) to pay, counting from the day after shipping. On what date is payment due? Answer as YYYY-MM-DD. 2026-08-27 is a public holiday and does not count as a business day either.",
+  "answer": "2026-09-09",
+  "params": {
+   "d": "2026-08-06",
+   "n": 23,
+   "holiday": "2026-08-27"
+  }
+ },
+ {
+  "id": "bizdays_x2",
+  "fam": "bizdays",
+  "kind": "date",
+  "split": "shift",
+  "q": "Start date 2026-10-06. Add 30 business days, skipping weekends. Result date (ISO)? 2026-10-21 is a public holiday and does not count as a business day either.",
+  "answer": "2026-11-18",
+  "params": {
+   "d": "2026-10-06",
+   "n": 30,
+   "holiday": "2026-10-21"
+  }
+ }
+]

@@ -1,0 +1,236 @@
+{
+ "loan": {
+  "task_name": "amortized_loan_monthly_payment",
+  "description": "Computes the fixed periodic payment for a fully amortizing loan given principal, nominal annual interest rate compounded per payment period (e.g., monthly), and number of payments. Handles 'equal monthly payments' loan/mortgage payment questions.",
+  "params": [
+   {
+    "name": "principal",
+    "type": "number",
+    "description": "Loan amount borrowed in dollars (e.g., 22000)"
+   },
+   {
+    "name": "annual_rate_percent",
+    "type": "number",
+    "description": "Nominal annual interest rate as a percent (e.g., 8.4 for 8.4%)"
+   },
+   {
+    "name": "num_payments",
+    "type": "number",
+    "description": "Total number of payments (e.g., 36). If given in years, multiply by payments per year."
+   },
+   {
+    "name": "periods_per_year",
+    "type": "number",
+    "description": "Number of compounding/payment periods per year (12 for monthly)"
+   }
+  ],
+  "code": "def solve(**p):\n    P = float(p['principal'])\n    rate = float(p['annual_rate_percent']) / 100.0\n    n = int(round(float(p['num_payments'])))\n    m = float(p.get('periods_per_year', 12) or 12)\n    r = rate / m\n    if r == 0:\n        pmt = P / n\n    else:\n        pmt = P * r / (1 - (1 + r) ** (-n))\n    from decimal import Decimal, ROUND_HALF_UP\n    return str(Decimal(repr(pmt)).quantize(Decimal('0.01'), rounding=ROUND_HALF_UP))\n",
+  "seed_params_json": "{\"principal\": 22000, \"annual_rate_percent\": 8.4, \"num_payments\": 36, \"periods_per_year\": 12}",
+  "build_cost": 0.017872,
+  "build_tries": 1,
+  "source_seed_cost": 0.019724,
+  "verified_vs_source": true,
+  "seed_truth": 693.47,
+  "source_seed_answer": "693.47"
+ },
+ "savings": {
+  "task_name": "savings_balance_with_regular_deposits",
+  "description": "Computes the future balance of a savings account that starts with a lump sum, earns a nominal annual interest rate compounded periodically (e.g. monthly), and receives a fixed regular deposit at the end (or beginning) of each period, over a given term. Returns the balance rounded to cents.",
+  "params": [
+   {
+    "name": "principal",
+    "type": "number",
+    "description": "Starting balance / initial deposit in dollars (e.g. 14750). Use 0 if there is none."
+   },
+   {
+    "name": "annual_rate_percent",
+    "type": "number",
+    "description": "Nominal annual interest rate as a percent (e.g. 3.2 for 3.2%)."
+   },
+   {
+    "name": "compounds_per_year",
+    "type": "number",
+    "description": "Number of compounding periods per year (12 for monthly, 4 quarterly, 365 daily, 1 annually)."
+   },
+   {
+    "name": "deposit",
+    "type": "number",
+    "description": "Amount of each regular deposit in dollars (e.g. 120). Use 0 if none."
+   },
+   {
+    "name": "deposits_per_year",
+    "type": "number",
+    "description": "Number of regular deposits per year (12 for monthly, 4 quarterly, 52 weekly, 1 annually)."
+   },
+   {
+    "name": "term_years",
+    "type": "number",
+    "description": "Length of time in years; convert months to years (e.g. 18 months = 1.5)."
+   },
+   {
+    "name": "deposit_timing",
+    "type": "string",
+    "description": "'end' if deposits are made at the end of each period (ordinary annuity), 'beginning' if made at the start of each period (annuity due). Default 'end'."
+   }
+  ],
+  "code": "def solve(**p):\n    from decimal import Decimal, ROUND_HALF_UP\n    P = float(p.get('principal', 0) or 0)\n    r = float(p.get('annual_rate_percent', 0) or 0) / 100.0\n    m = float(p.get('compounds_per_year', 12) or 12)\n    D = float(p.get('deposit', 0) or 0)\n    d = float(p.get('deposits_per_year', m) or m)\n    t = float(p.get('term_years', 1) or 0)\n    timing = str(p.get('deposit_timing', 'end') or 'end').strip().lower()\n    n_comp = m * t\n    growth = (1 + r / m) ** n_comp\n    fv_p = P * growth\n    n_dep = int(round(d * t))\n    j = (1 + r / m) ** (m / d) - 1\n    if abs(j) < 1e-15:\n        fv_a = D * n_dep\n    else:\n        fv_a = D * (((1 + j) ** n_dep - 1) / j)\n        if timing.startswith('beg') or 'due' in timing or 'start' in timing:\n            fv_a *= (1 + j)\n    total = fv_p + fv_a\n    return str(Decimal(repr(total)).quantize(Decimal('0.01'), rounding=ROUND_HALF_UP))\n",
+  "seed_params_json": "{\"principal\": 14750, \"annual_rate_percent\": 3.2, \"compounds_per_year\": 12, \"deposit\": 120, \"deposits_per_year\": 12, \"term_years\": 1.5, \"deposit_timing\": \"end\"}",
+  "build_cost": 0.036068,
+  "build_tries": 1,
+  "source_seed_cost": 0.02596,
+  "verified_vs_source": true,
+  "seed_truth": 17683.94,
+  "source_seed_answer": "17683.94"
+ },
+ "shipping": {
+  "task_name": "tiered_shipping_cost_surcharge_discount",
+  "description": "Computes a parcel's shipping cost under three-tier per-kg pricing. The tiers are a rate up to a first limit, a second rate between the first and second limits, and a third rate above the second limit. A percentage surcharge (e.g. fuel) is added, then a percentage discount is applied to the total. The result is rounded to cents.",
+  "params": [
+   {
+    "name": "weight",
+    "type": "number",
+    "description": "Parcel weight in kg"
+   },
+   {
+    "name": "tier1_limit",
+    "type": "number",
+    "description": "Upper weight bound of the first tier in kg (e.g. 5 for 'first 5 kg')"
+   },
+   {
+    "name": "rate1",
+    "type": "number",
+    "description": "Price per kg within the first tier"
+   },
+   {
+    "name": "tier2_limit",
+    "type": "number",
+    "description": "Upper weight bound of the second tier in kg (e.g. 20 for 'from 5 to 20 kg')"
+   },
+   {
+    "name": "rate2",
+    "type": "number",
+    "description": "Price per kg between tier1_limit and tier2_limit"
+   },
+   {
+    "name": "rate3",
+    "type": "number",
+    "description": "Price per kg above tier2_limit"
+   },
+   {
+    "name": "surcharge_pct",
+    "type": "number",
+    "description": "Surcharge percentage added to the base charge (e.g. 7.5 for 7.5%); 0 if none"
+   },
+   {
+    "name": "discount_pct",
+    "type": "number",
+    "description": "Discount percentage applied to the surcharged total (e.g. 20 for 20%); 0 if none"
+   }
+  ],
+  "code": "def solve(**p):\n    from decimal import Decimal, ROUND_HALF_UP\n    D = lambda x: Decimal(str(x))\n    w = D(p['weight'])\n    l1 = D(p['tier1_limit'])\n    l2 = D(p['tier2_limit'])\n    r1 = D(p['rate1'])\n    r2 = D(p['rate2'])\n    r3 = D(p['rate3'])\n    z = Decimal(0)\n    t1 = min(w, l1)\n    t2 = max(z, min(w, l2) - l1)\n    t3 = max(z, w - l2)\n    base = t1 * r1 + t2 * r2 + t3 * r3\n    total = base * (1 + D(p.get('surcharge_pct', 0)) / 100)\n    total = total * (1 - D(p.get('discount_pct', 0)) / 100)\n    return str(total.quantize(Decimal('0.01'), rounding=ROUND_HALF_UP))\n",
+  "seed_params_json": "{\"weight\": 23.6, \"tier1_limit\": 5, \"rate1\": 5.1, \"tier2_limit\": 20, \"rate2\": 3.9, \"rate3\": 2.15, \"surcharge_pct\": 7.5, \"discount_pct\": 20}",
+  "build_cost": 0.027712,
+  "build_tries": 1,
+  "source_seed_cost": 0.00824,
+  "verified_vs_source": true,
+  "seed_truth": 78.9,
+  "source_seed_answer": "78.90"
+ },
+ "trains": {
+  "task_name": "two_trains_meeting_clock_time",
+  "description": "Two trains start from opposite ends of a straight track of known length, each at its own departure clock time and constant speed, heading toward each other. The entry finds the clock time they meet, as 24-hour HH:MM rounded to the nearest minute.",
+  "params": [
+   {
+    "name": "distance_km",
+    "type": "number",
+    "description": "Distance between the two towns in km."
+   },
+   {
+    "name": "depart_a",
+    "type": "string",
+    "description": "Departure clock time of train A from the first town, in 24-hour 'HH:MM' format."
+   },
+   {
+    "name": "speed_a",
+    "type": "number",
+    "description": "Speed of train A in km/h."
+   },
+   {
+    "name": "depart_b",
+    "type": "string",
+    "description": "Departure clock time of train B from the second town, in 24-hour 'HH:MM' format."
+   },
+   {
+    "name": "speed_b",
+    "type": "number",
+    "description": "Speed of train B in km/h."
+   }
+  ],
+  "code": "def solve(**p):\n    import math\n    def tm(s):\n        h, m = str(s).strip().split(':')\n        return int(h) * 60 + float(m)\n    D = float(p['distance_km'])\n    ta = tm(p['depart_a']); tb = tm(p['depart_b'])\n    va = float(p['speed_a']); vb = float(p['speed_b'])\n    if ta <= tb:\n        te, ve, tl = ta, va, tb\n    else:\n        te, ve, tl = tb, vb, ta\n    head = ve * (tl - te) / 60.0\n    if head >= D:\n        meet = te + D / ve * 60.0\n    else:\n        meet = tl + (D - head) / (va + vb) * 60.0\n    m = int(math.floor(meet + 0.5 + 1e-9)) % 1440\n    return '%02d:%02d' % (m // 60, m % 60)\n",
+  "seed_params_json": "{\"distance_km\": 312, \"depart_a\": \"08:06\", \"speed_a\": 64, \"depart_b\": \"08:32\", \"speed_b\": 110}",
+  "build_cost": 0.024692,
+  "build_tries": 1,
+  "source_seed_cost": 0.0102,
+  "verified_vs_source": true,
+  "seed_truth": "10:10",
+  "source_seed_answer": "10:10"
+ },
+ "workrate": {
+  "task_name": "work_rate_together_then_one_finishes",
+  "description": "Two workers each do a job alone in given times (hours); they work together for a set time, then one leaves and the other finishes alone. Returns total elapsed time from the start, in whole minutes rounded to the nearest minute.",
+  "params": [
+   {
+    "name": "a_hours",
+    "type": "number",
+    "description": "Hours the first-named worker (e.g. Ana) needs to complete the whole job alone"
+   },
+   {
+    "name": "b_hours",
+    "type": "number",
+    "description": "Hours the second-named worker (e.g. Ben) needs to complete the whole job alone"
+   },
+   {
+    "name": "together_hours",
+    "type": "number",
+    "description": "Hours they work together before one leaves (convert minutes to hours if given in minutes)"
+   },
+   {
+    "name": "finisher",
+    "type": "string",
+    "description": "'B' if the second-named worker finishes alone (the first leaves); 'A' if the first-named worker finishes alone (the second leaves)"
+   }
+  ],
+  "code": "def solve(**p):\n    import math\n    a = float(p['a_hours']); b = float(p['b_hours'])\n    t = float(p['together_hours'])\n    fin = str(p.get('finisher', 'B')).strip().upper()\n    ra, rb = 1.0 / a, 1.0 / b\n    comb = ra + rb\n    if comb * t >= 1.0:\n        total = 1.0 / comb\n    else:\n        rem = 1.0 - comb * t\n        r = ra if fin.startswith('A') else rb\n        total = t + rem / r\n    minutes = total * 60.0\n    return str(int(math.floor(minutes + 0.5 + 1e-9)))\n",
+  "seed_params_json": "{\"a_hours\": 5, \"b_hours\": 12, \"together_hours\": 1.25, \"finisher\": \"B\"}",
+  "build_cost": 0.021392,
+  "build_tries": 1,
+  "source_seed_cost": 0.013488,
+  "verified_vs_source": true,
+  "seed_truth": 540,
+  "source_seed_answer": "540"
+ },
+ "bizdays": {
+  "task_name": "add_business_days_to_date",
+  "description": "Given a start date and a number N of business days (weekends Saturday/Sunday excluded, start date itself not counted), compute the resulting due date. Handles 'payment due N business days after date X' style problems with no holidays.",
+  "params": [
+   {
+    "name": "start_date",
+    "type": "string",
+    "description": "The starting date (e.g. invoice date) in YYYY-MM-DD format"
+   },
+   {
+    "name": "business_days",
+    "type": "number",
+    "description": "Number of business days (Mon-Fri) to add after the start date; the start date itself does not count. May be negative to count backwards."
+   }
+  ],
+  "code": "def solve(**p):\n    import datetime\n    d = datetime.date.fromisoformat(str(p['start_date']).strip())\n    n = int(p['business_days'])\n    step = 1 if n >= 0 else -1\n    remaining = abs(n)\n    while remaining > 0:\n        d += datetime.timedelta(days=step)\n        if d.weekday() < 5:\n            remaining -= 1\n    return d.isoformat()\n",
+  "seed_params_json": "{\"start_date\": \"2026-03-02\", \"business_days\": 23}",
+  "build_cost": 0.0137,
+  "build_tries": 1,
+  "source_seed_cost": 0.012508,
+  "verified_vs_source": true,
+  "seed_truth": "2026-04-02",
+  "source_seed_answer": "2026-04-02"
+ }
+}
