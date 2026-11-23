@@ -1,0 +1,171 @@
+order_id,date,customer_email,product,qty,unit_price,currency,status
+KC-202603-1118,2026-03-07,yusuf.28@mail.com,Gooseneck Kettle,1,63.38,EUR,refunded
+KC-202603-1093,2026-03-01,elif.5@proton.me,Stovetop Kettle,4,32.45,GBP,paid
+KC-202603-1012,2026-03-23,Uma.31@proton.me,Gooseneck Kettle,1,55.61,GBP,paid
+KC-202603-1034,2026-03-05,elif.54@inbox.co.uk,Tea Tin,1,"12,73",EUR,paid
+KC-202603-1046,2026-03-07,Sam.40@inbox.co.uk,Gooseneck Kettle,1,70.41,USD,paid
+KC-202603-1108,2026-03-22,kai.47@post.de,Tea Tin,1,"12,87",EUR,paid
+KC-202603-1133,2026-03-13,zoe.46@proton.me,Stovetop Kettle,2,38.38,EUR,paid
+KC-202603-1103,2026-03-09,jo.36@proton.me,Gooseneck Kettle,2,"64,84",EUR,paid
+KC-202603-1144,2026-03-18,rosa.56@proton.me,Descaler 3-pack,1,8.20,GBP,paid
+KC-202603-1076,2026-03-26,HANA.55@WEB.FR,Mug (pair),1,"24,71",USD,paid
+KC-202603-1024,2026-03-23,dev.40@web.fr,Descaler 3-pack,1,8.53,GBP,paid
+KC-202603-1111,2026-03-21,Elif.24@inbox.co.uk,Gooseneck Kettle,1,53.07,GBP,paid
+KC-202603-1095,2026-03-04,vic.26@inbox.co.uk,Stovetop Kettle,1,38.45,EUR,paid
+KC-202603-1064,2026-03-24,ROSA.20@POST.DE,Pour-over Set,1,"47,08",EUR,paid
+KC-202603-1155,2026-03-21,Zoe.55@inbox.co.uk,Pour-over Set,1,"48,94",EUR,refunded
+KC-202603-1141,2026-03-01,uma.55@proton.me,Stovetop Kettle,1,"32,36",GBP,paid
+KC-202603-1126,2026-03-13,yusuf.47@inbox.co.uk,Descaler 3-pack,2,"11,11",USD,paid
+KC-202603-1124,2026-03-21,elif.54@inbox.co.uk,Loose Leaf Sampler,1,19.84,USD,paid
+KC-202603-1153,2026-03-23,Elif.24@inbox.co.uk,Travel Flask,3,"26,68",EUR,paid
+KC-202603-1143,2026-03-28,hana.48@mail.com,Pour-over Set,2,"40,13",GBP,paid
+KC-202603-1159,2026-03-23,gus.48@mail.com,Loose Leaf Sampler,4,14.89,GBP,paid
+KC-202603-1149,2026-03-12,rosa.23@web.fr,Tea Tin,3,13.48,USD,paid
+KC-202603-1038,2026-03-09,IVAN.21@MAIL.COM,Tea Tin,1,13.95,USD,paid
+KC-202603-1062,2026-03-19,hana.13@inbox.co.uk,Pour-over Set,2,47.11,EUR,paid
+KC-202603-1131,2026-03-12,rosa.21@inbox.co.uk,Tea Tin,2,14.08,USD,refunded
+KC-202603-1140,2026-03-14,gus.48@mail.com,Tea Tin,1,"12,86",EUR,paid
+KC-202603-1028,2026-03-23,anna.59@post.de,Descaler 3-pack,2,10.68,USD,paid
+KC-202603-1119,2026-03-25,Hana.55@web.fr,Descaler 3-pack,2,10.74,USD,paid
+KC-202603-1097,2026-03-27,ivan.21@mail.com,Descaler 3-pack,1,10.05,EUR,paid
+KC-202603-1094,2026-03-26,zoe.59@web.fr,Gooseneck Kettle,1,"71,41",USD,paid
+KC-202603-1081,2026-03-04,qa+9@kettleandco.example,Mug (pair),2,22.12,EUR,test
+KC-202603-1156,2026-03-01,uma.31@proton.me,Loose Leaf Sampler,2,19.43,USD,paid
+KC-202603-1027,2026-03-21,farah.3@web.fr,Pour-over Set,1,48.30,EUR,paid
+KC-202603-1026,2026-03-26,qa+61@kettleandco.example,Pour-over Set,2,48.29,EUR,test
+KC-202603-1120,2026-03-25,rosa.56@proton.me,Stovetop Kettle,1,43.97,USD,paid
+KC-202603-1137,2026-03-22,uma.31@proton.me,Loose Leaf Sampler,2,"20,27",USD,paid
+KC-202603-1113,2026-03-03,hana.55@web.fr,Stovetop Kettle,4,"37,97",EUR,paid
+KC-202603-1030,2026-03-01,rosa.52@mail.com,Gooseneck Kettle,2,"53,91",GBP,paid
+KC-202603-1065,2026-03-27,IVAN.45@INBOX.CO.UK,Stovetop Kettle,4,"39,08",EUR,paid
+KC-202603-1152,2026-03-05,kai.3@web.fr,Descaler 3-pack,1,"11,03",USD,paid
+KC-202603-1017,2026-03-03,kai.3@web.fr,Loose Leaf Sampler,3,17.78,EUR,paid
+KC-202603-1007,2026-03-13,yusuf.47@inbox.co.uk,Gooseneck Kettle,1,"63,69",EUR,paid
+KC-202603-1151,2026-03-07,kai.3@web.fr,Stovetop Kettle,2,"32,65",GBP,paid
+KC-202603-1125,2026-03-09,DEV.54@PROTON.ME,Descaler 3-pack,2,"8,15",GBP,refunded
+KC-202603-1108,2026-03-22,kai.47@post.de,Tea Tin,1,"12,87",EUR,paid
+KC-202603-1052,2026-03-27,farah.3@web.fr,Descaler 3-pack,2,"8,57",GBP,paid
+KC-202603-1049,2026-03-11,ZOE.55@INBOX.CO.UK,Loose Leaf Sampler,1,19.33,USD,paid
+KC-202603-1083,2026-03-14,qa+26@kettleandco.example,Loose Leaf Sampler,1,"19,90",USD,test
+KC-202603-1022,2026-03-20,gus.45@inbox.co.uk,Tea Tin,1,12.68,EUR,paid
+KC-202603-1084,2026-03-04,QA+83@KETTLEANDCO.EXAMPLE,Loose Leaf Sampler,1,18.37,EUR,test
+KC-202603-1142,2026-03-09,mo.52@inbox.co.uk,Loose Leaf Sampler,3,18.14,EUR,paid
+KC-202603-1036,2026-03-09,mo.52@inbox.co.uk,Stovetop Kettle,1,"38,47",EUR,paid
+KC-202603-1061,2026-03-21,ivan.60@proton.me,Mug (pair),3,21.90,EUR,paid
+KC-202603-1087,2026-03-24,sam.10@inbox.co.uk,Loose Leaf Sampler,1,18.10,EUR,paid
+KC-202603-1042,2026-03-17,hana.48@mail.com,Tea Tin,1,13.43,USD,paid
+KC-202603-1085,2026-03-16,IVAN.21@MAIL.COM,Gooseneck Kettle,1,64.31,EUR,paid
+KC-202603-1043,2026-03-08,kai.3@web.fr,Mug (pair),1,"22,46",EUR,paid
+KC-202603-1045,2026-03-22,IVAN.37@POST.DE,Mug (pair),1,22.64,EUR,paid
+KC-202603-1068,2026-03-05,zoe.55@inbox.co.uk,Pour-over Set,1,52.78,USD,paid
+KC-202603-1117,2026-03-02,sam.10@inbox.co.uk,Travel Flask,1,"27,57",EUR,paid
+KC-202603-1055,2026-03-02,tara.10@post.de,Travel Flask,2,27.43,EUR,paid
+KC-202603-1003,2026-03-16,zoe.10@inbox.co.uk,Tea Tin,1,10.39,GBP,paid
+KC-202603-1102,2026-03-14,hana.48@mail.com,Descaler 3-pack,3,11.15,USD,paid
+KC-202603-1098,2026-03-20,Rosa.23@web.fr,Gooseneck Kettle,1,"64,93",EUR,paid
+KC-202603-1060,2026-03-01,IVAN.7@INBOX.CO.UK,Travel Flask,1,29.85,USD,paid
+KC-202603-1025,2026-03-17,zoe.59@web.fr,Stovetop Kettle,1,33.83,GBP,paid
+KC-202603-1129,2026-03-06,elif.54@inbox.co.uk,Descaler 3-pack,1,9.97,EUR,paid
+KC-202603-1032,2026-03-01,ELIF.24@INBOX.CO.UK,Stovetop Kettle,2,39.82,EUR,paid
+KC-202603-1130,2026-03-16,qa+27@kettleandco.example,Travel Flask,1,30.40,USD,test
+KC-202603-1073,2026-03-18,uma.18@proton.me,Gooseneck Kettle,1,69.47,USD,refunded
+KC-202603-1015,2026-03-01,sam.40@inbox.co.uk,Stovetop Kettle,4,38.47,EUR,paid
+KC-202603-1075,2026-03-02,Ivan.58@proton.me,Stovetop Kettle,1,39.88,EUR,paid
+KC-202603-1053,2026-03-26,rosa.56@proton.me,Loose Leaf Sampler,1,20.27,USD,paid
+KC-202603-1147,2026-03-01,dev.8@web.fr,Gooseneck Kettle,2,55.66,GBP,paid
+KC-202603-1071,2026-03-15,sam.52@proton.me,Gooseneck Kettle,1,65.13,EUR,paid
+KC-202603-1080,2026-03-24,ivan.45@inbox.co.uk,Stovetop Kettle,1,"39,85",EUR,paid
+KC-202603-1054,2026-03-19,BEN.30@WEB.FR,Travel Flask,1,27.65,EUR,paid
+KC-202603-1004,2026-03-16,anna.54@web.fr,Mug (pair),3,18.22,GBP,paid
+KC-202603-1005,2026-03-26,elif.24@inbox.co.uk,Travel Flask,3,"30,17",USD,paid
+KC-202603-1018,2026-03-03,mo.26@inbox.co.uk,Descaler 3-pack,1,10.84,USD,paid
+KC-202603-1090,2026-03-07,jo.36@web.fr,Travel Flask,1,22.79,GBP,paid
+KC-202603-1139,2026-03-22,DEV.54@PROTON.ME,Descaler 3-pack,1,9.80,EUR,refunded
+KC-202603-1101,2026-03-17,gus.48@mail.com,Pour-over Set,3,47.00,EUR,paid
+KC-202603-1122,2026-03-03,Yusuf.28@mail.com,Gooseneck Kettle,2,69.00,USD,paid
+KC-202603-1067,2026-03-04,Rosa.23@web.fr,Tea Tin,1,13.61,USD,refunded
+KC-202603-1048,2026-03-01,zoe.55@inbox.co.uk,Pour-over Set,1,48.17,EUR,paid
+KC-202603-1112,2026-03-21,Nia.52@inbox.co.uk,Travel Flask,2,29.75,USD,refunded
+KC-202603-1014,2026-03-24,zoe.46@proton.me,Descaler 3-pack,2,8.24,GBP,paid
+KC-202603-1134,2026-03-20,zoe.4@post.de,Gooseneck Kettle,1,64.28,EUR,paid
+KC-202603-1047,2026-03-23,dev.54@proton.me,Travel Flask,1,"27,21",EUR,paid
+KC-202603-1014,2026-03-24,zoe.46@proton.me,Descaler 3-pack,2,8.24,GBP,paid
+KC-202603-1023,2026-03-01,rosa.42@post.de,Stovetop Kettle,4,"39,10",EUR,paid
+KC-202603-1020,2026-03-08,farah.3@web.fr,Pour-over Set,3,"40,93",GBP,paid
+KC-202603-1009,2026-03-06,ANNA.59@POST.DE,Pour-over Set,1,"47,64",EUR,paid
+KC-202603-1058,2026-03-25,elif.24@inbox.co.uk,Gooseneck Kettle,3,"69,93",USD,paid
+KC-202603-1059,2026-03-04,sam.10@inbox.co.uk,Mug (pair),2,24.88,USD,paid
+KC-202603-1148,2026-03-14,rosa.42@post.de,Stovetop Kettle,1,39.28,EUR,paid
+KC-202603-1123,2026-03-17,rosa.20@post.de,Tea Tin,1,"14,01",USD,paid
+KC-202603-1099,2026-03-12,Dev.54@proton.me,Stovetop Kettle,1,42.92,USD,paid
+KC-202603-1021,2026-03-15,qa+66@kettleandco.example,Loose Leaf Sampler,3,20.06,USD,test
+KC-202603-1087,2026-03-24,sam.10@inbox.co.uk,Loose Leaf Sampler,1,18.10,EUR,paid
+KC-202603-1050,2026-03-03,Zoe.10@inbox.co.uk,Gooseneck Kettle,1,"71,48",USD,paid
+KC-202603-1070,2026-03-01,dev.40@web.fr,Descaler 3-pack,1,11.02,USD,paid
+KC-202603-1039,2026-03-05,Vic.8@mail.com,Mug (pair),1,24.58,USD,paid
+KC-202603-1010,2026-03-22,uma.55@proton.me,Descaler 3-pack,1,10.76,USD,paid
+KC-202603-1040,2026-03-22,uma.31@proton.me,Loose Leaf Sampler,1,"18,00",EUR,paid
+KC-202603-1008,2026-03-10,quinn.27@post.de,Loose Leaf Sampler,2,15.13,GBP,paid
+KC-202603-1057,2026-03-25,jo.36@web.fr,Descaler 3-pack,1,11.20,USD,paid
+KC-202603-1037,2026-03-28,Chloe.37@post.de,Stovetop Kettle,1,"32,20",GBP,paid
+KC-202603-1150,2026-03-20,lena.22@web.fr,Tea Tin,2,12.53,EUR,paid
+KC-202603-1157,2026-03-04,Yusuf.40@proton.me,Loose Leaf Sampler,1,19.42,USD,paid
+KC-202603-1035,2026-03-07,ivan.7@proton.me,Descaler 3-pack,1,9.62,EUR,paid
+KC-202603-1051,2026-03-14,Elif.24@inbox.co.uk,Gooseneck Kettle,2,71.54,USD,paid
+KC-202603-1138,2026-03-07,mo.26@inbox.co.uk,Mug (pair),2,22.00,EUR,paid
+KC-202603-1158,2026-03-24,kai.47@post.de,Pour-over Set,1,"41,43",GBP,paid
+KC-202603-1082,2026-03-21,MO.26@INBOX.CO.UK,Travel Flask,1,30.89,USD,paid
+KC-202603-1154,2026-03-03,ivan.7@inbox.co.uk,Pour-over Set,1,"48,34",EUR,paid
+KC-202603-1016,2026-03-13,zoe.18@proton.me,Descaler 3-pack,1,9.95,EUR,paid
+KC-202603-1072,2026-03-24,quinn.27@post.de,Travel Flask,2,29.45,USD,refunded
+KC-202603-1056,2026-03-25,Qa+13@kettleandco.example,Mug (pair),1,21.88,EUR,test
+KC-202603-1101,2026-03-17,gus.48@mail.com,Pour-over Set,3,47.00,EUR,paid
+KC-202603-1047,2026-03-23,dev.54@proton.me,Travel Flask,1,"27,21",EUR,paid
+KC-202603-1115,2026-03-18,kai.16@proton.me,Descaler 3-pack,3,"8,20",GBP,paid
+KC-202603-1078,2026-03-18,farah.32@mail.com,Travel Flask,1,"30,33",USD,paid
+KC-202603-1100,2026-03-15,Uma.25@proton.me,Stovetop Kettle,1,39.17,EUR,paid
+KC-202603-1013,2026-03-26,uma.55@proton.me,Tea Tin,1,"12,41",EUR,paid
+KC-202603-1110,2026-03-05,rosa.23@web.fr,Stovetop Kettle,1,33.58,GBP,paid
+KC-202603-1079,2026-03-01,elif.24@inbox.co.uk,Loose Leaf Sampler,1,20.14,USD,refunded
+KC-202603-1109,2026-03-22,Kai.47@post.de,Travel Flask,1,23.78,GBP,paid
+KC-202603-1105,2026-03-05,rosa.23@web.fr,Tea Tin,1,"12,24",EUR,paid
+KC-202603-1067,2026-03-04,Rosa.23@web.fr,Tea Tin,1,13.61,USD,refunded
+KC-202603-1002,2026-03-26,YUSUF.47@INBOX.CO.UK,Stovetop Kettle,1,41.79,USD,paid
+KC-202603-1091,2026-03-11,sam.40@inbox.co.uk,Gooseneck Kettle,3,65.56,EUR,refunded
+KC-202603-1006,2026-03-11,rosa.56@proton.me,Descaler 3-pack,2,"8,28",GBP,paid
+KC-202603-1033,2026-03-06,vic.26@inbox.co.uk,Stovetop Kettle,1,32.74,GBP,paid
+KC-202603-1106,2026-03-13,rosa.56@proton.me,Descaler 3-pack,1,"8,52",GBP,paid
+KC-202603-1011,2026-03-23,zoe.46@proton.me,Descaler 3-pack,3,11.01,USD,paid
+KC-202603-1104,2026-03-01,vic.26@inbox.co.uk,Descaler 3-pack,2,10.95,USD,paid
+KC-202603-1077,2026-03-15,zoe.18@proton.me,Pour-over Set,1,39.72,GBP,paid
+KC-202603-1092,2026-03-11,qa+98@kettleandco.example,Pour-over Set,1,46.82,EUR,test
+KC-202603-1145,2026-03-13,vic.8@mail.com,Loose Leaf Sampler,1,18.45,EUR,paid
+KC-202603-1146,2026-03-14,KAI.3@WEB.FR,Loose Leaf Sampler,1,"15,38",GBP,refunded
+KC-202603-1096,2026-03-11,qa+20@kettleandco.example,Stovetop Kettle,1,40.15,EUR,test
+KC-202603-1044,2026-03-23,zoe.4@post.de,Gooseneck Kettle,1,64.83,EUR,paid
+KC-202603-1127,2026-03-15,hana.55@web.fr,Descaler 3-pack,1,9.72,EUR,paid
+KC-202603-1128,2026-03-22,KAI.47@POST.DE,Travel Flask,1,"23,22",GBP,paid
+KC-202603-1114,2026-03-17,rosa.52@mail.com,Pour-over Set,1,40.32,GBP,paid
+KC-202603-1121,2026-03-01,sam.52@proton.me,Descaler 3-pack,1,8.52,GBP,paid
+KC-202603-1135,2026-03-18,dev.54@proton.me,Loose Leaf Sampler,2,19.55,USD,paid
+KC-202603-1146,2026-03-14,KAI.3@WEB.FR,Loose Leaf Sampler,1,"15,38",GBP,refunded
+KC-202603-1029,2026-03-05,IVAN.37@POST.DE,Loose Leaf Sampler,2,15.08,GBP,paid
+KC-202603-1056,2026-03-25,Qa+13@kettleandco.example,Mug (pair),1,21.88,EUR,test
+KC-202603-1074,2026-03-23,yusuf.47@inbox.co.uk,Travel Flask,1,27.80,EUR,paid
+KC-202603-1041,2026-03-19,qa+59@kettleandco.example,Tea Tin,2,13.67,USD,test
+KC-202603-1069,2026-03-03,nia.52@web.fr,Stovetop Kettle,2,43.82,USD,paid
+KC-202603-1086,2026-03-22,dev.54@proton.me,Stovetop Kettle,1,39.91,EUR,paid
+KC-202603-1019,2026-03-10,Uma.25@proton.me,Loose Leaf Sampler,1,19.45,USD,refunded
+KC-202603-1001,2026-03-11,IVAN.7@INBOX.CO.UK,Gooseneck Kettle,1,"71,15",USD,paid
+KC-202603-1107,2026-03-03,quinn.9@web.fr,Gooseneck Kettle,1,62.91,EUR,paid
+KC-202603-1136,2026-03-10,jo.31@post.de,Travel Flask,2,"28,11",EUR,paid
+KC-202603-1066,2026-03-06,Mo.7@proton.me,Tea Tin,2,"12,50",EUR,paid
+KC-202603-1132,2026-03-05,jo.31@post.de,Travel Flask,2,"23,58",GBP,paid
+KC-202603-1000,2026-03-25,QUINN.27@POST.DE,Stovetop Kettle,1,39.72,EUR,refunded
+KC-202603-1116,2026-03-25,zoe.4@post.de,Stovetop Kettle,1,"38,23",EUR,paid
+KC-202603-1031,2026-03-12,anna.59@post.de,Stovetop Kettle,1,39.90,EUR,paid
+KC-202603-1033,2026-03-06,vic.26@inbox.co.uk,Stovetop Kettle,1,32.74,GBP,paid
+KC-202603-1089,2026-03-07,quinn.9@web.fr,Gooseneck Kettle,2,"70,03",USD,paid
+KC-202603-1088,2026-03-16,hana.55@web.fr,Tea Tin,2,10.86,GBP,paid
+KC-202603-1154,2026-03-03,ivan.7@inbox.co.uk,Pour-over Set,1,"48,34",EUR,paid
+KC-202603-1063,2026-03-22,ivan.7@inbox.co.uk,Travel Flask,2,26.69,EUR,paid
