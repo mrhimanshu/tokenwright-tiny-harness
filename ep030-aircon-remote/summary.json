@@ -1,0 +1,277 @@
+{
+ "groups": {
+  "opus|panasonic_named": {
+   "n": 3,
+   "first_test": [
+    60,
+    60,
+    60
+   ],
+   "final_test": [
+    60,
+    60,
+    60
+   ],
+   "final_train": [
+    12,
+    12,
+    12
+   ],
+   "rounds": [
+    1,
+    1,
+    1
+   ],
+   "cracked": 3,
+   "cracked_first": 3,
+   "mean_final_pct": 100.0,
+   "mean_first_pct": 100.0,
+   "cost": 0.8080930000000001,
+   "mean_cost": 0.2693643333333333,
+   "mean_min": 1.3409986628426445
+  },
+  "opus|panasonic_blind": {
+   "n": 3,
+   "first_test": [
+    52,
+    60,
+    60
+   ],
+   "final_test": [
+    60,
+    60,
+    60
+   ],
+   "final_train": [
+    12,
+    12,
+    12
+   ],
+   "rounds": [
+    2,
+    1,
+    1
+   ],
+   "cracked": 3,
+   "cracked_first": 2,
+   "mean_final_pct": 100.0,
+   "mean_first_pct": 95.55555555555556,
+   "cost": 0.8708381999999999,
+   "mean_cost": 0.29027939999999997,
+   "mean_min": 1.410649143324958
+  },
+  "opus|brandx": {
+   "n": 3,
+   "first_test": [
+    60,
+    60,
+    60
+   ],
+   "final_test": [
+    60,
+    60,
+    60
+   ],
+   "final_train": [
+    12,
+    12,
+    12
+   ],
+   "rounds": [
+    1,
+    1,
+    1
+   ],
+   "cracked": 3,
+   "cracked_first": 3,
+   "mean_final_pct": 100.0,
+   "mean_first_pct": 100.0,
+   "cost": 1.798963,
+   "mean_cost": 0.5996543333333333,
+   "mean_min": 3.6687402526537576
+  },
+  "sonnet|panasonic_named": {
+   "n": 3,
+   "first_test": [
+    60,
+    60,
+    60
+   ],
+   "final_test": [
+    60,
+    60,
+    60
+   ],
+   "final_train": [
+    12,
+    12,
+    12
+   ],
+   "rounds": [
+    1,
+    1,
+    1
+   ],
+   "cracked": 3,
+   "cracked_first": 3,
+   "mean_final_pct": 100.0,
+   "mean_first_pct": 100.0,
+   "cost": 0.7800865,
+   "mean_cost": 0.2600288333333333,
+   "mean_min": 2.3596526106198628
+  },
+  "sonnet|panasonic_blind": {
+   "n": 3,
+   "first_test": [
+    60,
+    60,
+    60
+   ],
+   "final_test": [
+    60,
+    60,
+    60
+   ],
+   "final_train": [
+    12,
+    12,
+    12
+   ],
+   "rounds": [
+    1,
+    1,
+    1
+   ],
+   "cracked": 3,
+   "cracked_first": 3,
+   "mean_final_pct": 100.0,
+   "mean_first_pct": 100.0,
+   "cost": 1.0361915,
+   "mean_cost": 0.34539716666666664,
+   "mean_min": 3.4062584704822965
+  },
+  "sonnet|brandx": {
+   "n": 3,
+   "first_test": [
+    0,
+    0,
+    0
+   ],
+   "final_test": [
+    0,
+    0,
+    27
+   ],
+   "final_train": [
+    0,
+    0,
+    12
+   ],
+   "rounds": [
+    3,
+    3,
+    3
+   ],
+   "cracked": 0,
+   "cracked_first": 0,
+   "mean_final_pct": 15.0,
+   "mean_first_pct": 0.0,
+   "cost": 4.5136912,
+   "mean_cost": 1.5045637333333333,
+   "mean_min": 14.30625251531601
+  },
+  "haiku|panasonic_named": {
+   "n": 3,
+   "first_test": [
+    0,
+    0,
+    0
+   ],
+   "final_test": [
+    0,
+    60,
+    60
+   ],
+   "final_train": [
+    0,
+    12,
+    12
+   ],
+   "rounds": [
+    3,
+    2,
+    3
+   ],
+   "cracked": 2,
+   "cracked_first": 0,
+   "mean_final_pct": 66.66666666666666,
+   "mean_first_pct": 0.0,
+   "cost": 0.192326235,
+   "mean_cost": 0.064108745,
+   "mean_min": 6.63269549343321
+  },
+  "haiku|panasonic_blind": {
+   "n": 3,
+   "first_test": [
+    0,
+    0,
+    0
+   ],
+   "final_test": [
+    60,
+    0,
+    60
+   ],
+   "final_train": [
+    12,
+    0,
+    12
+   ],
+   "rounds": [
+    2,
+    3,
+    3
+   ],
+   "cracked": 2,
+   "cracked_first": 0,
+   "mean_final_pct": 66.66666666666666,
+   "mean_first_pct": 0.0,
+   "cost": 0.195868635,
+   "mean_cost": 0.065289545,
+   "mean_min": 6.756150147649977
+  },
+  "haiku|brandx": {
+   "n": 3,
+   "first_test": [
+    0,
+    0,
+    0
+   ],
+   "final_test": [
+    0,
+    0,
+    0
+   ],
+   "final_train": [
+    10,
+    8,
+    0
+   ],
+   "rounds": [
+    3,
+    3,
+    3
+   ],
+   "cracked": 0,
+   "cracked_first": 0,
+   "mean_final_pct": 0.0,
+   "mean_first_pct": 0.0,
+   "cost": 0.189115215,
+   "mean_cost": 0.06303840499999999,
+   "mean_min": 6.280619372261895
+  }
+ },
+ "total_spend": 10.385173485,
+ "n_runs": 27,
+ "api_calls": 50
+}
