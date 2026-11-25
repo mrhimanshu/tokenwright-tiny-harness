@@ -1,0 +1,40 @@
+cell              n    acc  ctx tok $/task real $/task nocache  secs srch
+opus|all         30  1.000    37857     0.01665        0.15378  1.48    0  warm=0.01062 none=0 {'tool_use': 30}
+opus|bm25        30  1.000     3318     0.01691        0.01691  2.73  1.1  warm=0.01691 none=0 {'tool_use': 30}
+opus|regex       30  0.967     5078     0.02484        0.02484   3.1 1.47  warm=0.02484 none=0 {'tool_use': 30}
+      miss splunk_4:grafana_list_annotations 1
+sonnet|all       30  0.967    37857     0.00828        0.07685  1.29    0  warm=0.00526 none=0 {'tool_use': 30}
+      miss splunk_4:grafana_list_alert_rules 1
+sonnet|bm25      30  0.967     3521     0.00896        0.00896  2.27 1.17  warm=0.00896 none=0 {'tool_use': 30}
+      miss sentry_5:sentry_create_release 1
+sonnet|regex     30  0.933     5657     0.01359        0.01359  2.17 1.27  warm=0.01359 none=1 {'tool_use': 29, 'end_turn': 1}
+      miss sentry_5:sentry_create_release 1
+      miss grafana_5:None 1
+haiku|all        90  0.967    37857     0.00047        0.00386  1.15    0  warm=0.00047 none=0 {'tool_use': 90}
+      miss grafana_3:grafana_get_dashboard_versions 2
+      miss splunk_4:grafana_list_alert_rules 1
+haiku|bm25       90  0.967     3306     0.00046        0.00046  1.82 1.04  warm=0.00046 none=0 {'tool_use': 90}
+      miss grafana_3:grafana_get_dashboard_versions 3
+haiku|regex      90  0.822     6260     0.00079        0.00079  2.04 1.28  warm=0.00079 none=1 {'tool_use': 89, 'end_turn': 1}
+      miss splunk_2:splunk_list_saved_searches 2
+      miss sentry_2:sentry_list_organizations 2
+      miss grafana_3:grafana_get_dashboard_versions 2
+      miss grafana_3:grafana_get_dashboard 1
+      miss splunk_3:splunk_run_search 1
+      miss splunk_4:grafana_list_alert_rules 1
+      miss sentry_3:sentry_get_issue 1
+      miss grafana_2:grafana_list_prometheus_label_values 1
+      miss sentry_5:sentry_get_project 1
+      miss grafana_5:None 1
+      miss grafana_2:grafana_list_prometheus_metric_names 1
+      miss grafana_5:sentry_list_metric_alerts 1
+      miss splunk_4:grafana_list_annotations 1
+
+sessions
+sonnet|all     n=12 done=12 $/session=0.0264 nocache=0.2993 ctx=145269 turns=3.75 calls=3.83 searches=0
+sonnet|bm25    n=12 done=12 $/session=0.0292 nocache=0.0733 ctx=30472 turns=3.83 calls=3.75 searches=3.67
+haiku|all      n=12 done=11 $/session=0.0029 nocache=0.0182 ctx=173787 turns=4.42 calls=5.08 searches=0
+      not done crash 1 ['sentry_search_issues', 'sentry_list_projects', 'sentry_get_issue_details', 'sentry_get_issue_details', 'sentry_list_issues', 'sentry_get_issue_details', 'sentry_get_issue_details', 'github_create_issue', 'github_list_issues']
+haiku|bm25     n=12 done=12 $/session=0.0023 nocache=0.0048 ctx=38774 turns=4.17 calls=4.25 searches=3.67
+
+total spend 3.56

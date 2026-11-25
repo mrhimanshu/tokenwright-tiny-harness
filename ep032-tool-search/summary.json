@@ -1,0 +1,284 @@
+{
+ "single": {
+  "opus|all": {
+   "n": 30,
+   "ok": 30,
+   "acc": 1.0,
+   "ctx": 37857,
+   "cost": 0.016654413333333333,
+   "cost_nocache": 0.15378413333333332,
+   "cost_warm": 0.010616531034482759,
+   "secs": 1.48,
+   "searches": 0,
+   "none": 0,
+   "stops": {
+    "tool_use": 30
+   },
+   "misses": []
+  },
+  "opus|bm25": {
+   "n": 30,
+   "ok": 30,
+   "acc": 1.0,
+   "ctx": 3318,
+   "cost": 0.016914133333333334,
+   "cost_nocache": 0.016914133333333334,
+   "cost_warm": 0.016914133333333334,
+   "secs": 2.73,
+   "searches": 1.1,
+   "none": 0,
+   "stops": {
+    "tool_use": 30
+   },
+   "misses": []
+  },
+  "opus|regex": {
+   "n": 30,
+   "ok": 29,
+   "acc": 0.967,
+   "ctx": 5078,
+   "cost": 0.024842,
+   "cost_nocache": 0.024842,
+   "cost_warm": 0.024842,
+   "secs": 3.1,
+   "searches": 1.47,
+   "none": 0,
+   "stops": {
+    "tool_use": 30
+   },
+   "misses": [
+    [
+     "splunk_4:grafana_list_annotations",
+     1
+    ]
+   ]
+  },
+  "sonnet|all": {
+   "n": 30,
+   "ok": 29,
+   "acc": 0.967,
+   "ctx": 37857,
+   "cost": 0.00828454,
+   "cost_nocache": 0.0768494,
+   "cost_warm": 0.005264127586206897,
+   "secs": 1.29,
+   "searches": 0,
+   "none": 0,
+   "stops": {
+    "tool_use": 30
+   },
+   "misses": [
+    [
+     "splunk_4:grafana_list_alert_rules",
+     1
+    ]
+   ]
+  },
+  "sonnet|bm25": {
+   "n": 30,
+   "ok": 29,
+   "acc": 0.967,
+   "ctx": 3521,
+   "cost": 0.008957066666666666,
+   "cost_nocache": 0.008957066666666666,
+   "cost_warm": 0.008957066666666666,
+   "secs": 2.27,
+   "searches": 1.17,
+   "none": 0,
+   "stops": {
+    "tool_use": 30
+   },
+   "misses": [
+    [
+     "sentry_5:sentry_create_release",
+     1
+    ]
+   ]
+  },
+  "sonnet|regex": {
+   "n": 30,
+   "ok": 28,
+   "acc": 0.933,
+   "ctx": 5657,
+   "cost": 0.013591266666666667,
+   "cost_nocache": 0.013591266666666667,
+   "cost_warm": 0.013591266666666667,
+   "secs": 2.17,
+   "searches": 1.27,
+   "none": 1,
+   "stops": {
+    "tool_use": 29,
+    "end_turn": 1
+   },
+   "misses": [
+    [
+     "sentry_5:sentry_create_release",
+     1
+    ],
+    [
+     "grafana_5:None",
+     1
+    ]
+   ]
+  },
+  "haiku|all": {
+   "n": 90,
+   "ok": 87,
+   "acc": 0.967,
+   "ctx": 37857,
+   "cost": 0.00046959444444444445,
+   "cost_nocache": 0.0038601644444444445,
+   "cost_warm": 0.00046959444444444445,
+   "secs": 1.15,
+   "searches": 0,
+   "none": 0,
+   "stops": {
+    "tool_use": 90
+   },
+   "misses": [
+    [
+     "grafana_3:grafana_get_dashboard_versions",
+     2
+    ],
+    [
+     "splunk_4:grafana_list_alert_rules",
+     1
+    ]
+   ]
+  },
+  "haiku|bm25": {
+   "n": 90,
+   "ok": 87,
+   "acc": 0.967,
+   "ctx": 3306,
+   "cost": 0.00046497000000000004,
+   "cost_nocache": 0.00046497000000000004,
+   "cost_warm": 0.00046497000000000004,
+   "secs": 1.82,
+   "searches": 1.04,
+   "none": 0,
+   "stops": {
+    "tool_use": 90
+   },
+   "misses": [
+    [
+     "grafana_3:grafana_get_dashboard_versions",
+     3
+    ]
+   ]
+  },
+  "haiku|regex": {
+   "n": 90,
+   "ok": 74,
+   "acc": 0.822,
+   "ctx": 6260,
+   "cost": 0.0007862544444444445,
+   "cost_nocache": 0.0007862544444444445,
+   "cost_warm": 0.0007862544444444445,
+   "secs": 2.04,
+   "searches": 1.28,
+   "none": 1,
+   "stops": {
+    "tool_use": 89,
+    "end_turn": 1
+   },
+   "misses": [
+    [
+     "splunk_2:splunk_list_saved_searches",
+     2
+    ],
+    [
+     "sentry_2:sentry_list_organizations",
+     2
+    ],
+    [
+     "grafana_3:grafana_get_dashboard_versions",
+     2
+    ],
+    [
+     "grafana_3:grafana_get_dashboard",
+     1
+    ],
+    [
+     "splunk_3:splunk_run_search",
+     1
+    ],
+    [
+     "splunk_4:grafana_list_alert_rules",
+     1
+    ],
+    [
+     "sentry_3:sentry_get_issue",
+     1
+    ],
+    [
+     "grafana_2:grafana_list_prometheus_label_values",
+     1
+    ],
+    [
+     "sentry_5:sentry_get_project",
+     1
+    ],
+    [
+     "grafana_5:None",
+     1
+    ],
+    [
+     "grafana_2:grafana_list_prometheus_metric_names",
+     1
+    ],
+    [
+     "grafana_5:sentry_list_metric_alerts",
+     1
+    ],
+    [
+     "splunk_4:grafana_list_annotations",
+     1
+    ]
+   ]
+  }
+ },
+ "sessions": {
+  "sonnet|all": {
+   "n": 12,
+   "done": 12,
+   "cost": 0.026351083333333334,
+   "cost_nocache": 0.2993115,
+   "ctx": 145269,
+   "turns": 3.75,
+   "calls": 3.83,
+   "searches": 0
+  },
+  "sonnet|bm25": {
+   "n": 12,
+   "done": 12,
+   "cost": 0.029216241666666667,
+   "cost_nocache": 0.07326733333333334,
+   "ctx": 30472,
+   "turns": 3.83,
+   "calls": 3.75,
+   "searches": 3.67
+  },
+  "haiku|all": {
+   "n": 12,
+   "done": 11,
+   "cost": 0.0028532933333333334,
+   "cost_nocache": 0.0182096,
+   "ctx": 173787,
+   "turns": 4.42,
+   "calls": 5.08,
+   "searches": 0
+  },
+  "haiku|bm25": {
+   "n": 12,
+   "done": 12,
+   "cost": 0.00225115,
+   "cost_nocache": 0.004802908333333334,
+   "ctx": 38774,
+   "turns": 4.17,
+   "calls": 4.25,
+   "searches": 3.67
+  }
+ },
+ "spend": 3.5602375200000003
+}
