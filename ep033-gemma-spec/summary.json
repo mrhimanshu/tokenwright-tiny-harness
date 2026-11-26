@@ -1,0 +1,249 @@
+{
+ "n_generations": 180,
+ "steal_median": 19.1,
+ "steal_max": 49.3,
+ "tps": {
+  "summarize": {
+   "off": 8.9,
+   "on": 13.99,
+   "adaptive": 14.76,
+   "lenient": 24.86
+  },
+  "code": {
+   "off": 8.49,
+   "on": 17.71,
+   "adaptive": 14.78,
+   "lenient": 18.95
+  },
+  "rewrite": {
+   "off": 11.04,
+   "on": 12.82,
+   "adaptive": 13.14,
+   "lenient": 28.97
+  },
+  "freeform": {
+   "off": 10.73,
+   "on": 10.94,
+   "adaptive": 10.44,
+   "lenient": 26.44
+  },
+  "copy": {
+   "off": 9.57,
+   "on": 21.17,
+   "adaptive": 18.66,
+   "lenient": 27.51
+  },
+  "ALL": {
+   "off": 9.46,
+   "on": 14.2,
+   "adaptive": 14.28,
+   "lenient": 25.74
+  }
+ },
+ "speedup": {
+  "summarize": {
+   "on": 1.63,
+   "on_steal_adj": 1.51,
+   "on_min": 0.51,
+   "on_max": 2.4,
+   "adaptive": 1.79,
+   "adaptive_steal_adj": 1.48,
+   "adaptive_min": 0.78,
+   "adaptive_max": 2.42,
+   "lenient": 2.87,
+   "lenient_steal_adj": 2.67,
+   "lenient_min": 1.34,
+   "lenient_max": 4.44
+  },
+  "code": {
+   "on": 1.92,
+   "on_steal_adj": 1.79,
+   "on_min": 1.27,
+   "on_max": 2.32,
+   "adaptive": 1.97,
+   "adaptive_steal_adj": 1.88,
+   "adaptive_min": 0.64,
+   "adaptive_max": 2.24,
+   "lenient": 2.21,
+   "lenient_steal_adj": 2.24,
+   "lenient_min": 1.45,
+   "lenient_max": 3.15
+  },
+  "rewrite": {
+   "on": 1.06,
+   "on_steal_adj": 1.17,
+   "on_min": 0.87,
+   "on_max": 2.06,
+   "adaptive": 1.38,
+   "adaptive_steal_adj": 1.32,
+   "adaptive_min": 0.9,
+   "adaptive_max": 2.25,
+   "lenient": 2.52,
+   "lenient_steal_adj": 2.46,
+   "lenient_min": 1.24,
+   "lenient_max": 3.86
+  },
+  "freeform": {
+   "on": 1.25,
+   "on_steal_adj": 1.17,
+   "on_min": 0.81,
+   "on_max": 1.87,
+   "adaptive": 1.11,
+   "adaptive_steal_adj": 1.16,
+   "adaptive_min": 0.79,
+   "adaptive_max": 1.75,
+   "lenient": 2.49,
+   "lenient_steal_adj": 2.42,
+   "lenient_min": 1.61,
+   "lenient_max": 3.28
+  },
+  "copy": {
+   "on": 2.23,
+   "on_steal_adj": 2.23,
+   "on_min": 1.06,
+   "on_max": 3.19,
+   "adaptive": 1.71,
+   "adaptive_steal_adj": 1.7,
+   "adaptive_min": 1.12,
+   "adaptive_max": 3.07,
+   "lenient": 2.69,
+   "lenient_steal_adj": 2.49,
+   "lenient_min": 1.95,
+   "lenient_max": 3.5
+  },
+  "ALL": {
+   "on": 1.49,
+   "on_steal_adj": 1.49,
+   "on_min": 0.51,
+   "on_max": 3.19,
+   "adaptive": 1.5,
+   "adaptive_steal_adj": 1.48,
+   "adaptive_min": 0.64,
+   "adaptive_max": 3.07,
+   "lenient": 2.51,
+   "lenient_steal_adj": 2.46,
+   "lenient_min": 1.24,
+   "lenient_max": 4.44
+  }
+ },
+ "identical": {
+  "summarize": {
+   "on": 9,
+   "adaptive": 9,
+   "lenient": 0,
+   "of": 9
+  },
+  "code": {
+   "on": 9,
+   "adaptive": 9,
+   "lenient": 0,
+   "of": 9
+  },
+  "rewrite": {
+   "on": 9,
+   "adaptive": 9,
+   "lenient": 0,
+   "of": 9
+  },
+  "freeform": {
+   "on": 9,
+   "adaptive": 9,
+   "lenient": 0,
+   "of": 9
+  },
+  "copy": {
+   "on": 9,
+   "adaptive": 9,
+   "lenient": 3,
+   "of": 9
+  },
+  "ALL": {
+   "on": 45,
+   "adaptive": 45,
+   "lenient": 3,
+   "of": 45
+  }
+ },
+ "ttft": {
+  "summarize": {
+   "off": 1.9,
+   "on": 1.6,
+   "adaptive": 1.71,
+   "lenient": 1.47
+  },
+  "code": {
+   "off": 1.02,
+   "on": 0.88,
+   "adaptive": 1.0,
+   "lenient": 0.98
+  },
+  "rewrite": {
+   "off": 1.12,
+   "on": 1.28,
+   "adaptive": 0.89,
+   "lenient": 0.97
+  },
+  "freeform": {
+   "off": 0.94,
+   "on": 0.88,
+   "adaptive": 0.97,
+   "lenient": 0.86
+  },
+  "copy": {
+   "off": 1.95,
+   "on": 1.67,
+   "adaptive": 1.7,
+   "lenient": 1.71
+  },
+  "ALL": {
+   "off": 1.2,
+   "on": 1.18,
+   "adaptive": 1.05,
+   "lenient": 1.21
+  }
+ },
+ "wall": {
+  "summarize": {
+   "off": 15.72,
+   "on": 11.25,
+   "adaptive": 10.52,
+   "lenient": 8.22
+  },
+  "code": {
+   "off": 30.88,
+   "on": 15.26,
+   "adaptive": 18.29,
+   "lenient": 14.72
+  },
+  "rewrite": {
+   "off": 24.18,
+   "on": 20.7,
+   "adaptive": 20.36,
+   "lenient": 9.81
+  },
+  "freeform": {
+   "off": 24.15,
+   "on": 24.12,
+   "adaptive": 25.2,
+   "lenient": 10.52
+  },
+  "copy": {
+   "off": 22.24,
+   "on": 11.88,
+   "adaptive": 15.27,
+   "lenient": 10.1
+  },
+  "ALL": {
+   "off": 23.96,
+   "on": 15.26,
+   "adaptive": 17.86,
+   "lenient": 10.52
+  }
+ },
+ "off_by_position": {
+  "0": 9.57,
+  "1": 9.18,
+  "2": 8.0,
+  "3": 9.62
+ }
+}
