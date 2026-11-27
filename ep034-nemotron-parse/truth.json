@@ -1,0 +1,743 @@
+{
+ "report1": {
+  "kind": "report",
+  "text": "Quarterly Operations Review\nIn the third quarter the support team closed 18,442 tickets, up 12.5% on the previous quarter. The median first response time fell from 4 hours 10 minutes to 1 hour 52 minutes, mainly because routine password resets are now handled by the self-service portal.\nCosts rose more slowly than volume. Total spend was $214,380 against a budget of $229,000, leaving an underspend of $14,620. The largest single item was overtime during the September migration, which accounted for 31% of all extra hours.\nTwo risks remain open. First, the legacy billing server reaches end of support on 14 March 2027. Second, three of the nine senior engineers are due for parental leave in the same month, so the migration plan must be finished before 28 February.",
+  "tier": "easy"
+ },
+ "report2": {
+  "kind": "report",
+  "text": "Field Notes: Water Quality Survey\nSamples were taken at 27 sites along the river between 3 and 9 June. At each site we measured temperature, pH, dissolved oxygen and nitrate. The average pH was 7.4, with a low of 6.8 below the paper mill outflow and a high of 8.1 at the reservoir.\nDissolved oxygen stayed above 6.0 mg/L at 24 of the 27 sites. The three exceptions were all downstream of the treatment works, where readings of 4.9, 5.2 and 5.6 mg/L were recorded on the warmest afternoon of the week.\nNitrate levels were within the legal limit everywhere, but site 19 showed 41 mg/L, close to the 50 mg/L threshold. We recommend monthly sampling at sites 17 to 21 until the end of 2027.",
+  "tier": "easy"
+ },
+ "report3": {
+  "kind": "report",
+  "text": "Minutes of the Library Committee\nThe meeting opened at 7:15 pm with eleven members present and two apologies. The minutes of the October meeting were approved without changes. The treasurer reported a balance of $8,906.40 after the purchase of 312 new books and two reading lamps.\nVisitor numbers have recovered. The library recorded 5,731 visits in October compared with 4,018 a year earlier, an increase of 42.6%. Saturday mornings remain the busiest period, with an average of 163 visitors between 9 am and noon.\nThe committee agreed to extend opening hours on Thursdays until 8 pm from 6 January, for a trial period of twelve weeks. The next meeting will be held on 2 December at 7 pm in the reading room.",
+  "tier": "easy"
+ },
+ "table1": {
+  "kind": "table",
+  "header": [
+   "Item",
+   "Qty",
+   "Unit price",
+   "Line total"
+  ],
+  "rows": [
+   [
+    "Laptop bag",
+    "20",
+    "$64.95",
+    "$1,299.00"
+   ],
+   [
+    "Docking station",
+    "7",
+    "$89.90",
+    "$629.30"
+   ],
+   [
+    "USB-C cable 2 m",
+    "33",
+    "$18.75",
+    "$618.75"
+   ],
+   [
+    "Label printer",
+    "7",
+    "$39.00",
+    "$273.00"
+   ],
+   [
+    "27-inch monitor",
+    "23",
+    "$89.90",
+    "$2,067.70"
+   ],
+   [
+    "Paper shredder",
+    "1",
+    "$18.75",
+    "$18.75"
+   ],
+   [
+    "Keyboard (UK)",
+    "34",
+    "$12.50",
+    "$425.00"
+   ],
+   [
+    "Webcam 1080p",
+    "4",
+    "$64.95",
+    "$259.80"
+   ],
+   [
+    "Laptop stand",
+    "17",
+    "$310.00",
+    "$5,270.00"
+   ],
+   [
+    "SSD 1 TB",
+    "36",
+    "$310.00",
+    "$11,160.00"
+   ]
+  ],
+  "total": "$22,021.30",
+  "tier": "easy"
+ },
+ "table2": {
+  "kind": "table",
+  "header": [
+   "Item",
+   "Qty",
+   "Unit price",
+   "Line total"
+  ],
+  "rows": [
+   [
+    "Laptop stand",
+    "14",
+    "$23.40",
+    "$327.60"
+   ],
+   [
+    "Ethernet switch 8-port",
+    "29",
+    "$7.25",
+    "$210.25"
+   ],
+   [
+    "Webcam 1080p",
+    "12",
+    "$89.90",
+    "$1,078.80"
+   ],
+   [
+    "Office chair",
+    "9",
+    "$89.90",
+    "$809.10"
+   ],
+   [
+    "Label printer",
+    "26",
+    "$7.25",
+    "$188.50"
+   ],
+   [
+    "Cable tray",
+    "28",
+    "$23.40",
+    "$655.20"
+   ],
+   [
+    "Desk lamp",
+    "16",
+    "$15.80",
+    "$252.80"
+   ],
+   [
+    "Docking station",
+    "8",
+    "$89.90",
+    "$719.20"
+   ],
+   [
+    "Keyboard (UK)",
+    "5",
+    "$249.99",
+    "$1,249.95"
+   ],
+   [
+    "Paper shredder",
+    "18",
+    "$129.00",
+    "$2,322.00"
+   ]
+  ],
+  "total": "$7,813.40",
+  "tier": "easy"
+ },
+ "table3": {
+  "kind": "table",
+  "header": [
+   "Item",
+   "Qty",
+   "Unit price",
+   "Line total"
+  ],
+  "rows": [
+   [
+    "27-inch monitor",
+    "31",
+    "$129.00",
+    "$3,999.00"
+   ],
+   [
+    "Office chair",
+    "30",
+    "$64.95",
+    "$1,948.50"
+   ],
+   [
+    "Keyboard (UK)",
+    "9",
+    "$249.99",
+    "$2,249.91"
+   ],
+   [
+    "Ethernet switch 8-port",
+    "18",
+    "$18.75",
+    "$337.50"
+   ],
+   [
+    "Wireless mouse",
+    "15",
+    "$18.75",
+    "$281.25"
+   ],
+   [
+    "Paper shredder",
+    "19",
+    "$39.00",
+    "$741.00"
+   ],
+   [
+    "Webcam 1080p",
+    "5",
+    "$39.00",
+    "$195.00"
+   ],
+   [
+    "Noise-cancelling headset",
+    "34",
+    "$12.50",
+    "$425.00"
+   ],
+   [
+    "Laptop stand",
+    "38",
+    "$7.25",
+    "$275.50"
+   ],
+   [
+    "HDMI adapter",
+    "20",
+    "$129.00",
+    "$2,580.00"
+   ]
+  ],
+  "total": "$13,032.66",
+  "tier": "easy"
+ },
+ "chart1": {
+  "kind": "chart",
+  "title": "Monthly active users (thousands)",
+  "categories": [
+   "Jan",
+   "Feb",
+   "Mar",
+   "Apr",
+   "May",
+   "Jun",
+   "Jul"
+  ],
+  "values": [
+   41,
+   64,
+   51,
+   80,
+   57,
+   90,
+   70
+  ],
+  "tier": "easy"
+ },
+ "chart2": {
+  "kind": "chart",
+  "title": "Average response time by region (ms)",
+  "categories": [
+   "London",
+   "Paris",
+   "Frankfurt",
+   "Mumbai",
+   "Tokyo",
+   "Sydney"
+  ],
+  "values": [
+   20,
+   21,
+   18,
+   55,
+   64,
+   53
+  ],
+  "tier": "easy"
+ },
+ "chart3": {
+  "kind": "chart",
+  "title": "Share of tickets solved on first contact (%)",
+  "categories": [
+   "Email",
+   "Chat",
+   "Phone",
+   "Forum",
+   "Social",
+   "Kiosk"
+  ],
+  "values": [
+   34,
+   35,
+   65,
+   55,
+   73,
+   58
+  ],
+  "tier": "easy"
+ },
+ "hand1": {
+  "kind": "handwriting",
+  "text": "dawn was given ... And the thought\nstreaks of poetry , meat disguised under heavy and vehement\nand of the artery-like vein , and expulsion of the\nuse of the expression : ' Boaz did it of his own\nfreedoms \" which are Divine . There are four ways of\nmantle , and said with such\n( 3 ) I will redeem you . ( 4 ) I will take you to me for a",
+  "source": "Teklia/IAM-line test split",
+  "tier": "easy"
+ },
+ "hand2": {
+  "kind": "handwriting",
+  "text": "it is a good idea to condition a child\nALSO present is a London journalist who\nall else . We pride ourselves about accuracy on\nled us to believe . Laud was enthusiastically hated\nBut disappointment awaited him . A\nme , \" said Mr. Copthorne . The verger\nit go at that , but she resolved to have",
+  "source": "Teklia/IAM-line test split",
+  "tier": "easy"
+ },
+ "hand3": {
+  "kind": "handwriting",
+  "text": "\" Tell me who the little bird was . \" \" Can't\nnever could outdo ; Green herbs , red peppers , mussels ,\nhospital .\nthan is customarily imagined as well as entering human\necho-sounders . Bottom crowding comes when they cannot reach\nIt was very interesting to have the privilege of filling\nYou made some sort of a protest to Graybury .",
+  "source": "Teklia/IAM-line test split",
+  "tier": "easy"
+ },
+ "hindi1": {
+  "kind": "hindi",
+  "text": "भारत\nभारत दक्षिण एशिया में स्थित भारतीय उपमहाद्वीप का सबसे बड़ा देश है। भारत भौगोलिक दृष्टि से विश्व का सातवाँ सबसे बड़ा देश है, जबकि जनसंख्या के दृष्टिकोण से विश्व का सबसे बड़ा देश है। भारत के पश्चिम में पाकिस्तान, उत्तर पश्चिम में अफगानिस्तान, उत्तर-पूर्व में चीन, नेपाल और भूटान, पूर्व में बांग्लादेश और म्यान्मार स्थित हैं। इसके उत्तर में हिमालय पर्वत तथा दक्षिण में भारतीय महासागर स्थित है।",
+  "source": "hi.wikipedia.org page summary",
+  "tier": "easy"
+ },
+ "hindi2": {
+  "kind": "hindi",
+  "text": "ताजमहल\nताजमहल भारत के उत्तर प्रदेश राज्य के आगरा शहर में स्थित एक विश्व धरोहर मक़बरा, और विश्व के ७ अजूबों में से एक है। इसका निर्माण १७वीं सदी में मुग़ल सम्राट शाहजहाँ ने अपनी पत्नी मुमताज़ महल की याद में करवाया था। सफ़ेद संगमरमर से बने इस मक़बरे को देखने हर साल लाखों पर्यटक आगरा आते हैं।",
+  "source": "hi.wikipedia.org page summary",
+  "tier": "easy"
+ },
+ "hindi3": {
+  "kind": "hindi",
+  "text": "गंगा नदी\nगंगा नदी भारत की सबसे महत्त्वपूर्ण व हिन्दू धर्म की मान्यतानुसार सबसे पवित्र नदी है। गंगा नदी का उद्गम भागीरथी व अलकनंदा नदी मिलकर करती है। यह भारत और बांग्लादेश में कुल मिलाकर 2526 किलोमीटर की दूरी तय करती हुई उत्तराखंड में हिमालय के गंगोत्री हिमनद के गोमुख स्थान से लेकर बंगाल की खाड़ी के सुन्दरवन तक भारत की मुख्य नदी के रूप में विशाल भू-भाग को सींचती है।",
+  "source": "hi.wikipedia.org page summary",
+  "tier": "easy"
+ },
+ "hardtable1": {
+  "kind": "table",
+  "tier": "hard",
+  "header": [
+   "Item",
+   "Qty",
+   "Unit price",
+   "Line total"
+  ],
+  "rows": [
+   [
+    "HDMI adapter",
+    "51",
+    "$348.74",
+    "$17,785.74"
+   ],
+   [
+    "Label printer",
+    "54",
+    "$231.37",
+    "$12,493.98"
+   ],
+   [
+    "SSD 1 TB",
+    "21",
+    "$151.60",
+    "$3,183.60"
+   ],
+   [
+    "USB-C cable 2 m",
+    "10",
+    "$216.45",
+    "$2,164.50"
+   ],
+   [
+    "Wireless mouse",
+    "54",
+    "$315.03",
+    "$17,011.62"
+   ],
+   [
+    "Noise-cancelling headset",
+    "24",
+    "$351.87",
+    "$8,444.88"
+   ],
+   [
+    "Keyboard (UK)",
+    "26",
+    "$13.46",
+    "$349.96"
+   ],
+   [
+    "Webcam 1080p",
+    "45",
+    "$281.85",
+    "$12,683.25"
+   ],
+   [
+    "Paper shredder",
+    "26",
+    "$301.28",
+    "$7,833.28"
+   ],
+   [
+    "Docking station",
+    "15",
+    "$296.27",
+    "$4,444.05"
+   ],
+   [
+    "Ethernet switch 8-port",
+    "28",
+    "$190.45",
+    "$5,332.60"
+   ],
+   [
+    "Whiteboard 120 cm",
+    "46",
+    "$251.54",
+    "$11,570.84"
+   ],
+   [
+    "Office chair",
+    "33",
+    "$242.28",
+    "$7,995.24"
+   ],
+   [
+    "27-inch monitor",
+    "27",
+    "$348.08",
+    "$9,398.16"
+   ]
+  ],
+  "total": "$120,691.70"
+ },
+ "hardtable2": {
+  "kind": "table",
+  "tier": "hard",
+  "header": [
+   "Item",
+   "Qty",
+   "Unit price",
+   "Line total"
+  ],
+  "rows": [
+   [
+    "Webcam 1080p",
+    "33",
+    "$251.80",
+    "$8,309.40"
+   ],
+   [
+    "Keyboard (UK)",
+    "34",
+    "$314.92",
+    "$10,707.28"
+   ],
+   [
+    "Noise-cancelling headset",
+    "54",
+    "$33.32",
+    "$1,799.28"
+   ],
+   [
+    "USB-C cable 2 m",
+    "27",
+    "$373.89",
+    "$10,095.03"
+   ],
+   [
+    "Laptop stand",
+    "18",
+    "$114.90",
+    "$2,068.20"
+   ],
+   [
+    "Office chair",
+    "29",
+    "$200.75",
+    "$5,821.75"
+   ],
+   [
+    "Desk lamp",
+    "55",
+    "$92.57",
+    "$5,091.35"
+   ],
+   [
+    "Laptop bag",
+    "46",
+    "$379.48",
+    "$17,456.08"
+   ],
+   [
+    "Paper shredder",
+    "28",
+    "$336.56",
+    "$9,423.68"
+   ],
+   [
+    "Cable tray",
+    "59",
+    "$86.42",
+    "$5,098.78"
+   ],
+   [
+    "Docking station",
+    "6",
+    "$337.05",
+    "$2,022.30"
+   ],
+   [
+    "27-inch monitor",
+    "40",
+    "$200.32",
+    "$8,012.80"
+   ],
+   [
+    "HDMI adapter",
+    "39",
+    "$211.43",
+    "$8,245.77"
+   ],
+   [
+    "Whiteboard 120 cm",
+    "39",
+    "$164.23",
+    "$6,404.97"
+   ]
+  ],
+  "total": "$100,556.67"
+ },
+ "hardtable3": {
+  "kind": "table",
+  "tier": "hard",
+  "header": [
+   "Item",
+   "Qty",
+   "Unit price",
+   "Line total"
+  ],
+  "rows": [
+   [
+    "Wireless mouse",
+    "25",
+    "$327.23",
+    "$8,180.75"
+   ],
+   [
+    "HDMI adapter",
+    "51",
+    "$390.52",
+    "$19,916.52"
+   ],
+   [
+    "Cable tray",
+    "30",
+    "$320.92",
+    "$9,627.60"
+   ],
+   [
+    "Keyboard (UK)",
+    "43",
+    "$295.84",
+    "$12,721.12"
+   ],
+   [
+    "Ethernet switch 8-port",
+    "34",
+    "$48.83",
+    "$1,660.22"
+   ],
+   [
+    "Office chair",
+    "34",
+    "$21.05",
+    "$715.70"
+   ],
+   [
+    "Whiteboard 120 cm",
+    "2",
+    "$41.08",
+    "$82.16"
+   ],
+   [
+    "Laptop stand",
+    "55",
+    "$292.37",
+    "$16,080.35"
+   ],
+   [
+    "Laptop bag",
+    "14",
+    "$87.22",
+    "$1,221.08"
+   ],
+   [
+    "Webcam 1080p",
+    "3",
+    "$137.88",
+    "$413.64"
+   ],
+   [
+    "USB-C cable 2 m",
+    "35",
+    "$22.14",
+    "$774.90"
+   ],
+   [
+    "SSD 1 TB",
+    "50",
+    "$288.22",
+    "$14,411.00"
+   ],
+   [
+    "Noise-cancelling headset",
+    "38",
+    "$73.00",
+    "$2,774.00"
+   ],
+   [
+    "Label printer",
+    "25",
+    "$40.81",
+    "$1,020.25"
+   ]
+  ],
+  "total": "$89,599.29"
+ },
+ "hardchart1": {
+  "kind": "chart",
+  "tier": "hard",
+  "title": "Weekly deploys per team",
+  "categories": [
+   "Search",
+   "Billing",
+   "Mobile",
+   "Infra",
+   "Data",
+   "Growth",
+   "Docs"
+  ],
+  "values": [
+   16,
+   70,
+   65,
+   34,
+   54,
+   55,
+   96
+  ]
+ },
+ "hardchart2": {
+  "kind": "chart",
+  "tier": "hard",
+  "title": "Cache hit rate by service (%)",
+  "categories": [
+   "auth",
+   "cart",
+   "feed",
+   "img",
+   "mail",
+   "pay"
+  ],
+  "values": [
+   12,
+   43,
+   33,
+   62,
+   66,
+   55
+  ]
+ },
+ "hardchart3": {
+  "kind": "chart",
+  "tier": "hard",
+  "title": "GPU hours used per lab",
+  "categories": [
+   "Vision",
+   "Speech",
+   "NLP",
+   "Robotics",
+   "Bio",
+   "RL"
+  ],
+  "values": [
+   7,
+   15,
+   94,
+   87,
+   77,
+   5
+  ]
+ },
+ "hardhindi1": {
+  "kind": "hindi",
+  "tier": "hard",
+  "text": "भारत\nभारत दक्षिण एशिया में स्थित भारतीय उपमहाद्वीप का सबसे बड़ा देश है। भारत भौगोलिक दृष्टि से विश्व का सातवाँ सबसे बड़ा देश है, जबकि जनसंख्या के दृष्टिकोण से विश्व का सबसे बड़ा देश है। भारत के पश्चिम में पाकिस्तान, उत्तर पश्चिम में अफगानिस्तान, उत्तर-पूर्व में चीन, नेपाल और भूटान, पूर्व में बांग्लादेश और म्यान्मार स्थित हैं। इसके उत्तर में हिमालय पर्वत तथा दक्षिण में भारतीय महासागर स्थित है।"
+ },
+ "hardhindi2": {
+  "kind": "hindi",
+  "tier": "hard",
+  "text": "ताजमहल\nताजमहल भारत के उत्तर प्रदेश राज्य के आगरा शहर में स्थित एक विश्व धरोहर मक़बरा, और विश्व के ७ अजूबों में से एक है। इसका निर्माण १७वीं सदी में मुग़ल सम्राट शाहजहाँ ने अपनी पत्नी मुमताज़ महल की याद में करवाया था। सफ़ेद संगमरमर से बने इस मक़बरे को देखने हर साल लाखों पर्यटक आगरा आते हैं।"
+ },
+ "hardhindi3": {
+  "kind": "hindi",
+  "tier": "hard",
+  "text": "गंगा नदी\nगंगा नदी भारत की सबसे महत्त्वपूर्ण व हिन्दू धर्म की मान्यतानुसार सबसे पवित्र नदी है। गंगा नदी का उद्गम भागीरथी व अलकनंदा नदी मिलकर करती है। यह भारत और बांग्लादेश में कुल मिलाकर 2526 किलोमीटर की दूरी तय करती हुई उत्तराखंड में हिमालय के गंगोत्री हिमनद के गोमुख स्थान से लेकर बंगाल की खाड़ी के सुन्दरवन तक भारत की मुख्य नदी के रूप में विशाल भू-भाग को सींचती है।"
+ },
+ "hardreport1": {
+  "kind": "report",
+  "tier": "hard",
+  "text": "Quarterly Operations Review\nIn the third quarter the support team closed 18,442 tickets, up 12.5% on the previous quarter. The median first response time fell from 4 hours 10 minutes to 1 hour 52 minutes, mainly because routine password resets are now handled by the self-service portal.\nCosts rose more slowly than volume. Total spend was $214,380 against a budget of $229,000, leaving an underspend of $14,620. The largest single item was overtime during the September migration, which accounted for 31% of all extra hours.\nTwo risks remain open. First, the legacy billing server reaches end of support on 14 March 2027. Second, three of the nine senior engineers are due for parental leave in the same month, so the migration plan must be finished before 28 February."
+ },
+ "hardreport2": {
+  "kind": "report",
+  "tier": "hard",
+  "text": "Field Notes: Water Quality Survey\nSamples were taken at 27 sites along the river between 3 and 9 June. At each site we measured temperature, pH, dissolved oxygen and nitrate. The average pH was 7.4, with a low of 6.8 below the paper mill outflow and a high of 8.1 at the reservoir.\nDissolved oxygen stayed above 6.0 mg/L at 24 of the 27 sites. The three exceptions were all downstream of the treatment works, where readings of 4.9, 5.2 and 5.6 mg/L were recorded on the warmest afternoon of the week.\nNitrate levels were within the legal limit everywhere, but site 19 showed 41 mg/L, close to the 50 mg/L threshold. We recommend monthly sampling at sites 17 to 21 until the end of 2027."
+ },
+ "hardreport3": {
+  "kind": "report",
+  "tier": "hard",
+  "text": "Minutes of the Library Committee\nThe meeting opened at 7:15 pm with eleven members present and two apologies. The minutes of the October meeting were approved without changes. The treasurer reported a balance of $8,906.40 after the purchase of 312 new books and two reading lamps.\nVisitor numbers have recovered. The library recorded 5,731 visits in October compared with 4,018 a year earlier, an increase of 42.6%. Saturday mornings remain the busiest period, with an average of 163 visitors between 9 am and noon.\nThe committee agreed to extend opening hours on Thursdays until 8 pm from 6 January, for a trial period of twelve weeks. The next meeting will be held on 2 December at 7 pm in the reading room."
+ },
+ "ctrlsmall1": {
+  "kind": "hindi",
+  "tier": "control",
+  "text": "भारत\nभारत दक्षिण एशिया में स्थित भारतीय उपमहाद्वीप का सबसे बड़ा देश है। भारत भौगोलिक दृष्टि से विश्व का सातवाँ सबसे बड़ा देश है, जबकि जनसंख्या के दृष्टिकोण से विश्व का सबसे बड़ा देश है। भारत के पश्चिम में पाकिस्तान, उत्तर पश्चिम में अफगानिस्तान, उत्तर-पूर्व में चीन, नेपाल और भूटान, पूर्व में बांग्लादेश और म्यान्मार स्थित हैं। इसके उत्तर में हिमालय पर्वत तथा दक्षिण में भारतीय महासागर स्थित है।"
+ },
+ "ctrlphoto1": {
+  "kind": "hindi",
+  "tier": "control",
+  "text": "भारत\nभारत दक्षिण एशिया में स्थित भारतीय उपमहाद्वीप का सबसे बड़ा देश है। भारत भौगोलिक दृष्टि से विश्व का सातवाँ सबसे बड़ा देश है, जबकि जनसंख्या के दृष्टिकोण से विश्व का सबसे बड़ा देश है। भारत के पश्चिम में पाकिस्तान, उत्तर पश्चिम में अफगानिस्तान, उत्तर-पूर्व में चीन, नेपाल और भूटान, पूर्व में बांग्लादेश और म्यान्मार स्थित हैं। इसके उत्तर में हिमालय पर्वत तथा दक्षिण में भारतीय महासागर स्थित है।"
+ },
+ "ctrlsmall2": {
+  "kind": "hindi",
+  "tier": "control",
+  "text": "ताजमहल\nताजमहल भारत के उत्तर प्रदेश राज्य के आगरा शहर में स्थित एक विश्व धरोहर मक़बरा, और विश्व के ७ अजूबों में से एक है। इसका निर्माण १७वीं सदी में मुग़ल सम्राट शाहजहाँ ने अपनी पत्नी मुमताज़ महल की याद में करवाया था। सफ़ेद संगमरमर से बने इस मक़बरे को देखने हर साल लाखों पर्यटक आगरा आते हैं।"
+ },
+ "ctrlphoto2": {
+  "kind": "hindi",
+  "tier": "control",
+  "text": "ताजमहल\nताजमहल भारत के उत्तर प्रदेश राज्य के आगरा शहर में स्थित एक विश्व धरोहर मक़बरा, और विश्व के ७ अजूबों में से एक है। इसका निर्माण १७वीं सदी में मुग़ल सम्राट शाहजहाँ ने अपनी पत्नी मुमताज़ महल की याद में करवाया था। सफ़ेद संगमरमर से बने इस मक़बरे को देखने हर साल लाखों पर्यटक आगरा आते हैं।"
+ }
+}

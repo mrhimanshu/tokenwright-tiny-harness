@@ -1,0 +1,301 @@
+{"system": "claude-haiku-5-5", "rep": 1, "page": "report1", "kind": "report", "seconds": 1.51, "cost_usd": 0.00042, "cer": 0.0}
+{"system": "claude-haiku-5-5", "rep": 1, "page": "chart1", "kind": "chart", "seconds": 0.86, "cost_usd": 0.000368, "found": 7, "n": 7, "mae": 0.0, "within2": 7, "exact": 7, "errs": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+{"system": "claude-haiku-5-5", "rep": 1, "page": "chart2", "kind": "chart", "seconds": 0.83, "cost_usd": 0.000365, "found": 6, "n": 6, "mae": 0.0, "within2": 6, "exact": 6, "errs": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+{"system": "claude-haiku-5-5", "rep": 1, "page": "chart3", "kind": "chart", "seconds": 0.88, "cost_usd": 0.000368, "found": 6, "n": 6, "mae": 0.0, "within2": 6, "exact": 6, "errs": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+{"system": "claude-haiku-5-5", "rep": 1, "page": "hand1", "kind": "handwriting", "seconds": 1.35, "cost_usd": 0.000354, "cer": 0.0}
+{"system": "claude-haiku-5-5", "rep": 1, "page": "hand2", "kind": "handwriting", "seconds": 1.46, "cost_usd": 0.000347, "cer": 0.00425531914893617}
+{"system": "claude-haiku-5-5", "rep": 1, "page": "hand3", "kind": "handwriting", "seconds": 1.39, "cost_usd": 0.000352, "cer": 0.007407407407407408}
+{"system": "claude-haiku-5-5", "rep": 1, "page": "hindi1", "kind": "hindi", "seconds": 2.18, "cost_usd": 0.000433, "cer": 0.0}
+{"system": "claude-haiku-5-5", "rep": 1, "page": "hindi2", "kind": "hindi", "seconds": 1.63, "cost_usd": 0.000396, "cer": 0.0}
+{"system": "claude-haiku-5-5", "rep": 1, "page": "hindi3", "kind": "hindi", "seconds": 1.58, "cost_usd": 0.000423, "cer": 0.0}
+{"system": "claude-haiku-5-5", "rep": 1, "page": "report2", "kind": "report", "seconds": 1.72, "cost_usd": 0.000437, "cer": 0.0}
+{"system": "claude-haiku-5-5", "rep": 1, "page": "report3", "kind": "report", "seconds": 1.69, "cost_usd": 0.000419, "cer": 0.0}
+{"system": "claude-haiku-5-5", "rep": 1, "page": "table1", "kind": "table", "seconds": 1.92, "cost_usd": 0.000467, "cell_acc": 1.0, "rows_ok": 10, "rows": 10, "total_ok": true}
+{"system": "claude-haiku-5-5", "rep": 1, "page": "table2", "kind": "table", "seconds": 1.7, "cost_usd": 0.000465, "cell_acc": 1.0, "rows_ok": 10, "rows": 10, "total_ok": true}
+{"system": "claude-haiku-5-5", "rep": 1, "page": "table3", "kind": "table", "seconds": 1.57, "cost_usd": 0.000471, "cell_acc": 1.0, "rows_ok": 10, "rows": 10, "total_ok": true}
+{"system": "claude-haiku-5-5", "rep": 1, "page": "hardchart1", "kind": "chart", "seconds": 0.8, "cost_usd": 0.000344, "found": 7, "n": 7, "mae": 0.0, "within2": 7, "exact": 7, "errs": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+{"system": "claude-haiku-5-5", "rep": 1, "page": "hardchart2", "kind": "chart", "seconds": 1.18, "cost_usd": 0.000339, "found": 6, "n": 6, "mae": 0.0, "within2": 6, "exact": 6, "errs": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+{"system": "claude-haiku-5-5", "rep": 1, "page": "hardchart3", "kind": "chart", "seconds": 0.71, "cost_usd": 0.00034, "found": 6, "n": 6, "mae": 0.0, "within2": 6, "exact": 6, "errs": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+{"system": "claude-haiku-5-5", "rep": 1, "page": "hardhindi1", "kind": "hindi", "seconds": 1.71, "cost_usd": 0.000433, "cer": 0.0}
+{"system": "claude-haiku-5-5", "rep": 1, "page": "hardhindi2", "kind": "hindi", "seconds": 1.9, "cost_usd": 0.000396, "cer": 0.0}
+{"system": "claude-haiku-5-5", "rep": 1, "page": "hardhindi3", "kind": "hindi", "seconds": 2.13, "cost_usd": 0.000423, "cer": 0.0}
+{"system": "claude-haiku-5-5", "rep": 1, "page": "hardreport1", "kind": "report", "seconds": 1.47, "cost_usd": 0.00042, "cer": 0.0}
+{"system": "claude-haiku-5-5", "rep": 1, "page": "hardreport2", "kind": "report", "seconds": 1.5, "cost_usd": 0.000437, "cer": 0.0}
+{"system": "claude-haiku-5-5", "rep": 1, "page": "hardreport3", "kind": "report", "seconds": 1.49, "cost_usd": 0.000419, "cer": 0.0}
+{"system": "claude-haiku-5-5", "rep": 1, "page": "hardtable1", "kind": "table", "seconds": 2.55, "cost_usd": 0.000519, "cell_acc": 1.0, "rows_ok": 14, "rows": 14, "total_ok": true}
+{"system": "claude-haiku-5-5", "rep": 1, "page": "hardtable2", "kind": "table", "seconds": 3.65, "cost_usd": 0.000722, "cell_acc": 1.0, "rows_ok": 14, "rows": 14, "total_ok": true}
+{"system": "claude-haiku-5-5", "rep": 1, "page": "hardtable3", "kind": "table", "seconds": 2.54, "cost_usd": 0.000516, "cell_acc": 1.0, "rows_ok": 14, "rows": 14, "total_ok": true}
+{"system": "claude-haiku-5-5", "rep": 2, "page": "chart1", "kind": "chart", "seconds": 0.96, "cost_usd": 0.000368, "found": 7, "n": 7, "mae": 0.0, "within2": 7, "exact": 7, "errs": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+{"system": "claude-haiku-5-5", "rep": 2, "page": "chart2", "kind": "chart", "seconds": 0.84, "cost_usd": 0.000365, "found": 6, "n": 6, "mae": 0.0, "within2": 6, "exact": 6, "errs": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+{"system": "claude-haiku-5-5", "rep": 2, "page": "chart3", "kind": "chart", "seconds": 0.84, "cost_usd": 0.000368, "found": 6, "n": 6, "mae": 0.0, "within2": 6, "exact": 6, "errs": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+{"system": "claude-haiku-5-5", "rep": 2, "page": "hand1", "kind": "handwriting", "seconds": 1.33, "cost_usd": 0.000354, "cer": 0.0}
+{"system": "claude-haiku-5-5", "rep": 2, "page": "hand2", "kind": "handwriting", "seconds": 1.37, "cost_usd": 0.000347, "cer": 0.02127659574468085}
+{"system": "claude-haiku-5-5", "rep": 2, "page": "hand3", "kind": "handwriting", "seconds": 1.24, "cost_usd": 0.000352, "cer": 0.014814814814814815}
+{"system": "claude-haiku-5-5", "rep": 2, "page": "hindi1", "kind": "hindi", "seconds": 1.63, "cost_usd": 0.000433, "cer": 0.0}
+{"system": "claude-haiku-5-5", "rep": 2, "page": "hindi2", "kind": "hindi", "seconds": 1.49, "cost_usd": 0.000396, "cer": 0.0}
+{"system": "claude-haiku-5-5", "rep": 2, "page": "hindi3", "kind": "hindi", "seconds": 1.7, "cost_usd": 0.000423, "cer": 0.0}
+{"system": "claude-haiku-5-5", "rep": 2, "page": "report1", "kind": "report", "seconds": 1.63, "cost_usd": 0.00042, "cer": 0.0}
+{"system": "claude-haiku-5-5", "rep": 2, "page": "report2", "kind": "report", "seconds": 1.49, "cost_usd": 0.000437, "cer": 0.0}
+{"system": "claude-haiku-5-5", "rep": 2, "page": "report3", "kind": "report", "seconds": 2.05, "cost_usd": 0.000419, "cer": 0.0}
+{"system": "claude-haiku-5-5", "rep": 2, "page": "table1", "kind": "table", "seconds": 1.79, "cost_usd": 0.000468, "cell_acc": 1.0, "rows_ok": 10, "rows": 10, "total_ok": true}
+{"system": "claude-haiku-5-5", "rep": 2, "page": "table2", "kind": "table", "seconds": 1.73, "cost_usd": 0.000465, "cell_acc": 1.0, "rows_ok": 10, "rows": 10, "total_ok": true}
+{"system": "claude-haiku-5-5", "rep": 2, "page": "table3", "kind": "table", "seconds": 1.47, "cost_usd": 0.000471, "cell_acc": 1.0, "rows_ok": 10, "rows": 10, "total_ok": true}
+{"system": "claude-haiku-5-5", "rep": 2, "page": "hardchart1", "kind": "chart", "seconds": 0.74, "cost_usd": 0.000344, "found": 7, "n": 7, "mae": 0.0, "within2": 7, "exact": 7, "errs": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+{"system": "claude-haiku-5-5", "rep": 2, "page": "hardchart2", "kind": "chart", "seconds": 1.15, "cost_usd": 0.000339, "found": 6, "n": 6, "mae": 0.0, "within2": 6, "exact": 6, "errs": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+{"system": "claude-haiku-5-5", "rep": 2, "page": "hardchart3", "kind": "chart", "seconds": 0.7, "cost_usd": 0.000339, "found": 6, "n": 6, "mae": 0.0, "within2": 6, "exact": 6, "errs": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+{"system": "claude-haiku-5-5", "rep": 2, "page": "hardhindi1", "kind": "hindi", "seconds": 1.75, "cost_usd": 0.000433, "cer": 0.0}
+{"system": "claude-haiku-5-5", "rep": 2, "page": "hardhindi2", "kind": "hindi", "seconds": 1.91, "cost_usd": 0.000396, "cer": 0.0}
+{"system": "claude-haiku-5-5", "rep": 2, "page": "hardhindi3", "kind": "hindi", "seconds": 2.55, "cost_usd": 0.000423, "cer": 0.0}
+{"system": "claude-haiku-5-5", "rep": 2, "page": "hardreport1", "kind": "report", "seconds": 1.54, "cost_usd": 0.00042, "cer": 0.0}
+{"system": "claude-haiku-5-5", "rep": 2, "page": "hardreport2", "kind": "report", "seconds": 1.64, "cost_usd": 0.000437, "cer": 0.0}
+{"system": "claude-haiku-5-5", "rep": 2, "page": "hardreport3", "kind": "report", "seconds": 1.48, "cost_usd": 0.000419, "cer": 0.0}
+{"system": "claude-haiku-5-5", "rep": 2, "page": "hardtable1", "kind": "table", "seconds": 2.56, "cost_usd": 0.000519, "cell_acc": 1.0, "rows_ok": 14, "rows": 14, "total_ok": true}
+{"system": "claude-haiku-5-5", "rep": 2, "page": "hardtable2", "kind": "table", "seconds": 2.63, "cost_usd": 0.000518, "cell_acc": 1.0, "rows_ok": 14, "rows": 14, "total_ok": true}
+{"system": "claude-haiku-5-5", "rep": 2, "page": "hardtable3", "kind": "table", "seconds": 2.44, "cost_usd": 0.000516, "cell_acc": 1.0, "rows_ok": 14, "rows": 14, "total_ok": true}
+{"system": "claude-haiku-5-5", "rep": 3, "page": "chart1", "kind": "chart", "seconds": 1.04, "cost_usd": 0.000368, "found": 7, "n": 7, "mae": 0.0, "within2": 7, "exact": 7, "errs": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+{"system": "claude-haiku-5-5", "rep": 3, "page": "chart2", "kind": "chart", "seconds": 0.85, "cost_usd": 0.000365, "found": 6, "n": 6, "mae": 0.0, "within2": 6, "exact": 6, "errs": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+{"system": "claude-haiku-5-5", "rep": 3, "page": "chart3", "kind": "chart", "seconds": 0.83, "cost_usd": 0.000368, "found": 6, "n": 6, "mae": 0.0, "within2": 6, "exact": 6, "errs": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+{"system": "claude-haiku-5-5", "rep": 3, "page": "hand1", "kind": "handwriting", "seconds": 1.31, "cost_usd": 0.000354, "cer": 0.0}
+{"system": "claude-haiku-5-5", "rep": 3, "page": "hand2", "kind": "handwriting", "seconds": 1.46, "cost_usd": 0.000346, "cer": 0.03404255319148936}
+{"system": "claude-haiku-5-5", "rep": 3, "page": "hand3", "kind": "handwriting", "seconds": 1.32, "cost_usd": 0.000352, "cer": 0.007407407407407408}
+{"system": "claude-haiku-5-5", "rep": 3, "page": "hindi1", "kind": "hindi", "seconds": 1.55, "cost_usd": 0.000433, "cer": 0.0}
+{"system": "claude-haiku-5-5", "rep": 3, "page": "hindi2", "kind": "hindi", "seconds": 1.4, "cost_usd": 0.000396, "cer": 0.0}
+{"system": "claude-haiku-5-5", "rep": 3, "page": "hindi3", "kind": "hindi", "seconds": 1.58, "cost_usd": 0.000423, "cer": 0.0}
+{"system": "claude-haiku-5-5", "rep": 3, "page": "report1", "kind": "report", "seconds": 1.35, "cost_usd": 0.00042, "cer": 0.0}
+{"system": "claude-haiku-5-5", "rep": 3, "page": "report2", "kind": "report", "seconds": 1.71, "cost_usd": 0.000437, "cer": 0.0}
+{"system": "claude-haiku-5-5", "rep": 3, "page": "report3", "kind": "report", "seconds": 1.96, "cost_usd": 0.000419, "cer": 0.0}
+{"system": "claude-haiku-5-5", "rep": 3, "page": "table1", "kind": "table", "seconds": 1.76, "cost_usd": 0.000467, "cell_acc": 1.0, "rows_ok": 10, "rows": 10, "total_ok": true}
+{"system": "claude-haiku-5-5", "rep": 3, "page": "table2", "kind": "table", "seconds": 1.75, "cost_usd": 0.000465, "cell_acc": 1.0, "rows_ok": 10, "rows": 10, "total_ok": true}
+{"system": "claude-haiku-5-5", "rep": 3, "page": "table3", "kind": "table", "seconds": 1.42, "cost_usd": 0.000471, "cell_acc": 1.0, "rows_ok": 10, "rows": 10, "total_ok": true}
+{"system": "claude-haiku-5-5", "rep": 3, "page": "hardchart1", "kind": "chart", "seconds": 0.79, "cost_usd": 0.000344, "found": 7, "n": 7, "mae": 0.0, "within2": 7, "exact": 7, "errs": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+{"system": "claude-haiku-5-5", "rep": 3, "page": "hardchart2", "kind": "chart", "seconds": 1.27, "cost_usd": 0.000339, "found": 6, "n": 6, "mae": 0.0, "within2": 6, "exact": 6, "errs": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+{"system": "claude-haiku-5-5", "rep": 3, "page": "hardchart3", "kind": "chart", "seconds": 0.71, "cost_usd": 0.00034, "found": 6, "n": 6, "mae": 0.0, "within2": 6, "exact": 6, "errs": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+{"system": "claude-haiku-5-5", "rep": 3, "page": "hardhindi1", "kind": "hindi", "seconds": 1.54, "cost_usd": 0.000433, "cer": 0.0}
+{"system": "claude-haiku-5-5", "rep": 3, "page": "hardhindi2", "kind": "hindi", "seconds": 2.08, "cost_usd": 0.000396, "cer": 0.0}
+{"system": "claude-haiku-5-5", "rep": 3, "page": "hardhindi3", "kind": "hindi", "seconds": 1.84, "cost_usd": 0.000423, "cer": 0.0}
+{"system": "claude-haiku-5-5", "rep": 3, "page": "hardreport1", "kind": "report", "seconds": 1.51, "cost_usd": 0.00042, "cer": 0.0}
+{"system": "claude-haiku-5-5", "rep": 3, "page": "hardreport2", "kind": "report", "seconds": 1.82, "cost_usd": 0.000437, "cer": 0.0}
+{"system": "claude-haiku-5-5", "rep": 3, "page": "hardreport3", "kind": "report", "seconds": 1.45, "cost_usd": 0.000419, "cer": 0.0}
+{"system": "claude-haiku-5-5", "rep": 3, "page": "hardtable1", "kind": "table", "seconds": 3.11, "cost_usd": 0.000519, "cell_acc": 1.0, "rows_ok": 14, "rows": 14, "total_ok": true}
+{"system": "claude-haiku-5-5", "rep": 3, "page": "hardtable2", "kind": "table", "seconds": 3.06, "cost_usd": 0.000517, "cell_acc": 1.0, "rows_ok": 14, "rows": 14, "total_ok": true}
+{"system": "claude-haiku-5-5", "rep": 3, "page": "hardtable3", "kind": "table", "seconds": 2.48, "cost_usd": 0.000516, "cell_acc": 1.0, "rows_ok": 14, "rows": 14, "total_ok": true}
+{"system": "claude-opus-5-5", "rep": 1, "page": "chart1", "kind": "chart", "seconds": 2.12, "cost_usd": 0.014736, "found": 7, "n": 7, "mae": 0.0, "within2": 7, "exact": 7, "errs": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+{"system": "claude-opus-5-5", "rep": 1, "page": "chart2", "kind": "chart", "seconds": 1.46, "cost_usd": 0.014596, "found": 6, "n": 6, "mae": 0.0, "within2": 6, "exact": 6, "errs": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+{"system": "claude-opus-5-5", "rep": 1, "page": "chart3", "kind": "chart", "seconds": 1.97, "cost_usd": 0.014456, "found": 6, "n": 6, "mae": 0.0, "within2": 6, "exact": 6, "errs": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+{"system": "claude-opus-5-5", "rep": 1, "page": "hand1", "kind": "handwriting", "seconds": 1.7, "cost_usd": 0.014156, "cer": 0.0}
+{"system": "claude-opus-5-5", "rep": 1, "page": "hand2", "kind": "handwriting", "seconds": 2.41, "cost_usd": 0.013836, "cer": 0.00425531914893617}
+{"system": "claude-opus-5-5", "rep": 1, "page": "hand3", "kind": "handwriting", "seconds": 2.59, "cost_usd": 0.014096, "cer": 0.0}
+{"system": "claude-opus-5-5", "rep": 1, "page": "hindi1", "kind": "hindi", "seconds": 2.91, "cost_usd": 0.017336, "cer": 0.0}
+{"system": "claude-opus-5-5", "rep": 1, "page": "hindi2", "kind": "hindi", "seconds": 2.6, "cost_usd": 0.015856, "cer": 0.0}
+{"system": "claude-opus-5-5", "rep": 1, "page": "hindi3", "kind": "hindi", "seconds": 2.81, "cost_usd": 0.016936, "cer": 0.0}
+{"system": "claude-opus-5-5", "rep": 1, "page": "report1", "kind": "report", "seconds": 2.4, "cost_usd": 0.016816, "cer": 0.0}
+{"system": "claude-opus-5-5", "rep": 1, "page": "report2", "kind": "report", "seconds": 3.11, "cost_usd": 0.017476, "cer": 0.0}
+{"system": "claude-opus-5-5", "rep": 1, "page": "report3", "kind": "report", "seconds": 3.15, "cost_usd": 0.016776, "cer": 0.0}
+{"system": "claude-opus-5-5", "rep": 1, "page": "table1", "kind": "table", "seconds": 3.16, "cost_usd": 0.018756, "cell_acc": 1.0, "rows_ok": 10, "rows": 10, "total_ok": true}
+{"system": "claude-opus-5-5", "rep": 1, "page": "table2", "kind": "table", "seconds": 3.2, "cost_usd": 0.018596, "cell_acc": 1.0, "rows_ok": 10, "rows": 10, "total_ok": true}
+{"system": "claude-opus-5-5", "rep": 1, "page": "table3", "kind": "table", "seconds": 3.42, "cost_usd": 0.018896, "cell_acc": 1.0, "rows_ok": 10, "rows": 10, "total_ok": true}
+{"system": "claude-opus-5-5", "rep": 1, "page": "hardchart1", "kind": "chart", "seconds": 1.8, "cost_usd": 0.013756, "found": 7, "n": 7, "mae": 0.0, "within2": 7, "exact": 7, "errs": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+{"system": "claude-opus-5-5", "rep": 1, "page": "hardchart2", "kind": "chart", "seconds": 1.73, "cost_usd": 0.013556, "found": 6, "n": 6, "mae": 0.0, "within2": 6, "exact": 6, "errs": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+{"system": "claude-opus-5-5", "rep": 1, "page": "hardchart3", "kind": "chart", "seconds": 1.75, "cost_usd": 0.013556, "found": 6, "n": 6, "mae": 0.0, "within2": 6, "exact": 6, "errs": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+{"system": "claude-opus-5-5", "rep": 1, "page": "hardhindi1", "kind": "hindi", "seconds": 2.96, "cost_usd": 0.017336, "cer": 0.0}
+{"system": "claude-opus-5-5", "rep": 1, "page": "hardhindi2", "kind": "hindi", "seconds": 2.04, "cost_usd": 0.015856, "cer": 0.0}
+{"system": "claude-opus-5-5", "rep": 1, "page": "hardhindi3", "kind": "hindi", "seconds": 3.39, "cost_usd": 0.016936, "cer": 0.0}
+{"system": "claude-opus-5-5", "rep": 1, "page": "hardreport1", "kind": "report", "seconds": 2.33, "cost_usd": 0.016816, "cer": 0.0}
+{"system": "claude-opus-5-5", "rep": 1, "page": "hardreport2", "kind": "report", "seconds": 2.88, "cost_usd": 0.017476, "cer": 0.0}
+{"system": "claude-opus-5-5", "rep": 1, "page": "hardreport3", "kind": "report", "seconds": 3.35, "cost_usd": 0.016776, "cer": 0.0}
+{"system": "claude-opus-5-5", "rep": 1, "page": "hardtable1", "kind": "table", "seconds": 4.2, "cost_usd": 0.020816, "cell_acc": 1.0, "rows_ok": 14, "rows": 14, "total_ok": true}
+{"system": "claude-opus-5-5", "rep": 1, "page": "hardtable2", "kind": "table", "seconds": 4.22, "cost_usd": 0.020716, "cell_acc": 1.0, "rows_ok": 14, "rows": 14, "total_ok": true}
+{"system": "claude-opus-5-5", "rep": 1, "page": "hardtable3", "kind": "table", "seconds": 4.25, "cost_usd": 0.020656, "cell_acc": 0.9821428571428571, "rows_ok": 13, "rows": 14, "total_ok": true}
+{"system": "claude-opus-5-5", "rep": 2, "page": "chart1", "kind": "chart", "seconds": 2.14, "cost_usd": 0.014736, "found": 7, "n": 7, "mae": 0.0, "within2": 7, "exact": 7, "errs": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+{"system": "claude-opus-5-5", "rep": 2, "page": "chart2", "kind": "chart", "seconds": 1.38, "cost_usd": 0.014616, "found": 6, "n": 6, "mae": 0.0, "within2": 6, "exact": 6, "errs": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+{"system": "claude-opus-5-5", "rep": 2, "page": "chart3", "kind": "chart", "seconds": 2.56, "cost_usd": 0.014676, "found": 6, "n": 6, "mae": 0.0, "within2": 6, "exact": 6, "errs": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+{"system": "claude-opus-5-5", "rep": 2, "page": "hand1", "kind": "handwriting", "seconds": 1.73, "cost_usd": 0.014156, "cer": 0.0}
+{"system": "claude-opus-5-5", "rep": 2, "page": "hand2", "kind": "handwriting", "seconds": 2.41, "cost_usd": 0.013836, "cer": 0.00425531914893617}
+{"system": "claude-opus-5-5", "rep": 2, "page": "hand3", "kind": "handwriting", "seconds": 2.81, "cost_usd": 0.014096, "cer": 0.0}
+{"system": "claude-opus-5-5", "rep": 2, "page": "hindi1", "kind": "hindi", "seconds": 2.63, "cost_usd": 0.017336, "cer": 0.0}
+{"system": "claude-opus-5-5", "rep": 2, "page": "hindi2", "kind": "hindi", "seconds": 2.52, "cost_usd": 0.015856, "cer": 0.0}
+{"system": "claude-opus-5-5", "rep": 2, "page": "hindi3", "kind": "hindi", "seconds": 2.65, "cost_usd": 0.016936, "cer": 0.0}
+{"system": "claude-opus-5-5", "rep": 2, "page": "report1", "kind": "report", "seconds": 2.44, "cost_usd": 0.016816, "cer": 0.0}
+{"system": "claude-opus-5-5", "rep": 2, "page": "report2", "kind": "report", "seconds": 3.08, "cost_usd": 0.017476, "cer": 0.0}
+{"system": "claude-opus-5-5", "rep": 2, "page": "report3", "kind": "report", "seconds": 3.39, "cost_usd": 0.016776, "cer": 0.0}
+{"system": "claude-opus-5-5", "rep": 2, "page": "table1", "kind": "table", "seconds": 3.15, "cost_usd": 0.018756, "cell_acc": 1.0, "rows_ok": 10, "rows": 10, "total_ok": true}
+{"system": "claude-opus-5-5", "rep": 2, "page": "table2", "kind": "table", "seconds": 3.19, "cost_usd": 0.018596, "cell_acc": 1.0, "rows_ok": 10, "rows": 10, "total_ok": true}
+{"system": "claude-opus-5-5", "rep": 2, "page": "table3", "kind": "table", "seconds": 3.3, "cost_usd": 0.018896, "cell_acc": 1.0, "rows_ok": 10, "rows": 10, "total_ok": true}
+{"system": "claude-opus-5-5", "rep": 2, "page": "hardchart1", "kind": "chart", "seconds": 1.76, "cost_usd": 0.013756, "found": 7, "n": 7, "mae": 0.0, "within2": 7, "exact": 7, "errs": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+{"system": "claude-opus-5-5", "rep": 2, "page": "hardchart2", "kind": "chart", "seconds": 1.88, "cost_usd": 0.013556, "found": 6, "n": 6, "mae": 0.0, "within2": 6, "exact": 6, "errs": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+{"system": "claude-opus-5-5", "rep": 2, "page": "hardchart3", "kind": "chart", "seconds": 1.78, "cost_usd": 0.013556, "found": 6, "n": 6, "mae": 0.0, "within2": 6, "exact": 6, "errs": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+{"system": "claude-opus-5-5", "rep": 2, "page": "hardhindi1", "kind": "hindi", "seconds": 3.21, "cost_usd": 0.017336, "cer": 0.0}
+{"system": "claude-opus-5-5", "rep": 2, "page": "hardhindi2", "kind": "hindi", "seconds": 2.2, "cost_usd": 0.015856, "cer": 0.0}
+{"system": "claude-opus-5-5", "rep": 2, "page": "hardhindi3", "kind": "hindi", "seconds": 4.16, "cost_usd": 0.016936, "cer": 0.0}
+{"system": "claude-opus-5-5", "rep": 2, "page": "hardreport1", "kind": "report", "seconds": 2.55, "cost_usd": 0.016816, "cer": 0.0}
+{"system": "claude-opus-5-5", "rep": 2, "page": "hardreport2", "kind": "report", "seconds": 2.77, "cost_usd": 0.017476, "cer": 0.0}
+{"system": "claude-opus-5-5", "rep": 2, "page": "hardreport3", "kind": "report", "seconds": 2.86, "cost_usd": 0.016776, "cer": 0.0}
+{"system": "claude-opus-5-5", "rep": 2, "page": "hardtable1", "kind": "table", "seconds": 4.5, "cost_usd": 0.020816, "cell_acc": 1.0, "rows_ok": 14, "rows": 14, "total_ok": true}
+{"system": "claude-opus-5-5", "rep": 2, "page": "hardtable2", "kind": "table", "seconds": 4.82, "cost_usd": 0.020716, "cell_acc": 1.0, "rows_ok": 14, "rows": 14, "total_ok": true}
+{"system": "claude-opus-5-5", "rep": 2, "page": "hardtable3", "kind": "table", "seconds": 4.36, "cost_usd": 0.020676, "cell_acc": 1.0, "rows_ok": 14, "rows": 14, "total_ok": true}
+{"system": "claude-opus-5-5", "rep": 3, "page": "chart1", "kind": "chart", "seconds": 2.15, "cost_usd": 0.014736, "found": 7, "n": 7, "mae": 0.0, "within2": 7, "exact": 7, "errs": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+{"system": "claude-opus-5-5", "rep": 3, "page": "chart2", "kind": "chart", "seconds": 1.46, "cost_usd": 0.014596, "found": 6, "n": 6, "mae": 0.0, "within2": 6, "exact": 6, "errs": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+{"system": "claude-opus-5-5", "rep": 3, "page": "chart3", "kind": "chart", "seconds": 1.99, "cost_usd": 0.014456, "found": 6, "n": 6, "mae": 0.0, "within2": 6, "exact": 6, "errs": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+{"system": "claude-opus-5-5", "rep": 3, "page": "hand1", "kind": "handwriting", "seconds": 1.65, "cost_usd": 0.014156, "cer": 0.0}
+{"system": "claude-opus-5-5", "rep": 3, "page": "hand2", "kind": "handwriting", "seconds": 2.84, "cost_usd": 0.013836, "cer": 0.00425531914893617}
+{"system": "claude-opus-5-5", "rep": 3, "page": "hand3", "kind": "handwriting", "seconds": 2.77, "cost_usd": 0.014096, "cer": 0.0}
+{"system": "claude-opus-5-5", "rep": 3, "page": "hindi1", "kind": "hindi", "seconds": 2.91, "cost_usd": 0.017336, "cer": 0.0}
+{"system": "claude-opus-5-5", "rep": 3, "page": "hindi2", "kind": "hindi", "seconds": 2.43, "cost_usd": 0.015856, "cer": 0.0}
+{"system": "claude-opus-5-5", "rep": 3, "page": "hindi3", "kind": "hindi", "seconds": 2.73, "cost_usd": 0.016936, "cer": 0.0}
+{"system": "claude-opus-5-5", "rep": 3, "page": "report1", "kind": "report", "seconds": 2.62, "cost_usd": 0.016816, "cer": 0.0}
+{"system": "claude-opus-5-5", "rep": 3, "page": "report2", "kind": "report", "seconds": 3.33, "cost_usd": 0.017476, "cer": 0.0}
+{"system": "claude-opus-5-5", "rep": 3, "page": "report3", "kind": "report", "seconds": 3.42, "cost_usd": 0.016776, "cer": 0.0}
+{"system": "claude-opus-5-5", "rep": 3, "page": "table1", "kind": "table", "seconds": 3.15, "cost_usd": 0.018756, "cell_acc": 1.0, "rows_ok": 10, "rows": 10, "total_ok": true}
+{"system": "claude-opus-5-5", "rep": 3, "page": "table2", "kind": "table", "seconds": 2.65, "cost_usd": 0.018596, "cell_acc": 1.0, "rows_ok": 10, "rows": 10, "total_ok": true}
+{"system": "claude-opus-5-5", "rep": 3, "page": "table3", "kind": "table", "seconds": 3.4, "cost_usd": 0.018896, "cell_acc": 1.0, "rows_ok": 10, "rows": 10, "total_ok": true}
+{"system": "claude-opus-5-5", "rep": 3, "page": "hardchart1", "kind": "chart", "seconds": 1.84, "cost_usd": 0.013756, "found": 7, "n": 7, "mae": 0.0, "within2": 7, "exact": 7, "errs": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+{"system": "claude-opus-5-5", "rep": 3, "page": "hardchart2", "kind": "chart", "seconds": 1.66, "cost_usd": 0.013556, "found": 6, "n": 6, "mae": 0.0, "within2": 6, "exact": 6, "errs": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+{"system": "claude-opus-5-5", "rep": 3, "page": "hardchart3", "kind": "chart", "seconds": 1.73, "cost_usd": 0.013556, "found": 6, "n": 6, "mae": 0.0, "within2": 6, "exact": 6, "errs": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+{"system": "claude-opus-5-5", "rep": 3, "page": "hardhindi1", "kind": "hindi", "seconds": 3.21, "cost_usd": 0.017336, "cer": 0.0}
+{"system": "claude-opus-5-5", "rep": 3, "page": "hardhindi2", "kind": "hindi", "seconds": 2.15, "cost_usd": 0.015856, "cer": 0.0}
+{"system": "claude-opus-5-5", "rep": 3, "page": "hardhindi3", "kind": "hindi", "seconds": 3.27, "cost_usd": 0.016936, "cer": 0.0}
+{"system": "claude-opus-5-5", "rep": 3, "page": "hardreport1", "kind": "report", "seconds": 2.43, "cost_usd": 0.016816, "cer": 0.0}
+{"system": "claude-opus-5-5", "rep": 3, "page": "hardreport2", "kind": "report", "seconds": 2.97, "cost_usd": 0.017476, "cer": 0.0}
+{"system": "claude-opus-5-5", "rep": 3, "page": "hardreport3", "kind": "report", "seconds": 3.02, "cost_usd": 0.016776, "cer": 0.0}
+{"system": "claude-opus-5-5", "rep": 3, "page": "hardtable1", "kind": "table", "seconds": 4.3, "cost_usd": 0.020816, "cell_acc": 1.0, "rows_ok": 14, "rows": 14, "total_ok": true}
+{"system": "claude-opus-5-5", "rep": 3, "page": "hardtable2", "kind": "table", "seconds": 5.32, "cost_usd": 0.020716, "cell_acc": 1.0, "rows_ok": 14, "rows": 14, "total_ok": true}
+{"system": "claude-opus-5-5", "rep": 3, "page": "hardtable3", "kind": "table", "seconds": 4.21, "cost_usd": 0.020656, "cell_acc": 0.9821428571428571, "rows_ok": 13, "rows": 14, "total_ok": true}
+{"system": "claude-sonnet-5-5", "rep": 1, "page": "chart1", "kind": "chart", "seconds": 1.88, "cost_usd": 0.007358, "found": 7, "n": 7, "mae": 0.0, "within2": 7, "exact": 7, "errs": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+{"system": "claude-sonnet-5-5", "rep": 1, "page": "chart2", "kind": "chart", "seconds": 1.12, "cost_usd": 0.007298, "found": 6, "n": 6, "mae": 0.0, "within2": 6, "exact": 6, "errs": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+{"system": "claude-sonnet-5-5", "rep": 1, "page": "chart3", "kind": "chart", "seconds": 1.97, "cost_usd": 0.007258, "found": 6, "n": 6, "mae": 0.0, "within2": 6, "exact": 6, "errs": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+{"system": "claude-sonnet-5-5", "rep": 1, "page": "hand1", "kind": "handwriting", "seconds": 1.25, "cost_usd": 0.007078, "cer": 0.0}
+{"system": "claude-sonnet-5-5", "rep": 1, "page": "hand2", "kind": "handwriting", "seconds": 2.03, "cost_usd": 0.006928, "cer": 0.00425531914893617}
+{"system": "claude-sonnet-5-5", "rep": 1, "page": "hand3", "kind": "handwriting", "seconds": 1.33, "cost_usd": 0.007048, "cer": 0.003703703703703704}
+{"system": "claude-sonnet-5-5", "rep": 1, "page": "hindi1", "kind": "hindi", "seconds": 2.28, "cost_usd": 0.008668, "cer": 0.0}
+{"system": "claude-sonnet-5-5", "rep": 1, "page": "hindi2", "kind": "hindi", "seconds": 2.02, "cost_usd": 0.007928, "cer": 0.0}
+{"system": "claude-sonnet-5-5", "rep": 1, "page": "hindi3", "kind": "hindi", "seconds": 1.64, "cost_usd": 0.008468, "cer": 0.0}
+{"system": "claude-sonnet-5-5", "rep": 1, "page": "report1", "kind": "report", "seconds": 1.93, "cost_usd": 0.008408, "cer": 0.0}
+{"system": "claude-sonnet-5-5", "rep": 1, "page": "report2", "kind": "report", "seconds": 3.18, "cost_usd": 0.008738, "cer": 0.0}
+{"system": "claude-sonnet-5-5", "rep": 1, "page": "report3", "kind": "report", "seconds": 1.95, "cost_usd": 0.008388, "cer": 0.0}
+{"system": "claude-sonnet-5-5", "rep": 1, "page": "table1", "kind": "table", "seconds": 2.77, "cost_usd": 0.009378, "cell_acc": 1.0, "rows_ok": 10, "rows": 10, "total_ok": true}
+{"system": "claude-sonnet-5-5", "rep": 1, "page": "table2", "kind": "table", "seconds": 2.63, "cost_usd": 0.009298, "cell_acc": 1.0, "rows_ok": 10, "rows": 10, "total_ok": true}
+{"system": "claude-sonnet-5-5", "rep": 1, "page": "table3", "kind": "table", "seconds": 2.06, "cost_usd": 0.009448, "cell_acc": 1.0, "rows_ok": 10, "rows": 10, "total_ok": true}
+{"system": "claude-sonnet-5-5", "rep": 1, "page": "hardchart1", "kind": "chart", "seconds": 2.0, "cost_usd": 0.006878, "found": 7, "n": 7, "mae": 0.0, "within2": 7, "exact": 7, "errs": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+{"system": "claude-sonnet-5-5", "rep": 1, "page": "hardchart2", "kind": "chart", "seconds": 1.72, "cost_usd": 0.006778, "found": 6, "n": 6, "mae": 0.0, "within2": 6, "exact": 6, "errs": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+{"system": "claude-sonnet-5-5", "rep": 1, "page": "hardchart3", "kind": "chart", "seconds": 1.71, "cost_usd": 0.006778, "found": 6, "n": 6, "mae": 0.0, "within2": 6, "exact": 6, "errs": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+{"system": "claude-sonnet-5-5", "rep": 1, "page": "hardhindi1", "kind": "hindi", "seconds": 2.71, "cost_usd": 0.008668, "cer": 0.0}
+{"system": "claude-sonnet-5-5", "rep": 1, "page": "hardhindi2", "kind": "hindi", "seconds": 1.77, "cost_usd": 0.007928, "cer": 0.0}
+{"system": "claude-sonnet-5-5", "rep": 1, "page": "hardhindi3", "kind": "hindi", "seconds": 2.24, "cost_usd": 0.008468, "cer": 0.0}
+{"system": "claude-sonnet-5-5", "rep": 1, "page": "hardreport1", "kind": "report", "seconds": 1.84, "cost_usd": 0.008408, "cer": 0.0}
+{"system": "claude-sonnet-5-5", "rep": 1, "page": "hardreport2", "kind": "report", "seconds": 1.99, "cost_usd": 0.008738, "cer": 0.0}
+{"system": "claude-sonnet-5-5", "rep": 1, "page": "hardreport3", "kind": "report", "seconds": 2.0, "cost_usd": 0.008388, "cer": 0.0}
+{"system": "claude-sonnet-5-5", "rep": 1, "page": "hardtable1", "kind": "table", "seconds": 3.01, "cost_usd": 0.010408, "cell_acc": 1.0, "rows_ok": 14, "rows": 14, "total_ok": true}
+{"system": "claude-sonnet-5-5", "rep": 1, "page": "hardtable2", "kind": "table", "seconds": 3.22, "cost_usd": 0.010338, "cell_acc": 1.0, "rows_ok": 14, "rows": 14, "total_ok": true}
+{"system": "claude-sonnet-5-5", "rep": 1, "page": "hardtable3", "kind": "table", "seconds": 2.73, "cost_usd": 0.010308, "cell_acc": 0.9821428571428571, "rows_ok": 13, "rows": 14, "total_ok": true}
+{"system": "claude-sonnet-5-5", "rep": 2, "page": "chart1", "kind": "chart", "seconds": 1.96, "cost_usd": 0.007358, "found": 7, "n": 7, "mae": 0.0, "within2": 7, "exact": 7, "errs": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+{"system": "claude-sonnet-5-5", "rep": 2, "page": "chart2", "kind": "chart", "seconds": 1.19, "cost_usd": 0.007298, "found": 6, "n": 6, "mae": 0.0, "within2": 6, "exact": 6, "errs": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+{"system": "claude-sonnet-5-5", "rep": 2, "page": "chart3", "kind": "chart", "seconds": 1.83, "cost_usd": 0.007258, "found": 6, "n": 6, "mae": 0.0, "within2": 6, "exact": 6, "errs": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+{"system": "claude-sonnet-5-5", "rep": 2, "page": "hand1", "kind": "handwriting", "seconds": 1.45, "cost_usd": 0.007078, "cer": 0.0}
+{"system": "claude-sonnet-5-5", "rep": 2, "page": "hand2", "kind": "handwriting", "seconds": 1.97, "cost_usd": 0.006928, "cer": 0.00425531914893617}
+{"system": "claude-sonnet-5-5", "rep": 2, "page": "hand3", "kind": "handwriting", "seconds": 1.4, "cost_usd": 0.007048, "cer": 0.003703703703703704}
+{"system": "claude-sonnet-5-5", "rep": 2, "page": "hindi1", "kind": "hindi", "seconds": 2.46, "cost_usd": 0.008668, "cer": 0.0}
+{"system": "claude-sonnet-5-5", "rep": 2, "page": "hindi2", "kind": "hindi", "seconds": 2.16, "cost_usd": 0.007928, "cer": 0.0}
+{"system": "claude-sonnet-5-5", "rep": 2, "page": "hindi3", "kind": "hindi", "seconds": 1.67, "cost_usd": 0.008468, "cer": 0.0}
+{"system": "claude-sonnet-5-5", "rep": 2, "page": "report1", "kind": "report", "seconds": 1.92, "cost_usd": 0.008408, "cer": 0.0}
+{"system": "claude-sonnet-5-5", "rep": 2, "page": "report2", "kind": "report", "seconds": 2.77, "cost_usd": 0.008738, "cer": 0.0}
+{"system": "claude-sonnet-5-5", "rep": 2, "page": "report3", "kind": "report", "seconds": 2.05, "cost_usd": 0.008388, "cer": 0.0}
+{"system": "claude-sonnet-5-5", "rep": 2, "page": "table1", "kind": "table", "seconds": 2.82, "cost_usd": 0.009378, "cell_acc": 1.0, "rows_ok": 10, "rows": 10, "total_ok": true}
+{"system": "claude-sonnet-5-5", "rep": 2, "page": "table2", "kind": "table", "seconds": 2.72, "cost_usd": 0.009298, "cell_acc": 1.0, "rows_ok": 10, "rows": 10, "total_ok": true}
+{"system": "claude-sonnet-5-5", "rep": 2, "page": "table3", "kind": "table", "seconds": 2.1, "cost_usd": 0.009448, "cell_acc": 1.0, "rows_ok": 10, "rows": 10, "total_ok": true}
+{"system": "claude-sonnet-5-5", "rep": 2, "page": "hardchart1", "kind": "chart", "seconds": 1.8, "cost_usd": 0.006878, "found": 7, "n": 7, "mae": 0.0, "within2": 7, "exact": 7, "errs": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+{"system": "claude-sonnet-5-5", "rep": 2, "page": "hardchart2", "kind": "chart", "seconds": 1.67, "cost_usd": 0.006778, "found": 6, "n": 6, "mae": 0.0, "within2": 6, "exact": 6, "errs": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+{"system": "claude-sonnet-5-5", "rep": 2, "page": "hardchart3", "kind": "chart", "seconds": 1.99, "cost_usd": 0.006778, "found": 6, "n": 6, "mae": 0.0, "within2": 6, "exact": 6, "errs": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+{"system": "claude-sonnet-5-5", "rep": 2, "page": "hardhindi1", "kind": "hindi", "seconds": 2.42, "cost_usd": 0.008668, "cer": 0.0}
+{"system": "claude-sonnet-5-5", "rep": 2, "page": "hardhindi2", "kind": "hindi", "seconds": 2.0, "cost_usd": 0.007928, "cer": 0.0}
+{"system": "claude-sonnet-5-5", "rep": 2, "page": "hardhindi3", "kind": "hindi", "seconds": 2.19, "cost_usd": 0.008468, "cer": 0.0}
+{"system": "claude-sonnet-5-5", "rep": 2, "page": "hardreport1", "kind": "report", "seconds": 2.79, "cost_usd": 0.008408, "cer": 0.0}
+{"system": "claude-sonnet-5-5", "rep": 2, "page": "hardreport2", "kind": "report", "seconds": 2.25, "cost_usd": 0.008738, "cer": 0.0}
+{"system": "claude-sonnet-5-5", "rep": 2, "page": "hardreport3", "kind": "report", "seconds": 2.06, "cost_usd": 0.008388, "cer": 0.0}
+{"system": "claude-sonnet-5-5", "rep": 2, "page": "hardtable1", "kind": "table", "seconds": 3.37, "cost_usd": 0.010408, "cell_acc": 1.0, "rows_ok": 14, "rows": 14, "total_ok": true}
+{"system": "claude-sonnet-5-5", "rep": 2, "page": "hardtable2", "kind": "table", "seconds": 3.31, "cost_usd": 0.010338, "cell_acc": 1.0, "rows_ok": 14, "rows": 14, "total_ok": true}
+{"system": "claude-sonnet-5-5", "rep": 2, "page": "hardtable3", "kind": "table", "seconds": 2.7, "cost_usd": 0.010308, "cell_acc": 0.9821428571428571, "rows_ok": 13, "rows": 14, "total_ok": true}
+{"system": "claude-sonnet-5-5", "rep": 3, "page": "chart1", "kind": "chart", "seconds": 1.87, "cost_usd": 0.007358, "found": 7, "n": 7, "mae": 0.0, "within2": 7, "exact": 7, "errs": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+{"system": "claude-sonnet-5-5", "rep": 3, "page": "chart2", "kind": "chart", "seconds": 1.18, "cost_usd": 0.007298, "found": 6, "n": 6, "mae": 0.0, "within2": 6, "exact": 6, "errs": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+{"system": "claude-sonnet-5-5", "rep": 3, "page": "chart3", "kind": "chart", "seconds": 1.86, "cost_usd": 0.007258, "found": 6, "n": 6, "mae": 0.0, "within2": 6, "exact": 6, "errs": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+{"system": "claude-sonnet-5-5", "rep": 3, "page": "hand1", "kind": "handwriting", "seconds": 1.37, "cost_usd": 0.007078, "cer": 0.0}
+{"system": "claude-sonnet-5-5", "rep": 3, "page": "hand2", "kind": "handwriting", "seconds": 2.79, "cost_usd": 0.006928, "cer": 0.00425531914893617}
+{"system": "claude-sonnet-5-5", "rep": 3, "page": "hand3", "kind": "handwriting", "seconds": 1.26, "cost_usd": 0.007048, "cer": 0.003703703703703704}
+{"system": "claude-sonnet-5-5", "rep": 3, "page": "hindi1", "kind": "hindi", "seconds": 2.22, "cost_usd": 0.008668, "cer": 0.0}
+{"system": "claude-sonnet-5-5", "rep": 3, "page": "hindi2", "kind": "hindi", "seconds": 2.04, "cost_usd": 0.007928, "cer": 0.0}
+{"system": "claude-sonnet-5-5", "rep": 3, "page": "hindi3", "kind": "hindi", "seconds": 1.65, "cost_usd": 0.008468, "cer": 0.0}
+{"system": "claude-sonnet-5-5", "rep": 3, "page": "report1", "kind": "report", "seconds": 1.84, "cost_usd": 0.008408, "cer": 0.0}
+{"system": "claude-sonnet-5-5", "rep": 3, "page": "report2", "kind": "report", "seconds": 2.7, "cost_usd": 0.008738, "cer": 0.0}
+{"system": "claude-sonnet-5-5", "rep": 3, "page": "report3", "kind": "report", "seconds": 1.92, "cost_usd": 0.008388, "cer": 0.0}
+{"system": "claude-sonnet-5-5", "rep": 3, "page": "table1", "kind": "table", "seconds": 2.72, "cost_usd": 0.009378, "cell_acc": 1.0, "rows_ok": 10, "rows": 10, "total_ok": true}
+{"system": "claude-sonnet-5-5", "rep": 3, "page": "table2", "kind": "table", "seconds": 2.7, "cost_usd": 0.009298, "cell_acc": 1.0, "rows_ok": 10, "rows": 10, "total_ok": true}
+{"system": "claude-sonnet-5-5", "rep": 3, "page": "table3", "kind": "table", "seconds": 2.05, "cost_usd": 0.009448, "cell_acc": 1.0, "rows_ok": 10, "rows": 10, "total_ok": true}
+{"system": "claude-sonnet-5-5", "rep": 3, "page": "hardchart1", "kind": "chart", "seconds": 1.88, "cost_usd": 0.006878, "found": 7, "n": 7, "mae": 0.0, "within2": 7, "exact": 7, "errs": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+{"system": "claude-sonnet-5-5", "rep": 3, "page": "hardchart2", "kind": "chart", "seconds": 1.67, "cost_usd": 0.006778, "found": 6, "n": 6, "mae": 0.0, "within2": 6, "exact": 6, "errs": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+{"system": "claude-sonnet-5-5", "rep": 3, "page": "hardchart3", "kind": "chart", "seconds": 2.35, "cost_usd": 0.006778, "found": 6, "n": 6, "mae": 0.0, "within2": 6, "exact": 6, "errs": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+{"system": "claude-sonnet-5-5", "rep": 3, "page": "hardhindi1", "kind": "hindi", "seconds": 2.51, "cost_usd": 0.008668, "cer": 0.0}
+{"system": "claude-sonnet-5-5", "rep": 3, "page": "hardhindi2", "kind": "hindi", "seconds": 2.18, "cost_usd": 0.007928, "cer": 0.0}
+{"system": "claude-sonnet-5-5", "rep": 3, "page": "hardhindi3", "kind": "hindi", "seconds": 2.38, "cost_usd": 0.008468, "cer": 0.0}
+{"system": "claude-sonnet-5-5", "rep": 3, "page": "hardreport1", "kind": "report", "seconds": 1.93, "cost_usd": 0.008408, "cer": 0.0}
+{"system": "claude-sonnet-5-5", "rep": 3, "page": "hardreport2", "kind": "report", "seconds": 2.24, "cost_usd": 0.008738, "cer": 0.0}
+{"system": "claude-sonnet-5-5", "rep": 3, "page": "hardreport3", "kind": "report", "seconds": 1.88, "cost_usd": 0.008388, "cer": 0.0}
+{"system": "claude-sonnet-5-5", "rep": 3, "page": "hardtable1", "kind": "table", "seconds": 3.17, "cost_usd": 0.010408, "cell_acc": 1.0, "rows_ok": 14, "rows": 14, "total_ok": true}
+{"system": "claude-sonnet-5-5", "rep": 3, "page": "hardtable2", "kind": "table", "seconds": 3.4, "cost_usd": 0.010338, "cell_acc": 1.0, "rows_ok": 14, "rows": 14, "total_ok": true}
+{"system": "claude-sonnet-5-5", "rep": 3, "page": "hardtable3", "kind": "table", "seconds": 2.88, "cost_usd": 0.010328, "cell_acc": 0.9821428571428571, "rows_ok": 13, "rows": 14, "total_ok": true}
+{"system": "parse20", "rep": 1, "page": "report1", "kind": "report", "seconds": 166.14, "cost_usd": 0.0, "cer": 0.0}
+{"system": "parse20", "rep": 1, "page": "table1", "kind": "table", "seconds": 175.85, "cost_usd": 0.0, "cell_acc": 1.0, "rows_ok": 10, "rows": 10, "total_ok": true}
+{"system": "parse20", "rep": 1, "page": "chart1", "kind": "chart", "seconds": 162.45, "cost_usd": 0.0, "found": 7, "n": 7, "mae": 0.42857142857142855, "within2": 7, "exact": 5, "errs": [0.0, 1.0, 2.0, 0.0, 0.0, 0.0, 0.0]}
+{"system": "parse20", "rep": 1, "page": "hand1", "kind": "handwriting", "seconds": 168.74, "cost_usd": 0.0, "cer": 0.04597701149425287}
+{"system": "parse20", "rep": 1, "page": "hindi1", "kind": "hindi", "seconds": 193.43, "cost_usd": 0.0, "cer": 0.0}
+{"system": "parse20", "rep": 1, "page": "report2", "kind": "report", "seconds": 170.41, "cost_usd": 0.0, "cer": 0.0}
+{"system": "parse20", "rep": 1, "page": "table2", "kind": "table", "seconds": 179.53, "cost_usd": 0.0, "cell_acc": 1.0, "rows_ok": 10, "rows": 10, "total_ok": true}
+{"system": "parse20", "rep": 1, "page": "chart2", "kind": "chart", "seconds": 163.97, "cost_usd": 0.0, "found": 6, "n": 6, "mae": 0.5, "within2": 6, "exact": 3, "errs": [0.0, 0.0, 1.0, 1.0, 1.0, 0.0]}
+{"system": "parse20", "rep": 1, "page": "hand2", "kind": "handwriting", "seconds": 161.98, "cost_usd": 0.0, "cer": 0.17446808510638298}
+{"system": "parse20", "rep": 1, "page": "hindi2", "kind": "hindi", "seconds": 171.49, "cost_usd": 0.0, "cer": 0.017167381974248927}
+{"system": "parse20", "rep": 1, "page": "report3", "kind": "report", "seconds": 190.52, "cost_usd": 0.0, "cer": 0.0}
+{"system": "parse20", "rep": 1, "page": "table3", "kind": "table", "seconds": 186.46, "cost_usd": 0.0, "cell_acc": 1.0, "rows_ok": 10, "rows": 10, "total_ok": true}
+{"system": "parse20", "rep": 1, "page": "chart3", "kind": "chart", "seconds": 168.66, "cost_usd": 0.0, "found": 6, "n": 6, "mae": 0.16666666666666666, "within2": 6, "exact": 5, "errs": [0.0, 0.0, 0.0, 0.0, 1.0, 0.0]}
+{"system": "parse20", "rep": 1, "page": "hand3", "kind": "handwriting", "seconds": 168.05, "cost_usd": 0.0, "cer": 0.05185185185185185}
+{"system": "parse20", "rep": 1, "page": "hindi3", "kind": "hindi", "seconds": 172.09, "cost_usd": 0.0, "cer": 0.016835016835016835}
+{"system": "parse20", "rep": 1, "page": "hardchart1", "kind": "chart", "seconds": 182.44, "cost_usd": 0.0, "found": 7, "n": 7, "mae": 1.3428571428571412, "within2": 5, "exact": 0, "errs": [1.5, 1.0999999999999943, 0.7999999999999972, 3.1999999999999993, 0.29999999999999716, 0.20000000000000284, 2.299999999999997]}
+{"system": "parse20", "rep": 1, "page": "hardchart2", "kind": "chart", "seconds": 171.8, "cost_usd": 0.0, "found": 6, "n": 6, "mae": 3.549999999999999, "within2": 2, "exact": 0, "errs": [0.3000000000000007, 2.6000000000000014, 4.799999999999997, 7.099999999999994, 4.799999999999997, 1.7000000000000028]}
+{"system": "parse20", "rep": 1, "page": "hardchart3", "kind": "chart", "seconds": 162.92, "cost_usd": 0.0, "found": 6, "n": 6, "mae": 3.550000000000001, "within2": 1, "exact": 0, "errs": [3.5, 6.300000000000001, 2.200000000000003, 2.700000000000003, 1.5, 5.1]}
+{"system": "parse20", "rep": 1, "page": "hardhindi1", "kind": "hindi", "seconds": 178.65, "cost_usd": 0.0, "cer": 0.0030581039755351682}
+{"system": "parse20", "rep": 1, "page": "hardhindi2", "kind": "hindi", "seconds": 167.71, "cost_usd": 0.0, "cer": 0.017167381974248927}
+{"system": "parse20", "rep": 1, "page": "hardhindi3", "kind": "hindi", "seconds": 175.14, "cost_usd": 0.0, "cer": 0.026936026936026935}
+{"system": "parse20", "rep": 1, "page": "hardreport1", "kind": "report", "seconds": 166.08, "cost_usd": 0.0, "cer": 0.39813374805598756}
+{"system": "parse20", "rep": 1, "page": "hardreport2", "kind": "report", "seconds": 173.85, "cost_usd": 0.0, "cer": 0.32085561497326204}
+{"system": "parse20", "rep": 1, "page": "hardreport3", "kind": "report", "seconds": 161.93, "cost_usd": 0.0, "cer": 0.0}
+{"system": "parse20", "rep": 1, "page": "hardtable1", "kind": "table", "seconds": 189.01, "cost_usd": 0.0, "cell_acc": 1.0, "rows_ok": 14, "rows": 14, "total_ok": true}
+{"system": "parse20", "rep": 1, "page": "hardtable2", "kind": "table", "seconds": 225.13, "cost_usd": 0.0, "cell_acc": 1.0, "rows_ok": 14, "rows": 14, "total_ok": true}
+{"system": "parse20", "rep": 1, "page": "hardtable3", "kind": "table", "seconds": 208.1, "cost_usd": 0.0, "cell_acc": 1.0, "rows_ok": 14, "rows": 14, "total_ok": true}
+{"system": "parse35", "rep": 1, "page": "report1", "kind": "report", "seconds": 70.49, "cost_usd": 0.0, "cer": 0.0}
+{"system": "parse35", "rep": 1, "page": "table1", "kind": "table", "seconds": 78.28, "cost_usd": 0.0, "cell_acc": 1.0, "rows_ok": 10, "rows": 10, "total_ok": true}
+{"system": "parse35", "rep": 1, "page": "chart1", "kind": "chart", "seconds": 68.59, "cost_usd": 0.0, "found": 7, "n": 7, "mae": 0.0, "within2": 7, "exact": 7, "errs": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+{"system": "parse35", "rep": 1, "page": "hand1", "kind": "handwriting", "seconds": 66.86, "cost_usd": 0.0, "cer": 0.022988505747126436}
+{"system": "parse35", "rep": 1, "page": "hindi1", "kind": "hindi", "seconds": 70.76, "cost_usd": 0.0, "cer": 0.2599388379204893}
+{"system": "parse35", "rep": 1, "page": "report2", "kind": "report", "seconds": 74.82, "cost_usd": 0.0, "cer": 0.0}
+{"system": "parse35", "rep": 1, "page": "table2", "kind": "table", "seconds": 73.46, "cost_usd": 0.0, "cell_acc": 1.0, "rows_ok": 10, "rows": 10, "total_ok": true}
+{"system": "parse35", "rep": 1, "page": "chart2", "kind": "chart", "seconds": 65.67, "cost_usd": 0.0, "found": 6, "n": 6, "mae": 0.0, "within2": 6, "exact": 6, "errs": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+{"system": "parse35", "rep": 1, "page": "hand2", "kind": "handwriting", "seconds": 66.52, "cost_usd": 0.0, "cer": 0.03404255319148936}
+{"system": "parse35", "rep": 1, "page": "hindi2", "kind": "hindi", "seconds": 74.29, "cost_usd": 0.0, "cer": 0.1888412017167382}
+{"system": "parse35", "rep": 1, "page": "report3", "kind": "report", "seconds": 69.89, "cost_usd": 0.0, "cer": 0.0}
+{"system": "parse35", "rep": 1, "page": "table3", "kind": "table", "seconds": 72.87, "cost_usd": 0.0, "cell_acc": 1.0, "rows_ok": 10, "rows": 10, "total_ok": true}
+{"system": "parse35", "rep": 1, "page": "chart3", "kind": "chart", "seconds": 67.09, "cost_usd": 0.0, "found": 6, "n": 6, "mae": 0.0, "within2": 6, "exact": 6, "errs": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}
+{"system": "parse35", "rep": 1, "page": "hand3", "kind": "handwriting", "seconds": 61.38, "cost_usd": 0.0, "cer": 0.014814814814814815}
+{"system": "parse35", "rep": 1, "page": "hindi3", "kind": "hindi", "seconds": 82.1, "cost_usd": 0.0, "cer": 0.10774410774410774}
+{"system": "parse35", "rep": 1, "page": "hardchart1", "kind": "chart", "seconds": 64.72, "cost_usd": 0.0, "found": 7, "n": 7, "mae": 0.5714285714285714, "within2": 7, "exact": 4, "errs": [1.0, 0.0, 1.0, 2.0, 0.0, 0.0, 0.0]}
+{"system": "parse35", "rep": 1, "page": "hardchart2", "kind": "chart", "seconds": 61.82, "cost_usd": 0.0, "found": 6, "n": 6, "mae": 0.5, "within2": 6, "exact": 3, "errs": [0.0, 0.0, 1.0, 0.0, 1.0, 1.0]}
+{"system": "parse35", "rep": 1, "page": "hardchart3", "kind": "chart", "seconds": 62.26, "cost_usd": 0.0, "found": 6, "n": 6, "mae": 0.3333333333333333, "within2": 6, "exact": 4, "errs": [0.0, 0.0, 1.0, 1.0, 0.0, 0.0]}
+{"system": "parse35", "rep": 1, "page": "hardhindi1", "kind": "hindi", "seconds": 75.55, "cost_usd": 0.0, "cer": 0.0030581039755351682}
+{"system": "parse35", "rep": 1, "page": "hardhindi2", "kind": "hindi", "seconds": 73.62, "cost_usd": 0.0, "cer": 0.017167381974248927}
+{"system": "parse35", "rep": 1, "page": "hardhindi3", "kind": "hindi", "seconds": 74.28, "cost_usd": 0.0, "cer": 0.003367003367003367}
+{"system": "parse35", "rep": 1, "page": "hardreport1", "kind": "report", "seconds": 66.41, "cost_usd": 0.0, "cer": 0.0}
+{"system": "parse35", "rep": 1, "page": "hardreport2", "kind": "report", "seconds": 66.09, "cost_usd": 0.0, "cer": 0.0}
+{"system": "parse35", "rep": 1, "page": "hardreport3", "kind": "report", "seconds": 63.94, "cost_usd": 0.0, "cer": 0.0}
+{"system": "parse35", "rep": 1, "page": "hardtable1", "kind": "table", "seconds": 86.02, "cost_usd": 0.0, "cell_acc": 1.0, "rows_ok": 14, "rows": 14, "total_ok": true}
+{"system": "parse35", "rep": 1, "page": "hardtable2", "kind": "table", "seconds": 79.87, "cost_usd": 0.0, "cell_acc": 1.0, "rows_ok": 14, "rows": 14, "total_ok": true}
+{"system": "parse35", "rep": 1, "page": "hardtable3", "kind": "table", "seconds": 83.64, "cost_usd": 0.0, "cell_acc": 0.9821428571428571, "rows_ok": 13, "rows": 14, "total_ok": true}
+{"system": "parse35", "rep": 1, "page": "ctrlsmall1", "kind": "hindi", "seconds": 142.57, "cost_usd": 0.0, "cer": 0.2599388379204893}
+{"system": "parse35", "rep": 1, "page": "ctrlphoto1", "kind": "hindi", "seconds": 149.95, "cost_usd": 0.0, "cer": 0.25076452599388377}
+{"system": "parse35", "rep": 1, "page": "ctrlsmall2", "kind": "hindi", "seconds": 139.41, "cost_usd": 0.0, "cer": 0.1630901287553648}
+{"system": "parse35", "rep": 1, "page": "ctrlphoto2", "kind": "hindi", "seconds": 136.58, "cost_usd": 0.0, "cer": 0.02575107296137339}

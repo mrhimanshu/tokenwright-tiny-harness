@@ -1,0 +1,78 @@
+system | kind | tier | n | metric
+parse20 | report | easy | 3 | CER 0.00%  pages [0.0, 0.0, 0.0]
+parse20 | report | hard | 3 | CER 23.97%  pages [39.8, 32.1, 0.0]
+parse20 | report | all | 6 | CER 11.98%  pages [0.0, 0.0, 0.0, 39.8, 32.1, 0.0]
+parse20 | table | easy | 3 | wrong cells 0/120  rows ok 30/30  totals 3/3
+parse20 | table | hard | 3 | wrong cells 0/168  rows ok 42/42  totals 3/3
+parse20 | table | all | 6 | wrong cells 0/288  rows ok 72/72  totals 6/6
+parse20 | chart | easy | 3 | wrong values 6/19  off by >2: 0  MAE 0.37
+parse20 | chart | hard | 3 | wrong values 19/19  off by >2: 11  MAE 2.74
+parse20 | chart | all | 6 | wrong values 25/38  off by >2: 11  MAE 1.55
+parse20 | handwriting | easy | 3 | CER 9.08%  pages [4.6, 17.4, 5.2]
+parse20 | handwriting | all | 3 | CER 9.08%  pages [4.6, 17.4, 5.2]
+parse20 | hindi | easy | 3 | CER 1.13%  pages [0.0, 1.7, 1.7]
+parse20 | hindi | hard | 3 | CER 1.57%  pages [0.3, 1.7, 2.7]
+parse20 | hindi | all | 6 | CER 1.35%  pages [0.0, 1.7, 1.7, 0.3, 1.7, 2.7]
+parse35 | report | easy | 3 | CER 0.00%  pages [0.0, 0.0, 0.0]
+parse35 | report | hard | 3 | CER 0.00%  pages [0.0, 0.0, 0.0]
+parse35 | report | all | 6 | CER 0.00%  pages [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+parse35 | table | easy | 3 | wrong cells 0/120  rows ok 30/30  totals 3/3
+parse35 | table | hard | 3 | wrong cells 1/168  rows ok 41/42  totals 3/3
+parse35 | table | all | 6 | wrong cells 1/288  rows ok 71/72  totals 6/6
+parse35 | chart | easy | 3 | wrong values 0/19  off by >2: 0  MAE 0.00
+parse35 | chart | hard | 3 | wrong values 8/19  off by >2: 0  MAE 0.47
+parse35 | chart | all | 6 | wrong values 8/38  off by >2: 0  MAE 0.24
+parse35 | handwriting | easy | 3 | CER 2.39%  pages [2.3, 3.4, 1.5]
+parse35 | handwriting | all | 3 | CER 2.39%  pages [2.3, 3.4, 1.5]
+parse35 | hindi | easy | 3 | CER 18.55%  pages [26.0, 18.9, 10.8]
+parse35 | hindi | hard | 3 | CER 0.79%  pages [0.3, 1.7, 0.3]
+parse35 | hindi | all | 10 | CER 12.80%  pages [26.0, 18.9, 10.8, 0.3, 1.7, 0.3, 26.0, 25.1, 16.3, 2.6]
+claude-haiku-5-5 | report | easy | 9 | CER 0.00%  pages [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+claude-haiku-5-5 | report | hard | 9 | CER 0.00%  pages [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+claude-haiku-5-5 | report | all | 18 | CER 0.00%  pages [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+claude-haiku-5-5 | table | easy | 9 | wrong cells 0/360  rows ok 90/90  totals 9/9
+claude-haiku-5-5 | table | hard | 9 | wrong cells 0/504  rows ok 126/126  totals 9/9
+claude-haiku-5-5 | table | all | 18 | wrong cells 0/864  rows ok 216/216  totals 18/18
+claude-haiku-5-5 | chart | easy | 9 | wrong values 0/57  off by >2: 0  MAE 0.00
+claude-haiku-5-5 | chart | hard | 9 | wrong values 0/57  off by >2: 0  MAE 0.00
+claude-haiku-5-5 | chart | all | 18 | wrong values 0/114  off by >2: 0  MAE 0.00
+claude-haiku-5-5 | handwriting | easy | 9 | CER 0.99%  pages [0.0, 0.4, 0.7, 0.0, 2.1, 1.5, 0.0, 3.4, 0.7]
+claude-haiku-5-5 | handwriting | all | 9 | CER 0.99%  pages [0.0, 0.4, 0.7, 0.0, 2.1, 1.5, 0.0, 3.4, 0.7]
+claude-haiku-5-5 | hindi | easy | 9 | CER 0.00%  pages [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+claude-haiku-5-5 | hindi | hard | 9 | CER 0.00%  pages [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+claude-haiku-5-5 | hindi | all | 18 | CER 0.00%  pages [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+claude-sonnet-5-5 | report | easy | 9 | CER 0.00%  pages [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+claude-sonnet-5-5 | report | hard | 9 | CER 0.00%  pages [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+claude-sonnet-5-5 | report | all | 18 | CER 0.00%  pages [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+claude-sonnet-5-5 | table | easy | 9 | wrong cells 0/360  rows ok 90/90  totals 9/9
+claude-sonnet-5-5 | table | hard | 9 | wrong cells 3/504  rows ok 123/126  totals 9/9
+claude-sonnet-5-5 | table | all | 18 | wrong cells 3/864  rows ok 213/216  totals 18/18
+claude-sonnet-5-5 | chart | easy | 9 | wrong values 0/57  off by >2: 0  MAE 0.00
+claude-sonnet-5-5 | chart | hard | 9 | wrong values 0/57  off by >2: 0  MAE 0.00
+claude-sonnet-5-5 | chart | all | 18 | wrong values 0/114  off by >2: 0  MAE 0.00
+claude-sonnet-5-5 | handwriting | easy | 9 | CER 0.27%  pages [0.0, 0.4, 0.4, 0.0, 0.4, 0.4, 0.0, 0.4, 0.4]
+claude-sonnet-5-5 | handwriting | all | 9 | CER 0.27%  pages [0.0, 0.4, 0.4, 0.0, 0.4, 0.4, 0.0, 0.4, 0.4]
+claude-sonnet-5-5 | hindi | easy | 9 | CER 0.00%  pages [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+claude-sonnet-5-5 | hindi | hard | 9 | CER 0.00%  pages [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+claude-sonnet-5-5 | hindi | all | 18 | CER 0.00%  pages [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+claude-opus-5-5 | report | easy | 9 | CER 0.00%  pages [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+claude-opus-5-5 | report | hard | 9 | CER 0.00%  pages [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+claude-opus-5-5 | report | all | 18 | CER 0.00%  pages [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+claude-opus-5-5 | table | easy | 9 | wrong cells 0/360  rows ok 90/90  totals 9/9
+claude-opus-5-5 | table | hard | 9 | wrong cells 2/504  rows ok 124/126  totals 9/9
+claude-opus-5-5 | table | all | 18 | wrong cells 2/864  rows ok 214/216  totals 18/18
+claude-opus-5-5 | chart | easy | 9 | wrong values 0/57  off by >2: 0  MAE 0.00
+claude-opus-5-5 | chart | hard | 9 | wrong values 0/57  off by >2: 0  MAE 0.00
+claude-opus-5-5 | chart | all | 18 | wrong values 0/114  off by >2: 0  MAE 0.00
+claude-opus-5-5 | handwriting | easy | 9 | CER 0.14%  pages [0.0, 0.4, 0.0, 0.0, 0.4, 0.0, 0.0, 0.4, 0.0]
+claude-opus-5-5 | handwriting | all | 9 | CER 0.14%  pages [0.0, 0.4, 0.0, 0.0, 0.4, 0.0, 0.0, 0.4, 0.0]
+claude-opus-5-5 | hindi | easy | 9 | CER 0.00%  pages [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+claude-opus-5-5 | hindi | hard | 9 | CER 0.00%  pages [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+claude-opus-5-5 | hindi | all | 18 | CER 0.00%  pages [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+
+parse20: n=27 median 171.80s/page  mean $0.00000/page  1000 pages = $0.00, 47.7 h peak_rss 6.76 GB  rss_after 6.43 GB  steal median 3.5%  sec min/max 161.93/225.13
+parse35: n=31 median 72.87s/page  mean $0.00000/page  1000 pages = $0.00, 20.2 h peak_rss 5.12 GB  rss_after 5.0 GB  steal median 3.6%  sec min/max 61.38/149.95
+claude-haiku-5-5: n=81 median 1.54s/page  mean $0.00042/page  1000 pages = $0.42, 0.4 h
+claude-sonnet-5-5: n=81 median 2.03s/page  mean $0.00829/page  1000 pages = $8.29, 0.6 h
+claude-opus-5-5: n=81 median 2.77s/page  mean $0.01658/page  1000 pages = $16.58, 0.8 h
+total API spend $2.05
