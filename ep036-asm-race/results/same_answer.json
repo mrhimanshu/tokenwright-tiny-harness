@@ -1,0 +1,64 @@
+{
+ "prompts": [
+  {
+   "prompt": "Explain the difference between L1, L2, and L3 CPU caches and why cache locality matters.",
+   "asm": "The **L1, L2, and L3 CPU caches** are **levels of memory cache** in a CPU architecture, each designed to store data and instructions that are frequently accessed. Here's a breakdown of their differences and the importance of **cache locality**:\n\n---\n\n### **1. L1 Cache**\n-",
+   "llama": "The **L1, L2, and L3 CPU caches** are **levels of memory cache** in a CPU architecture, each designed to store data and instructions that are frequently accessed by the CPU. The **difference** between these levels lies in their **size, access frequency, and purpose**:\n\n---\n\n### **",
+   "identical": false,
+   "same_first_words": 26,
+   "words_asm": 45,
+   "words_llama": 46,
+   "identical_stripped": false
+  },
+  {
+   "prompt": "What is 17 * 23? Answer with the number only.",
+   "asm": "17 \u00d7 23 = 391.",
+   "llama": "17 \u00d7 23 = 391. [end of text]",
+   "identical": false,
+   "same_first_words": 5,
+   "words_asm": 5,
+   "words_llama": 8,
+   "identical_stripped": true
+  },
+  {
+   "prompt": "Write a Python function that reverses a string.",
+   "asm": "Here's a simple Python function that reverses a string:\n\n```python\ndef reverse_string(s):\n    return s[::-1]\n```\n\n### Example usage:\n```python\nprint(reverse_string(\"hello\"))  # Output: \"olleh\"\nprint(reverse_string(\"Python\"))  # Output: \"nohtyP",
+   "llama": "Here's a simple Python function that reverses a string:\n\n```python\ndef reverse_string(s):\n    return s[::-1]\n```\n\n### Example usage:\n```python\nprint(reverse_string(\"hello\"))  # Output: \"olleh\"\nprint(reverse_string(\"Python\"))  # Output: \"nohtyP",
+   "identical": true,
+   "same_first_words": 27,
+   "words_asm": 27,
+   "words_llama": 27,
+   "identical_stripped": true
+  },
+  {
+   "prompt": "Name three planets in the solar system.",
+   "asm": "Three planets in the solar system are Mercury, Venus, and Mars.",
+   "llama": "Three planets in the solar system are Mercury, Venus, and Mars. [end of text]",
+   "identical": false,
+   "same_first_words": 11,
+   "words_asm": 11,
+   "words_llama": 14,
+   "identical_stripped": true
+  },
+  {
+   "prompt": "Translate 'good morning' into French and Spanish.",
+   "asm": "\"Bonjour\" en fran\u00e7ais et \"buenos d\u00edas\" en espa\u00f1ol.",
+   "llama": "\"Bonjour\" en fran\u00e7ais et \"buenos d\u00edas\" en espa\u00f1ol. [end of text]",
+   "identical": false,
+   "same_first_words": 8,
+   "words_asm": 8,
+   "words_llama": 11,
+   "identical_stripped": true
+  }
+ ],
+ "peak_rss_kb": {
+  "asm": 649600,
+  "llama": 5284948,
+  "llama_ctx2048": 925112,
+  "note": "llama default ctx = 40960 (model train ctx) allocates a big KV cache; asm-llm default -c 2048"
+ },
+ "engine_bytes": {
+  "asm": 14712,
+  "llama_completion_plus_libs": 15608952
+ }
+}
