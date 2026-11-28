@@ -16,10 +16,10 @@ Prompt: Appendix B system prompt + instruction verbatim (lab/src/), transcript w
 | Sonnet 5.5 | predict | 1 | 57.50 | 61.67 |
 | Opus 5.5 | predict | 1 | 60.83 | 64.17 |
 "predict" = "predict whether X is the very next person to speak" (not what's polite).
-Haiku on the FULL test sets (results/full_haiku.jsonl): Friends paper 59.60, predict 60.48 (n=1,287). AMI: see summary in analyse_full below.
+Haiku on the FULL test sets (results/full_haiku.jsonl): Friends paper 59.60, predict 60.48 (n=1,287). AMI (n=1,410): paper 53.57, predict 53.42. Haiku full-test spend $0.76.
 Weakest category: Friends SILENT_ref (target was in the conversation, label silent): Opus 20.5%, Sonnet 18.2%, Haiku 25–29% correct.
 Their numbers for comparison (Table 2): gemini-3.1-pro Friends 60.54 / AMI 61.03 / SPGI 64.45; gpt-5.2 55.41 / 59.21 / 56.94. Humans (Friends, 360 items): 60.31 / 64.81 / 66.13.
-Spend: $4.08 on the sample (Opus paper $1.83, Opus predict $0.70, Sonnet $0.95 + $0.34, Haiku ~$0.20) + Haiku full test ~$0.5.
+Spend: $4.08 on the sample (Opus paper $1.83, Opus predict $0.70, Sonnet $0.95 + $0.34, Haiku ~$0.20) + Haiku full test $0.76 (total ≈ $4.85).
 
 ## 2. One-line rules, full official test sets (lab/baselines.py)
 - "SPEAK if the target's name is in the most recent line": Friends **65.99**, AMI 49.52, SPGI 50.00 (AMI speakers are letters A–D, SPGI numbers, so it can't fire there).
