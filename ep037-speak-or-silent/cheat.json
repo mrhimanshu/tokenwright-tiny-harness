@@ -1,0 +1,46 @@
+{
+ "friends": {
+  "lookup_full": {
+   "balacc": 74.32,
+   "hits": 368
+  },
+  "lookup_last3": {
+   "balacc": 75.34,
+   "hits": 425
+  },
+  "lookup_last1": {
+   "balacc": 77.32,
+   "hits": 538
+  },
+  "lookup_line_only": {
+   "balacc": 74.32,
+   "hits": 368
+  },
+  "rule_only": {
+   "balacc": 65.99,
+   "rule": "name"
+  }
+ },
+ "ami": {
+  "lookup_full": {
+   "balacc": 55.51,
+   "hits": 1
+  },
+  "lookup_last3": {
+   "balacc": 56.86,
+   "hits": 72
+  },
+  "lookup_last1": {
+   "balacc": 67.1,
+   "hits": 379
+  },
+  "lookup_line_only": {
+   "balacc": 55.51,
+   "hits": 1
+  },
+  "rule_only": {
+   "balacc": 55.51,
+   "rule": "prev"
+  }
+ }
+}

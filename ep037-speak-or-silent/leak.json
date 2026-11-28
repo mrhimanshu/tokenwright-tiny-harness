@@ -1,0 +1,67 @@
+{
+ "friends": {
+  "test": 1287,
+  "same_sequence_in_train": 1242,
+  "same_moment_in_train": 358,
+  "identical_text_in_train": 628,
+  "identical_text_same_target_in_train": 368,
+  "test_ids_prefix": {
+   "test": 140,
+   "train": 1147
+  },
+  "silent_answer_implied": 222,
+  "with_sibling": 628,
+  "twin_full": {
+   "n": 368,
+   "same_label": 347,
+   "conflict": 21
+  },
+  "twin_last3ctx": {
+   "n": 425,
+   "same_label": 394,
+   "conflict": 31
+  }
+ },
+ "ami": {
+  "test": 1410,
+  "same_sequence_in_train": 1321,
+  "same_moment_in_train": 583,
+  "identical_text_in_train": 586,
+  "identical_text_same_target_in_train": 1,
+  "test_ids_prefix": {
+   "IS1003d": 193,
+   "IS1006b": 103,
+   "IS1006d": 103,
+   "IS1001a": 27,
+   "IS1005a": 12,
+   "ES2009c": 93,
+   "ES2002a": 54,
+   "IS1001c": 74,
+   "ES2008b": 86,
+   "TS3005b": 72,
+   "IS1001b": 102,
+   "ES2008a": 34,
+   "IS1008d": 30,
+   "IS1003b": 74,
+   "TS3005a": 16,
+   "ES2002c": 118,
+   "IS1008b": 16,
+   "ES2009d": 127,
+   "IS1000a": 55,
+   "IS1008a": 9,
+   "IS1008c": 12
+  },
+  "silent_answer_implied": 278,
+  "with_sibling": 586,
+  "twin_full": {
+   "n": 1,
+   "same_label": 0,
+   "conflict": 1
+  },
+  "twin_last3ctx": {
+   "n": 72,
+   "same_label": 56,
+   "conflict": 16
+  }
+ }
+}

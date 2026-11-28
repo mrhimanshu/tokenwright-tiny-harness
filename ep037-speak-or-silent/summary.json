@@ -1,0 +1,408 @@
+{
+ "cells": {
+  "claude-haiku-5-5|paper|0": {
+   "n": 6,
+   "missing_pred": 0,
+   "cost": 0.001,
+   "stop": {
+    "end_turn": 6
+   },
+   "speak_rate": 33.3,
+   "friends": {
+    "balacc": 75.0,
+    "n": 3,
+    "cats": {
+     "SILENT_ref": 100.0,
+     "SPEAK_explicit": 0.0,
+     "SPEAK_implicit": 100.0
+    }
+   },
+   "ami": {
+    "balacc": 75.0,
+    "n": 3,
+    "cats": {
+     "SILENT_no_ref": 100.0,
+     "SPEAK_implicit": 50.0
+    }
+   },
+   "both": 75.0
+  },
+  "claude-haiku-5-5|paper|1": {
+   "n": 240,
+   "missing_pred": 0,
+   "cost": 0.048,
+   "stop": {
+    "end_turn": 240
+   },
+   "speak_rate": 36.2,
+   "friends": {
+    "balacc": 59.17,
+    "n": 120,
+    "cats": {
+     "SILENT_no_ref": 93.8,
+     "SILENT_ref": 27.3,
+     "SPEAK_explicit": 85.7,
+     "SPEAK_implicit": 66.7
+    }
+   },
+   "ami": {
+    "balacc": 51.67,
+    "n": 120,
+    "cats": {
+     "SILENT_no_ref": 95.7,
+     "SILENT_ref": 85.7,
+     "SPEAK_explicit": 21.4,
+     "SPEAK_implicit": 6.5
+    }
+   },
+   "both": 55.42
+  },
+  "claude-haiku-5-5|paper|2": {
+   "n": 240,
+   "missing_pred": 0,
+   "cost": 0.048,
+   "stop": {
+    "end_turn": 240
+   },
+   "speak_rate": 36.2,
+   "friends": {
+    "balacc": 60.0,
+    "n": 120,
+    "cats": {
+     "SILENT_no_ref": 93.8,
+     "SILENT_ref": 29.5,
+     "SPEAK_explicit": 81.0,
+     "SPEAK_implicit": 69.2
+    }
+   },
+   "ami": {
+    "balacc": 52.5,
+    "n": 120,
+    "cats": {
+     "SILENT_no_ref": 93.5,
+     "SILENT_ref": 92.9,
+     "SPEAK_explicit": 14.3,
+     "SPEAK_implicit": 10.9
+    }
+   },
+   "both": 56.25
+  },
+  "claude-haiku-5-5|paper|3": {
+   "n": 240,
+   "missing_pred": 0,
+   "cost": 0.048,
+   "stop": {
+    "end_turn": 240
+   },
+   "speak_rate": 38.3,
+   "friends": {
+    "balacc": 58.33,
+    "n": 120,
+    "cats": {
+     "SILENT_no_ref": 87.5,
+     "SILENT_ref": 25.0,
+     "SPEAK_explicit": 81.0,
+     "SPEAK_implicit": 71.8
+    }
+   },
+   "ami": {
+    "balacc": 51.67,
+    "n": 120,
+    "cats": {
+     "SILENT_no_ref": 93.5,
+     "SILENT_ref": 85.7,
+     "SPEAK_explicit": 21.4,
+     "SPEAK_implicit": 8.7
+    }
+   },
+   "both": 55.0
+  },
+  "claude-haiku-5-5|predict|1": {
+   "n": 240,
+   "missing_pred": 0,
+   "cost": 0.02,
+   "stop": {
+    "end_turn": 240
+   },
+   "speak_rate": 35.0,
+   "friends": {
+    "balacc": 57.5,
+    "n": 120,
+    "cats": {
+     "SILENT_no_ref": 100.0,
+     "SILENT_ref": 27.3,
+     "SPEAK_explicit": 71.4,
+     "SPEAK_implicit": 66.7
+    }
+   },
+   "ami": {
+    "balacc": 52.5,
+    "n": 120,
+    "cats": {
+     "SILENT_no_ref": 97.8,
+     "SILENT_ref": 78.6,
+     "SPEAK_explicit": 28.6,
+     "SPEAK_implicit": 6.5
+    }
+   },
+   "both": 55.0
+  },
+  "claude-haiku-5-5|predict|2": {
+   "n": 240,
+   "missing_pred": 0,
+   "cost": 0.02,
+   "stop": {
+    "end_turn": 240
+   },
+   "speak_rate": 37.1,
+   "friends": {
+    "balacc": 60.83,
+    "n": 120,
+    "cats": {
+     "SILENT_no_ref": 87.5,
+     "SILENT_ref": 29.5,
+     "SPEAK_explicit": 81.0,
+     "SPEAK_implicit": 74.4
+    }
+   },
+   "ami": {
+    "balacc": 51.67,
+    "n": 120,
+    "cats": {
+     "SILENT_no_ref": 95.7,
+     "SILENT_ref": 85.7,
+     "SPEAK_explicit": 28.6,
+     "SPEAK_implicit": 4.3
+    }
+   },
+   "both": 56.25
+  },
+  "claude-haiku-5-5|predict|3": {
+   "n": 240,
+   "missing_pred": 0,
+   "cost": 0.02,
+   "stop": {
+    "end_turn": 240
+   },
+   "speak_rate": 32.5,
+   "friends": {
+    "balacc": 58.33,
+    "n": 120,
+    "cats": {
+     "SILENT_no_ref": 87.5,
+     "SILENT_ref": 34.1,
+     "SPEAK_explicit": 61.9,
+     "SPEAK_implicit": 71.8
+    }
+   },
+   "ami": {
+    "balacc": 51.67,
+    "n": 120,
+    "cats": {
+     "SILENT_no_ref": 97.8,
+     "SILENT_ref": 92.9,
+     "SPEAK_explicit": 21.4,
+     "SPEAK_implicit": 2.2
+    }
+   },
+   "both": 55.0
+  },
+  "claude-opus-5-5|paper|0": {
+   "n": 6,
+   "missing_pred": 0,
+   "cost": 0.044,
+   "stop": {
+    "end_turn": 6
+   },
+   "speak_rate": 33.3,
+   "friends": {
+    "balacc": 75.0,
+    "n": 3,
+    "cats": {
+     "SILENT_ref": 100.0,
+     "SPEAK_explicit": 0.0,
+     "SPEAK_implicit": 100.0
+    }
+   },
+   "ami": {
+    "balacc": 75.0,
+    "n": 3,
+    "cats": {
+     "SILENT_no_ref": 100.0,
+     "SPEAK_implicit": 50.0
+    }
+   },
+   "both": 75.0
+  },
+  "claude-opus-5-5|paper|1": {
+   "n": 240,
+   "missing_pred": 0,
+   "cost": 1.825,
+   "stop": {
+    "end_turn": 240
+   },
+   "speak_rate": 51.7,
+   "friends": {
+    "balacc": 59.17,
+    "n": 120,
+    "cats": {
+     "SILENT_no_ref": 62.5,
+     "SILENT_ref": 20.5,
+     "SPEAK_explicit": 85.7,
+     "SPEAK_implicit": 87.2
+    }
+   },
+   "ami": {
+    "balacc": 62.5,
+    "n": 120,
+    "cats": {
+     "SILENT_no_ref": 89.1,
+     "SILENT_ref": 78.6,
+     "SPEAK_explicit": 71.4,
+     "SPEAK_implicit": 28.3
+    }
+   },
+   "both": 60.83
+  },
+  "claude-opus-5-5|predict|1": {
+   "n": 240,
+   "missing_pred": 0,
+   "cost": 0.699,
+   "stop": {
+    "end_turn": 240
+   },
+   "speak_rate": 52.5,
+   "friends": {
+    "balacc": 60.83,
+    "n": 120,
+    "cats": {
+     "SILENT_no_ref": 68.8,
+     "SILENT_ref": 20.5,
+     "SPEAK_explicit": 85.7,
+     "SPEAK_implicit": 89.7
+    }
+   },
+   "ami": {
+    "balacc": 64.17,
+    "n": 120,
+    "cats": {
+     "SILENT_no_ref": 93.5,
+     "SILENT_ref": 64.3,
+     "SPEAK_explicit": 64.3,
+     "SPEAK_implicit": 34.8
+    }
+   },
+   "both": 62.5
+  },
+  "claude-sonnet-5-5|paper|0": {
+   "n": 6,
+   "missing_pred": 0,
+   "cost": 0.023,
+   "stop": {
+    "end_turn": 6
+   },
+   "speak_rate": 33.3,
+   "friends": {
+    "balacc": 75.0,
+    "n": 3,
+    "cats": {
+     "SILENT_ref": 100.0,
+     "SPEAK_explicit": 0.0,
+     "SPEAK_implicit": 100.0
+    }
+   },
+   "ami": {
+    "balacc": 75.0,
+    "n": 3,
+    "cats": {
+     "SILENT_no_ref": 100.0,
+     "SPEAK_implicit": 50.0
+    }
+   },
+   "both": 75.0
+  },
+  "claude-sonnet-5-5|paper|1": {
+   "n": 240,
+   "missing_pred": 0,
+   "cost": 0.948,
+   "stop": {
+    "end_turn": 240
+   },
+   "speak_rate": 50.4,
+   "friends": {
+    "balacc": 59.17,
+    "n": 120,
+    "cats": {
+     "SILENT_no_ref": 87.5,
+     "SILENT_ref": 18.2,
+     "SPEAK_explicit": 76.2,
+     "SPEAK_implicit": 84.6
+    }
+   },
+   "ami": {
+    "balacc": 58.33,
+    "n": 120,
+    "cats": {
+     "SILENT_no_ref": 80.4,
+     "SILENT_ref": 78.6,
+     "SPEAK_explicit": 64.3,
+     "SPEAK_implicit": 28.3
+    }
+   },
+   "both": 58.75
+  },
+  "claude-sonnet-5-5|predict|1": {
+   "n": 240,
+   "missing_pred": 0,
+   "cost": 0.342,
+   "stop": {
+    "end_turn": 240
+   },
+   "speak_rate": 50.4,
+   "friends": {
+    "balacc": 57.5,
+    "n": 120,
+    "cats": {
+     "SILENT_no_ref": 75.0,
+     "SILENT_ref": 18.2,
+     "SPEAK_explicit": 81.0,
+     "SPEAK_implicit": 82.1
+    }
+   },
+   "ami": {
+    "balacc": 61.67,
+    "n": 120,
+    "cats": {
+     "SILENT_no_ref": 91.3,
+     "SILENT_ref": 64.3,
+     "SPEAK_explicit": 71.4,
+     "SPEAK_implicit": 28.3
+    }
+   },
+   "both": 59.58
+  }
+ },
+ "rules_on_sample": {
+  "friends": {
+   "name_in_last_line": 63.33,
+   "spoke_turn_before": 40.83,
+   "name_cats": {
+    "SILENT_no_ref": 100.0,
+    "SILENT_ref": 86.4,
+    "SPEAK_explicit": 100.0,
+    "SPEAK_implicit": 2.6
+   }
+  },
+  "ami": {
+   "name_in_last_line": 48.33,
+   "spoke_turn_before": 59.17,
+   "name_cats": {
+    "SILENT_no_ref": 100.0,
+    "SILENT_ref": 71.4,
+    "SPEAK_explicit": 7.1,
+    "SPEAK_implicit": 2.2
+   }
+  }
+ },
+ "total_cost": 4.085
+}
